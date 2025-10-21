@@ -730,6 +730,17 @@
 			x: 4.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["1F8737DA77D2BDB2"]
+			id: "1DE7CB89404AD7DB"
+			tasks: [{
+				id: "1F2D3BF9529B9A52"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
 	]
 	title: "0.5 - Real Tech"
 }
