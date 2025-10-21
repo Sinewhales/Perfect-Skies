@@ -1,0 +1,54 @@
+{
+  "general": {
+    "pipes": {
+      "disable_rf_pipe": {
+        "#Comment": "pipes.disable_rf_pipe",
+        "value": false
+      },
+      "mjPerMillibucket": {
+        "#Comment": "pipes.mjPerMillibucket",
+        "#Range": "100 - 9223372036854775807",
+        "value": 1000
+      },
+      "mjPerItem": {
+        "#Comment": "pipes.mjPerItem",
+        "#Range": "50000 - 9223372036854775807",
+        "value": 1000000
+      },
+      "baseFluidRate": {
+        "#Comment": "pipes.baseFluidRate",
+        "#Range": "1 - 40",
+        "value": 10
+      },
+      "basePowerRate": {
+        "#Comment": "pipes.basePowerRate",
+        "#Range": "1 - 40",
+        "value": 4
+      },
+      "baseRfRate": {
+        "#Comment": "pipes.baseRfRate",
+        "#Range": "10 - 4000",
+        "value": 40
+      },
+      "disableStrictDaizuliItemPipeLogic": {
+        "#Comment": "The logic of the daizuli item pipe: [false]: Use strict daizuli item pipe logic. Bounce the items back if no expected available directions exist. [true]: Use the daizuli item pipe logic of BC7. Colour only influences the priority of the travelling direction of items.",
+        "value": false
+      }
+    }
+  },
+  "display": {
+    "pipes": {
+      "fluidColourIsBorder": {
+        "#Comment": "pipes.fluidColourIsBorder",
+        "value": true
+      }
+    }
+  },
+  "experimental": {
+    "kinesisLossMode": {
+      "#Comment": "kinesisLossMode",
+      "#Allowed Values": "LOSSLESS, PERCENTAGE, ABSOLUTE",
+      "value": "LOSSLESS"
+    }
+  }
+}

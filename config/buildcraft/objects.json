@@ -1,0 +1,412 @@
+{
+  "items": {
+    "snapshot_blueprint": {
+      "#Comment": "snapshot_blueprint",
+      "value": true
+    },
+    "snapshot_template": {
+      "#Comment": "snapshot_template",
+      "value": true
+    },
+    "schematic_single": {
+      "#Comment": "schematic_single",
+      "value": true
+    },
+    "filler_planner": {
+      "#Comment": "filler_planner",
+      "value": true
+    },
+    "wrench": {
+      "#Comment": "wrench",
+      "value": true
+    },
+    "gear_wood": {
+      "#Comment": "gear_wood",
+      "value": true
+    },
+    "gear_stone": {
+      "#Comment": "gear_stone",
+      "value": true
+    },
+    "gear_iron": {
+      "#Comment": "gear_iron",
+      "value": true
+    },
+    "gear_gold": {
+      "#Comment": "gear_gold",
+      "value": true
+    },
+    "gear_diamond": {
+      "#Comment": "gear_diamond",
+      "value": true
+    },
+    "paintbrush_clean": {
+      "#Comment": "paintbrush_clean",
+      "value": true
+    },
+    "paintbrush_white": {
+      "#Comment": "paintbrush_white",
+      "value": true
+    },
+    "paintbrush_orange": {
+      "#Comment": "paintbrush_orange",
+      "value": true
+    },
+    "paintbrush_magenta": {
+      "#Comment": "paintbrush_magenta",
+      "value": true
+    },
+    "paintbrush_light_blue": {
+      "#Comment": "paintbrush_light_blue",
+      "value": true
+    },
+    "paintbrush_yellow": {
+      "#Comment": "paintbrush_yellow",
+      "value": true
+    },
+    "paintbrush_lime": {
+      "#Comment": "paintbrush_lime",
+      "value": true
+    },
+    "paintbrush_pink": {
+      "#Comment": "paintbrush_pink",
+      "value": true
+    },
+    "paintbrush_light_gray": {
+      "#Comment": "paintbrush_light_gray",
+      "value": true
+    },
+    "paintbrush_cyan": {
+      "#Comment": "paintbrush_cyan",
+      "value": true
+    },
+    "paintbrush_purple": {
+      "#Comment": "paintbrush_purple",
+      "value": true
+    },
+    "paintbrush_blue": {
+      "#Comment": "paintbrush_blue",
+      "value": true
+    },
+    "paintbrush_brown": {
+      "#Comment": "paintbrush_brown",
+      "value": true
+    },
+    "paintbrush_green": {
+      "#Comment": "paintbrush_green",
+      "value": true
+    },
+    "paintbrush_red": {
+      "#Comment": "paintbrush_red",
+      "value": true
+    },
+    "paintbrush_black": {
+      "#Comment": "paintbrush_black",
+      "value": true
+    },
+    "paintbrush_gray": {
+      "#Comment": "paintbrush_gray",
+      "value": true
+    },
+    "list": {
+      "#Comment": "list",
+      "value": true
+    },
+    "map_location": {
+      "#Comment": "map_location",
+      "value": true
+    },
+    "marker_connector": {
+      "#Comment": "marker_connector",
+      "value": true
+    },
+    "volume_box": {
+      "#Comment": "volume_box",
+      "value": true
+    },
+    "fragile_fluid_shard": {
+      "#Comment": "fragile_fluid_shard",
+      "value": true
+    },
+    "goggles": {
+      "#Comment": "goggles",
+      "value": true
+    },
+    "chipset_redstone": {
+      "#Comment": "chipset_redstone",
+      "value": true
+    },
+    "chipset_iron": {
+      "#Comment": "chipset_iron",
+      "value": true
+    },
+    "chipset_gold": {
+      "#Comment": "chipset_gold",
+      "value": true
+    },
+    "chipset_quartz": {
+      "#Comment": "chipset_quartz",
+      "value": true
+    },
+    "chipset_diamond": {
+      "#Comment": "chipset_diamond",
+      "value": true
+    },
+    "redstone_crystal": {
+      "#Comment": "redstone_crystal",
+      "value": true
+    },
+    "gate_copier": {
+      "#Comment": "gate_copier",
+      "value": true
+    },
+    "plug_gate": {
+      "#Comment": "plug_gate",
+      "value": true
+    },
+    "plug_lens": {
+      "#Comment": "plug_lens",
+      "value": true
+    },
+    "plug_pulsar": {
+      "#Comment": "plug_pulsar",
+      "value": true
+    },
+    "plug_light_sensor": {
+      "#Comment": "plug_light_sensor",
+      "value": true
+    },
+    "plug_timer": {
+      "#Comment": "plug_timer",
+      "value": true
+    },
+    "waterproof": {
+      "#Comment": "waterproof",
+      "value": true
+    },
+    "plug_facade": {
+      "#Comment": "plug_facade",
+      "value": true
+    },
+    "plug_blocker": {
+      "#Comment": "plug_blocker",
+      "value": true
+    },
+    "plug_power_adaptor": {
+      "#Comment": "plug_power_adaptor",
+      "value": true
+    },
+    "wire": {
+      "#Comment": "wire",
+      "value": true
+    },
+    "robot_station": {
+      "#Comment": "robot_station",
+      "value": true
+    },
+    "redstone_board": {
+      "#Comment": "redstone_board",
+      "value": true
+    },
+    "plastic_sheet": {
+      "#Comment": "plastic_sheet",
+      "value": true
+    },
+    "water_gel_spawn": {
+      "#Comment": "water_gel_spawn",
+      "value": true
+    },
+    "gel": {
+      "#Comment": "gel",
+      "value": true
+    },
+    "robot": {
+      "#Comment": "robot",
+      "value": true
+    },
+    "robot_googles": {
+      "#Comment": "robot_googles",
+      "value": true
+    },
+    "glob_oil": {
+      "#Comment": "glob_oil",
+      "value": true
+    },
+    "oil_placer": {
+      "#Comment": "oil_placer",
+      "value": true
+    }
+  },
+  "blocks": {
+    "laser": {
+      "#Comment": "laser",
+      "value": true
+    },
+    "spring_water": {
+      "#Comment": "spring_water",
+      "value": true
+    },
+    "filtered_buffer": {
+      "#Comment": "filtered_buffer",
+      "value": true
+    },
+    "spring_oil": {
+      "#Comment": "spring_oil",
+      "value": true
+    },
+    "decorated": {
+      "#Comment": "decorated",
+      "value": true
+    },
+    "assembly_table": {
+      "#Comment": "assembly_table",
+      "value": true
+    },
+    "advanced_crafting_table": {
+      "#Comment": "advanced_crafting_table",
+      "value": true
+    },
+    "integration_table": {
+      "#Comment": "integration_table",
+      "value": true
+    },
+    "charging_table": {
+      "#Comment": "charging_table",
+      "value": true
+    },
+    "programming_table": {
+      "#Comment": "programming_table",
+      "value": true
+    },
+    "marker_volume": {
+      "#Comment": "marker_volume",
+      "value": true
+    },
+    "pipe_holder": {
+      "#Comment": "pipe_holder",
+      "value": true
+    },
+    "marker_path": {
+      "#Comment": "marker_path",
+      "value": true
+    },
+    "filler": {
+      "#Comment": "filler",
+      "value": true
+    },
+    "power_tester": {
+      "#Comment": "power_tester",
+      "value": true
+    },
+    "builder": {
+      "#Comment": "builder",
+      "value": true
+    },
+    "architect": {
+      "#Comment": "architect",
+      "value": true
+    },
+    "engine_wood": {
+      "#Comment": "engine_wood",
+      "value": true
+    },
+    "library": {
+      "#Comment": "library",
+      "value": true
+    },
+    "engine_creative": {
+      "#Comment": "engine_creative",
+      "value": true
+    },
+    "replacer": {
+      "#Comment": "replacer",
+      "value": true
+    },
+    "frame": {
+      "#Comment": "frame",
+      "value": true
+    },
+    "quarry": {
+      "#Comment": "quarry",
+      "value": true
+    },
+    "marker_construction": {
+      "#Comment": "marker_construction",
+      "value": true
+    },
+    "autoworkbench_item": {
+      "#Comment": "autoworkbench_item",
+      "value": true
+    },
+    "mining_well": {
+      "#Comment": "mining_well",
+      "value": true
+    },
+    "pump": {
+      "#Comment": "pump",
+      "value": true
+    },
+    "tube": {
+      "#Comment": "tube",
+      "value": true
+    },
+    "flood_gate": {
+      "#Comment": "flood_gate",
+      "value": true
+    },
+    "zone_planner": {
+      "#Comment": "zone_planner",
+      "value": true
+    },
+    "requester": {
+      "#Comment": "requester",
+      "value": true
+    },
+    "tank": {
+      "#Comment": "tank",
+      "value": true
+    },
+    "chute": {
+      "#Comment": "chute",
+      "value": true
+    },
+    "distiller": {
+      "#Comment": "distiller",
+      "value": true
+    },
+    "heat_exchange": {
+      "#Comment": "heat_exchange",
+      "value": true
+    },
+    "water_gel": {
+      "#Comment": "water_gel",
+      "value": true
+    },
+    "engine_stone": {
+      "#Comment": "engine_stone",
+      "value": true
+    },
+    "engine_iron": {
+      "#Comment": "engine_iron",
+      "value": true
+    }
+  },
+  "engines": {
+    "wood": {
+      "#Comment": "wood",
+      "value": true
+    },
+    "creative": {
+      "#Comment": "creative",
+      "value": true
+    },
+    "stone": {
+      "#Comment": "stone",
+      "value": true
+    },
+    "iron": {
+      "#Comment": "iron",
+      "value": true
+    }
+  }
+}

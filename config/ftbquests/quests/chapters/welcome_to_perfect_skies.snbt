@@ -1,0 +1,225 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_perfect_skies"
+	group: ""
+	icon: "sereneseasons:calendar"
+	id: "56EA4AAA59CE1479"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4B81F3FAE36DB511"
+			size: 2.0d
+			tasks: [{
+				id: "6AC1B093C7413199"
+				title: "Welcome"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "sereneseasons:calendar"
+			id: "7A9179559B479A4A"
+			rewards: [{
+				id: "62D928D15FD19D8A"
+				item: "sereneseasons:calendar"
+				type: "item"
+			}]
+			subtitle: "This modpack uses Serene Seasons. Seasons affect crops grow and the type of mobs that can spawn around you as well as other things. Make sure to use the Calendar to keep track of the current season."
+			tasks: [{
+				id: "16CCF37C5993E9AC"
+				title: "Seasons"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "geolosys:limonite_ore_sample"
+			id: "33B5ED9EF964E264"
+			rewards: [{
+				id: "752F4BE434AA5491"
+				item: "geolosys:prospectors_pick"
+				type: "item"
+			}]
+			subtitle: "Don't mine normally. In this pack, Ores only generate in veins. Start by exploring and finding a specific sample. Then dig straight down and you should find a huge vein of that specific ore."
+			tasks: [{
+				id: "4135D9BB73A22B8F"
+				title: "Ore Gen"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "nuclearcraft:wasteland_earth"
+			id: "5C4E8E948CA58447"
+			rewards: [{
+				id: "5A1DE8165373A0CD"
+				item: "nuclearcraft:geiger_counter"
+				type: "item"
+			}]
+			subtitle: "Don't approach Wastelands.  You will slowly accumulate radiation which will slowly give you negative debuffs. Use the Geigar Counters to see how much radiation you have "
+			tasks: [{
+				id: "4FBDBA71636F9582"
+				title: "Wastelands"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: {
+				Count: 1
+				id: "scannable:scanner"
+				tag: {
+					energy: 5000
+				}
+			}
+			id: "6DCC1DAECC0E0BCA"
+			rewards: [
+				{
+					id: "7C88E2694E6D286F"
+					item: {
+						Count: 1
+						id: "scannable:scanner"
+						tag: {
+							energy: 5000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A362DC7780268A7"
+					item: "scannable:common_ores_module"
+					type: "item"
+				}
+				{
+					id: "4DD83EE8109A583D"
+					item: "scannable:rare_ores_module"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0C5BDD3CDA4F7B71"
+					item: "kubejs:scanner_battery"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3EF175B2FD26A809"
+				title: "Scanner"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "waystones:waystone"
+			id: "00CEEC6896483F22"
+			rewards: [
+				{
+					id: "0D3EA9AA39FE33A0"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "11AF68B68E9908EA"
+					item: {
+						Count: 1
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Waystones recipes are disabled and those in villages are unbreakable. You can only TP to your personnal waystone or to any village tou have discovered."
+			tasks: [{
+				id: "2967D0162935673A"
+				title: "Waystones"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "iceandfire:dragon_skull_fire"
+			id: "4252873AC944B156"
+			subtitle: "Most of Ice and Fire stuff has been removed from the Overworld. You will acces it's content as you progress."
+			tasks: [{
+				id: "012F85C3C6962E43"
+				title: "Where are the Dragons ?"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "minecraft:grass"
+			id: "48C969E6FB3594C2"
+			rewards: [{
+				id: "381AE7E547BB34DD"
+				item: {
+					Count: 1
+					id: "lootbags:loot_bag"
+					tag: {
+						Color: 13882323
+						Loot: "lootbags:kjs/a93e9hs1ns87kfthowfa40cqh"
+						Name: "Seed Bag"
+						Type: "COMMON"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "As a way to declutter inventory, grass now have a chance to drop a Seed Bag when broken. Open it to get the usual loots."
+			tasks: [{
+				id: "680A7D0DE9E95E61"
+				title: "Grass"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			id: "648A59B92E22618E"
+			size: 2.0d
+			tasks: [{
+				id: "6CECEA43DD69C9A4"
+				title: "Ready ?"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4B81F3FAE36DB511"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "7230A222432AAE45"
+			rewards: [{
+				id: "59F1C2552CD3D804"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A49A93B91216346"
+				title: "Backpack"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+	]
+	title: "Welcome to Perfect Skies"
+}

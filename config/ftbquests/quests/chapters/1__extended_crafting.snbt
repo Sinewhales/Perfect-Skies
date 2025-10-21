@@ -1,0 +1,438 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1__extended_crafting"
+	group: ""
+	icon: "extendedcrafting:advanced_table"
+	id: "694A4D82DE1A6C74"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "164674E47363A30C"
+			rewards: [{
+				id: "12FEE850980936C1"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:mending"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "35EBEDBF949FD128"
+				item: {
+					Count: 1
+					id: "kubejs:plate_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["164674E47363A30C"]
+			id: "56AC3D22D12FC7A5"
+			shape: "octagon"
+			tasks: [{
+				id: "2A840A3D4CD8A3D9"
+				item: "thermal:iron_plate"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "387CD2768D1787DA"
+			shape: "octagon"
+			subtitle: "Cauldron filling can be automated with a dispenser"
+			tasks: [{
+				id: "63890FB237435A2B"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["387CD2768D1787DA"]
+			id: "08B810FFC3FC0F63"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "4C8E948E7F545468"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"23B144455379D488"
+				"0697A7CE410E55E3"
+			]
+			id: "23541139EDDB64CB"
+			shape: "octagon"
+			tasks: [{
+				id: "09E6B85DD421BEE6"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["23541139EDDB64CB"]
+			id: "0570E402958E89E9"
+			shape: "octagon"
+			tasks: [{
+				id: "43DBCEC3EC0823A3"
+				item: "extendedcrafting:basic_component"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0570E402958E89E9"]
+			id: "4BD35D1EBCFE8DD1"
+			shape: "octagon"
+			tasks: [{
+				id: "01448BB3EEDAC7E2"
+				item: "extendedcrafting:basic_catalyst"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4BD35D1EBCFE8DD1"]
+			id: "47CB31A5FFB365AE"
+			rewards: [{
+				id: "52483E133984387C"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			tasks: [{
+				id: "242B2066028B57F0"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["47CB31A5FFB365AE"]
+			id: "736A4858CBC99949"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "34B79AF3F73D19E0"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["08B810FFC3FC0F63"]
+			id: "6DEB497FF0FD5C04"
+			tasks: [{
+				id: "7A90EEEA881FCC28"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0697A7CE410E55E3"]
+			id: "3796F62557384EB5"
+			tasks: [{
+				id: "0F7D7A07038B9C56"
+				item: "giacomos_exp:expseed"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["56AC3D22D12FC7A5"]
+			id: "483796C2EC96EBD0"
+			rewards: [{
+				id: "47B9CDCC7AA1B3A3"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "In this pack Infinite Water Sources are disabled."
+			tasks: [{
+				id: "06CF2706CD5E8186"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "105C110813F01A82"
+			subtitle: "If you managed to find Cactus (or use the one given in the previous quest), you can make Cactus Juice which can be turned into Water. Useful if you're stuck in a desert biome or if water is pretty far away from your base."
+			tasks: [{
+				id: "682E68E49A6A81F2"
+				item: "kubejs:cactus_juice"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["08B810FFC3FC0F63"]
+			hide_dependency_lines: false
+			id: "0697A7CE410E55E3"
+			shape: "octagon"
+			tasks: [{
+				id: "3E3BEC4697534E46"
+				item: "mob_grinding_utils:tank_sink"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08B810FFC3FC0F63"]
+			id: "65E0631988028A2E"
+			shape: "octagon"
+			tasks: [{
+				id: "0EC1949C175304D5"
+				item: {
+					Count: 1
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["65E0631988028A2E"]
+			id: "1705F0D4F9E48635"
+			shape: "octagon"
+			tasks: [{
+				id: "0CCA42B2A4CBAFBB"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1705F0D4F9E48635"]
+			id: "23B144455379D488"
+			shape: "octagon"
+			tasks: [{
+				id: "273094491E7B241B"
+				item: "kubejs:inactive_luminessence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56AC3D22D12FC7A5"]
+			id: "11344054C9C971F9"
+			tasks: [{
+				id: "3AABF2C5381B04F9"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			title: "Early Automation"
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"11344054C9C971F9"
+				"4CFDA8D6076098B1"
+			]
+			icon: "flopper:flopper"
+			id: "20A3162E6FB71B18"
+			tasks: [
+				{
+					id: "308ED251F0E92491"
+					item: "flopper:flopper"
+					type: "item"
+				}
+				{
+					id: "32AE3C4B85FEC70D"
+					item: "quark:chute"
+					type: "item"
+				}
+			]
+			title: "Hopper Varients"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["648A59B92E22618E"]
+			id: "1979340115DFE500"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "0AFCADEDC7DCB8F9"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "60FB14BE07C4EC74"
+			tasks: [{
+				id: "38486BE203023275"
+				item: "extendedcrafting:handheld_table"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "765B3F8F0733A8D3"
+			tasks: [{
+				id: "4647C4BFC08EB846"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["08B810FFC3FC0F63"]
+			id: "6E798A361CF22316"
+			tasks: [{
+				id: "1FFE6EF650A861ED"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:watering_can"
+					tag: {
+						Water: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "273654184CAD71BC"
+			tasks: [{
+				id: "0A24C1AD881015E7"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "3A25F11774080437"
+			tasks: [{
+				id: "0B98CB15357E7674"
+				item: {
+					Count: 1
+					id: "portabletanks:basic_portable_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["56AC3D22D12FC7A5"]
+			id: "1AC52A86C309953B"
+			tasks: [{
+				id: "6FF9FD6869AD2290"
+				item: "crafter_port:crafter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["56AC3D22D12FC7A5"]
+			id: "46B221D54066E885"
+			tasks: [{
+				id: "769D3E68C5FBCB6A"
+				item: "quark:pipe"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			icon: "minecraft:stonecutter"
+			id: "4CFDA8D6076098B1"
+			tasks: [
+				{
+					id: "20A6C60CB4ABF80C"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+				{
+					id: "07D7241CFFFD63D4"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CFDA8D6076098B1"]
+			id: "0F286D1985726E20"
+			tasks: [{
+				id: "5FF1A327C5F397A9"
+				item: "projectred_core:platformed_plate"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4CFDA8D6076098B1"]
+			id: "7B1DC94CCA6A15B5"
+			subtitle: "Sophisticated Storage Chests recipes are disabled, you'll have to use upgrades."
+			tasks: [{
+				id: "4DBE2F4F73D84650"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.5d
+		}
+	]
+	title: "0 - Extended Crafting"
+}

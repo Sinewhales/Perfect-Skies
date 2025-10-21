@@ -1,0 +1,572 @@
+ServerEvents.recipes(event => {
+
+  // [0] Plate Hammer
+event.shaped(
+  Item.of('kubejs:plate_hammer', 1), // arg 1: output
+  [
+    'BBB',
+    'BBB', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'minecraft:stick',
+    B: 'minecraft:iron_ingot',  //arg 3: the mapping object
+  }
+)
+
+// [0] Scanner Battery
+event.shaped(
+  Item.of('kubejs:scanner_battery', 1), // arg 1: output
+  [
+    ' A ',
+    'BCB', // arg 2: the shape (array of strings)
+    'BCB'
+  ],
+  {
+    A: 'minecraft:copper_ingot',
+    B: 'minecraft:iron_ingot',
+    C: 'minecraft:redstone'  //arg 3: the mapping object
+  }
+)
+
+// [0] Cactus Juice
+event.shapeless(
+  Item.of('kubejs:cactus_juice'), // arg 1: output
+  [
+    'minecraft:cactus'
+  ]
+)
+
+// [0] Inactive Luminessence
+event.custom({
+  "type": "ae2:transform",
+  "circumstance": {
+    "type": "fluid",
+    "tag": "minecraft:water"
+  },
+  "ingredients": [
+    {
+      "item": 'mysticalagriculture:inferium_essence'
+    },
+    {
+      "item": 'minecraft:glowstone_dust'
+    },
+        {
+      "item": 'projectred_core:electrotine_dust'
+    }
+  ],
+  "result": {
+    "item": 'kubejs:inactive_luminessence',
+    "count": 2
+  }
+})
+
+// [0] Ink
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": "minecraft:black_dye"
+    },
+    "block_in": {
+        "blocks": ["water"],
+        "state": {
+            "level": 0
+        }
+    },
+    "post": [
+        {
+            "type": "place",
+            "block": "kubejs:black_dye"
+        }
+    ]
+})
+
+// [1] Electrotine Plate
+
+event.shaped(
+  Item.of('kubejs:electrotine_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'projectred_core:electrotine_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// [1] Diamond Plate
+
+event.shaped(
+  Item.of('kubejs:diamond_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'minecraft:diamond',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// [1] Red Alloy Plate
+event.shaped(
+  Item.of('kubejs:red_alloy_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'projectred_core:red_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// [1] Obsidian Plate
+event.custom({
+    "type": "lychee:block_crushing",
+    "item_in": [
+        {
+            "item": 'minecraft:obsidian'
+        }
+    ],
+    "post": [
+        {
+            "type": "drop_item",
+            "item": "kubejs:obsidian_plate",
+            "count": 4
+        }
+    ]
+})
+
+// [1] Wood Sheet
+event.custom({
+    "type": "lychee:block_crushing",
+    "item_in": [
+        {
+            "tag": 'minecraft:logs'
+        }
+    ],
+    "post": [
+        {
+            "type": "drop_item",
+            "item": "kubejs:wood_sheet",
+            "count": 2
+        }
+    ]
+})
+
+// [1] Sulfuric Rubber
+event.shaped(
+  Item.of('kubejs:rubber_sulfur', 8), // arg 1: output
+  [
+    'AAA',
+    'ABA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'thermal:rubber',
+    B: 'thermal:sulfur'  //arg 3: the mapping object
+  }
+)
+
+// [1] Electrotine Gear
+
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:electrotine_plate"
+    },
+    "B": {
+      "item": "thermal:iron_gear"
+    }
+  },
+  "result": {
+    "item": "kubejs:electrotine_gear"
+  }
+})
+
+// [1] Tanned Leather
+
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": "minecraft:leather",
+  "fluid": {
+    "fluid": "thermal:resin",
+    "amount": 250
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:tanned_leather'
+  }
+})
+
+// [1] Nature Extract
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'quark:blossom_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'quark:yellow_blossom_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'quark:yellow_blossom_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+})
+
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'quark:blossom_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'quark:blue_blossom_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'quark:blue_blossom_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+})
+
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'quark:blossom_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'quark:red_blossom_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'quark:red_blossom_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+})
+
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'quark:blossom_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'quark:lavender_blossom_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'quark:lavender_blossom_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+})
+
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'quark:blossom_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'quark:orange_blossom_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'quark:orange_blossom_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+}) 
+
+// [1] Electrotine Crystal
+event.custom({
+  "type": "buildcraftsilicon:assembly",
+  "output": {
+    "item": "kubejs:electrotine_crystal"
+  },
+  "requiredMicroJoules": 100000000000,
+  "requiredStacks": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": 'projectred_exploration:electrotine_block'
+      }
+    }
+  ],
+  "subType": "BASIC"
+})
+
+// [1] Glowstone Crystal
+event.custom({
+  "type": "buildcraftsilicon:assembly",
+  "output": {
+    "item": "kubejs:glowstone_crystal"
+  },
+  "requiredMicroJoules": 100000000000,
+  "requiredStacks": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": 'extendedcrafting:luminessence_block'
+      }
+    }
+  ],
+  "subType": "BASIC"
+})
+
+// [1] Heating Coil
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'kubejs:red_alloy_plate' }
+  ],
+  tool: { item: 'kubejs:plate_hammer' },
+  result: [
+    { item: 'kubejs:heat_coil', count: 1 }
+  ]
+})
+
+// [2] Purple Neodymium Plate
+event.shaped(
+  Item.of('kubejs:purple_neodymium_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'kubejs:purple_neodymium',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// [2] Dark Iron Gear (Thermal)
+event.custom({
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": 'thermal:iron_gear'
+    },
+    {
+      "fluid": "kubejs:black_dye",
+      "amount": 250
+    }
+  ],
+  "result": [
+    {
+      "item": 'kubejs:black_iron_gear'
+    }
+  ],
+  "experience": 0.1
+})
+
+// [2] Electrotine Plate (Thermal)
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'projectred_core:electrotine_ingot'
+  },
+  "result": [
+    {
+      "item": 'kubejs:electrotine_plate'
+    }
+  ]
+})
+
+// [2] Diamond Plate (Thermal)
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'minecraft:diamond'
+  },
+  "result": [
+    {
+      "item": 'kubejs:diamond_plate'
+    }
+  ]
+})
+
+// [2] Red Alloy Plate (Thermal)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'projectred_core:red_ingot'
+  },
+  "result": [
+    {
+      "item": 'kubejs:red_alloy_plate'
+    }
+  ]
+})
+
+// [2] Purple Neodymium Plate (Thermal)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'kubejs:purple_neodymium'
+  },
+  "result": [
+    {
+      "item": 'kubejs:purple_neodymium_plate'
+    }
+  ]
+})
+
+// [2] Purple Neodymium
+event.custom({
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "item": 'alexscaves:azure_neodymium_ingot'
+        },
+
+      ],
+      "count": 1
+    },
+    {
+      "item": 'alexscaves:scarlet_neodymium_ingot',
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": 'kubejs:purple_neodymium',
+      "count": 1
+    }
+  ],
+  "energy": 16000
+})
+
+// [2] Ink (Thermal)
+event.custom({
+  "type": "thermal:brewer",
+  "ingredients": [
+    {
+      "item": 'minecraft:black_dye'
+    },
+	{
+      "fluid": "minecraft:water",
+	  "amount": 1000
+    }
+  ],
+  "result": [
+    {
+      "fluid": "kubejs:black_dye",
+      "amount": 1000
+    }
+  ],
+  "energy": 1000
+})
+
+// Raw Aluminum Block
+event.shaped(
+  Item.of('kubejs:raw_aluminum_block', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'kubejs:raw_aluminum_ore'  //arg 3: the mapping object
+  }
+)
+})
+
+// Ink (Squid Milking)
+function milk(event, currentTime) {
+  event.getTarget().persistentData.put("lastMilked", currentTime)
+  let pitch =  Math.random() + 0.8;
+  Utils.server.runCommandSilent(`playsound minecraft:entity.cow.milk neutral @a ${event.getTarget().getX()} ${event.getTarget().getY()} ${event.getTarget().getZ()} 1 ${pitch}`)
+  if (event.player.getMainHandItem().count == 1)
+    event.server.scheduleInTicks(1, () => {
+      event.player.setMainHandItem("kubejs:black_dye_bucket");
+    });
+  else{
+    event.player.setMainHandItem(event.player.getMainHandItem().withCount(event.player.getMainHandItem().count - 1))
+    event.player.give(Item.of("kubejs:black_dye_bucket").withCount(1))
+  } 
+  }
+ItemEvents.entityInteracted("minecraft:bucket", (event) => {
+    if (event.getTarget().getType() != "minecraft:squid") return
+    let currentTime = event.getTarget().level.getTime();
+    event.player.swing();
+    if (!event.getTarget().persistentData.get("lastMilked")) {
+        event.getTarget().persistentData.put("lastMilked", currentTime) // first time milking
+        milk(event, currentTime)
+        event.cancel();
+    }else{
+        let lastMilked = event.getTarget().persistentData.getLong("lastMilked");
+        let timeSinceLastMilked = currentTime - lastMilked;
+        if (timeSinceLastMilked < 400) {
+            event.getLevel().runCommandSilent("/particle angry_villager " + event.getTarget().getX() + " " + event.getTarget().getY() + " " + event.getTarget().getZ() + " 0.3 0.7 0.3 1 4");
+            event.getLevel().runCommandSilent(`/title ${event.player.displayName.getString()} actionbar "Can't milk now. Try again later"`);
+            event.cancel();
+        }else{
+          milk(event, currentTime)
+          event.cancel();
+        }
+    }
+    
+});

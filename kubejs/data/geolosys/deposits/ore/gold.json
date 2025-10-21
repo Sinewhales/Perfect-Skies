@@ -1,0 +1,46 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": -40,
+    "yMax": 40,
+    "size": 40,
+    "spread": 12,
+    "biomeTag": "#minecraft:is_overworld",
+       "blocks": {
+      "default": [
+        {
+          "block": "minecraft:gold_ore",
+          "chance": 0.4
+        },
+        {
+          "block": "thermal:silver_ore",
+          "chance": 0.2
+        },
+      {
+          "block": "minecraft:andesite",
+          "chance": 0.4
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "minecraft:deepslate_gold_ore",
+          "chance": 0.4
+        },
+        {
+          "block": "thermal:deepslate_silver_ore",
+          "chance": 0.2
+        },
+         {
+          "block": "minecraft:andesite",
+          "chance": 0.4
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:gold_ore_sample",
+        "chance": 1.0
+      }],
+    "generationWeight": 3
+  }
+}

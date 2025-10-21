@@ -1,0 +1,85 @@
+{
+  "config_version": "1.0.20",
+  "config_datetime": "2025-10-10_19-50-17",
+  "general": {
+    "min_structure_distance_from_world_center": 0,
+    "disable_all_structures": false,
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 1.0
+  },
+  "structures": [],
+  "structure_sets": [
+    {
+      "name": "solarcraft:clearing_ritual_structure",
+      "salt": 56053313,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 300,
+      "separation": 250
+    },
+    {
+      "name": "solarcraft:cold_star_charging_station",
+      "salt": 739048430,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:crystal_boss_room",
+      "salt": 739048430,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 100,
+      "separation": 80
+    },
+    {
+      "name": "solarcraft:dimensional_shard_structure",
+      "salt": 556143134,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 70,
+      "separation": 60
+    },
+    {
+      "name": "solarcraft:magician_tower",
+      "salt": 31157935,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:runic_elemental_arena",
+      "salt": 442382084,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 200,
+      "separation": 150
+    },
+    {
+      "name": "solarcraft:solarforge_dungeon_one",
+      "salt": 23423542,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:sun_shard_puzzle",
+      "salt": 896746456,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 100,
+      "separation": 80
+    },
+    {
+      "name": "solarcraft:trap_dungeon",
+      "salt": 4234252,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    }
+  ]
+}

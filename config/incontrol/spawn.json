@@ -1,0 +1,32 @@
+[
+
+
+        {
+    "dimension": "minecraft:overworld",
+    "mob": ["iceandfire:deathworm"],
+    "result": "deny"
+  },
+
+          {
+    "dimension": "minecraft:overworld",
+    "mob": ["iceandfire:sea_serpent"],
+    "result": "deny"
+  },
+
+            {
+    "dimension": "minecraft:overworld",
+    "mob": ["iceandfire:amphithere"],
+    "result": "deny"
+  },
+
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "chickens",
+    "mincount": {
+      "amount": 0,
+      "mod": "chickens",
+      "perchunk": true
+    },
+    "result": "deny"
+  }
+]

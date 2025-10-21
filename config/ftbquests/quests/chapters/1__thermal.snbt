@@ -1,0 +1,60 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1__thermal"
+	group: ""
+	id: "5E36C216E3DD3537"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6577F9361D9432E3"]
+			id: "3F2E9FE2DD873E93"
+			size: 2.0d
+			tasks: [{
+				id: "43CEB63F36AE0D0D"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F2E9FE2DD873E93"]
+			id: "5E0B960A44F76F7F"
+			tasks: [{
+				id: "1EAF729F35FFFF42"
+				item: "alexscaves:scarlet_neodymium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F2E9FE2DD873E93"]
+			id: "09D1DDD2D80A9A62"
+			tasks: [{
+				id: "3B8886196BD2FBE1"
+				item: "alexscaves:azure_neodymium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"09D1DDD2D80A9A62"
+				"5E0B960A44F76F7F"
+			]
+			id: "3376238811FADA0C"
+			tasks: [{
+				id: "26199D44AA3DA1EA"
+				item: "kubejs:purple_neodymium"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+	]
+	title: "1 - Thermal"
+}

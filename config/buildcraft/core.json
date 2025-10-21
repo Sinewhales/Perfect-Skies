@@ -1,0 +1,125 @@
+{
+  "general": {
+    "miningBreaksPlayerProtectedBlocks": {
+      "#Comment": "Should BuildCraft miners be allowed to break blocks using player-specific protection?",
+      "value": false
+    },
+    "itemLifespan": {
+      "#Comment": "How long, in seconds, should items stay on the ground? (Vanilla \u003d 300, default \u003d 60)",
+      "#Range": "5 - 600",
+      "value": 60
+    },
+    "pumpsConsumeWater": {
+      "#Comment": "Should pumps consume water? Enabling this will disable minor optimisations, but work properly with finite water mods.",
+      "value": false
+    },
+    "markerMaxDistance": {
+      "#Comment": "How far, in minecraft blocks, should markers (volume and path) reach?",
+      "#Range": "16 - 256",
+      "value": 64
+    },
+    "pumpMaxDistance": {
+      "#Comment": "How far, in minecraft blocks, should pumps reach in fluids?",
+      "#Range": "16 - 128",
+      "value": 64
+    },
+    "miningMultiplier": {
+      "#Comment": "How much power should be required for all mining machines?",
+      "#Range": "1.0 - 200.0",
+      "value": 1.0
+    },
+    "miningMaxDepth": {
+      "#Comment": "How much further down can miners (like the quarry or the mining well) dig?\n(Note: values above 256 only have an effect if a mod like cubic chunks is installed).",
+      "#Range": "32 - 4096",
+      "value": 512
+    },
+    "chunkLoadLevel": {
+      "#Comment": "chunkLoadLevel",
+      "#Allowed Values": "NONE, STRICT_TILES, SELF_TILES, ALL_TILES",
+      "value": "SELF_TILES"
+    },
+    "mjPerRf": {
+      "#Comment": "The MJ to RF conversion constant (how much MJ is needed per 1 RF)",
+      "#Range": "1.0E-4 - 0.2",
+      "value": 0.1
+    },
+    "powerMode": {
+      "#Comment": "Controls how BuildCraft handles Power.\nThere are three options:\n\n\u0027MJ_ONLY\u0027 - the default, all buildcraft machines only accept or generate MJ. This does NOT affect the MJ Dynamo or RF Engine, which can be enabled.\n\n\u0027MJ_AUTOCONVERT_RF\u0027 - buildcraft machnes accept MJ or RF, and generate MJ and self-convert to RF for RF accepting machines\n\n\u0027DISPLAY_RF\u0027 - identical to \u0027MJ_AUTOCONVERT_RF\u0027, but also displays MJ as RF in all buildcraft machines.",
+      "#Allowed Values": "MJ_ONLY, MJ_AUTOCONVERT_RF, DISPLAY_RF",
+      "value": "MJ_ONLY"
+    }
+  },
+  "display": {
+    "useColouredLabels": {
+      "#Comment": "Should colours be displayed as their own (or a similar) colour in tooltips?",
+      "value": true
+    },
+    "useHighContrastColouredLabels": {
+      "#Comment": "Should colours displayed in tooltips use higher-contrast colours?",
+      "value": false
+    },
+    "hidePowerValues": {
+      "#Comment": "Should all power values (MJ, MJ/t) be hidden?",
+      "value": false
+    },
+    "hideFluidValues": {
+      "#Comment": "Should all fluid values (Buckets, mB, mB/t) be hidden?",
+      "value": false
+    },
+    "guideBookEnableDetail": {
+      "#Comment": "guideBookEnableDetail",
+      "value": false
+    },
+    "useBucketsStatic": {
+      "#Comment": "Should static fluid values be displayed in terms of buckets rather than thousandths of a bucket? (B vs mB)",
+      "value": true
+    },
+    "useBucketsFlow": {
+      "#Comment": "Should flowing fluid values be displayed in terms of buckets per second rather than thousandths of a bucket per tick? (B/s vs mB/t)",
+      "value": true
+    },
+    "useLongLocalizedName": {
+      "#Comment": "Should localised strings be displayed in long or short form (10 mB / t vs 10 milli buckets per tick",
+      "value": true
+    },
+    "colorBlindMode": {
+      "#Comment": "Should I enable colorblind mode?",
+      "value": false
+    },
+    "timeGap": {
+      "#Comment": "Should localised strings be displayed in terms of seconds (1 MJ/s) or ticks (20 MJ/t)",
+      "#Allowed Values": "TICKS, SECONDS",
+      "value": "SECONDS"
+    },
+    "itemRenderRotation": {
+      "#Comment": "The rotation that items use when travelling through pipes. Set to \u0027enabled\u0027 for full rotation, \u0027disabled\u0027 for no rotation, or \u0027horizontals_only\u0027 to only rotate items when going horizontally.",
+      "#Allowed Values": "DISABLED, HORIZONTALS_ONLY, ENABLED",
+      "value": "ENABLED"
+    },
+    "useSwappableSprites": {
+      "#Comment": "Disable this if you get texture errors with optifine. Disables some texture switching functionality when changing config options such as colour blind mode.",
+      "value": true
+    }
+  },
+  "performance": {
+    "guideItemSearchLimit": {
+      "#Comment": "The maximum number of items that the guide book will index.",
+      "#Range": "1500 - 5000000",
+      "value": 10000
+    },
+    "enableAnimatedSprites": {
+      "#Comment": "Disable this if you get sub-standard framerates due to buildcraftcore\u0027s ~60 sprites animating every frame.",
+      "value": true
+    }
+  },
+  "worldgen": {
+    "enable": {
+      "#Comment": "Should BuildCraft generate anything in the world?",
+      "value": true
+    },
+    "generateWaterSprings": {
+      "#Comment": "Should BuildCraft generate water springs?",
+      "value": true
+    }
+  }
+}

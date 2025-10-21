@@ -1,0 +1,12 @@
+{
+  "client": {
+    "colored_pipes_visible": {
+      "#Comment": "Should all colored pipes be visible in JEI/REI?",
+      "value": false
+    },
+    "facades_visible": {
+      "#Comment": "Should all facades be visible in JEI/REI?",
+      "value": false
+    }
+  }
+}

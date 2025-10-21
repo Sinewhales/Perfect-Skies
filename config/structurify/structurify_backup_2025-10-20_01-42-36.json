@@ -1,0 +1,171 @@
+{
+  "config_version": "1.0.20",
+  "config_datetime": "2025-10-10_20-00-56",
+  "general": {
+    "min_structure_distance_from_world_center": 0,
+    "disable_all_structures": false,
+    "enable_global_spacing_and_separation_modifier": false,
+    "global_spacing_and_separation_modifier": 1.0
+  },
+  "structures": [
+    {
+      "name": "ae2:meteorite",
+      "is_disabled": false,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "biome_check_mode": "BLACKLIST",
+      "biome_check_blacklisted_biomes": [
+        "#is_river",
+        "#is_ocean",
+        "#is_beach"
+      ],
+      "whitelisted_biomes": [
+        "mining_dimension:mining"
+      ],
+      "blacklisted_biomes": [
+        "minecraft:mushroom_fields",
+        "minecraft:deep_frozen_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean",
+        "minecraft:stony_shore",
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp",
+        "minecraft:snowy_slopes",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_beach",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:grove",
+        "minecraft:windswept_hills",
+        "minecraft:snowy_taiga",
+        "minecraft:windswept_forest",
+        "minecraft:taiga",
+        "minecraft:plains",
+        "minecraft:meadow",
+        "minecraft:beach",
+        "minecraft:forest",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:flower_forest",
+        "minecraft:birch_forest",
+        "minecraft:dark_forest",
+        "minecraft:savanna_plateau",
+        "minecraft:savanna",
+        "minecraft:jungle",
+        "minecraft:badlands",
+        "minecraft:desert",
+        "minecraft:wooded_badlands",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:frozen_river",
+        "minecraft:river",
+        "minecraft:ice_spikes",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:sunflower_plains",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:sparse_jungle",
+        "minecraft:bamboo_jungle",
+        "minecraft:eroded_badlands",
+        "minecraft:windswept_savanna",
+        "minecraft:cherry_grove",
+        "minecraft:frozen_peaks",
+        "minecraft:dripstone_caves",
+        "minecraft:lush_caves",
+        "minecraft:deep_dark",
+        "buildcraftenergy:oil_desert",
+        "buildcraftenergy:oil_ocean",
+        "nuclearcraft:wasteland",
+        "traverse:autumnal_woods",
+        "traverse:coniferous_forest",
+        "traverse:desert_shrubland",
+        "traverse:flatlands",
+        "traverse:lush_swamp",
+        "traverse:snowy_coniferous_forest",
+        "traverse:woodlands",
+        "integrateddynamics:meneglin",
+        "quark:glimmering_weald"
+      ]
+    }
+  ],
+  "structure_sets": [
+    {
+      "name": "solarcraft:clearing_ritual_structure",
+      "salt": 56053313,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 300,
+      "separation": 250
+    },
+    {
+      "name": "solarcraft:cold_star_charging_station",
+      "salt": 739048430,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:crystal_boss_room",
+      "salt": 739048430,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 100,
+      "separation": 80
+    },
+    {
+      "name": "solarcraft:dimensional_shard_structure",
+      "salt": 556143134,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 70,
+      "separation": 60
+    },
+    {
+      "name": "solarcraft:magician_tower",
+      "salt": 31157935,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:runic_elemental_arena",
+      "salt": 442382084,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 200,
+      "separation": 150
+    },
+    {
+      "name": "solarcraft:solarforge_dungeon_one",
+      "salt": 23423542,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    },
+    {
+      "name": "solarcraft:sun_shard_puzzle",
+      "salt": 896746456,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 100,
+      "separation": 80
+    },
+    {
+      "name": "solarcraft:trap_dungeon",
+      "salt": 4234252,
+      "frequency": 0.5,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 40
+    }
+  ]
+}

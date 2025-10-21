@@ -1,0 +1,10 @@
+{
+  "worldgen": {
+    "oil": {
+      "excludedDimensions": {
+        "#Comment": "Dimension ID\u0027s (e.g. \u0027minecraft:the_nether\u0027 for the nether,\u0027minecraft:the_end\u0027 for the end) of dimensions that should never generate oil.",
+        "value": []
+      }
+    }
+  }
+}

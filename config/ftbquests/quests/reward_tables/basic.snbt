@@ -1,0 +1,13 @@
+{
+	id: "1CCDB1519D60B0C4"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 16, item: "minecraft:iron_ingot" }
+		{ count: 8, item: "extendedcrafting:black_iron_ingot" }
+		{ count: 16, item: "extendedcrafting:luminessence" }
+		{ count: 64, item: "minecraft:glowstone_dust" }
+		{ item: "waystones:waystone" }
+	]
+	title: "Basic"
+}

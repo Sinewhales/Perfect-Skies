@@ -1,0 +1,35 @@
+{
+  "type": "geolosys:deposit_dike",
+  "config": {
+    "yMin": 20,
+    "yMax": 60,
+    "baseRadius": 15,
+    "biomeTag": "#minecraft:is_nether",
+    "blocks": {
+      "default": [
+        {
+          "block": "minecraft:nether_quartz_ore",
+          "chance": 0.6
+        },
+        {
+          "block": "kubejs:nether_black_quartz",
+          "chance": 0.2
+        },
+      {
+          "block": "kubejs:nether_sulfur_ore",
+          "chance": 0.2
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:quartz_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 15
+  }
+  }
+
+
+

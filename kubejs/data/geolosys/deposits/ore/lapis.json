@@ -1,0 +1,40 @@
+{                                                     
+  "type": "geolosys:deposit_layer",                   
+  "config": {
+    "yMin": -60,                                       
+    "yMax": 40,                                        
+    "radius": 10,                                       
+    "depth": 10,                                        
+    "biomeTag": "#minecraft:is_overworld",               
+    "blocks": {                                      
+      "default": [{                                    
+        "block": "minecraft:lapis_ore",
+        "chance": 0.6
+      },
+    {                                   
+        "block": "geolosys:bauxite_ore",
+        "chance": 0.2
+      },
+        {                                    
+        "block": "minecraft:calcite",
+        "chance": 0.2
+      }],
+      "minecraft:deepslate": [{                       
+        "block": "minecraft:deepslate_lapis_ore",
+        "chance": 0.6
+      },
+    {                       
+        "block": "geolosys:deepslate_bauxite_ore",
+        "chance": 0.2
+      },
+            {                                  
+        "block": "minecraft:calcite",
+        "chance": 0.2
+      }]
+    },
+    "samples": [{                                     
+      "block": "geolosys:lapis_ore_sample",   
+      "chance": 1.0
+    }],
+    "generationWeight": 3                             
+}}
