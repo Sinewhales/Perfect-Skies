@@ -532,6 +532,35 @@ event.shaped(
     A: 'kubejs:raw_aluminum_ore'  //arg 3: the mapping object
   }
 )
+
+// Cotton Cloth
+event.shaped(
+  Item.of('kubejs:cotton_cloth', 1), // arg 1: output
+  [
+    'ABA',
+    'BAB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'rusticdelight:cotton_boll',
+    B: 'minecraft:string',  //arg 3: the mapping object
+  }
+)
+
+// Impregnated Wood
+event.shaped(
+  Item.of('kubejs:impregnated_wood', 8), // arg 1: output
+  [
+    'AAA',
+    'ABA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: '#minecraft:planks',
+    B: 'thermal:resin_bucket',  //arg 3: the mapping object
+  }
+)
+
 })
 
 // Ink (Squid Milking)

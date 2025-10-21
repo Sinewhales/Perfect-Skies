@@ -87,6 +87,14 @@ event.removeAll('forge:crops/flax')
 event.add('forge:crops/flax', 'supplementaries:flax')
 event.removeAll('forge:seeds/flax')
 event.add('forge:seeds/flax', 'supplementaries:flax_seeds')
+
+// Rope
+event.removeAll('forge:rope')
+event.add('forge:rope', 'farmersdelight:rope')
+
+event.removeAll('supplementaries:ropes')
+event.add('supplementaries:ropes', 'farmersdelight:rope')
+
 })
 
 

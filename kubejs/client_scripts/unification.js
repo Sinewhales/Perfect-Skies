@@ -57,6 +57,9 @@ event.hide(['thermal:onion_seeds', 'thermal:onion', 'thermal:onion_block'])
 // Flax
 event.hide(['thermal:flax_seeds', 'actuallyadditions:flax_seeds', 'thermal:flax', 'thermal:flax_block'])
 event.hide(['sophisticatedstorage:xp_pump_upgrade', 'sophisticatedbackpacks:xp_pump_upgrade'])
+
+// Rope
+event.hide(['supplementaries:rope'])
 })
 
 JEIEvents.hideFluids(event => {

@@ -11,6 +11,7 @@
 		{
 			dependencies: ["736A4858CBC99949"]
 			id: "7311B50C34A2BDFD"
+			shape: "octagon"
 			size: 2.0d
 			tasks: [{
 				id: "0FC8E896491C5E7D"
@@ -23,24 +24,26 @@
 		{
 			dependencies: ["7311B50C34A2BDFD"]
 			id: "772525396CCB0C66"
+			shape: "octagon"
 			tasks: [{
 				id: "171964980647FC3F"
 				item: "thermal:resin_bucket"
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["772525396CCB0C66"]
 			id: "3182A6033D7D8C22"
+			shape: "octagon"
 			tasks: [{
 				id: "0E760B421B8D893A"
 				item: "thermal_extra:sticky_ball"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3182A6033D7D8C22"]
@@ -50,11 +53,10 @@
 				item: "thermal:rubberwood_sapling"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: -2.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3F099285F2685DB5"]
 			id: "15C156042C03B205"
 			size: 2.0d
 			tasks: [{
@@ -62,12 +64,13 @@
 				item: "thermal:device_tree_extractor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["772525396CCB0C66"]
 			id: "1F8737DA77D2BDB2"
+			shape: "octagon"
 			tasks: [{
 				id: "49EC943C0D76F4E6"
 				item: "forestry:impregnated_stick"
@@ -77,75 +80,37 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1F8737DA77D2BDB2"]
-			id: "2D72C4263DA7DAC4"
-			tasks: [{
-				id: "3E2CD88BE5B617BA"
-				item: "buildcraftcore:gear_wood"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"2D72C4263DA7DAC4"
-				"5067EBCE7F78BF06"
-			]
-			id: "2B10E2CD60D1D91E"
-			tasks: [{
-				id: "2065D8489D294B7F"
-				item: "buildcraftcore:gear_stone"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 3.0d
-		}
-		{
 			id: "5067EBCE7F78BF06"
 			tasks: [{
 				id: "1BD800A14025D096"
 				item: "quark:shale"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.5d
+			x: 13.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["2B10E2CD60D1D91E"]
-			id: "3E13A4A10BCE6706"
-			tasks: [{
-				id: "760A8C8E52D018A7"
-				item: "thermal:iron_gear"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3E13A4A10BCE6706"]
 			id: "09F416AE50FD88E6"
 			tasks: [{
 				id: "49B6FFB05AC04430"
 				item: "kubejs:black_iron_gear"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"08AE1B36551CBDD5"
-				"09F416AE50FD88E6"
-			]
+			dependencies: ["4BC17EF501A87E26"]
 			id: "3F099285F2685DB5"
+			shape: "octagon"
+			size: 2.0d
 			tasks: [{
 				id: "5587404A2B5C4A8D"
 				item: "extendedcrafting:frame"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["15C156042C03B205"]
@@ -155,8 +120,8 @@
 				item: "industrialforegoing:latex_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 9.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["15C156042C03B205"]
@@ -166,8 +131,8 @@
 				item: "integrateddynamics:bucket_menril_resin"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 10.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["13D0F4DA36DEC2D8"]
@@ -222,8 +187,8 @@
 				item: "integrateddynamics:drying_basin"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 17.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["43C74383CE73981F"]
@@ -399,16 +364,17 @@
 		{
 			dependencies: [
 				"3182A6033D7D8C22"
-				"2D72C4263DA7DAC4"
+				"2D3FA62E725A305A"
 			]
 			id: "08AE1B36551CBDD5"
+			shape: "octagon"
 			tasks: [{
 				id: "41F57C93728F8F84"
 				item: "actuallyadditions:wood_casing"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["39160D9A39D9F7B0"]
@@ -440,17 +406,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["08AE1B36551CBDD5"]
-			id: "7417B5D3460D5892"
-			tasks: [{
-				id: "36C22E0D7B79771B"
-				item: "farmersdelight:cutting_board"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["76C8B754EAE20908"]
 			id: "6771EAB3BA34B265"
 			tasks: [{
@@ -464,8 +419,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 15.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["43C74383CE73981F"]
@@ -475,8 +430,8 @@
 				item: "kubejs:tanned_leather"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.5d
+			x: 14.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["15C156042C03B205"]
@@ -486,8 +441,8 @@
 				item: "kubejs:nature_extract_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 6.0d
+			x: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["5A6BC037C8E17FC9"]
@@ -554,8 +509,226 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["736A4858CBC99949"]
+			id: "4DB1E41E0C180BE7"
+			shape: "octagon"
+			subtitle: "The seeds can be found in forest biomes"
+			tasks: [{
+				id: "3ABB7CA11EB2ADDD"
+				item: "rusticdelight:cotton_boll"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["736A4858CBC99949"]
+			id: "7D1F69A26703EE9F"
+			shape: "octagon"
+			subtitle: "Look around river and lakes"
+			tasks: [{
+				id: "04FBE19EE51AD50C"
+				item: "supplementaries:flax"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D1F69A26703EE9F"]
+			id: "2BC3DFD433ABBB28"
+			shape: "octagon"
+			tasks: [{
+				id: "214392BE06F36634"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4DB1E41E0C180BE7"]
+			id: "43F5212CEE781956"
+			shape: "octagon"
+			tasks: [{
+				id: "753CD466D60B84F2"
+				item: "kubejs:cotton_cloth"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1F8737DA77D2BDB2"
+				"2BC3DFD433ABBB28"
+				"43F5212CEE781956"
+			]
+			id: "7B378AD0C88D508D"
+			shape: "octagon"
+			tasks: [{
+				id: "03AE38B5475C5615"
+				item: {
+					Count: 1
+					id: "forestry:scoop"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["736A4858CBC99949"]
+			id: "656E8CC3EF3DD6FE"
+			shape: "octagon"
+			tasks: [{
+				id: "100183D4FE48C73F"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"08AE1B36551CBDD5"
+				"656E8CC3EF3DD6FE"
+			]
+			id: "32E7D984EB4D94A4"
+			shape: "octagon"
+			tasks: [{
+				id: "2C94CD9DDC5AABDC"
+				item: "kubejs:seared_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["32E7D984EB4D94A4"]
+			id: "4A4CD88863C74DA4"
+			shape: "octagon"
+			tasks: [{
+				id: "469D8CF1E66FDBA2"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B378AD0C88D508D"]
+			id: "66F4B6B6094E786C"
+			shape: "octagon"
+			tasks: [{
+				id: "64CFCA9CFEFD32BD"
+				item: "forestry:bee_house"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66F4B6B6094E786C"
+				"4A4CD88863C74DA4"
+			]
+			id: "24DDA5F30B32023F"
+			shape: "octagon"
+			tasks: [{
+				id: "376BAFE74009A57D"
+				item: "kubejs:amber_paste_chunk"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F8737DA77D2BDB2"]
+			id: "2D3FA62E725A305A"
+			shape: "octagon"
+			tasks: [{
+				id: "3F7DCAB0ECE91E0E"
+				item: "buildcraftcore:gear_wood"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D3FA62E725A305A"]
+			id: "634CFDA467E5223C"
+			shape: "octagon"
+			tasks: [{
+				id: "1F581F3DF0512794"
+				item: "buildcraftcore:gear_stone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["634CFDA467E5223C"]
+			id: "0CABF40B7D4A8C2C"
+			subtitle: "Shale can be automated by doing a cobblestone generator and making the cobblestone generate over a clay block."
+			tasks: [{
+				id: "52045E7B9EF4D832"
+				item: "projectred_expansion:block_breaker"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["08AE1B36551CBDD5"]
+			id: "5DEE5B95100A872A"
+			tasks: [{
+				id: "3A984647B753435E"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5DEE5B95100A872A"]
+			icon: "minecraft:gravel"
+			id: "74FB419F56B24ED7"
+			tasks: [
+				{
+					id: "332FC553DE2A0030"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "30FE8E367DFFBE53"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"634CFDA467E5223C"
+				"4A4CD88863C74DA4"
+			]
+			id: "4BC17EF501A87E26"
+			tasks: [{
+				id: "70B93BCB32739982"
+				item: "thermal:iron_gear"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
 		}
 	]
 	title: "0.5 - Real Tech"

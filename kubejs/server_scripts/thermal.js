@@ -153,26 +153,6 @@ event.shaped(
 event.custom({
   "type": "extendedcrafting:shaped_table",
   "pattern": [
-    " A ",
-    "ABA",
-    " A "
-  ],
-  "key": {
-    "A": {
-      "item": "thermal:iron_plate"
-    },
-    "B": {
-      "item": "buildcraftcore:gear_stone"
-    }
-  },
-  "result": {
-    "item": 'thermal:iron_gear'
-  }
-})
-
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
     "ABA",
     " B ",
     "ABA"
@@ -410,6 +390,19 @@ event.custom({
   result: [
     { item: 'thermal_extra:iron_rod', count: 1 }
   ]
+})
+
+// Better recipe for resin balls
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "thermal:resin",
+    "amount": 250
+  },
+  "duration": 20,
+  "result": {
+    "item": 'thermal_extra:sticky_ball'
+  }
 })
 })
 

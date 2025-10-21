@@ -29,6 +29,7 @@ event.create('seed_bag').displayName("Bundle of Seeds")
 event.create('heart_of_emerald').displayName("Heart of Emerald")
 event.create('cotton_cloth').displayName("Cotton Cloth")
 event.create('synthethic_leather').displayName("Synthethic Leather")
+event.create('amber_paste_chunk').displayName("Amber Paste Chunk")
 // Raw Ore Block
 // Aluminum Dust
 
@@ -53,10 +54,15 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xbfff00)
     .displayName('Nature Extract')
 
-    event.create('wax')
-    .thinTexture(0xf3e3c2)
-    .bucketColor(0xf3e3c2)
-    .displayName('Wax')
+    event.create('amber_paste')
+    .thinTexture(0xFFBF00)
+    .bucketColor(0xFFBF00)
+    .displayName('Amber Paste')
+
+    event.create('royal_honey')
+    .thinTexture(0xE79A3F)
+    .bucketColor(0xE79A3F)
+    .displayName('Royal Honey')
 
 
 
@@ -71,6 +77,7 @@ StartupEvents.registry('block', event => {
   event.create('nether_black_quartz').displayName("Nether Black Quartz Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('nether_ore')
   event.create('raw_aluminum_block').displayName("Raw Aluminum Block").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('seared_casing').displayName("Seared Casing")
+  event.create('impregnated_wood').displayName("Impregnated Wood")
 
 })
 

@@ -96,29 +96,29 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "tconstruct:hepatizon_ingot"
     },
     "B": {
-      "item": "kubejs:black_iron_gear"
+      "item": "thermal:invar_gear"
     },
     "C": {
-      "item": "minecraft:tinted_glass"
+      "item": "tinkers_thinking:tempered_glass"
     },
     "D": {
-      "item": 'minecraft:obsidian'
+      "item": "tconstruct:obsidian_pane"
     },
     "E": {
-      "item": "supplementaries:ash_brick"
+      "item": 'tconstruct:seared_brick'
     },
     "F": {
-      "item": "extendedcrafting:basic_component"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "G": {
       "item": "actuallyadditions:wood_casing"
     }
   },
   "result": {
-    "item": 'extendedcrafting:frame'
+    "item": "extendedcrafting:frame"
   }
 })
 

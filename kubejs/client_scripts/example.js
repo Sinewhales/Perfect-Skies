@@ -5,6 +5,7 @@ event.add(['mysticalagriculture:inferium_essence'], '\u00A71Can only be obtained
 event.add(['kubejs:scanner_battery'], '\u00A74Remove Modules before charging using a Battery')
 event.add(['kubejs:heart_of_emerald'], '\u00A71Dropped by Wandering Traders (100%) and Villagers (20%)')
 event.add(['minecraft:emerald'], '\u00A71Can be randomly dropped by Villagers')
+event.add(['kubejs:royal_honey_bucket'], '\u00A71Can only be made with Forestry combs')
 
 })
 

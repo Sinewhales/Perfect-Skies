@@ -100,4 +100,27 @@ event.remove({ output: '#quark:revertable_chests' })
 event.remove({ id: 'quark:building/crafting/chests/chest_revert' })
 event.stonecutting('#quark:revertable_chests', 'minecraft:chest')
 event.stonecutting('minecraft:chest', '#quark:revertable_chests')
+
+// Gravel
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'minecraft:cobblestone' }
+  ],
+  tool: { item: 'kubejs:plate_hammer' },
+  result: [
+    { item: 'minecraft:gravel', count: 1 }
+  ]
+})
+
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'minecraft:gravel' }
+  ],
+  tool: { item: 'kubejs:plate_hammer' },
+  result: [
+    { item: 'minecraft:sand', count: 1 }
+  ]
+})
 })

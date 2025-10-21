@@ -586,4 +586,27 @@ event.remove({ id: 'sophisticatedbackpacks:xp_pump_upgrade' })
 
 // Remove
 event.remove({ id: 'tconstruct:tables/book_substitute' })
+
+// Rope
+event.remove({ id: 'farmersdelight:rope' })
+event.remove({ id: 'supplementaries:rope' })
+event.shaped(
+  Item.of('farmersdelight:rope', 1), // arg 1: output
+  [
+    'ABA',
+    'BAB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'supplementaries:flax',
+    B: 'farmersdelight:straw',
+  }
+)
+
+event.replaceInput(
+  { input: 'supplementaries:rope'}, // Arg 1: the filter
+  'supplementaries:rope',            // Arg 2: the item to replace
+  'farmersdelight:rope'       // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
 })

@@ -7,7 +7,55 @@ event.smithing(
   'projectred_core:plate',                          // arg 3: the item to be upgraded
   'minecraft:redstone'                           // arg 4: the upgrade item
 )
+event.remove({ id: 'projectred_expansion:block_breaker' })
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "quark:shale"
+    },
+    "B": {
+      "item": "projectred_core:red_ingot"
+    },
+    "C": {
+      "item": "minecraft:piston"
+    },
+    "D": {
+      "item": "thermal:iron_plate"
+    },
+    "E": {
+      "item": "buildcraftcore:gear_stone"
+    },
+    "F": {
+      "type": "forge:nbt",
+      "item": "minecraft:iron_pickaxe",
+      "count": 1,
+      "nbt": "{Damage:0}"
+    },
+    "G": {
+      "item": "quark:sturdy_stone"
+    },
+    "H": {
+      "item": "tconstruct:seared_bricks"
+    },
+    "I": {
+      "item": "actuallyadditions:wood_casing"
+    }
+  },
+  "result": {
+    "item": 'projectred_expansion:block_breaker'
+  }
 })
+
+})
+
 
 
 

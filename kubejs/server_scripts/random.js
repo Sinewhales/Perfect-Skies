@@ -13,7 +13,8 @@ event.remove({ id: 'actuallyadditions:charcoal_to_tiny' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank_sink' })
 event.remove({ id: 'giacomos_exp:expseed' })
-
+event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
+event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
 
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -249,6 +250,13 @@ event.shaped(
     B: 'minecraft:chest',
 
   }
+)
+
+event.shapeless(
+  Item.of('minecraft:string'), // arg 1: output
+  [
+    '3x rusticdelight:cotton_boll'
+  ]
 )
 
 })

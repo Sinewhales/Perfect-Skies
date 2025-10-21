@@ -56,6 +56,43 @@ event.custom({
     "item": "forestry:fabricator"
   }
 })
+
+event.remove({ id: 'forestry:scoop' })
+event.shaped(
+  Item.of('forestry:scoop', 1), // arg 1: output
+  [
+    ' BC',
+    ' AB', // arg 2: the shape (array of strings)
+    'A  '
+  ],
+  {
+    A: 'forestry:impregnated_stick',
+    B: 'kubejs:cotton_cloth',
+    C: 'farmersdelight:rope'  //arg 3: the mapping object
+  }
+)
+
+// Bee House
+event.remove({ id: 'forestry:bee_house' })
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:impregnated_wood"
+    },
+    "B": {
+      "tag": 'forestry:combs'
+    }
+  },
+  "result": {
+    "item": "forestry:bee_house"
+  }
+})
 })
 
 
