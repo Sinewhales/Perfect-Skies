@@ -1,1 +1,94 @@
-{}
+{  
+"customEntries": [
+    {
+      "output": {
+        "item": "hexerei:sage_seed"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "actuallyadditions:coffee_beans"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "supplementaries:flax_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "actuallyadditions:canola_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+        {
+      "output": {
+        "item": "farmersdelight:cabbage_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "rusticdelight:bell_pepper_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "farmersdelight:tomato_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+      {
+      "output": {
+        "item": "rusticdelight:cotton_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+          {
+      "output": {
+        "item": "occultism:datura_seeds"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    },
+              {
+      "output": {
+        "item": "integrateddynamics:menril_sapling"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "saplings"
+    }
+]
+}

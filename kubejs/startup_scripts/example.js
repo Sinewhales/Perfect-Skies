@@ -30,6 +30,7 @@ event.create('heart_of_emerald').displayName("Heart of Emerald")
 event.create('cotton_cloth').displayName("Cotton Cloth")
 event.create('synthethic_leather').displayName("Synthethic Leather")
 event.create('amber_paste_chunk').displayName("Amber Paste Chunk")
+event.create('crushing_hammer').displayName("Crushing Hammer").unstackable().maxDamage(200)
 // Raw Ore Block
 // Aluminum Dust
 
@@ -78,6 +79,7 @@ StartupEvents.registry('block', event => {
   event.create('raw_aluminum_block').displayName("Raw Aluminum Block").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('seared_casing').displayName("Seared Casing")
   event.create('impregnated_wood').displayName("Impregnated Wood")
+  
 
 })
 

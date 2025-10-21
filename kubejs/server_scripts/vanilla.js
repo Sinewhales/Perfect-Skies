@@ -95,7 +95,7 @@ event.shaped(
     A: '#minecraft:planks'  //arg 3: the mapping object
   }
 )
-
+// test
 event.remove({ output: '#quark:revertable_chests' })
 event.remove({ id: 'quark:building/crafting/chests/chest_revert' })
 event.stonecutting('#quark:revertable_chests', 'minecraft:chest')
@@ -112,7 +112,7 @@ event.custom({
     { item: 'minecraft:gravel', count: 1 }
   ]
 })
-//test
+
 event.custom({
   type: 'farmersdelight:cutting',
   ingredients: [
@@ -122,5 +122,43 @@ event.custom({
   result: [
     { item: 'minecraft:sand', count: 1 }
   ]
+})
+
+// Gravel
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'minecraft:cobblestone' }
+  ],
+  tool: { item: 'kubejs:crushing_hammer' },
+  result: [
+    { item: 'minecraft:gravel', count: 1 }
+  ]
+})
+
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'minecraft:gravel' }
+  ],
+  tool: { item: 'kubejs:crushing_hammer' },
+  result: [
+    { item: 'minecraft:sand', count: 1 }
+  ]
+})
+
+
+
+// Leather
+event.custom({
+  "type": "tinkers_thinking:drying_rack",
+  "ingredient": [
+    {
+      "item": 'kubejs:synthethic_leather'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:leather'
+  }
 })
 })

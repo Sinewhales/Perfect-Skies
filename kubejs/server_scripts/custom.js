@@ -561,6 +561,20 @@ event.shaped(
   }
 )
 
+event.shaped(
+  Item.of('kubejs:crushing_hammer', 1), // arg 1: output
+  [
+    ' A ',
+    ' BA', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'quark:sturdy_stone',
+    B: 'minecraft:stick',  //arg 3: the mapping object
+  }
+)
+
+
 })
 
 // Ink (Squid Milking)

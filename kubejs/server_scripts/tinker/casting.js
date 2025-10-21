@@ -103,5 +103,19 @@ event.custom({
   },
   "result": 'forestry:impregnated_stick'
 })
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:cotton_cloth'
+  },
+    "cast_consumed": true,
+  "cooling_time": 100,
+  "fluid": {
+    "amount": 100,
+    "fluid": "kubejs:royal_honey"
+  },
+  "result": 'kubejs:synthethic_leather'
+})
 })
 

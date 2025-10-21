@@ -57,17 +57,6 @@
 			y: 5.5d
 		}
 		{
-			id: "15C156042C03B205"
-			size: 2.0d
-			tasks: [{
-				id: "71EF3463069A2951"
-				item: "thermal:device_tree_extractor"
-				type: "item"
-			}]
-			x: 10.0d
-			y: 8.0d
-		}
-		{
 			dependencies: ["772525396CCB0C66"]
 			id: "1F8737DA77D2BDB2"
 			shape: "octagon"
@@ -80,24 +69,14 @@
 			y: 2.0d
 		}
 		{
-			id: "5067EBCE7F78BF06"
-			tasks: [{
-				id: "1BD800A14025D096"
-				item: "quark:shale"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -2.5d
-		}
-		{
 			id: "09F416AE50FD88E6"
 			tasks: [{
 				id: "49B6FFB05AC04430"
 				item: "kubejs:black_iron_gear"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 0.0d
+			x: 19.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4BC17EF501A87E26"]
@@ -113,37 +92,38 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["15C156042C03B205"]
+			dependencies: ["23038F2A78FCA033"]
 			id: "13D0F4DA36DEC2D8"
+			shape: "octagon"
 			tasks: [{
 				id: "761D55C7391A2671"
 				item: "industrialforegoing:latex_bucket"
 				type: "item"
 			}]
 			x: 9.5d
-			y: 10.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["15C156042C03B205"]
+			dependencies: ["23038F2A78FCA033"]
 			id: "616A4825E45E1EB3"
+			shape: "octagon"
 			tasks: [{
 				id: "11EDEA4092D52237"
 				item: "integrateddynamics:bucket_menril_resin"
 				type: "item"
 			}]
 			x: 10.5d
-			y: 10.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["13D0F4DA36DEC2D8"]
 			id: "54E7BF339D2D6C25"
 			tasks: [{
 				id: "4EBB273F067C104A"
 				item: "thermal:rubber"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: 18.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["54E7BF339D2D6C25"]
@@ -153,8 +133,8 @@
 				item: "kubejs:rubber_sulfur"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 4.5d
+			x: 18.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7FBCCE520F52677D"]
@@ -176,19 +156,18 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 4.5d
+			x: 19.5d
+			y: 11.0d
 		}
 		{
-			dependencies: ["616A4825E45E1EB3"]
 			id: "43C74383CE73981F"
 			tasks: [{
 				id: "027AF4FEE2C98F4E"
 				item: "integrateddynamics:drying_basin"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 4.0d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["43C74383CE73981F"]
@@ -211,8 +190,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: 3.0d
+			x: 18.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["51A200C16FF11600"]
@@ -222,8 +201,8 @@
 				item: "watercollector:watercollector"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 21.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["650977348CBDEDC5"]
@@ -235,8 +214,8 @@
 				id: "5E28EA6D455E3AFC"
 				type: "biome"
 			}]
-			x: 14.0d
-			y: 6.0d
+			x: 21.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["54075E2AA0BF4708"]
@@ -419,7 +398,7 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
+			x: 21.5d
 			y: 1.0d
 		}
 		{
@@ -430,30 +409,30 @@
 				item: "kubejs:tanned_leather"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 2.5d
+			x: 20.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["15C156042C03B205"]
+			dependencies: ["23038F2A78FCA033"]
 			id: "5A6BC037C8E17FC9"
+			shape: "octagon"
 			tasks: [{
 				id: "3AD40F757B731A1A"
 				item: "kubejs:nature_extract_bucket"
 				type: "item"
 			}]
 			x: 8.5d
-			y: 10.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["5A6BC037C8E17FC9"]
 			id: "7A868DDD5C938094"
 			tasks: [{
 				id: "4AA607781B46FEDA"
 				item: "mysticalagriculture:nature_agglomeratio"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 6.0d
+			x: 19.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7A868DDD5C938094"]
@@ -469,8 +448,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 6.0d
+			x: 21.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["69B79C7BDC29D82E"]
@@ -494,11 +473,10 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 6.0d
+			x: 21.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["5A6BC037C8E17FC9"]
 			id: "31DE6B2B295CF849"
 			tasks: [{
 				id: "7E499822BCDF57E0"
@@ -740,6 +718,18 @@
 			}]
 			x: -3.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3F099285F2685DB5"]
+			id: "23038F2A78FCA033"
+			shape: "octagon"
+			tasks: [{
+				id: "574944BAD9B6CD21"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
 		}
 	]
 	title: "0.5 - Real Tech"

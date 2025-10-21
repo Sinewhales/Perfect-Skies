@@ -6,7 +6,9 @@ event.add(['kubejs:scanner_battery'], '\u00A74Remove Modules before charging usi
 event.add(['kubejs:heart_of_emerald'], '\u00A71Dropped by Wandering Traders (100%) and Villagers (20%)')
 event.add(['minecraft:emerald'], '\u00A71Can be randomly dropped by Villagers')
 event.add(['kubejs:royal_honey_bucket'], '\u00A71Can only be made with Forestry combs')
-
+event.add(['kubejs:crushing_hammer'], '\u00A71Cant do Plates but has way more durability than the Plate Hammer')
+event.add(['farmingforblockheads:market'], '\u00A71Can also be traded from a Farmer Villager')
+event.add(['kubejs:synthethic_leather'], '\u00A71Dry on a Drying Rack')
 })
 
 JEIAddedEvents.registerCategories(event => {

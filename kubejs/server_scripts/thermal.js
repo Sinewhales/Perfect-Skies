@@ -91,35 +91,35 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "thermal:rubberwood_planks"
+      "item": "kubejs:impregnated_wood"
     },
     "B": {
       "item": "kubejs:black_iron_gear"
     },
     "C": {
-      "item": 'minecraft:tinted_glass'
+      "item": "tinkers_thinking:tempered_glass"
     },
     "D": {
-      "item": "thermal_extra:sticky_ball"
+      "item": "thermal:bronze_plate"
     },
     "E": {
-      "item": "thermal:redstone_servo"
+      "item": "kubejs:amber_paste_chunk"
     },
     "F": {
       "item": "treetap:tap"
     },
     "G": {
-      "item": "buildcraftfactory:tank"
+      "item": "portabletanks:advanced_portable_tank"
     },
     "H": {
-      "item": "minecraft:bucket"
+      "item": "tconstruct:seared_bricks"
     },
     "I": {
       "item": "extendedcrafting:frame"
     }
   },
   "result": {
-    "item": 'thermal:device_tree_extractor'
+    "item": "thermal:device_tree_extractor"
   }
 })
 
@@ -404,5 +404,19 @@ event.custom({
     "item": 'thermal_extra:sticky_ball'
   }
 })
+
+// Bronze Plate
+event.shaped(
+  Item.of('thermal:bronze_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:bronze_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
 })
 
