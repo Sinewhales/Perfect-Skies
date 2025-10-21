@@ -16,6 +16,7 @@ event.remove({ id: 'thermal:machine_smelter' })
 event.remove({ id: 'thermal:rf_coil' })
 event.remove({ id: 'thermal:parts/gold_gear' })
 event.remove({ id: 'thermal_extra:crafting/iron_rod' })
+event.remove({ id: 'thermal:parts/lapis_gear' })
 
 // [0] Iron Plate 
 event.shaped(
@@ -405,6 +406,18 @@ event.custom({
   }
 })
 
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "thermal:latex",
+    "amount": 250
+  },
+  "duration": 40,
+  "result": {
+    "item": 'thermal:rubber'
+  }
+})
+
 // Bronze Plate
 event.shaped(
   Item.of('thermal:bronze_plate', 1), // arg 1: output
@@ -416,6 +429,41 @@ event.shaped(
   {
     A: 'kubejs:plate_hammer',
     B: 'thermal:bronze_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Lapis Plate
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": 'kubejs:lapis_plate'
+    },
+    "B": {
+      "item": 'buildcraftcore:gear_stone'
+    }
+  },
+  "result": {
+    "item": 'thermal:lapis_gear'
+  }
+})
+
+// Invar Plate
+event.shaped(
+  Item.of('thermal:invar_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:invar_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
 })

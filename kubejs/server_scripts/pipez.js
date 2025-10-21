@@ -9,23 +9,24 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "thermal:copper_plate"
+      "item": "kubejs:red_alloy_plate"
     },
     "B": {
-      "item": "thermal_extra:sticky_ball"
+      "item": "thermal:lapis_gear"
     },
     "C": {
-      "item": "buildcraftfactory:tank"
+      "item": "buildcrafttransport:pipe_fluids_iron_colorless"
     },
     "D": {
-      "item": "integrateddynamics:crystalized_menril_block"
+      "item": "integratedterminals:menril_glass"
     }
   },
   "result": {
-    "item": 'pipez:fluid_pipe',
-    "count": 8
+    "item": "pipez:fluid_pipe",
+    "count": 6
   }
-})
+}
+)
 
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -36,21 +37,21 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "thermal:bronze_plate"
     },
     "B": {
       "item": "thermal:cured_rubber"
     },
     "C": {
-      "item": "minecraft:hopper"
+      "item": "quark:pipe"
     },
     "D": {
-      "item": "extendedcrafting:luminessence_block"
+      "item": "thermal:electrum_block"
     }
   },
   "result": {
-        "item": 'pipez:item_pipe',
-        "count": 8
+    "item": 'pipez:item_pipe',
+    "count": 6
   }
 })
 
@@ -63,21 +64,21 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "thermal:invar_plate"
     },
     "B": {
-      "item": "projectred_core:electrotine_dust"
+      "item": "kubejs:empowered_rubber"
     },
     "C": {
-      "item": 'projectred_core:red_ingot'
+      "item": "buildcrafttransport:pipe_power_gold_colorless"
     },
     "D": {
-      "item": "alexscaves:scarlet_neodymium_node"
+      "item": "kubejs:red_alloy_block"
     }
   },
   "result": {
-     "item": 'pipez:energy_pipe',
-     "count": 8
+    "item": "pipez:energy_pipe",
+    "count": 6
   }
 })
 })

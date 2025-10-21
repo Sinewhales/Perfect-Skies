@@ -574,6 +574,37 @@ event.shaped(
   }
 )
 
+// Mud Bricks
+event.smelting('kubejs:mud_brick', 'kubejs:mud_ball')
+// Lapis Plate
+event.custom({
+    "type": "lychee:block_crushing",
+    "item_in": [
+        {
+            "item": 'minecraft:lapis_block'
+        }
+    ],
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'kubejs:lapis_plate',
+            "count": 4
+        }
+    ]
+})
+
+// Red Alloy Block
+event.shaped(
+  Item.of('kubejs:red_alloy_block', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'projectred_core:red_ingot'
+  }
+)
 
 })
 

@@ -69,16 +69,6 @@
 			y: 2.0d
 		}
 		{
-			id: "09F416AE50FD88E6"
-			tasks: [{
-				id: "49B6FFB05AC04430"
-				item: "kubejs:black_iron_gear"
-				type: "item"
-			}]
-			x: 19.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["4BC17EF501A87E26"]
 			id: "3F099285F2685DB5"
 			shape: "octagon"
@@ -116,58 +106,28 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["13D0F4DA36DEC2D8"]
 			id: "54E7BF339D2D6C25"
+			shape: "octagon"
 			tasks: [{
-				id: "4EBB273F067C104A"
-				item: "thermal:rubber"
+				id: "2D2E22B8A7127374"
+				item: "kubejs:empowered_rubber"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 12.5d
+			x: 9.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["54E7BF339D2D6C25"]
-			id: "7FBCCE520F52677D"
-			tasks: [{
-				id: "6B8991C63EDE64F1"
-				item: "kubejs:rubber_sulfur"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["7FBCCE520F52677D"]
-			id: "3E6A75F7AB87A657"
-			rewards: [{
-				id: "6706D4CEEE097DDD"
-				item: {
-					Count: 1
-					id: "alexscaves:cave_map"
-					tag: {
-						BiomeTargetResourceKey: "alexscaves:magnetic_caves"
-						Loading: 0b
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "673B55AED06B07D2"
-				item: "thermal:cured_rubber"
-				type: "item"
-			}]
-			x: 19.5d
-			y: 11.0d
-		}
-		{
+			dependencies: ["616A4825E45E1EB3"]
 			id: "43C74383CE73981F"
+			shape: "octagon"
 			tasks: [{
 				id: "027AF4FEE2C98F4E"
 				item: "integrateddynamics:drying_basin"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 5.0d
+			x: 12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["43C74383CE73981F"]
@@ -190,8 +150,8 @@
 					type: "item"
 				}
 			]
-			x: 18.5d
-			y: 6.5d
+			x: 13.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["51A200C16FF11600"]
@@ -201,8 +161,8 @@
 				item: "watercollector:watercollector"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 5.5d
+			x: 15.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["650977348CBDEDC5"]
@@ -218,7 +178,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["54075E2AA0BF4708"]
 			id: "6A1435794C592A3C"
 			tasks: [{
 				id: "69D68001DD444924"
@@ -229,7 +188,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["6A1435794C592A3C"]
+			dependencies: ["23038F2A78FCA033"]
 			id: "0D12FDBAE586CF1E"
 			tasks: [
 				{
@@ -248,8 +207,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 11.0d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2A7EC98668A8B096"]
@@ -398,8 +357,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: 1.0d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["43C74383CE73981F"]
@@ -409,8 +368,8 @@
 				item: "kubejs:tanned_leather"
 				type: "item"
 			}]
-			x: 20.5d
-			y: 3.5d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["23038F2A78FCA033"]

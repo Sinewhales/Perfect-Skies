@@ -43,35 +43,35 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "integrateddynamics:menril_log"
+      "item": "kubejs:impregnated_wood"
     },
     "B": {
-      "item": "kubejs:electrotine_plate"
+      "item": "integrateddynamics:menril_berries"
     },
     "C": {
-      "item": "architects_palette:algal_brick"
+      "item": "kubejs:amber_paste_chunk"
     },
     "D": {
-      "item": "thermal:cured_rubber"
+      "item": 'kubejs:empowered_rubber'
     },
     "E": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": 'minecraft:mud_bricks'
     },
     "F": {
       "item": "minecraft:cauldron"
     },
     "G": {
-      "item": "kubejs:black_iron_gear"
+      "item": "tconstruct:obsidian_pane"
     },
     "H": {
-      "item": "farmersdelight:rope"
+      "item": "kubejs:black_iron_gear"
     },
     "I": {
-      "item": "actuallyadditions:wood_casing"
+      "item": "extendedcrafting:frame"
     }
   },
   "result": {
-    "item": 'integrateddynamics:drying_basin'
+    "item": "integrateddynamics:drying_basin"
   }
 })
 event.remove({ id: 'integratedterminals:crafting/part_terminal_storage' })
@@ -264,5 +264,38 @@ event.shaped(
     B: 'integrateddynamics:crystalized_menril_block',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
+
+// Menril glass
+event.remove({ id: 'integratedterminals:drying_basin/menril_glass' })
+event.remove({ id: 'integratedterminals:mechanical_drying_basin/menril_glass' })
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "integrateddynamics:menril_resin",
+    "amount": 1000
+  },
+  "item": {
+    "item": 'tinkers_thinking:tempered_glass'
+  },
+  "duration": 200,
+  "result": {
+    "item": "integratedterminals:menril_glass"
+  }
+})
+
+event.custom({
+  "type": "integrateddynamics:mechanical_drying_basin",
+  "fluid": {
+    "fluid": "integrateddynamics:menril_resin",
+    "amount": 1000
+  },
+  "item": {
+    "item": 'tinkers_thinking:tempered_glass'
+  },
+  "duration": 20,
+  "result": {
+    "item": "integratedterminals:menril_glass"
+  }
+})
 })
 

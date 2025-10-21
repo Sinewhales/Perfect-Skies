@@ -38,5 +38,18 @@ event.custom({
   "time": 24
 })
 
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": 'integrateddynamics:menril_berries'
+  },
+  "result": {
+    "amount": 30,
+    "fluid": "integrateddynamics:menril_resin"
+  },
+  "temperature": 450,
+  "time": 24
+})
+
 })
 

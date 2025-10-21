@@ -158,6 +158,9 @@
     "part": true,
     "squeezer": true
   },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
   "twilightforest": {
     "quest_ram_wool": true
   },

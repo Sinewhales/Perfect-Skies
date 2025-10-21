@@ -209,6 +209,34 @@ event.custom({
   }
 })
 
+// Pipe Sealant
+event.remove({ id: 'buildcrafttransport:pipe_sealant' })
+event.shapeless(
+  Item.of('buildcrafttransport:waterproof'), // arg 1: output
+  [
+    'tinkers_thinking:earth_slime_drop',
+    'minecraft:green_dye',
+    'thermal:rubber',
+    'kubejs:amber_paste_chunk'
+  ]
+)
+
+// Iron Pipe
+event.replaceInput(
+  { id: 'buildcrafttransport:pipe_items_iron_colorless_colorless' }, // Arg 1: the filter
+  'minecraft:iron_ingot',            // Arg 2: the item to replace
+  'thermal:iron_plate'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+// Gold Pipe
+event.replaceInput(
+  { id: 'buildcrafttransport:pipe_items_gold_colorless_colorless' }, // Arg 1: the filter
+  'minecraft:gold_ingot',            // Arg 2: the item to replace
+  'thermal:gold_plate'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
 
 })
 

@@ -117,5 +117,19 @@ event.custom({
   },
   "result": 'kubejs:synthethic_leather'
 })
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'thermal:cured_rubber'
+  },
+    "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 100,
+    "fluid": "integrateddynamics:menril_resin"
+  },
+  "result": 'kubejs:empowered_rubber'
+})
 })
 

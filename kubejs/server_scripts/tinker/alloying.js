@@ -119,5 +119,23 @@ event.custom({
   "temperature": 1000
 })
 
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "tag": "forge:molten_gold"
+    },
+    {
+      "amount": 90,
+      "tag": "forge:molten_silver"
+    }
+  ],
+  "result": {
+    "amount": 180,
+    "tag": "forge:molten_electrum"
+  },
+  "temperature": 760
+})
 })
 
