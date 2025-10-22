@@ -9,6 +9,7 @@ event.add(['kubejs:royal_honey_bucket'], '\u00A71Can only be made with Forestry 
 event.add(['kubejs:crushing_hammer'], '\u00A71Cant do Plates but has way more durability than the Plate Hammer')
 event.add(['farmingforblockheads:market'], '\u00A71Can also be traded from a Farmer Villager')
 event.add(['kubejs:synthethic_leather'], '\u00A71Dry on a Drying Rack')
+event.add(['kubejs:ancient_rune'], '\u00A71Found by doing archaeology on Suspicious Blocks')
 })
 
 JEIAddedEvents.registerCategories(event => {

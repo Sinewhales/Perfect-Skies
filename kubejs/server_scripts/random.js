@@ -259,6 +259,79 @@ event.shapeless(
   ]
 )
 
+// Summoning Altar
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "tconstruct:rose_gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:candle"
+    },
+    "C": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "D": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "minecraft:red_wool"
+    },
+    "F": {
+      "item": "thermal:electrum_plate"
+    },
+    "G": {
+      "item": "kubejs:impregnated_wood"
+    },
+    "H": {
+      "item": "minecraft:lectern"
+    },
+    "I": {
+      "item": "minecraft:enchanting_table"
+    }
+  },
+  "result": {
+    "item": "summoningrituals:altar"
+  }
+})
+
+// Explorer's Compass
+event.remove({ id: 'explorerscompass:explorers_compass' })
+event.recipes.summoningrituals
+    .altar(Ingredient.of('naturescompass:naturescompass'))
+    .itemOutput('explorerscompass:explorerscompass')
+    .input('2x kubejs:pulsating_iron_plate')
+    .input('2x extendedcrafting:black_iron_ingot')
+    .input('2x mysticalagriculture:nature_agglomeratio')
+    .input('2x minecraft:amethyst_shard')
+    .input('2x architects_palette:moonshale')
+    .input('2x kubejs:cotton_cloth')
+    .input('2x minecraft:moss_block')
+    .input('minecraft:cobweb')
+    .recipeTime(200)
+
+// Moonshale
+event.remove({ id: 'architects_palette:warping/moonshale_from_stone_warping' })
+event.custom({
+  "type": "architects_palette:warping",
+  "dimension": "minecraft:the_nether",
+  "ingredient": [
+    {
+      "item": "quark:shale"
+    }
+  ],
+  "result": {
+    "item": "architects_palette:moonshale"
+  }
+})
 })
 
 // Obituary

@@ -137,5 +137,62 @@ event.custom({
   },
   "temperature": 760
 })
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "fluid": "tconstruct:molten_copper"
+    },
+    {
+      "amount": 90,
+      "fluid": "tconstruct:molten_aluminum"
+    }
+  ],
+  "result": {
+    "amount": 180,
+    "fluid": "kubejs:molten_duralumin"
+  },
+  "temperature": 605
+})
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "tag": "forge:molten_copper"
+    },
+    {
+      "amount": 90,
+      "tag": "forge:molten_gold"
+    }
+  ],
+  "result": {
+    "amount": 180,
+    "tag": "forge:molten_rose_gold"
+  },
+  "temperature": 550
+})
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "tag": "forge:molten_iron"
+    },
+    {
+      "amount": 250,
+      "fluid": "tconstruct:molten_ender"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "fluid": "kubejs:molten_pulsating_iron"
+  },
+  "temperature": 550
+})
 })
 

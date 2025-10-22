@@ -104,7 +104,49 @@ event.custom({
   "energy": 16000
 })
 
-
+// Spelunkery Table
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:ancient_rune"
+    },
+    "B": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "minecraft:lapis_block"
+    },
+    "D": {
+      "item": "minecraft:dripstone_block"
+    },
+    "E": {
+      "item": "kubejs:impregnated_wood"
+    },
+    "F": {
+      "item": "architects_palette:moonshale"
+    },
+    "G": {
+      "item": "kubejs:mud_bricks"
+    },
+    "H": {
+      "item": "farmersdelight:rope"
+    },
+    "I": {
+      "item": "minecraft:cartography_table"
+    }
+  },
+  "result": {
+    "item": "alexscaves:spelunkery_table"
+  }
+})
 
 
 })

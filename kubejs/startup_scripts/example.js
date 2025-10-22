@@ -34,7 +34,16 @@ event.create('empowered_rubber').displayName("Empowered Rubber").glow(true)
 event.create('mud_ball').displayName("Mud Ball")
 event.create('mud_brick').displayName("Mud Brick")
 event.create('lapis_plate').displayName("Lapis Plate")
+event.create('brass_ingot').displayName("Brass Ingot")
+event.create('brass_plate').displayName("Brass Plate")
 event.create('crushing_hammer').displayName("Crushing Hammer").unstackable().maxDamage(200)
+event.create('hyper_diamond').displayName("Hyper Diamond")
+event.create('pulsating_chipset').displayName("Pulsating Chipset")
+event.create('pulsating_iron').displayName("Pulsating Iron Ingot")
+event.create('duralumin').displayName("Duralumin Ingot")
+event.create('duralumin_plate').displayName("Duralumin Plate")
+event.create('ancient_rune').displayName("Ancient Rune")
+event.create('pulsating_iron_plate').displayName("Pulsating Iron Plate")
 // Raw Ore Block
 // Aluminum Dust
 
@@ -69,6 +78,31 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xE79A3F)
     .displayName('Royal Honey')
 
+    event.create('lubricant')
+    .thinTexture(0xD3D3D3)
+    .bucketColor(0xD3D3D3)
+    .displayName('Lubricant')
+
+    event.create('citric_acid')
+    .thinTexture(0xf6fbb1)
+    .bucketColor(0xf6fbb1)
+    .displayName('Citric Acid')
+
+    event.create('molten_pulsating_iron')
+    .thickTexture(0x6ee489)
+    .bucketColor(0x6ee489)
+    .displayName('Molten Pulsating Iron')
+
+    event.create('molten_black_iron')
+    .thickTexture(0x232323)
+    .bucketColor(0x232323)
+    .displayName('Molten Black Iron')
+
+    event.create('molten_duralumin')
+    .thickTexture(0xbbd7a9)
+    .bucketColor(0xbbd7a9)
+    .displayName('Molten Duralumin')
+
 
 
     
@@ -84,6 +118,10 @@ StartupEvents.registry('block', event => {
   event.create('seared_casing').displayName("Seared Casing")
   event.create('impregnated_wood').displayName("Impregnated Wood")
   event.create('red_alloy_block').displayName("Block of Red Alloy").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
+  event.create('mud_bricks').displayName("Small Mud Bricks").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('nether_bricks')
+  event.create('double_compressed_cobblestone').displayName("Double Compressed Cobblestone").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('triple_compressed_cobblestone').displayName("Triple Compressed Cobblestone").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+
 
   
 

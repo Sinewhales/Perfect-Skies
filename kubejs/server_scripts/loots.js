@@ -53,6 +53,10 @@ event.addLootTableModifier("minecraft:chests/pillager_outpost").removeLoot("@rft
 event.addLootTableModifier("minecraft:chests/buried_treasure").removeLoot("@rftoolsdim")
 event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("@rftoolsdim")
 
+
+
+
+
 // Mud Ball
  event.addBlockLootModifier("minecraft:mud").removeLoot("minecraft:mud").addLoot('4x kubejs:mud_ball')      
 });

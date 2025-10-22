@@ -163,7 +163,6 @@ event.custom({
 })
 
 // Mud
-event.remove({ id: 'minecraft:mud_bricks' })
 event.shaped(
   Item.of('minecraft:mud', 1), // arg 1: output
   [
@@ -176,15 +175,5 @@ event.shaped(
   }
 )
 
-event.shaped(
-  Item.of('minecraft:mud_bricks', 1), // arg 1: output
-  [
-    'AA ',
-    'AA ', // arg 2: the shape (array of strings)
-    '   '
-  ],
-  {
-    A: 'kubejs:mud_brick'  //arg 3: the mapping object
-  }
-)
+
 })

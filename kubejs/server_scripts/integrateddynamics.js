@@ -43,35 +43,35 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:impregnated_wood"
+      "item": "architects_palette:algal_bricks"
     },
     "B": {
-      "item": "integrateddynamics:menril_berries"
+      "item": "farmersdelight:rope"
     },
     "C": {
-      "item": "kubejs:amber_paste_chunk"
+      "item": "kubejs:duralumin_plate"
     },
     "D": {
-      "item": 'kubejs:empowered_rubber'
+      "item": "kubejs:impregnated_wood"
     },
     "E": {
-      "item": 'minecraft:mud_bricks'
+      "item": "kubejs:empowered_rubber"
     },
     "F": {
       "item": "minecraft:cauldron"
     },
     "G": {
-      "item": "tconstruct:obsidian_pane"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "H": {
-      "item": "kubejs:black_iron_gear"
+      "item": "tconstruct:seared_basin"
     },
     "I": {
-      "item": "extendedcrafting:frame"
+      "item": "actuallyadditions:wood_casing"
     }
   },
   "result": {
-    "item": "integrateddynamics:drying_basin"
+    "item": 'integrateddynamics:drying_basin'
   }
 })
 event.remove({ id: 'integratedterminals:crafting/part_terminal_storage' })

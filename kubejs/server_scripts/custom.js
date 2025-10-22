@@ -137,7 +137,7 @@ event.custom({
         {
             "type": "drop_item",
             "item": "kubejs:obsidian_plate",
-            "count": 4
+            "count": 2
         }
     ]
 })
@@ -605,6 +605,152 @@ event.shaped(
     A: 'projectred_core:red_ingot'
   }
 )
+
+// Small Mud Bricks
+event.shaped(
+  Item.of('kubejs:mud_bricks', 1), // arg 1: output
+  [
+    'AA ',
+    'AA ', // arg 2: the shape (array of strings)
+    '   '
+  ],
+  {
+    A: 'kubejs:mud_brick'  //arg 3: the mapping object
+  }
+)
+
+// Duralumin Plate
+event.shaped(
+  Item.of('kubejs:duralumin_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'kubejs:duralumin',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'kubejs:duralumin'
+  },
+  "result": [
+    {
+      "item": 'kubejs:duralumin_plate'
+    }
+  ]
+})
+
+// Double Compressed Cobblestone
+event.shaped(
+  Item.of('kubejs:double_compressed_cobblestone', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'quark:sturdy_stone',
+
+  }
+)
+
+// Triple Compressed Cobblestone
+event.shaped(
+  Item.of('kubejs:triple_compressed_cobblestone', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'kubejs:double_compressed_cobblestone',
+
+  }
+)
+
+// Pulsating Iron Plate
+event.shaped(
+  Item.of('kubejs:pulsating_iron_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'kubejs:pulsating_iron',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'kubejs:pulsating_iron'
+  },
+  "result": [
+    {
+      "item": 'kubejs:pulsating_iron_plate'
+    }
+  ]
+})
+
+// Better Recipes for Lapis Plates
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'minecraft:lapis_block'
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": 'kubejs:lapis_plate',
+          "count": 4
+        }
+      }
+    ]
+  }
+
+  
+}
+)
+event.remove({ id: 'integrateddynamics:squeezer/ore/dust_obsidian' })
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'minecraft:obsidian'
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": 'kubejs:obsidian_plate',
+          "count": 2
+        }
+      }
+    ]
+  }})
+
+  event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": 'minecraft:logs'
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": 'kubejs:wood_sheet',
+          "count": 2
+        }
+      }
+    ]
+  }}) 
 
 })
 

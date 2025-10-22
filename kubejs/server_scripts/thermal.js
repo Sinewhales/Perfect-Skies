@@ -92,28 +92,28 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:impregnated_wood"
+      "item": "kubejs:mud_bricks"
     },
     "B": {
-      "item": "kubejs:black_iron_gear"
+      "item": "thermal:bronze_gear"
     },
     "C": {
-      "item": "tinkers_thinking:tempered_glass"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "D": {
-      "item": "thermal:bronze_plate"
+      "item": "kubejs:impregnated_wood"
     },
     "E": {
-      "item": "kubejs:amber_paste_chunk"
-    },
-    "F": {
       "item": "treetap:tap"
     },
+    "F": {
+      "item": "buildcraftfactory:tank"
+    },
     "G": {
-      "item": "portabletanks:advanced_portable_tank"
+      "item": "flopper:flopper"
     },
     "H": {
-      "item": "tconstruct:seared_bricks"
+      "item": 'kubejs:amber_paste_chunk'
     },
     "I": {
       "item": "extendedcrafting:frame"
@@ -464,6 +464,20 @@ event.shaped(
   {
     A: 'kubejs:plate_hammer',
     B: 'thermal:invar_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Electrum Plate
+event.shaped(
+  Item.of('thermal:electrum_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:electrum_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
 })

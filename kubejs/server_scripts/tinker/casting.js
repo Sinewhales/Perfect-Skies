@@ -112,8 +112,8 @@ event.custom({
     "cast_consumed": true,
   "cooling_time": 100,
   "fluid": {
-    "amount": 100,
-    "fluid": "kubejs:royal_honey"
+    "amount": 250,
+    "fluid": "tconstruct:honey"
   },
   "result": 'kubejs:synthethic_leather'
 })
@@ -130,6 +130,36 @@ event.custom({
     "fluid": "integrateddynamics:menril_resin"
   },
   "result": 'kubejs:empowered_rubber'
+})
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cooling_time": 54,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_duralumin"
+  },
+  "result": {
+    "item": 'kubejs:duralumin'
+  }
+})
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cooling_time": 54,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_pulsating_iron"
+  },
+  "result": {
+    "item": 'kubejs:pulsating_iron'
+  }
 })
 })
 
