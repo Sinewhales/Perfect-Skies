@@ -44,6 +44,8 @@ event.create('duralumin').displayName("Duralumin Ingot")
 event.create('duralumin_plate').displayName("Duralumin Plate")
 event.create('ancient_rune').displayName("Ancient Rune")
 event.create('pulsating_iron_plate').displayName("Pulsating Iron Plate")
+event.create('pewter_ingot').displayName("Pewter Ingot")
+event.create('graphene').displayName("Graphene")
 // Raw Ore Block
 // Aluminum Dust
 

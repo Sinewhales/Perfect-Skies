@@ -4,51 +4,16 @@ event.remove({ id: 'alexscaves:azure_neodymium_ingot' })
 event.remove({ id: 'alexscaves:jei.cave_map_magnetic_caves' })
 
 // [1] Magnetic Caves Map
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
-  ],
-  "key": {
-    "A": {
-      "item": "minecraft:calcite"
-    },
-    "B": {
-      "item": "kubejs:electrotine_plate"
-    },
-    "C": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "D": {
-      "item": "integrateddynamics:crystalized_menril_chunk"
-    },
-    "E": {
-      "item": "mysticalagriculture:nature_agglomeratio"
-    },
-    "F": {
-      "item": "quark:diamond_heart"
-    },
-    "G": {
-      "item": "extendedcrafting:black_iron_slate"
-    },
-    "H": {
-      "item": 'architects_palette:moonshale',
-    },
-    "I": {
-      "item": "minecraft:map"
-    }
-  },
-  "result": {
-      "type": "forge:nbt",
-      "item": "alexscaves:cave_tablet",
-      "count": 1,
-      "nbt": "{CaveBiome:\"alexscaves:magnetic_caves\"}"
-  }
-})
+event.recipes.summoningrituals
+    .altar(Ingredient.of('kubejs:ancient_rune'))
+    .itemOutput(Item.of('alexscaves:cave_tablet', '{CaveBiome:"alexscaves:magnetic_caves"}'))
+    .input('minecraft:lodestone')
+    .input('2x mysticalagriculture:nature_agglomeratio')
+    .input('kubejs:heart_of_emerald')
+    .input('2x kubejs:red_alloy_plate')
+    .input('thermal:electrum_gear')
+    .input('minecraft:amethyst_block')
+    .recipeTime(200)
 
 // [2] Scarlet Neodymium
 event.custom({

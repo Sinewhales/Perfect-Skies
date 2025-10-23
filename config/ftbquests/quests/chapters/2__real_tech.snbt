@@ -168,7 +168,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["650977348CBDEDC5"]
+			dependencies: [
+				"49A0F303180943EE"
+				"0B099495C9C42C22"
+			]
+			dependency_requirement: "one_completed"
 			id: "39160D9A39D9F7B0"
 			size: 2.0d
 			tasks: [{
@@ -177,8 +181,8 @@
 				id: "5E28EA6D455E3AFC"
 				type: "biome"
 			}]
-			x: 21.0d
-			y: 11.0d
+			x: 18.0d
+			y: 8.0d
 		}
 		{
 			id: "6A1435794C592A3C"
@@ -187,8 +191,8 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 9.5d
+			x: 17.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["23038F2A78FCA033"]
@@ -221,8 +225,8 @@
 				item: "integrateddynamics:squeezer"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 8.5d
+			x: 13.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -292,17 +296,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["74DC5BF4A6A40B95"]
-			id: "4990365C116028CF"
-			tasks: [{
-				id: "0559D38D2391BEDC"
-				item: "integratedterminals:part_terminal_storage"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 14.0d
-		}
-		{
 			dependencies: [
 				"3182A6033D7D8C22"
 				"2D3FA62E725A305A"
@@ -343,8 +336,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 8.0d
+			x: 19.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["76C8B754EAE20908"]
@@ -398,6 +391,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["6F0D00E835D20734"]
 			id: "69B79C7BDC29D82E"
 			tasks: [{
 				id: "549C94CD2AD1146A"
@@ -410,11 +404,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: 7.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["6F0D00E835D20734"]
+			dependencies: ["69B79C7BDC29D82E"]
 			icon: "alexscaves:spelunkery_table"
 			id: "650977348CBDEDC5"
 			tasks: [
@@ -755,6 +749,41 @@
 			}]
 			x: 11.0d
 			y: 14.0d
+		}
+		{
+			dependencies: ["650977348CBDEDC5"]
+			id: "49A0F303180943EE"
+			tasks: [{
+				id: "68CE745334A3787B"
+				item: {
+					Count: 1
+					id: "alexscaves:cave_map"
+					tag: {
+						BiomeTargetResourceKey: "alexscaves:magnetic_caves"
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			id: "0B099495C9C42C22"
+			subtitle: "Use only if you went the exploration route for the Spelunkery Table and the Cave Map."
+			tasks: [{
+				id: "2A58FD2F05A82160"
+				item: {
+					Count: 1
+					id: "alexscaves:cave_map"
+					tag: {
+						BiomeTargetResourceKey: "alexscaves:magnetic_caves"
+					}
+				}
+				type: "item"
+			}]
+			title: "The exploration route"
+			x: 20.5d
+			y: 8.0d
 		}
 	]
 	title: "0.5 - Real Tech"

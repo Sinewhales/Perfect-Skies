@@ -775,6 +775,17 @@ event.custom({
     ]
   }}) 
 
+  // Emerald Heart Dupe
+  event.recipes.summoningrituals
+    .altar(Ingredient.of('kubejs:heart_of_emerald'))
+    .itemOutput('2x kubejs:heart_of_emerald')
+    .input('kubejs:enchanted_water_bucket')
+    .input('8x extendedcrafting:luminessence')
+    .input('2x minecraft:emerald')
+    .input('farmersdelight:organic_compost')
+    .input('2x tconstruct:jeweled_apple')
+    .input('minecraft:white_dye')
+    .recipeTime(200)
 })
 
 // Ink (Squid Milking)

@@ -175,5 +175,18 @@ event.shaped(
   }
 )
 
+// Lodestone Alt
+event.shaped(
+  Item.of('minecraft:lodestone', 1), // arg 1: output
+  [
+    'AAA',
+    'ABA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'architects_palette:chiseled_moonshale',
+    B: 'extendedcrafting:black_iron_block'  //arg 3: the mapping object
+  }
+)
 
 })

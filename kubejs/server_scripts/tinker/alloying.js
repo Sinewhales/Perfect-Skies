@@ -194,5 +194,43 @@ event.custom({
   },
   "temperature": 550
 })
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 180,
+      "tag": "forge:molten_tin"
+    },
+    {
+      "amount": 90,
+      "fluid": "tconstruct:molten_lead"
+    }
+  ],
+  "result": {
+    "amount": 270,
+    "fluid": "tconstruct:molten_pewter"
+  },
+  "temperature": 700
+})
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "tag": "forge:molten_bronze"
+    },
+    {
+      "amount": 100,
+      "tag": "tconstruct:molten_amethyst"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_amethyst_bronze"
+  },
+  "temperature": 820
+})
 })
 
