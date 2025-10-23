@@ -65,7 +65,7 @@ event.custom({
       "item": "minecraft:tinted_glass"
     },
     "D": {
-      "item": "geolosys:anthracite_coal"
+      "item": "minecraft:coal"
     },
     "E": {
       "item": "extendedcrafting:black_iron_slate"

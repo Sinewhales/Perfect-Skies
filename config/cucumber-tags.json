@@ -23,7 +23,7 @@
   "forge:ingots/signalum": "thermal:signalum_ingot",
   "forge:ingots/enderium": "thermal:enderium_ingot",
   "forge:rubber": "null",
-  "forge:ingots/nickel": "geolosys:nickel_ingot",
+  "forge:ingots/nickel": "dustandash:nickel_ingot",
   "forge:gems/sapphire": "iceandfire:sapphire_gem",
   "forge:ingots/bronze": "nuclearcraft:bronze_ingot",
   "forge:ingots/uranium": "nuclearcraft:uranium_ingot",

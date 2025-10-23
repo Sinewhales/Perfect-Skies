@@ -50,20 +50,6 @@ event.add('forge:nuggets/copper', 'thermal:copper_nugget')
 event.removeAll('forge:raw_materials/aluminum')
 event.add('forge:raw_materials/aluminum', 'kubejs:raw_aluminum_ore')
 
-// Cluster Removal
-event.remove('forge:raw_materials/copper', 'geolosys:copper_cluster')
-event.remove('forge:raw_materials/gold', 'geolosys:gold_cluster')
-
-event.remove('forge:raw_materials/lead', 'geolosys:lead_cluster')
-event.remove('forge:raw_materials/iron', 'geolosys:iron_cluster')
-event.remove('forge:raw_materials/zinc', 'geolosys:zinc_cluster')
-event.remove('forge:raw_materials/uranium', 'geolosys:uranium_cluster')
-event.remove('ad_extendra:raw_uranium', 'geolosys:uranium_cluster')
-event.remove('forge:raw_materials/tin', 'geolosys:tin_cluster')
-event.remove('forge:raw_materials/silver', 'geolosys:silver_cluster')
-event.remove('forge:raw_materials/platinum', 'geolosys:platinum_cluster')
-event.remove('forge:raw_materials/osmium', 'geolosys:osmium_cluster')
-event.remove('forge:raw_materials/nickel', 'geolosys:nickel_cluster')
 
 // Rice
 event.removeAll('forge:crops/rice')

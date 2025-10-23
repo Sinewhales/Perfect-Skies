@@ -254,25 +254,8 @@ event.replaceInput(
 
 // Copper Nuggets
 event.remove({ output: 'iceandfire:copper_nugget' })
-event.remove({ id: 'geolosys:crafting/nuggets/copper_nugget_to_copper_ingot' })
-event.remove({ id: 'geolosys:crafting/nuggets/copper_ingot_to_copper_nugget' })
 
-// Aluminum Cluster replacement
-event.smelting('geolosys:aluminum_ingot', 'kubejs:raw_aluminum_ore')
-event.blasting('geolosys:aluminum_ingot', 'kubejs:raw_aluminum_ore')
-event.remove({ input: 'geolosys:aluminum_cluster' })
-event.remove({ input: 'geolosys:copper_cluster' })
-event.remove({ input: 'geolosys:gold_cluster' })
-event.remove({ input: 'geolosys:iron_cluster' })
-event.remove({ input: 'geolosys:lead_cluster' })
-event.remove({ input: 'geolosys:zinc_cluster' })
-event.remove({ input: 'geolosys:uranium_cluster' })
-event.remove({ input: 'geolosys:tin_cluster' })
-event.remove({ input: 'geolosys:silver_cluster' })
-event.remove({ input: 'geolosys:platinum_cluster' })
-event.remove({ input: 'geolosys:osmium_cluster' })
-event.remove({ input: 'geolosys:nickel_cluster' })
-event.remove({ input: 'geolosys:nether_gold_cluster' })
+
 
 // Onion
 event.remove({ id: 'thermal:machines/insolator/insolator_onion' })

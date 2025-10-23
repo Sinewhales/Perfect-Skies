@@ -326,7 +326,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 8.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["39160D9A39D9F7B0"]
@@ -387,17 +387,17 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["5A6BC037C8E17FC9"]
 			id: "7A868DDD5C938094"
 			tasks: [{
 				id: "4AA607781B46FEDA"
 				item: "mysticalagriculture:nature_agglomeratio"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 9.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["7A868DDD5C938094"]
 			id: "69B79C7BDC29D82E"
 			tasks: [{
 				id: "549C94CD2AD1146A"
@@ -436,9 +436,10 @@
 				}
 			]
 			x: 10.0d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
+			dependencies: ["7A868DDD5C938094"]
 			id: "31DE6B2B295CF849"
 			tasks: [{
 				id: "7E499822BCDF57E0"
@@ -449,8 +450,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 12.0d
+			x: 8.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["736A4858CBC99949"]
@@ -705,6 +706,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["4A4CD88863C74DA4"]
 			id: "4350A7DDC1009E27"
 			tasks: [{
 				id: "7819EDF6C7469B9B"
@@ -712,10 +714,13 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["4350A7DDC1009E27"]
+			dependencies: [
+				"4350A7DDC1009E27"
+				"31DE6B2B295CF849"
+			]
 			id: "11A87E406E49F782"
 			tasks: [{
 				id: "09CA9E5F9886546F"
@@ -726,8 +731,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 8.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4350A7DDC1009E27"]
@@ -737,8 +742,19 @@
 				item: "kubejs:ancient_rune"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.5d
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2F938C3B3391AD00"]
+			id: "4D4ADD0CCDE8ABE5"
+			tasks: [{
+				id: "3F68B110D0E1885D"
+				item: "stevescarts:blockcartassembler"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 14.0d
 		}
 	]
 	title: "0.5 - Real Tech"
