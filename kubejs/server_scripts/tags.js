@@ -50,6 +50,9 @@ event.add('forge:nuggets/copper', 'thermal:copper_nugget')
 event.removeAll('forge:raw_materials/aluminum')
 event.add('forge:raw_materials/aluminum', 'kubejs:raw_aluminum_ore')
 
+// Alu Ore
+event.add('forge:ores/aluminum', 'kubejs:aluminium_ore')
+event.add('forge:ores/aluminum', 'kubejs:deepslate_aluminium_ore')
 
 // Rice
 event.removeAll('forge:crops/rice')

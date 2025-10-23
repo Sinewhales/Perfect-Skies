@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "kubejs:ore_black_quartz",
+  "step": "underground_ores"
+}

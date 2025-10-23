@@ -39,24 +39,6 @@
 		}
 		{
 			dependencies: ["4B81F3FAE36DB511"]
-			icon: "geolosys:limonite_ore_sample"
-			id: "33B5ED9EF964E264"
-			rewards: [{
-				id: "752F4BE434AA5491"
-				item: "geolosys:prospectors_pick"
-				type: "item"
-			}]
-			subtitle: "Don't mine normally. In this pack, Ores only generate in veins. Start by exploring and finding a specific sample. Then dig straight down and you should find a huge vein of that specific ore."
-			tasks: [{
-				id: "4135D9BB73A22B8F"
-				title: "Ore Gen"
-				type: "checkmark"
-			}]
-			x: -4.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4B81F3FAE36DB511"]
 			icon: "nuclearcraft:wasteland_earth"
 			id: "5C4E8E948CA58447"
 			rewards: [{

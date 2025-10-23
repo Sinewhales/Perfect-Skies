@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "integrateddynamics:meneglin",
+  "features": "kubejs:enchanted_lake",
+  "step": "lakes"
+}

@@ -2,6 +2,8 @@ LootJS.modifiers((event) => {
   // Remove Default Custom Ores
     event.addBlockLootModifier("kubejs:nether_sulfur_ore").removeLoot("kubejs:nether_sulfur_ore")        
       event.addBlockLootModifier("kubejs:nether_black_quartz").removeLoot("kubejs:nether_black_quartz")   
+	      event.addBlockLootModifier("kubejs:aluminium_ore").removeLoot("kubejs:aluminium_ore").addLoot('kubejs:raw_aluminum_ore')        
+      event.addBlockLootModifier("kubejs:deepslate_aluminium_ore").removeLoot("kubejs:deepslate_aluminium_ore").addLoot('kubejs:raw_aluminum_ore')
       
   // Grass
   event.addBlockLootModifier("minecraft:grass").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))

@@ -83,6 +83,11 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xD3D3D3)
     .displayName('Lubricant')
 
+    event.create('enchanted_water')
+    .thinTexture(0x7fddea)
+    .bucketColor(0x7fddea)
+    .displayName('Enchanted Water')
+
     event.create('citric_acid')
     .thinTexture(0xf6fbb1)
     .bucketColor(0xf6fbb1)
@@ -121,6 +126,9 @@ StartupEvents.registry('block', event => {
   event.create('mud_bricks').displayName("Small Mud Bricks").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('nether_bricks')
   event.create('double_compressed_cobblestone').displayName("Double Compressed Cobblestone").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('triple_compressed_cobblestone').displayName("Triple Compressed Cobblestone").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('aluminium_ore').displayName("Aluminum Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone').tagBlock('minecraft:mineable/pickaxe')
+  event.create('deepslate_aluminium_ore').displayName("Deepslate Aluminum Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+
 
 
   

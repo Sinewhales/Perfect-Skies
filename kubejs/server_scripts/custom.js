@@ -81,6 +81,25 @@ event.custom({
     ]
 })
 
+// Ancient Rune
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "tag": 'minecraft:decorated_pot_sherds'
+    },
+    "block_in": "kubejs:enchanted_water",
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'kubejs:ancient_rune'
+        },
+        {
+            "type": "place",
+            "block": "*"
+        }
+    ]
+})
+
 // [1] Electrotine Plate
 
 event.shaped(
@@ -576,6 +595,10 @@ event.shaped(
 
 // Mud Bricks
 event.smelting('kubejs:mud_brick', 'kubejs:mud_ball')
+
+// Aluminum
+event.smelting('dustandash:aluminum_ingot', 'kubejs:raw_aluminum_ore')
+event.blasting('dustandash:aluminum_ingot', 'kubejs:raw_aluminum_ore')
 // Lapis Plate
 event.custom({
     "type": "lychee:block_crushing",

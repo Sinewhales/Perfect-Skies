@@ -28,5 +28,16 @@
       "perchunk": true
     },
     "result": "deny"
+  },
+
+    {
+    "dimension": "minecraft:nether",
+    "mod": "chickens",
+    "mincount": {
+      "amount": 0,
+      "mod": "chickens",
+      "perchunk": true
+    },
+    "result": "deny"
   }
 ]
