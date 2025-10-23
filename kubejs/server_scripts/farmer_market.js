@@ -1,6 +1,4 @@
-MoreJSEvents.villagerTrades(event => {
-    event.addTrade("minecraft:farmer", 1, Item.of("farmingforblockheads:market", 1), Item.of("minecraft:emerald", 2))
-})
+
 ServerEvents.recipes(event => {
 event.remove({ id: 'farmingforblockheads:market' })
 event.custom({
