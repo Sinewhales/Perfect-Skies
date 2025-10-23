@@ -1,0 +1,46 @@
+{
+  "type": "geolosys:deposit_dense",
+  "config": {
+    "blocks": {
+      "default": [
+        {
+          "block": "minecraft:redstone_ore",
+          "chance": 0.4
+        },
+        {
+          "block": "projectred_exploration:electrotine_ore",
+          "chance": 0.4
+        },
+      {
+          "block": "thermal:cinnabar_ore",
+          "chance": 0.2
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "minecraft:deepslate_redstone_ore",
+          "chance": 0.4
+        },
+        {
+          "block": "projectred_exploration:deepslate_electrotine_ore",
+          "chance": 0.4
+        },
+         {
+          "block": "thermal:deepslate_cinnabar_ore",
+          "chance": 0.2
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:cinnabar_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "yMin": -60,
+    "yMax": 10,
+    "size": 60,
+    "biomeTag": "#minecraft:is_overworld",
+    "generationWeight": 3
+  }
+}

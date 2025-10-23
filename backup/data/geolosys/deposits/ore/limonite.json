@@ -1,0 +1,46 @@
+{
+  "type": "geolosys:deposit_dense",
+  "config": {
+    "blocks": {
+      "default": [
+        {
+          "block": "minecraft:iron_ore",
+          "chance": 0.6
+        },
+        {
+          "block": "thermal:nickel_ore",
+          "chance": 0.3
+        },
+      {
+          "block": "quark:shale",
+          "chance": 0.1
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "minecraft:deepslate_iron_ore",
+          "chance": 0.6
+        },
+        {
+          "block": "thermal:deepslate_nickel_ore",
+          "chance": 0.2
+        },
+         {
+          "block": "quark:shale",
+          "chance": 0.2
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:limonite_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "yMin": -20,
+    "yMax": 80,
+    "size": 90,
+    "biomeTag": "#minecraft:is_overworld",
+    "generationWeight": 6
+  }
+}
