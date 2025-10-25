@@ -51,6 +51,20 @@ event.custom({
   "time": 24
 })
 
+// Black Iron
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": 'extendedcrafting:black_iron_ingot'
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "kubejs:molten_black_iron"
+  },
+  "temperature": 600,
+  "time": 60
+})
+
 
 })
 

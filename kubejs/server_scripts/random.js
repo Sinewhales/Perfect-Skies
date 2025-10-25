@@ -15,6 +15,7 @@ event.remove({ id: 'mob_grinding_utils:recipe_tank_sink' })
 event.remove({ id: 'giacomos_exp:expseed' })
 event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
 event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
+event.remove({ id: 'architects_palette:smelting/moonshale' })
 
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -107,7 +108,7 @@ event.custom({
       "item": "kubejs:black_iron_gear"
     },
     "H": {
-      "item": "buildcraftfactory:tank"
+      "item": 'fluidtank:tank_stone' 
     },
     "I": {
       "item": "actuallyadditions:wood_casing"
@@ -152,7 +153,7 @@ event.shaped(
   ],
   {
     A: 'extendedcrafting:black_iron_ingot',
-    B: 'buildcraftfactory:tank',
+    B: 'minecraft:obsidian',
     C: 'minecraft:glass'  //arg 3: the mapping object
   }
 )

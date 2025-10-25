@@ -1,1 +1,7 @@
-// 1.20.1	2025-10-07T11:28:36.020787	Block States: mm
+// 1.20.1	2025-10-25T19:00:54.442582	Block States: mm
+d3c442541ca323a3a7ed3d336e42e559aea6d835 assets/mm/blockstates/primitive_smelter.json
+65db652f7d1c155e91cab6a6974de11043ca7f70 assets/mm/blockstates/stone_input.json
+d638e13dcc1979d14be3477236a6c8db273fcf61 assets/mm/blockstates/stone_output.json
+5216d481bc0becea8907e6141d3687b91772b953 assets/mm/models/block/primitive_smelter.json
+d31dcc2bad37a05bfc1d2473e6848dbe9b9152cd assets/mm/models/block/stone_input.json
+1b246d73942485c94883935ff8efcf78e524e072 assets/mm/models/block/stone_output.json

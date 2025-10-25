@@ -232,5 +232,24 @@ event.custom({
   },
   "temperature": 820
 })
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 180,
+      "fluid": "kubejs:molten_black_iron"
+    },
+    {
+      "amount": 90,
+      "fluid": "tconstruct:molten_steel"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "fluid": "kubejs:molten_black_steel"
+  },
+  "temperature": 820
+})
 })
 

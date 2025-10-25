@@ -1,0 +1,11 @@
+{
+  "javaVersion": "17.0.8",
+  "javaVendor": "Eclipse Adoptium",
+  "osName": "Mac OS X",
+  "osVersion": "15.1.1",
+  "osArch": "aarch64",
+  "availProcessors": 8,
+  "freeMemory": 3940381336,
+  "maxMemory": 10502537216,
+  "totalMemory": 10477371392
+}

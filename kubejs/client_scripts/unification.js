@@ -69,6 +69,10 @@ event.hide(['tconstruct:plate_cast'])
 event.hide(['tconstruct:plate_red_sand_cast'])
 event.hide(['tconstruct:plate_sand_cast'])
 
+// Steel Ingot
+  event.hide('tconstruct:steel_ingot')
+
+
 })
 
 JEIEvents.hideFluids(event => {

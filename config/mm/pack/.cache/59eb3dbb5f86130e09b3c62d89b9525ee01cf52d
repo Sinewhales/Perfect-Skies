@@ -1,1 +1,4 @@
-// 1.20.1	2025-10-07T11:28:36.021341	Loot Tables
+// 1.20.1	2025-10-25T19:00:54.44316	Loot Tables
+0a8fcbdb99075ec0307df5991c6e47e62cae60b9 data/mm/loot_tables/blocks/primitive_smelter.json
+3fb13c6cb2573ee7c33326dd3b68327504a83c5f data/mm/loot_tables/blocks/stone_input.json
+82a0475ecac3914a09720224c0c0a3338184e1c6 data/mm/loot_tables/blocks/stone_output.json

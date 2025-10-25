@@ -1,0 +1,5 @@
+
+[generic]
+	#When true, plasma fluid can destroy blocks, unless the blocks are tagged with cannot_fluid_destruction.
+	StellarPlasmaFluidDestruction = true
+

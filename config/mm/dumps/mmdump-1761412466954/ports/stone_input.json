@@ -1,0 +1,11 @@
+{
+  "id": "stone",
+  "controllerIds": "mm:primitive_smelter",
+  "name": "Stone",
+  "type": "mm:item",
+  "config": {
+    "rows": 1,
+    "columns": 1,
+    "autoPush": true
+  }
+}

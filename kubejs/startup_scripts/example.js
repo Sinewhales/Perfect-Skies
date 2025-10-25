@@ -46,6 +46,11 @@ event.create('ancient_rune').displayName("Ancient Rune")
 event.create('pulsating_iron_plate').displayName("Pulsating Iron Plate")
 event.create('pewter_ingot').displayName("Pewter Ingot")
 event.create('graphene').displayName("Graphene")
+event.create('black_steel_ingot').displayName("Black Steel Ingot")
+event.create('black_steel_plate').displayName("Black Steel Plate")
+event.create('black_steel_gear').displayName("Black Steel Gear")
+event.create('gelatinous_ferrousslime_drop').displayName("Gelatinous Ferrouslime Drop")
+event.create('blaze_shard').displayName("Blaze Shard")
 // Raw Ore Block
 // Aluminum Dust
 
@@ -110,6 +115,11 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xbbd7a9)
     .displayName('Molten Duralumin')
 
+      event.create('molten_black_steel')
+    .thickTexture(0x484f64)
+    .bucketColor(0x484f64)
+    .displayName('Molten Black Steel')
+
 
 
     
@@ -130,6 +140,14 @@ StartupEvents.registry('block', event => {
   event.create('triple_compressed_cobblestone').displayName("Triple Compressed Cobblestone").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('aluminium_ore').displayName("Aluminum Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone').tagBlock('minecraft:mineable/pickaxe')
   event.create('deepslate_aluminium_ore').displayName("Deepslate Aluminum Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('reinforced_obsidian_block').displayName("Reinforced Obsidian").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone').hardness(50).resistance(1200)
+  event.create('duralumin_block').displayName("Block of Duralumin").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
+  event.create('black_steel_block').displayName("Block of Black Steel").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
+  event.create('compressed_furnace').displayName("Compressed Furnace").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('primitive_smelter').displayName("Primitive Smelter").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('stone_output_bus').displayName("Stone Input Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('stone_input_bus').displayName("Stone Output Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('stone_fuel_bus').displayName("Stone Fuel Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
 
 
 

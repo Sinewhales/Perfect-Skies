@@ -1,3 +1,6 @@
 {
+  "block.mm.primitive_smelter": "Primitive Smelter",
+  "block.mm.stone_input": "Stone Input",
+  "block.mm.stone_output": "Stone Output",
   "item.mm.blueprint": "Blueprint"
 }

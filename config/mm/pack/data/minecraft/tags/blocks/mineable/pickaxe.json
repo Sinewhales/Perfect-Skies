@@ -1,3 +1,7 @@
 {
-  "values": []
+  "values": [
+    "mm:primitive_smelter",
+    "mm:stone_input",
+    "mm:stone_output"
+  ]
 }

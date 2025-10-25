@@ -629,6 +629,32 @@ event.shaped(
   }
 )
 
+// Duralumin Block
+event.shaped(
+  Item.of('kubejs:duralumin_block', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'kubejs:duralumin'
+  }
+)
+
+// Black Steel Block
+event.shaped(
+  Item.of('kubejs:black_steel_block', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'kubejs:black_steel_ingot'
+  }
+)
+
 // Small Mud Bricks
 event.shaped(
   Item.of('kubejs:mud_bricks', 1), // arg 1: output
@@ -678,6 +704,20 @@ event.shaped(
   ],
   {
     A: 'quark:sturdy_stone',
+
+  }
+)
+
+// Compressed Furnace
+event.shaped(
+  Item.of('kubejs:compressed_furnace', 1), // arg 1: output
+  [
+    'AAA',
+    'AAA', // arg 2: the shape (array of strings)
+    'AAA'
+  ],
+  {
+    A: 'minecraft:furnace',
 
   }
 )
@@ -786,6 +826,32 @@ event.custom({
     .input('2x tconstruct:jeweled_apple')
     .input('minecraft:white_dye')
     .recipeTime(200)
+
+// Black Steel Plate
+event.shaped(
+  Item.of('kubejs:black_steel_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'kubejs:black_steel_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'kubejs:black_steel_ingot'
+  },
+  "result": [
+    {
+      "item": 'kubejs:black_steel_plate'
+    }
+  ]
+})
 })
 
 // Ink (Squid Milking)

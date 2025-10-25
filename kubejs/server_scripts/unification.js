@@ -592,4 +592,32 @@ event.replaceInput(
   'farmersdelight:rope'       // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
+
+// Steel
+event.replaceInput(
+  { output: 'tconstruct:steel_ingot'}, // Arg 1: the filter
+  'tconstruct:steel_ingot',            // Arg 2: the item to replace
+  'ad_astra:steel_ingot'      // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.replaceOutput(
+  { output: 'nuclearcraft:steel_ingot'}, // Arg 1: the filter
+  'nuclearcraft:steel_ingot',            // Arg 2: the item to replace
+  'ad_astra:steel_ingot'      // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.replaceOutput(
+  { output: 'thermal:steel_ingot'}, // Arg 1: the filter
+  'thermal:steel_ingot',            // Arg 2: the item to replace
+  'ad_astra:steel_ingot'      // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.remove({ id: 'tconstruct:common/materials/steel_ingot_from_nuggets' })
+event.remove({ id: 'tconstruct:common/materials/steel_ingot_from_block' })
+event.remove({ id: 'tconstruct:common/materials/steel_nugget_from_ingot' })
+event.remove({ id: 'tconstruct:common/materials/steel_block_from_ingot' })
+event.remove({ id: 'thermal:machines/centrifuge/centrifuge_experience_bottle' })
 })

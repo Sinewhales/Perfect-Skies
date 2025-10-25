@@ -126,38 +126,41 @@ event.custom({
   "pattern": [
     "ABCBA",
     "DEFED",
-    "GFHFG",
+    "GHIHG",
     "DEFED",
     "ABCBA"
   ],
   "key": {
     "A": {
-      "item": "kubejs:obsidian_plate"
+      "item": "kubejs:reinforced_obsidian_block"
     },
     "B": {
-      "item": "alexscaves:raw_azure_neodymium"
+      "item": "kubejs:empowered_rubber"
     },
     "C": {
       "item": "minecraft:anvil"
     },
     "D": {
-      "item": "integrateddynamics:crystalized_menril_block"
+      "item": "integratedterminals:menril_glass"
     },
     "E": {
-      "item": "kubejs:electrotine_gear"
+      "item": "kubejs:black_steel_plate"
     },
     "F": {
-      "item": "thermal:cured_rubber"
+      "item": "kubejs:gelatinous_ferrousslime_drop"
     },
     "G": {
       "item": "alexscaves:galena"
     },
     "H": {
+      "item": "kubejs:electrotine_gear"
+    },
+    "I": {
       "item": "extendedcrafting:frame"
     }
   },
   "result": {
-    "item": 'integrateddynamics:squeezer'
+    "item": "integrateddynamics:squeezer"
   }
 })
 

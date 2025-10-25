@@ -21,24 +21,6 @@
 		}
 		{
 			dependencies: ["4B81F3FAE36DB511"]
-			icon: "sereneseasons:calendar"
-			id: "7A9179559B479A4A"
-			rewards: [{
-				id: "62D928D15FD19D8A"
-				item: "sereneseasons:calendar"
-				type: "item"
-			}]
-			subtitle: "This modpack uses Serene Seasons. Seasons affect crops grow and the type of mobs that can spawn around you as well as other things. Make sure to use the Calendar to keep track of the current season."
-			tasks: [{
-				id: "16CCF37C5993E9AC"
-				title: "Seasons"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4B81F3FAE36DB511"]
 			icon: "nuclearcraft:wasteland_earth"
 			id: "5C4E8E948CA58447"
 			rewards: [{
@@ -199,7 +181,7 @@
 				title: "Backpack"
 				type: "checkmark"
 			}]
-			x: 2.5d
+			x: 1.0d
 			y: 2.5d
 		}
 	]

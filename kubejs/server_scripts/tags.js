@@ -84,6 +84,9 @@ event.add('forge:rope', 'farmersdelight:rope')
 event.removeAll('supplementaries:ropes')
 event.add('supplementaries:ropes', 'farmersdelight:rope')
 
+// Steel
+event.removeAll('forge:ingots/steel')
+event.add('forge:ingots/steel', 'ad_astra:steel_ingot')
 })
 
 

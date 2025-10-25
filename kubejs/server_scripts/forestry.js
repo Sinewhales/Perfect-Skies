@@ -93,6 +93,96 @@ event.custom({
     "item": "forestry:bee_house"
   }
 })
+
+// Carpenter
+event.remove({ id: 'forestry:carpenter' })
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "tconstruct:amethyst_bronze_ingot"
+    },
+    "B": {
+      "item": "kubejs:black_steel_gear"
+    },
+    "C": {
+      "item": "integratedterminals:menril_glass"
+    },
+    "D": {
+      "item": "kubejs:impregnated_wood"
+    },
+    "E": {
+      "item": "thermal:lead_plate"
+    },
+    "F": {
+      "item": "kubejs:amber_paste_chunk"
+    },
+    "G": {
+      "item": "fluidtank:tank_bronze"
+    },
+    "H": {
+      "item": "extendedcrafting:basic_table"
+    },
+    "I": {
+      "item": "forestry:sturdy_machine"
+    }
+  },
+  "result": {
+    "item": "forestry:carpenter"
+  }
+})
+
+// Sturdy Casing
+event.remove({ id: 'forestry:sturdy_machine' })
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
+  ],
+  "key": {
+    "A": {
+      "item": "tconstruct:amethyst_bronze_ingot"
+    },
+    "B": {
+      "item": "kubejs:duralumin_plate"
+    },
+    "C": {
+      "item": "tinkers_thinking:tempered_glass"
+    },
+    "D": {
+      "item": "integratedscripting:mendesite"
+    },
+    "E": {
+      "item": "thermal:lead_gear"
+    },
+    "F": {
+      "item": "kubejs:gelatinous_ferrousslime_drop"
+    },
+    "G": {
+      "item": "thermal:invar_plate"
+    },
+    "H": {
+      "item": "kubejs:amber_paste_chunk"
+    },
+    "I": {
+      "item": "actuallyadditions:wood_casing"
+    }
+  },
+  "result": {
+    "item": 'forestry:sturdy_machine'
+  }
+})
 })
 
 

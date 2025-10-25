@@ -107,7 +107,7 @@ event.custom({
       "item": "treetap:tap"
     },
     "F": {
-      "item": "buildcraftfactory:tank"
+      "item": 'fluidtank:tank_stone' 
     },
     "G": {
       "item": "flopper:flopper"
@@ -478,6 +478,20 @@ event.shaped(
   {
     A: 'kubejs:plate_hammer',
     B: 'thermal:electrum_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Lead Plate
+event.shaped(
+  Item.of('thermal:lead_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:lead_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
 })

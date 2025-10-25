@@ -181,18 +181,19 @@
 				id: "5E28EA6D455E3AFC"
 				type: "biome"
 			}]
-			x: 18.0d
-			y: 8.0d
+			x: 10.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["0384461FF42098C3"]
 			id: "6A1435794C592A3C"
 			tasks: [{
 				id: "69D68001DD444924"
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 14.5d
+			x: 6.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["23038F2A78FCA033"]
@@ -218,15 +219,15 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["2A7EC98668A8B096"]
+			dependencies: ["7B23AAAB363D027B"]
 			id: "73EA67916A032320"
 			tasks: [{
 				id: "586F72736E552C40"
 				item: "integrateddynamics:squeezer"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 13.5d
+			x: 12.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -234,54 +235,25 @@
 				"54075E2AA0BF4708"
 			]
 			id: "0384461FF42098C3"
+			size: 2.0d
 			tasks: [{
 				id: "091F8387079DB437"
 				item: "thermal:lead_dust"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 10.0d
+			x: 8.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["0384461FF42098C3"]
-			id: "2F938C3B3391AD00"
-			size: 2.0d
-			tasks: [
-				{
-					id: "6BEF712E658AF1B2"
-					item: "buildcraftsilicon:assembly_table"
-					type: "item"
-				}
-				{
-					id: "7A8ADFC539C60352"
-					item: "buildcraftsilicon:laser"
-					type: "item"
-				}
-			]
-			x: 11.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["2F938C3B3391AD00"]
-			id: "19063BD902524A31"
-			tasks: [{
-				id: "4CC9B876C5F68412"
-				item: "buildcraftsilicon:redstone_crystal"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["19063BD902524A31"]
+			dependencies: ["284D66127B122C81"]
 			id: "74DC5BF4A6A40B95"
 			tasks: [{
 				id: "11A05E529D31248E"
 				item: "forestry:fabricator"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 12.0d
+			x: 3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["74DC5BF4A6A40B95"]
@@ -292,8 +264,8 @@
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 11.0d
+			x: 0.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -318,26 +290,8 @@
 				item: "alexscaves:galena"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["39160D9A39D9F7B0"]
-			id: "2A7EC98668A8B096"
-			tasks: [
-				{
-					id: "765FFC848F0F6F53"
-					item: "alexscaves:raw_scarlet_neodymium"
-					type: "item"
-				}
-				{
-					id: "3988FEFCA8FF72D4"
-					item: "alexscaves:raw_azure_neodymium"
-					type: "item"
-				}
-			]
-			x: 19.0d
-			y: 13.5d
+			x: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["76C8B754EAE20908"]
@@ -429,8 +383,8 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: 8.0d
+			x: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["7A868DDD5C938094"]
@@ -740,15 +694,15 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["2F938C3B3391AD00"]
+			dependencies: ["74DC5BF4A6A40B95"]
 			id: "4D4ADD0CCDE8ABE5"
 			tasks: [{
 				id: "3F68B110D0E1885D"
 				item: "stevescarts:blockcartassembler"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 14.0d
+			x: 3.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["650977348CBDEDC5"]
@@ -764,8 +718,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 8.0d
+			x: 8.0d
+			y: 11.0d
 		}
 		{
 			id: "0B099495C9C42C22"
@@ -782,8 +736,67 @@
 				type: "item"
 			}]
 			title: "The exploration route"
-			x: 20.5d
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["43C74383CE73981F"]
+			id: "61A5BB484746BEA3"
+			tasks: [{
+				id: "5096C38CC1F56AB8"
+				item: "tconstruct:scorched_brick"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["61A5BB484746BEA3"]
+			id: "2F91212C3E306218"
+			tasks: [{
+				id: "72F3370EE981E0FA"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			x: 12.5d
 			y: 8.0d
+		}
+		{
+			dependencies: ["2F91212C3E306218"]
+			id: "7B23AAAB363D027B"
+			tasks: [{
+				id: "6923A22FE7C83256"
+				item: "kubejs:black_steel_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0384461FF42098C3"]
+			id: "63E3769FDFEF7D35"
+			tasks: [{
+				id: "23766C1A01EEE924"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"6A1435794C592A3C"
+				"63E3769FDFEF7D35"
+			]
+			dependency_requirement: "one_completed"
+			id: "284D66127B122C81"
+			tasks: [{
+				id: "131D09D99F404BF7"
+				item: "forestry:carpenter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.0d
 		}
 	]
 	title: "0.5 - Real Tech"
