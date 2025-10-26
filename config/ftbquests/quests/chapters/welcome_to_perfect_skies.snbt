@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "welcome_to_perfect_skies"
 	group: ""
-	icon: "sereneseasons:calendar"
+	icon: "botania:cosmetic_questgiver_mark"
 	id: "56EA4AAA59CE1479"
 	order_index: 0
 	quest_links: [ ]

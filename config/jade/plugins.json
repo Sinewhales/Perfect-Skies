@@ -73,6 +73,9 @@
     "assembly_client_data": true,
     "laser_target_client_data": true
   },
+  "custommachinery": {
+    "machine_component_provider": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -150,9 +153,6 @@
   },
   "replication": {
     "matter_tank": true
-  },
-  "mm": {
-    "controller_progress": true
   },
   "expatternprovider": {
     "jade_chamber": true,

@@ -25,6 +25,8 @@
   "buildcraftsilicon:assembly_server_data": null,
   "buildcraftsilicon:laser_target_client_data": null,
   "buildcraftsilicon:laser_target_server_data": null,
+  "custommachinery:machine_component_provider": null,
+  "custommachinery:machine_server_data_provider": null,
   "expatternprovider:jade_chamber": null,
   "expatternprovider:jade_wireless": null,
   "expatternprovider:tile_data": null,
