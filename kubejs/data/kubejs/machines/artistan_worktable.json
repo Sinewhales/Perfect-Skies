@@ -1,0 +1,231 @@
+{
+  "name": {
+    "text": "Artistan Worktable"
+  },
+  "appearance": {},
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "mode": "input",
+      "id": "input",
+      "capacity": 4000
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "result",
+      "variant": "custommachinery:result"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input2",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input3",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input4",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input5",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input6",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input7",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input8",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input9",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 1,
+      "id": "tool",
+      "mode": "input"
+    }
+  ],
+  "gui": [
+        {
+      "type": "custommachinery:texture",
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 25,
+      "y": 6,
+      "width": 190,
+      "height": 158
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input1",
+      "x": 60,
+      "y": 12,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input3",
+      "x": 96,
+      "y": 12,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input4",
+      "x": 60,
+      "y": 30,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input5",
+      "x": 78,
+      "y": 30,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input2",
+      "x": 78,
+      "y": 12,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input6",
+      "x": 96,
+      "y": 30,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input7",
+      "x": 60,
+      "y": 48,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input8",
+      "x": 78,
+      "y": 48,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input9",
+      "x": 96,
+      "y": 48,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 140,
+      "y": 27
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "result",
+      "x": 179,
+      "y": 25,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "tool",
+      "x": 142,
+      "y": 48,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "input",
+      "x": 33,
+      "y": 16
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "x": 40,
+      "y": 78
+    }
+  ],
+"processor": {
+    "type": "custommachinery:craft"
+  }
+}

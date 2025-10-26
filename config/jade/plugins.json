@@ -51,6 +51,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "agricraft": {
+    "soil": true,
+    "crop_block": true
+  },
   "treechop": {
     "plugin": true,
     "show_tree_block_counts": true,
@@ -174,6 +178,9 @@
   },
   "ars_nouveau": {
     "mob_jar": true
+  },
+  "mysticalagradditions": {
+    "infused_farmland": true
   },
   "twilightforest": {
     "quest_ram_wool": true

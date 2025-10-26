@@ -798,6 +798,17 @@
 			x: 5.0d
 			y: 14.0d
 		}
+		{
+			dependencies: ["3F099285F2685DB5"]
+			id: "5911B823FF5CB65E"
+			tasks: [{
+				id: "357E51551246AEF0"
+				item: "mbd2:primitive_smelter"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
 	]
 	title: "0.5 - Real Tech"
 }
