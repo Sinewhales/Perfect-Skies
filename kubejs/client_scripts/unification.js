@@ -72,7 +72,8 @@ event.hide(['tconstruct:plate_sand_cast'])
 // Steel Ingot
   event.hide('tconstruct:steel_ingot')
 
-
+// Hide KJS Multi Parts
+event.hide(['kubejs:stone_output_bus', 'kubejs:primitive_smelter', 'kubejs:stone_input_bus', 'kubejs:stone_fuel_bus'])
 })
 
 JEIEvents.hideFluids(event => {
