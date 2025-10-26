@@ -1,0 +1,6 @@
+{
+    "block.mbd2.primitive_smelter": "Primitive Smelter",
+    "block.mbd2.stone_fuel_bus": "Stone Fuel Hatch",
+    "block.mbd2.stone_output_bus": "Stone Export Bus",
+    "block.mbd2.stone_input_bus": "Stone Import Bus"
+}
