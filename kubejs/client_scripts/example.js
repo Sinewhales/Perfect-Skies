@@ -12,6 +12,7 @@ event.add(['kubejs:synthethic_leather'], '\u00A71Dry on a Drying Rack')
 event.add(['kubejs:enchanted_water_bucket'], '\u00A71Spawns naturally in Meneglin biomes')
 event.add(['thermal:compost'], '\u00A71Composter output')
 
+
 })
 
 JEIAddedEvents.registerCategories(event => {
@@ -64,5 +65,57 @@ global['render'] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mo
     guiGraphics.blit("minecraft:textures/item/cauldron.png", 45, 30, 0, 0, 16, 16, 16, 16)
     guiGraphics.blit("kubejs:textures/gui/curved_arrow.png", 40, 13, 0, 0, 16, 16, 16, 16)
 	guiGraphics.blit("kubejs:textures/gui/arrow_right.png", 65, 30, 0, 0, 16, 16, 16, 16)
+
+}
+
+JEIAddedEvents.registerCategories(event => {
+	event.custom('kubejs:drying_rack', c => {
+		c.width = 110 //or whatever int
+		c.height = 40
+		c.title('Drying Rack')
+			.background(event.data.jeiHelpers.guiHelper.createBlankDrawable(100, 40))
+			.icon(event.data.jeiHelpers.guiHelper.createDrawableItemStack(Item.of('tinkers_thinking:drying_rack')))
+			.isRecipeHandled(r => {
+				return global['verifyRecipe'](event.data.jeiHelpers, r)
+			})
+			.handleLookup((builder, recipe, focuses) => {
+				global['handleLookup'](event.data.jeiHelpers, builder, recipe, focuses)
+			})
+			.setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+				global['render'](event.data.jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY)
+			})
+	})
+})
+
+JEIAddedEvents.registerRecipes(event => {
+	event.custom('kubejs:drying_rack').add({ input: 'kubejs:paper_pulp', output: 'minecraft:paper' })
+	event.custom('kubejs:drying_rack').add({ input: 'alexscaves:ferrouslime_ball', output: 'kubejs:gelatinous_ferrousslime_drop' })
+	event.custom('kubejs:drying_rack').add({ input: 'kubejs:synthethic_leather', output: 'minecraft:leather' })
+	event.custom('kubejs:drying_rack').add({ input: 'minecraft:slime_ball', output: 'tinkers_thinking:earth_slime_drop' })
+	event.custom('kubejs:drying_rack').add({ input: 'tconstruct:sky_slime_ball', output: 'tinkers_thinking:sky_slime_drop' })
+	event.custom('kubejs:drying_rack').add({ input: 'tconstruct:ichor_slime_ball', output: 'tinkers_thinking:ichor_slime_drop' })
+	event.custom('kubejs:drying_rack').add({ input: 'minecraft:magma_cream', output: 'tinkers_thinking:magma_slime_drop' })
+	event.custom('kubejs:drying_rack').add({ input: 'tconstruct:ender_slime_ball', output: 'tinkers_thinking:ender_slime_drop' })
+})
+
+global['verifyRecipe'] = (jeiHelpers, recipe) => {
+	if(!recipe) return false;
+	if(!recipe.data) return false;
+	if(!recipe.data.input) return false;
+	if(!recipe.data.output) return false;
+
+	return true;
+}
+
+global['handleLookup'] = (jeiHelpers, builder, recipe, focuses) => {
+	builder.addSlot('INPUT', 20, 10).addItemStack(Item.of(recipe.data.input)).setSlotName('input')
+	builder.addSlot('OUTPUT', 65, 10).addItemStack(Item.of(recipe.data.output)).setSlotName('output')
+	builder.addInvisibleIngredients("OUTPUT").addItemStack(Item.of(recipe.data.name))
+
+}
+
+
+global['render'] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+	guiGraphics.blit("kubejs:textures/gui/arrow_right.png", 43, 10, 0, 0, 16, 16, 16, 16)
 
 }

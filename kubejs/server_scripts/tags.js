@@ -87,6 +87,19 @@ event.add('supplementaries:ropes', 'farmersdelight:rope')
 // Steel
 event.removeAll('forge:ingots/steel')
 event.add('forge:ingots/steel', 'ad_astra:steel_ingot')
+
+// Paper Source
+event.add('perfectskies:paper_source', 'farmersdelight:rice')
+event.add('perfectskies:paper_source', 'rusticdelight:cotton_boll')
+event.add('perfectskies:paper_source', 'farmersdelight:tree_bark')
+event.add('perfectskies:paper_source', 'minecraft:sugar_cane')
+
+// Hammer
+event.add('perfectskies:hammer', 'kubejs:plate_hammer')
+event.add('perfectskies:hammer', 'kubejs:crushing_hammer')
+
+// Vat
+event.add('oreberriesreplanted:vat', ['oreberriesreplanted:oak_vat', 'oreberriesreplanted:spruce_vat', 'oreberriesreplanted:birch_vat', 'oreberriesreplanted:jungle_vat', 'oreberriesreplanted:acacia_vat', 'oreberriesreplanted:dark_oak_vat', 'oreberriesreplanted:mangrove_vat', 'oreberriesreplanted:cherry_vat', 'oreberriesreplanted:warped_vat', 'oreberriesreplanted:crimson_vat'])
 })
 
 

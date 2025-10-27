@@ -268,3 +268,5 @@
 !ad_astra_star:stellar_plasma_12000k,
 !ad_astra_star:stellar_plasma_5700k,
 !the_bumblezone:sugar_water_floor,
+!phantasm:acidburnt_abysses,
+!phantasm:dreaming_den,

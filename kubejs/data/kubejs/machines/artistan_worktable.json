@@ -1,8 +1,11 @@
 {
   "name": {
-    "text": "Artistan Worktable"
+    "text": "Artisan Worktable"
   },
-  "appearance": {},
+  "appearance": {
+    "block": "kubejs:worktable",
+    "item": "kubejs:worktable"
+  },
   "components": [
     {
       "type": "custommachinery:fluid",

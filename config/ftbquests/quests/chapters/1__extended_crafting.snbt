@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1979340115DFE500"]
 			id: "164674E47363A30C"
 			rewards: [{
 				id: "12FEE850980936C1"
@@ -37,8 +36,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
-			y: -6.5d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["164674E47363A30C"]
@@ -49,8 +48,8 @@
 				item: "thermal:iron_plate"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -5.5d
+			x: 11.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["483796C2EC96EBD0"]
@@ -62,8 +61,8 @@
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["387CD2768D1787DA"]
@@ -75,8 +74,8 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -156,8 +155,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.5d
+			x: 7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0697A7CE410E55E3"]
@@ -186,11 +185,11 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["483796C2EC96EBD0"]
+			dependencies: ["55ED45653EB88150"]
 			id: "105C110813F01A82"
 			subtitle: "If you managed to find Cactus (or use the one given in the previous quest), you can make Cactus Juice which can be turned into Water. Useful if you're stuck in a desert biome or if water is pretty far away from your base."
 			tasks: [{
@@ -198,8 +197,8 @@
 				item: "kubejs:cactus_juice"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.5d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["08B810FFC3FC0F63"]
@@ -265,8 +264,8 @@
 				type: "item"
 			}]
 			title: "Early Automation"
-			x: -5.5d
-			y: -4.0d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -288,11 +287,11 @@
 				}
 			]
 			title: "Hopper Varients"
-			x: -5.5d
-			y: -2.5d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["648A59B92E22618E"]
+			dependencies: ["01788FAEEC656353"]
 			id: "1979340115DFE500"
 			shape: "octagon"
 			size: 2.0d
@@ -301,7 +300,7 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: -8.0d
 		}
 		{
@@ -312,19 +311,18 @@
 				item: "extendedcrafting:handheld_table"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -9.5d
+			x: -10.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["1979340115DFE500"]
 			id: "765B3F8F0733A8D3"
 			tasks: [{
 				id: "4647C4BFC08EB846"
 				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.5d
+			x: -1.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["08B810FFC3FC0F63"]
@@ -344,30 +342,14 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["1979340115DFE500"]
 			id: "273654184CAD71BC"
 			tasks: [{
 				id: "0A24C1AD881015E7"
 				item: "forestry:worktable"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["483796C2EC96EBD0"]
-			id: "3A25F11774080437"
-			tasks: [{
-				id: "0B98CB15357E7674"
-				item: {
-					Count: 1
-					id: "portabletanks:basic_portable_tank"
-					tag: { }
-				}
-				type: "item"
-			}]
 			x: 0.0d
-			y: -5.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -377,8 +359,8 @@
 				item: "crafter_port:crafter"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.5d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -388,11 +370,10 @@
 				item: "quark:pipe"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -6.5d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["1979340115DFE500"]
 			icon: "minecraft:stonecutter"
 			id: "4CFDA8D6076098B1"
 			tasks: [
@@ -407,8 +388,8 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: -4.0d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4CFDA8D6076098B1"]
@@ -418,8 +399,8 @@
 				item: "projectred_core:platformed_plate"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4CFDA8D6076098B1"]
@@ -430,8 +411,284 @@
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.5d
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "55ED45653EB88150"
+			tasks: [{
+				id: "34DA51852BE8356D"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55ED45653EB88150"]
+			id: "222109A43ED13D48"
+			tasks: [{
+				id: "5A432417305595CF"
+				item: "actuallyadditions:rice_slimeball"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5112CC2DA9D82C4A"]
+			id: "5A5DC66D6E6307CB"
+			tasks: [{
+				id: "348CC8636A46028E"
+				item: {
+					Count: 1
+					id: "custommachinery:custom_machine_item"
+					tag: {
+						machine: "kubejs:artistan_worktable"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			id: "7FBFBA3B9862A97C"
+			subtitle: "Crushing a raw ore with an anvil gives you a 50% chance to get an additional dust"
+			tasks: [{
+				id: "10CA92419B44CFB6"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			title: "An early ore processing method"
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			id: "588CA388EC0CA92E"
+			tasks: [{
+				id: "1A35B047B2A81052"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(perfectskies:paper_source)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Paper "
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5A5DC66D6E6307CB"
+				"588CA388EC0CA92E"
+			]
+			id: "1F59C875CAACB4F0"
+			tasks: [{
+				id: "2538A94E489245F4"
+				item: "kubejs:pulp"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1F59C875CAACB4F0"]
+			icon: "oreberriesreplanted:oak_vat"
+			id: "6AA80074051E0539"
+			tasks: [
+				{
+					id: "573B0BD361799112"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(oreberriesreplanted:vat)"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "221808735BA326DB"
+					item: "kubejs:paper_pulp"
+					type: "item"
+				}
+			]
+			title: "Crushing Vat"
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6AA80074051E0539"]
+			id: "7CE77E39DAA9749D"
+			tasks: [{
+				id: "066B97D60FDF653E"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CE77E39DAA9749D"]
+			id: "2B1C2D47B7EE36AD"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "4B059FE1C80BFEFD"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: -8.460122920350699d
+			y: -1.5773861059575367d
+		}
+		{
+			dependencies: ["1113E6A776F22C69"]
+			id: "3C514660147F4066"
+			tasks: [{
+				id: "5CF77EC67DD78643"
+				item: "ceramics:unfired_clay_bucket"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C514660147F4066"]
+			id: "51DA828F05C25E66"
+			tasks: [{
+				id: "2B1340D14AAA2BC6"
+				item: "ceramics:empty_clay_bucket"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53B838C1046E2E38"]
+			icon: {
+				Count: 1
+				id: "farmersdelight:flint_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7810266D6B6184BA"
+			subtitle: "Sticks are found in world or can be made from Bamboo."
+			tasks: [
+				{
+					id: "3609A9F23005ED54"
+					item: {
+						Count: 1
+						id: "farmersdelight:flint_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "754489D26116E1F5"
+					item: "farmersdelight:tree_bark"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["648A59B92E22618E"]
+			id: "53B838C1046E2E38"
+			tasks: [{
+				id: "440B16718863C8C2"
+				title: "Welcome"
+				type: "checkmark"
+			}]
+			x: -16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7810266D6B6184BA"]
+			id: "01788FAEEC656353"
+			subtitle: "Craft some planks using Tree Bark."
+			tasks: [{
+				id: "28CB5596DA289579"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			id: "5708A7ABA12777C0"
+			tasks: [{
+				id: "3C8B57B5F34AF464"
+				item: "hexerei:pestle_and_mortar"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5708A7ABA12777C0"]
+			id: "60E601209730C631"
+			tasks: [{
+				id: "3BC5689807DFBDB1"
+				item: "forestry:wood_pulp"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "5112CC2DA9D82C4A"
+			shape: "octagon"
+			tasks: [{
+				id: "78774CDE878A26BE"
+				item: {
+					Count: 1
+					id: "kubejs:crushing_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5112CC2DA9D82C4A"]
+			id: "1113E6A776F22C69"
+			tasks: [{
+				id: "603D0073031DC672"
+				item: "ceramics:unfired_clay_plate"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A5DC66D6E6307CB"]
+			id: "3D7403ACE91DB3FA"
+			tasks: [{
+				id: "72D673EE4E34E6FF"
+				item: {
+					Count: 1
+					id: "cb_microblock:stone_saw"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -8.0d
 		}
 	]
 	title: "0 - Extended Crafting"

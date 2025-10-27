@@ -74,6 +74,13 @@ event.hide(['tconstruct:plate_sand_cast'])
 
 // Hide KJS Multi Parts
 event.hide(['kubejs:stone_output_bus', 'kubejs:primitive_smelter', 'kubejs:stone_input_bus', 'kubejs:stone_fuel_bus'])
+event.hide('kubejs:worktable')
+
+})
+
+JEIEvents.addItems(event => {
+  event.add(['cb_microblock:stone_saw', 'cb_microblock:iron_saw', 'cb_microblock:diamond_saw', 'cb_microblock:stone_rod'])
+  event.add('ceramics:unfired_clay_bucket')
 })
 
 JEIEvents.hideFluids(event => {

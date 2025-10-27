@@ -1,25 +1,18 @@
 ServerEvents.recipes(event => {
   // Wood
 event.remove({ id: 'fluidtank:tank_wood' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "AAA",
-    "ABA",
-    "AAA"
+event.shaped(
+  Item.of('fluidtank:tank_wood', 1), // arg 1: output
+  [
+    'ABA',
+    'B B', // arg 2: the shape (array of strings)
+    'ABA'
   ],
-  "key": {
-    "A": {
-      "item": "kubejs:impregnated_wood"
-    },
-    "B": {
-      "item": "tinkers_thinking:tempered_glass"
-    }
-  },
-  "result": {
-    "item": "fluidtank:tank_wood"
+  {
+    A: '#minecraft:planks',
+    B: 'minecraft:glass',  //arg 3: the mapping object
   }
-})
+)
 
 // Stone
 event.remove({ id: 'fluidtank:tank_stone' })

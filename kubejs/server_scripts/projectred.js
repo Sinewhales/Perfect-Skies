@@ -54,6 +54,18 @@ event.custom({
   }
 })
 
+// Stone Rod
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'minecraft:stone' }
+  ],
+  tool: { tag: 'perfectskies:hammer' },
+  result: [
+    { item: 'cb_microblock:stone_rod', count: 2 }
+  ]
+})
+
 })
 
 

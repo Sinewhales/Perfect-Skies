@@ -5,10 +5,17 @@
 	"ftbquests": {
 		"quests": true
 	},
+	"leaderboards": {
+		"leaderboards": true
+	},
 	"ftblibrary": {
 		"toggle.gamemode": true,
 		"toggle.rain": true,
 		"toggle.day": true,
 		"toggle.night": true
+	},
+	"ftbchunks": {
+		"chunks": true,
+		"claim_chunks": true
 	}
 }

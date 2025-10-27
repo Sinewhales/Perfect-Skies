@@ -30,12 +30,24 @@ event.shaped(
 )
 
 // [0] Cactus Juice
-event.shapeless(
-  Item.of('kubejs:cactus_juice'), // arg 1: output
-  [
-    'minecraft:cactus'
-  ]
-)
+event.custom({
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": 'minecraft:glass_bottle'
+  },
+  "cookingtime": 60,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": 'kubejs:cactus_juice'
+  }
+})
+
 
 // [0] Inactive Luminessence
 event.custom({
@@ -588,7 +600,7 @@ event.shaped(
     'B  '
   ],
   {
-    A: 'quark:sturdy_stone',
+    A: 'minecraft:cobblestone',
     B: 'minecraft:stick',  //arg 3: the mapping object
   }
 )
@@ -597,8 +609,11 @@ event.shaped(
 event.smelting('kubejs:mud_brick', 'kubejs:mud_ball')
 
 // Aluminum
-event.smelting('dustandash:aluminum_ingot', 'kubejs:raw_aluminum_ore')
-event.blasting('dustandash:aluminum_ingot', 'kubejs:raw_aluminum_ore')
+event.smelting('kubejs:aluminum_ingot', 'kubejs:raw_aluminum_ore')
+event.blasting('kubejs:aluminum_ingot', 'kubejs:raw_aluminum_ore')
+
+event.smelting('kubejs:aluminum_ingot', 'kubejs:aluminum_dust')
+event.blasting('kubejs:aluminum_ingot', 'kubejs:aluminum_dust')
 // Lapis Plate
 event.custom({
     "type": "lychee:block_crushing",
@@ -852,6 +867,15 @@ event.custom({
     }
   ]
 })
+
+// Artisan Worktable
+event.shapeless(
+  Item.of('custommachinery:custom_machine_item', '{machine:"kubejs:artistan_worktable"}'), // arg 1: output
+  [
+    'minecraft:crafting_table',
+    '#perfectskies:hammer'
+  ]
+).damageIngredient('#perfectskies:hammer', 1)
 })
 
 // Ink (Squid Milking)

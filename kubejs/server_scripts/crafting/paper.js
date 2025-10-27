@@ -1,0 +1,105 @@
+ServerEvents.recipes(event => {
+    event.remove({ id: "farmersdelight:paper_from_tree_bark" })
+// Tree Bark
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('farmersdelight:tree_bark', "input1")
+.requireItem('farmersdelight:tree_bark', "input2")
+   .requireItem('farmersdelight:tree_bark', "input3")
+   .requireItem('farmersdelight:tree_bark', "input4")
+   .requireItem('farmersdelight:tree_bark', "input6")
+   .requireItem('farmersdelight:tree_bark', "input7")
+   .requireItem('farmersdelight:tree_bark', "input8")
+   .requireItem('farmersdelight:tree_bark', "input9")
+
+// Warphopper
+event.remove({ id: "netherexp:warphopper_fur_paper" }) // Re-Add if added during an update
+
+// Sugar Cane
+event.remove({ id: "quark:tweaks/crafting/utility/bent/paper" }) 
+event.remove({ id: "minecraft:paper" }) 
+
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('minecraft:sugar_cane', "input1")
+.requireItem('minecraft:sugar_cane', "input2")
+   .requireItem('minecraft:sugar_cane', "input3")
+   .requireItem('minecraft:sugar_cane', "input4")
+   .requireItem('minecraft:sugar_cane', "input6")
+   .requireItem('minecraft:sugar_cane', "input7")
+   .requireItem('minecraft:sugar_cane', "input8")
+   .requireItem('minecraft:sugar_cane', "input9")
+
+// Rice
+event.remove({ id: "actuallyadditions:rice_paper" }) 
+
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('farmersdelight:rice', "input1")
+.requireItem('farmersdelight:rice', "input2")
+   .requireItem('farmersdelight:rice', "input3")
+   .requireItem('farmersdelight:rice', "input4")
+   .requireItem('farmersdelight:rice', "input6")
+   .requireItem('farmersdelight:rice', "input7")
+   .requireItem('farmersdelight:rice', "input8")
+   .requireItem('farmersdelight:rice', "input9")
+
+// Cotton
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('rusticdelight:cotton_boll', "input1")
+.requireItem('rusticdelight:cotton_boll', "input2")
+   .requireItem('rusticdelight:cotton_boll', "input3")
+   .requireItem('rusticdelight:cotton_boll', "input4")
+   .requireItem('rusticdelight:cotton_boll', "input6")
+   .requireItem('rusticdelight:cotton_boll', "input7")
+   .requireItem('rusticdelight:cotton_boll', "input8")
+   .requireItem('rusticdelight:cotton_boll', "input9")
+
+// Disable Sticky Resin Recipe / Find a way to reimplement it later
+event.remove({ id: "thermal_extra:sticky_ball_to_paper" }) 
+
+// Death Tome in Smeltery produces pulp
+// Ritual for summoning death tome (Book + Animation Rune)
+
+
+// Liquid Pulp 
+event.custom({
+  "type": "tconstruct:entity_melting",
+  "damage": 1,
+  "entity": {
+    "type": "twilightforest:death_tome"
+  },
+  "result": {
+    "amount": 50,
+    "fluid": "tinkers_thinking:pulp"
+  }
+})
+
+event.custom({
+       "type": "oreberriesreplanted:vat",
+        "ingredient": {
+          "item": "kubejs:pulp"
+        },
+        "fluid": "tinkers_thinking:pulp",
+        "amount": 100,
+        "result": {
+          "item": "kubejs:paper_pulp"
+        },
+        "evaporationtime": 100
+      })
+
+
+// Drying
+event.custom({
+  "type": "tinkers_thinking:drying_rack",
+  "ingredient": [
+    {
+      "item": "kubejs:paper_pulp"
+    }
+  ],
+  "output": {
+    "item": "minecraft:paper"
+  }
+})
+})

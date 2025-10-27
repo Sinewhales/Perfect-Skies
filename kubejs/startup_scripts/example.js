@@ -51,6 +51,13 @@ event.create('black_steel_plate').displayName("Black Steel Plate")
 event.create('black_steel_gear').displayName("Black Steel Gear")
 event.create('gelatinous_ferrousslime_drop').displayName("Gelatinous Ferrouslime Drop")
 event.create('blaze_shard').displayName("Blaze Shard")
+event.create('aluminum_nugget').displayName("Aluminum Nugget")
+event.create('aluminum_ingot').displayName("Aluminum Ingot")
+event.create('aluminum_dust').displayName("Aluminum Dust")
+event.create('pulp').displayName("Pulp")
+event.create('sticky_resin').displayName("Sticky Resin")
+event.create('paper_pulp').displayName("Paper Pulp")
+event.create('rock').displayName("Small Rock")
 // Raw Ore Block
 // Aluminum Dust
 
@@ -148,7 +155,7 @@ StartupEvents.registry('block', event => {
   event.create('stone_output_bus').displayName("Stone Input Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('stone_input_bus').displayName("Stone Output Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('stone_fuel_bus').displayName("Stone Fuel Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
-
+  event.create('worktable').displayName("Worktable").model('kubejs:block/worktable').defaultCutout()
 
 
   
