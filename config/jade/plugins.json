@@ -158,12 +158,17 @@
   "replication": {
     "matter_tank": true
   },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
-  },
-  "portabletanks": {
-    "portable_tank_component": true
   },
   "balm": {
     "jade": true
