@@ -620,4 +620,127 @@ event.remove({ id: 'tconstruct:common/materials/steel_ingot_from_block' })
 event.remove({ id: 'tconstruct:common/materials/steel_nugget_from_ingot' })
 event.remove({ id: 'tconstruct:common/materials/steel_block_from_ingot' })
 event.remove({ id: 'thermal:machines/centrifuge/centrifuge_experience_bottle' })
+
+// Alu
+event.replaceOutput(
+  { output: 'dustandash:aluminum_ingot'}, // Arg 1: the filter
+  'dustandash:aluminum_ingot',            // Arg 2: the item to replace
+  'kubejs:aluminum_ingot'     // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.remove({ id: 'dustandash:ionizer/aluminum_ingot' })
+event.remove({ id: 'dustandash:integrate/aluminum_ingot' })
+event.remove({ id: 'minecraft:aluminum_from_nugget' })
+event.remove({ id: 'minecraft:aluminum_from_block' })
+event.remove({ id: 'nuclearcraft:blast_aluminum_dust' })
+event.remove({ id: 'minecraft:nuclearcraft_aluminum_dust' })
+event.remove({ id: 'minecraft:nuclearcraft_aluminum_plate' })
+
+event.remove({ id: 'chemlib:aluminum_nugget_to_ingot' })
+event.remove({ id: 'chemlib:aluminum_block_to_ingot' })
+event.remove({ id: 'chemlib:aluminum_ingot_from_blasting_aluminum_dust' })
+event.remove({ id: 'chemlib:aluminum_ingot_from_smelting_aluminum_dust' })
+event.remove({ id: 'chemlib:aluminum_ingot_to_block' })
+event.remove({ id: 'chemlib:aluminum_ingot_to_nugget' })
+event.remove({ id: 'nuclearcraft:aluminum_nugget' })
+event.remove({ id: 'nuclearcraft:aluminum_block' })
+
+// Alu Dust Alchemistry
+event.remove({ id: 'alchemistry:compactor/aluminum_dust' })
+event.custom({
+  "type": "alchemistry:compactor",
+  "group": "alchemistry:compactor",
+  "input": {
+    "count": 16,
+    "ingredient": {
+      "item": "chemlib:aluminum"
+    }
+  },
+  "result": {
+    "item": "kubejs:aluminum_dust"
+  }
+})
+
+// Alu Dust can be made in pulverizer 
+event.custom({
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "tag": 'forge:ores/aluminum'
+  },
+  "result": [
+    {
+      "item": 'kubejs:aluminum_dust',
+      "chance": 6.5
+    },
+    {
+      "item": "thermal:iron_dust",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:gravel",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2
+})
+
+event.custom({
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": 'kubejs:aluminum_ingot'
+  },
+  "result": [
+    {
+      "item": 'kubejs:aluminum_dust',
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5
+})
+
+event.custom({
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "tag": "forge:raw_materials/aluminum"
+  },
+  "result": [
+    {
+      "item": "kubejs:aluminum_dust",
+      "chance": 1.25
+    },
+    {
+      "item": "thermal:iron_dust",
+      "chance": 0.05
+    }
+  ],
+  "experience": 0.1
+})
+
+event.custom({
+  "type": "thermal_extra:endothermic_dehydrator",
+  "energy": 100000,
+  "ingredients": [
+    {
+      "amount": 90,
+      "fluid": "thermal_extra:raw_aluminum"
+    }
+  ],
+  "result": [
+    {
+      "chance": 1.25,
+      "count": 2,
+      "item": "kubejs:aluminum_dust"
+    },
+    {
+      "chance": 0.5,
+      "item": "kubejs:aluminum_dust"
+    },
+    {
+      "chance": 0.15,
+      "item": "thermal:iron_dust"
+    }
+  ]
+})
+
 })

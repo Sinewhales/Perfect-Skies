@@ -88,6 +88,35 @@ event.add('supplementaries:ropes', 'farmersdelight:rope')
 event.removeAll('forge:ingots/steel')
 event.add('forge:ingots/steel', 'ad_astra:steel_ingot')
 
+// Aluminum
+event.removeAll('forge:ingots/aluminum')
+event.add('forge:ingots/aluminum', 'kubejs:aluminum_ingot')
+event.removeAllTagsFrom('nuclearcraft:aluminum_ingot')
+
+// Nuggets
+event.removeAllTagsFrom('nuclearcraft:aluminum_nugget')
+event.add('forge:nuggets/aluminum', 'kubejs:aluminum_nugget')
+event.add('agricraft:nuggets/aluminium', 'kubejs:aluminum_nugget')
+event.add('forge:nuggets', 'kubejs:aluminum_nugget')
+event.removeAllTagsFrom('chemlib:aluminum_nugget')
+
+// Dust
+event.removeAllTagsFrom('nuclearcraft:aluminum_dust')
+event.add('forge:dusts/aluminium', 'kubejs:aluminum_dust')
+event.add('forge:dusts/aluminum', 'kubejs:aluminum_dust')
+event.add('forge:dusts', 'kubejs:aluminum_dust')
+event.removeAllTagsFrom('chemlib:aluminum_dust')
+
+// Block
+event.removeAllTagsFrom('nuclearcraft:aluminum_block')
+event.removeAllTagsFrom('chemlib:aluminum_metal_block')
+event.add('forge:storage_blocks/aluminum', 'kubejs:aluminum_block')
+event.add('forge:storage_blocks', 'kubejs:aluminum_block')
+
+// Plate
+event.removeAllTagsFrom('chemlib:aluminum_plate')
+event.add('forge:plates/aluminum', 'kubejs:aluminum_plate')
+event.add('forge:plates', 'kubejs:aluminum_plate')
 // Paper Source
 event.add('perfectskies:paper_source', 'farmersdelight:rice')
 event.add('perfectskies:paper_source', 'rusticdelight:cotton_boll')
@@ -100,6 +129,16 @@ event.add('perfectskies:hammer', 'kubejs:crushing_hammer')
 
 // Vat
 event.add('oreberriesreplanted:vat', ['oreberriesreplanted:oak_vat', 'oreberriesreplanted:spruce_vat', 'oreberriesreplanted:birch_vat', 'oreberriesreplanted:jungle_vat', 'oreberriesreplanted:acacia_vat', 'oreberriesreplanted:dark_oak_vat', 'oreberriesreplanted:mangrove_vat', 'oreberriesreplanted:cherry_vat', 'oreberriesreplanted:warped_vat', 'oreberriesreplanted:crimson_vat'])
+
+// Hexerei Mahogany
+event.add('hexerei:mahogany_logs', ['hexerei:mahogany_log', 'hexerei:mahogany_wood', 'hexerei:stripped_mahogany_log', 'hexerei:stripped_mahogany_wood'])
+
+// Hexerei Willow
+event.add('hexerei:willow_logs', ['hexerei:willow_log', 'hexerei:willow_wood', 'hexerei:stripped_willow_log', 'hexerei:stripped_willow_wood'])
+
+// Hexerei Witch Hazel
+event.add('hexerei:witch_hazel_logs', ['hexerei:witch_hazel_log', 'hexerei:witch_hazel_wood', 'hexerei:stripped_witch_hazel_log', 'hexerei:stripped_witch_hazel_wood'])
+
 })
 
 

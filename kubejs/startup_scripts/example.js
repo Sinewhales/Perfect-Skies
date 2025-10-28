@@ -58,6 +58,8 @@ event.create('pulp').displayName("Pulp")
 event.create('sticky_resin').displayName("Sticky Resin")
 event.create('paper_pulp').displayName("Paper Pulp")
 event.create('rock').displayName("Small Rock")
+event.create('aluminum_plate').displayName("Aluminum Plate")
+
 // Raw Ore Block
 // Aluminum Dust
 
@@ -156,6 +158,7 @@ StartupEvents.registry('block', event => {
   event.create('stone_input_bus').displayName("Stone Output Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('stone_fuel_bus').displayName("Stone Fuel Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('worktable').displayName("Worktable").model('kubejs:block/worktable').defaultCutout()
+  event.create('aluminum_block').displayName("Block of Aluminum").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
 
 
   

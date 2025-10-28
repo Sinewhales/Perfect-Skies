@@ -76,11 +76,25 @@ event.hide(['tconstruct:plate_sand_cast'])
 event.hide(['kubejs:stone_output_bus', 'kubejs:primitive_smelter', 'kubejs:stone_input_bus', 'kubejs:stone_fuel_bus'])
 event.hide('kubejs:worktable')
 
+// Aluminum
+event.hide('dustandash:aluminum_ingot')
+event.hide('nuclearcraft:aluminum_ingot')
+event.hide('chemlib:aluminum_ingot')
+event.hide('nuclearcraft:aluminum_nugget')
+event.hide('chemlib:aluminum_nugget')
+
+event.hide('nuclearcraft:aluminum_dust')
+event.hide('chemlib:aluminum_dust')
+
+event.hide('nuclearcraft:aluminum_block')
+event.hide('chemlib:aluminum_plate')
 })
 
 JEIEvents.addItems(event => {
   event.add(['cb_microblock:stone_saw', 'cb_microblock:iron_saw', 'cb_microblock:diamond_saw', 'cb_microblock:stone_rod'])
   event.add('ceramics:unfired_clay_bucket')
+  event.add(['tropicraft:light_mangrove_log', 'tropicraft:black_mangrove_log', 'tropicraft:red_mangrove_log'])
+
 })
 
 JEIEvents.hideFluids(event => {

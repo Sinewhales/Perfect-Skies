@@ -876,7 +876,67 @@ event.shapeless(
     '#perfectskies:hammer'
   ]
 ).damageIngredient('#perfectskies:hammer', 1)
+
+// Aluminum
+event.shapeless(
+  Item.of('kubejs:aluminum_ingot'), // arg 1: output
+  [
+    '9x kubejs:aluminum_nugget'
+  ]
+)
+
+event.shapeless(
+  Item.of('kubejs:aluminum_nugget', 9), // arg 1: output
+  [
+    'kubejs:aluminum_ingot'
+  ]
+)
+// Alu Block
+event.shapeless(
+  Item.of('kubejs:aluminum_block'), // arg 1: output
+  [
+    '9x kubejs:aluminum_ingot'
+  ]
+)
+
+event.shapeless(
+  Item.of('kubejs:aluminum_ingot', 9), // arg 1: output
+  [
+    'kubejs:aluminum_block'
+  ]
+)
+
+// Aluminum Plate
+event.shaped(
+  Item.of('kubejs:aluminum_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'kubejs:aluminum_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+event.custom({
+  "type": "thermal:press",
+  "ingredient": {
+    "item": 'kubejs:aluminum_ingot'
+  },
+  "result": [
+    {
+      "item": 'kubejs:aluminum_plate'
+    }
+  ]
 })
+})
+
+
+
+
+
 
 // Ink (Squid Milking)
 function milk(event, currentTime) {
