@@ -192,4 +192,274 @@ event.remove({ id: "evilcraft:crafting/undead_planks" })
 event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x evilcraft:undead_planks')
 .requireItemTag('#evilcraft:undead_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
 
+// Forestry
+// Larch
+event.remove({ id: "forestry:larch_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:larch_planks')
+.requireItemTag('#forestry:larch_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Larch Fireproof
+event.remove({ id: "forestry:larch_fireproof_planks" })
+
+// Teak
+event.remove({ id: "forestry:teak_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:teak_planks')
+.requireItemTag('#forestry:teak_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Teak Fireproof
+event.remove({ id: "forestry:teak_fireproof_planks" })
+
+// Desert Acacia
+event.remove({ id: "forestry:acacia_desert_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:acacia_desert_planks')
+.requireItemTag('#forestry:acacia_desert_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Desert Acacia Fireproof
+event.remove({ id: "forestry:acacia_desert_fireproof_planks" })
+
+// Lime 
+event.remove({ id: "forestry:lime_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:lime_planks')
+.requireItemTag('#forestry:lime_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+// Lime Fireproof
+event.remove({ id: "forestry:lime_fireproof_planks" })
+
+// Chestnut
+event.remove({ id: "forestry:chestnut_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:chestnut_planks')
+.requireItemTag('#forestry:chestnut_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Chestnut Fireproof
+event.remove({ id: "forestry:chestnut_fireproof_planks" })
+
+// Wenge
+event.remove({ id: "forestry:wenge_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:wenge_planks')
+.requireItemTag('#forestry:wenge_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Wenge Fireproof
+event.remove({ id: "forestry:wenge_fireproof_planks" })
+
+// Baobab
+event.remove({ id: "forestry:baobab_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:baobab_planks')
+.requireItemTag('#forestry:baobab_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Baobab Fireproof
+event.remove({ id: "forestry:baobab_fireproof_planks" })
+
+// Sequoia
+event.remove({ id: "forestry:sequoia_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:sequoia_planks')
+.requireItemTag('#forestry:sequoia_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Sequoia Fireproof
+event.remove({ id: "forestry:sequoia_fireproof_planks" })
+
+// Kapok
+event.remove({ id: "forestry:kapok_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:kapok_planks')
+.requireItemTag('#forestry:kapok_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Kapok Fireproof
+event.remove({ id: "forestry:kapok_fireproof_planks" })
+
+// Ebony
+event.remove({ id: "forestry:ebony_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:ebony_planks')
+.requireItemTag('#forestry:ebony_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Ebony Fireproof
+event.remove({ id: "forestry:ebony_fireproof_planks" })
+
+// Mahogany
+event.remove({ id: "forestry:mahogany_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:mahogany_planks')
+.requireItemTag('#forestry:mahogany_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Mahogany Fireproof
+event.remove({ id: "forestry:mahogany_fireproof_planks" })
+
+// Balsa
+event.remove({ id: "forestry:balsa_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:balsa_planks')
+.requireItemTag('#forestry:balsa_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Balsa Fireproof
+event.remove({ id: "forestry:balsa_fireproof_planks" })
+
+// Willow
+event.remove({ id: "forestry:willow_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:willow_planks')
+.requireItemTag('#forestry:willow_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Willow Fireproof
+event.remove({ id: "forestry:willow_fireproof_planks" })
+
+// Walnut 
+event.remove({ id: "forestry:walnut_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:walnut_planks')
+.requireItemTag('#forestry:walnut_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Walnut Fireproof
+event.remove({ id: "forestry:walnut_fireproof_planks" })
+
+// Greenheart
+event.remove({ id: "forestry:greenheart_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:greenheart_planks')
+.requireItemTag('#forestry:greenheart_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Greenheart Fireproof
+event.remove({ id: "forestry:greenheart_fireproof_planks" })
+
+// Hill Cherry
+event.remove({ id: "forestry:hill_cherry_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:hill_cherry_planks')
+.requireItemTag('#forestry:hill_cherry_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Hill Cherry
+event.remove({ id: "forestry:hill_cherry_fireproof_planks" })
+
+// Mahoe
+event.remove({ id: "forestry:mahoe_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:mahoe_planks')
+.requireItemTag('#forestry:mahoe_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Mahoe Fireproof
+event.remove({ id: "forestry:mahoe_fireproof_planks" })
+
+// Poplar
+event.remove({ id: "forestry:poplar_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:poplar_planks')
+.requireItemTag('#forestry:poplar_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Poplar Fireproof
+event.remove({ id: "forestry:poplar_fireproof_planks" })
+
+// Palm
+event.remove({ id: "forestry:palm_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:palm_planks')
+.requireItemTag('#forestry:palm_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Palm Fireproof
+event.remove({ id: "forestry:palm_fireproof_planks" })
+
+// Papaya
+event.remove({ id: "forestry:papaya_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:papaya_planks')
+.requireItemTag('#forestry:papaya_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Papaya Fireproof
+event.remove({ id: "forestry:papaya_fireproof_planks" })
+
+// Pine
+event.remove({ id: "forestry:pine_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:pine_planks')
+.requireItemTag('#forestry:pine_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Pine Fireproof
+event.remove({ id: "forestry:pine_fireproof_planks" })
+
+// Plum
+event.remove({ id: "forestry:plum_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:plum_planks')
+.requireItemTag('#forestry:plum_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Plum Fireproof
+event.remove({ id: "forestry:plum_fireproof_planks" })
+
+// Maple
+event.remove({ id: "forestry:maple_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:maple_planks')
+.requireItemTag('#forestry:maple_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Maple Fireproof
+event.remove({ id: "forestry:maple_fireproof_planks" })
+
+// Citrus
+event.remove({ id: "forestry:citrus_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:citrus_planks')
+.requireItemTag('#forestry:citrus_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Citrus Fireproof
+event.remove({ id: "forestry:citrus_fireproof_planks" })
+
+// Giant Sequoia
+event.remove({ id: "forestry:giganteum_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:giganteum_planks')
+.requireItemTag('#forestry:giganteum_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Giant Sequoia Fireproof
+event.remove({ id: "forestry:giganteum_fireproof_planks" })
+
+// IPE
+event.remove({ id: "forestry:ipe_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:ipe_planks')
+.requireItemTag('#forestry:ipe_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// IPE Fireproof
+event.remove({ id: "forestry:ipe_fireproof_planks" })
+
+// Padauk
+event.remove({ id: "forestry:padauk_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:padauk_planks')
+.requireItemTag('#forestry:padauk_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Padauk Fireproof
+event.remove({ id: "forestry:padauk_fireproof_planks" })
+
+// Cocobolo
+event.remove({ id: "forestry:cocobolo_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:cocobolo_planks')
+.requireItemTag('#forestry:cocobolo_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Cocobolo Fireproof
+event.remove({ id: "forestry:cocobolo_fireproof_planks" })
+
+// Zebrawood
+event.remove({ id: "forestry:zebrawood_planks" })
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", '2x forestry:zebrawood_planks')
+.requireItemTag('#forestry:zebrawood_logs', 1, "input5").damageItemTag('#cb_microblock:tools/saw', 1, "tool")
+
+// Zebrawood Fireproof
+event.remove({ id: "forestry:zebrawood_fireproof_planks" })
+
+// Vanilla Fireproof
+event.remove({ id: "forestry:oak_fireproof_planks" })
+event.remove({ id: "forestry:spruce_fireproof_planks" })
+event.remove({ id: "forestry:birch_fireproof_planks" })
+event.remove({ id: "forestry:jungle_fireproof_planks" })
+event.remove({ id: "forestry:acacia_fireproof_planks" })
+event.remove({ id: "forestry:dark_oak_fireproof_planks" })
+event.remove({ id: "forestry:cherry_fireproof_planks" })
+
 })
