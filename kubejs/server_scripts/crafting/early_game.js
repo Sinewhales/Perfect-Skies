@@ -58,18 +58,6 @@ event.shaped(
 
 event.remove({ id: "cb_microblock:stone_rod" })
 event.remove({ id: 'farmersdelight:cutting/stone' })
-event.shaped(
-  Item.of('cb_microblock:stone_rod', 1), // arg 1: output
-  [
-    '   ',
-    ' A ', // arg 2: the shape (array of strings)
-    ' A '
-  ],
-  {
-    A: 'kubejs:rock',
-
-  }
-)
 
 
 

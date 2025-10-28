@@ -58,11 +58,11 @@ event.custom({
 event.custom({
   type: 'farmersdelight:cutting',
   ingredients: [
-    { item: 'minecraft:stone' }
+    { item: 'minecraft:cobblestone' }
   ],
-  tool: { tag: 'perfectskies:hammer' },
+  tool: { tag: 'cb_microblock:tools/saw' },
   result: [
-    { item: 'cb_microblock:stone_rod', count: 2 }
+    { item: 'cb_microblock:stone_rod', count: 1 }
   ]
 })
 
