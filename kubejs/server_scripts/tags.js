@@ -139,6 +139,12 @@ event.add('hexerei:willow_logs', ['hexerei:willow_log', 'hexerei:willow_wood', '
 // Hexerei Witch Hazel
 event.add('hexerei:witch_hazel_logs', ['hexerei:witch_hazel_log', 'hexerei:witch_hazel_wood', 'hexerei:stripped_witch_hazel_log', 'hexerei:stripped_witch_hazel_wood'])
 
+// Oreberries
+event.add('oreberriesreplanted:oreberries_bush', ['oreberriesreplanted:iron_oreberry_bush', 'oreberriesreplanted:gold_oreberry_bush', 'oreberriesreplanted:copper_oreberry_bush', 'oreberriesreplanted:tin_oreberry_bush', 'oreberriesreplanted:aluminum_oreberry_bush', 'oreberriesreplanted:nickel_oreberry_bush', 'oreberriesreplanted:silver_oreberry_bush', 'oreberriesreplanted:essence_berry_bush'])
+
+// Stone that can be smelted
+event.add('perfectskies:ore_stones', ['minecraft:andesite', 'minecraft:granite', 'minecraft:diorite', 'quark:shale', 'quark:limestone', 'quark:jasper'])
+
 })
 
 

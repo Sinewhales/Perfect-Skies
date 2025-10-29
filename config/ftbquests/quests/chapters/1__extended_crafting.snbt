@@ -315,14 +315,15 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["3D7403ACE91DB3FA"]
 			id: "765B3F8F0733A8D3"
 			tasks: [{
 				id: "4647C4BFC08EB846"
 				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: -7.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["08B810FFC3FC0F63"]
@@ -342,14 +343,15 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["7CE77E39DAA9749D"]
 			id: "273654184CAD71BC"
 			tasks: [{
 				id: "0A24C1AD881015E7"
 				item: "forestry:worktable"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -12.0d
+			x: -10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -559,12 +561,21 @@
 		}
 		{
 			dependencies: ["3C514660147F4066"]
+			icon: "ceramics:empty_clay_bucket"
 			id: "51DA828F05C25E66"
-			tasks: [{
-				id: "2B1340D14AAA2BC6"
-				item: "ceramics:empty_clay_bucket"
-				type: "item"
-			}]
+			subtitle: "Dry the Unfired Bucket on a Drying Rack"
+			tasks: [
+				{
+					id: "2B1340D14AAA2BC6"
+					item: "ceramics:empty_clay_bucket"
+					type: "item"
+				}
+				{
+					id: "29C6647205092886"
+					item: "tinkers_thinking:drying_rack"
+					type: "item"
+				}
+			]
 			x: -11.5d
 			y: -2.0d
 		}
@@ -689,6 +700,103 @@
 			}]
 			x: -7.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["2B1C2D47B7EE36AD"]
+			id: "56F6D191156562F6"
+			subtitle: "Vanilla tools are unusuable and the only ones available are from Tinker. Wood and Flint are good materials for pickaxes. Bone and Cactus are good early game materials for Swords."
+			tasks: [
+				{
+					id: "4A85AA4EE42136E7"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "60A43A13C7FA3496"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["56F6D191156562F6"]
+			id: "1AF3B85CDF694535"
+			tasks: [{
+				id: "5025EFA4E276078C"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1AF3B85CDF694535"]
+			id: "00BE63AAC3037974"
+			subtitle: "If you happen to stumble on those bushes, their fruit can be smelted for one ore nugget or crushed for 2 !"
+			tasks: [{
+				id: "7873E0031C8BA019"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(oreberriesreplanted:oreberries_bush)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Oreberry Bushes"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1AF3B85CDF694535"]
+			id: "78A6419975CB68E0"
+			subtitle: "Alternatively, the different stone types you may find underground can be smelted into various nuggets. Those stones can also be generated using a specific cobblestone generator."
+			tasks: [{
+				id: "075155F88A8D2644"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(perfectskies:ore_stones)"
+					}
+				}
+				type: "item"
+			}]
+			title: "Ores from Stone"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1AF3B85CDF694535"]
+			id: "510706A143424837"
+			tasks: [{
+				id: "7F9BC6FFA05A5D49"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["510706A143424837"]
+			id: "14321C45C97BCBDB"
+			subtitle: "The Smeltery is not available until later but iron tools can already be made using a Tinker Station"
+			tasks: [{
+				id: "653FEB1466574C04"
+				item: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
 		}
 	]
 	title: "0 - Extended Crafting"

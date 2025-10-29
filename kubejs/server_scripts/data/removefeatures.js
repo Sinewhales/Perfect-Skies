@@ -92,7 +92,11 @@ ServerEvents.highPriorityData(e => {
        "draconicevolution:nether_draconium_ore",
        "draconicevolution:overworld_draconium_ore",
        "tinkers_thinking:chlorophyll_ore_small",
-       "tinkers_thinking:chlorophyll_ore_large"
+       "tinkers_thinking:chlorophyll_ore_large",
+       "oreberriesreplanted:lead_oreberry_bush",
+       "oreberriesreplanted:uranium_oreberry_bush",
+       "oreberriesreplanted:osmium_oreberry_bush",
+       "oreberriesreplanted:zinc_oreberry_bush"
   ]
 
     function removeFeatures(idArray) {

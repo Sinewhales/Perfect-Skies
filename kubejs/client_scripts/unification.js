@@ -82,12 +82,13 @@ event.hide('nuclearcraft:aluminum_ingot')
 event.hide('chemlib:aluminum_ingot')
 event.hide('nuclearcraft:aluminum_nugget')
 event.hide('chemlib:aluminum_nugget')
-
+event.hide('chemlib:aluminum_metal_block')
 event.hide('nuclearcraft:aluminum_dust')
 event.hide('chemlib:aluminum_dust')
 
 event.hide('nuclearcraft:aluminum_block')
 event.hide('chemlib:aluminum_plate')
+event.hide(['oreberriesreplanted:lead_oreberry_bush', 'oreberriesreplanted:uranium_oreberry_bush', 'oreberriesreplanted:osmium_oreberry_bush', 'oreberriesreplanted:zinc_oreberry_bush', 'oreberriesreplanted:lead_oreberry', 'oreberriesreplanted:uranium_oreberry', 'oreberriesreplanted:osmium_oreberry', 'oreberriesreplanted:zinc_oreberry'])
 })
 
 JEIEvents.addItems(event => {
@@ -102,4 +103,8 @@ JEIEvents.hideFluids(event => {
   event.hide('reliquary:experience')
   event.hide('cofh_core:experience')
   event.hide('experienceobelisk:cognitium')
+  event.hide('oreberriesreplanted:osmium_oreberry_juice')
+  event.hide('oreberriesreplanted:zinc_oreberry_juice')
+  event.hide('oreberriesreplanted:lead_oreberry_juice')
+  event.hide('oreberriesreplanted:uranium_oreberry_juice')
 })

@@ -170,6 +170,9 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
+  "telepastries": {
+    "bites": true
+  },
   "balm": {
     "jade": true
   },

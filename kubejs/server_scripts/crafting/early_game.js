@@ -73,7 +73,53 @@ event.shaped(
   }
 )
 
+// Sticks
 
+event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks_bamboo" })
+event.remove({ id: 'minecraft:stick' })
+event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks" })
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { tag: 'minecraft:planks' }
+  ],
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'minecraft:stick', count: 1 }
+  ]
+})
 
+event.shaped(
+  Item.of('minecraft:stick', 1), // arg 1: output
+  [
+    '   ',
+    ' A ', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'minecraft:bamboo',
 
+  }
+)
+
+// Clay Bucket
+event.custom({
+  "type": "tinkers_thinking:drying_rack",
+  "ingredient": [
+    {
+      "item": 'ceramics:unfired_clay_bucket'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:leather'
+  }
+})
+
+// Stones give random nuggets when smelted
+event.smelting('minecraft:iron_nugget', 'minecraft:andesite')
+event.smelting('thermal:copper_nugget', 'minecraft:granite')
+event.smelting('thermal:silver_nugget', 'minecraft:diorite')
+event.smelting('thermal:tin_nugget', 'quark:shale')
+event.smelting('thermal:nickel_nugget', 'quark:limestone')
+event.smelting('minecraft:gold_nugget', 'quark:jasper')
 })
