@@ -543,18 +543,11 @@
 			dependencies: ["1F8737DA77D2BDB2"]
 			id: "2D3FA62E725A305A"
 			shape: "octagon"
-			tasks: [
-				{
-					id: "3F7DCAB0ECE91E0E"
-					item: "buildcraftcore:gear_wood"
-					type: "item"
-				}
-				{
-					id: "573B6575B576BF6D"
-					item: "kubejs:wooden_gear"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "573B6575B576BF6D"
+				item: "kubejs:wooden_gear"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 2.0d
 		}
@@ -563,8 +556,8 @@
 			id: "634CFDA467E5223C"
 			shape: "octagon"
 			tasks: [{
-				id: "1F581F3DF0512794"
-				item: "buildcraftcore:gear_stone"
+				id: "4833EF51AC758B41"
+				item: "kubejs:stone_gear"
 				type: "item"
 			}]
 			x: 2.0d

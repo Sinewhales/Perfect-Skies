@@ -46,7 +46,7 @@ event.custom({
       "item": "kubejs:electrotine_gear"
     },
     "G": {
-      "item": "buildcraftsilicon:redstone_crystal"
+      "item": "kubejs:redstone_crystal"
     },
     "H": {
       "item": "extendedcrafting:frame"

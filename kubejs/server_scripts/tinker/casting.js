@@ -30,7 +30,7 @@ event.remove({ id: "tconstruct:smeltery/casting/metal/invar/gear_sand_cast" })
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'buildcraftcore:gear_stone'
+    "item": 'kubejs:stone_gear'
   },
     "cast_consumed": true,
   "cooling_time": 120,
@@ -63,7 +63,7 @@ event.remove({ id: "tconstruct:smeltery/casting/metal/iron/gear_sand_cast" })
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'buildcraftcore:gear_stone'
+    "item": 'kubejs:stone_gear'
   },
     "cast_consumed": true,
   "cooling_time": 120,

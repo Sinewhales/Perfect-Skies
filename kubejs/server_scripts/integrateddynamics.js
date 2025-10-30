@@ -110,7 +110,7 @@ event.custom({
       "item": "integrateddynamics:variable_transformer_input"
     },
     "H": {
-      "item": "buildcraftsilicon:chipset_quartz"
+      "item": "kubejs:glinting_chipset"
     },
     "I": {
       "item": "integrateddynamics:part_display_panel"
@@ -200,7 +200,7 @@ event.custom({
       "item": "integrateddynamics:menril_berries"
     },
     "C": {
-      "item": "buildcraftsilicon:chipset_iron"
+      "item": "kubejs:sturdy_chipset"
     },
     "D": {
       "item": "kubejs:electrotine_crystal"
@@ -243,7 +243,7 @@ event.custom({
       "item": "thermal:cured_rubber"
     },
     "C": {
-      "item": "buildcraftsilicon:chipset_gold"
+      "item": "kubejs:refined_chipset"
     },
     "D": {
       "item": "thermal:lead_block"

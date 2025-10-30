@@ -31,7 +31,7 @@ event.custom({
       "item": "thermal:iron_plate"
     },
     "E": {
-      "item": "buildcraftcore:gear_stone"
+      "item": "kubejs:stone_gear"
     },
     "F": {
       "type": "forge:nbt",

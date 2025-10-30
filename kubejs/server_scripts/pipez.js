@@ -15,7 +15,7 @@ event.custom({
       "item": "thermal:lapis_gear"
     },
     "C": {
-      "item": "buildcrafttransport:pipe_fluids_iron_colorless"
+      "item": "flopper:flopper"
     },
     "D": {
       "item": "integratedterminals:menril_glass"
@@ -70,7 +70,7 @@ event.custom({
       "item": "kubejs:empowered_rubber"
     },
     "C": {
-      "item": "buildcrafttransport:pipe_power_gold_colorless"
+      "item": 'projectred_core:electrotine_dust'
     },
     "D": {
       "item": "kubejs:red_alloy_block"

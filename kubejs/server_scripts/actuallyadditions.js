@@ -18,7 +18,7 @@ event.custom({
       "item": "thermal:rubberwood_planks"
     },
     "C": {
-      "item": "buildcraftcore:gear_wood"
+      "item": "kubejs:wooden_gear"
     },
     "D": {
       "item": "thermal_extra:sticky_ball"

@@ -77,8 +77,6 @@ event.custom({
 
 // Iron Gear
 event.remove({ id: 'industrialforegoing:iron_gear' })
-event.remove({ id: 'buildcraftcore:gear_iron' })
-event.remove({ id: 'buildcraftcore:gear_iron' })
 event.remove({ id: 'hammerlib:gears/iron' })
 event.replaceInput(
   { input: '#forge:gears/iron' }, // Arg 1: the filter
@@ -218,7 +216,6 @@ event.custom({
 })
 // Gold Gear
 event.remove({ id: 'industrialforegoing:gold_gear' })
-event.remove({ id: 'buildcraftcore:gear_gold' })
 event.replaceInput(
   { input: '#forge:gears/gold' }, // Arg 1: the filter
   '#forge:gears/gold',            // Arg 2: the item to replace

@@ -15,7 +15,7 @@ event.custom({
       "item": "forestry:electron_tube_lapis"
     },
     "C": {
-      "item": "buildcraftsilicon:chipset_redstone"
+      "item": "kubejs:conductive_chipset"
     },
     "D": {
       "item": "integrateddynamics:variable"
@@ -41,7 +41,7 @@ event.custom({
       "item": "forestry:electron_tube_lapis"
     },
     "C": {
-      "item": "buildcraftsilicon:chipset_iron"
+      "item": "kubejs:sturdy_chipset"
     },
     "D": {
       "item": "integrateddynamics:variable"

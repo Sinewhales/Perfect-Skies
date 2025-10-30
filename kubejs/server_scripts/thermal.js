@@ -262,7 +262,7 @@ event.custom({
       "item": "minecraft:piston"
     },
     "I": {
-      "item": "buildcraftcore:engine_stone"
+      "item": 'projectred_core:motor'
     }
   },
   "result": {
@@ -287,7 +287,7 @@ event.custom({
       "item": "thermal:tin_gear"
     },
     "C": {
-      "item": "buildcraftsilicon:chipset_diamond"
+      "item": "kubejs:pristine_chipset"
     },
     "D": {
       "item": "integratedterminals:menril_glass"
@@ -348,7 +348,7 @@ event.custom({
       "item": "thermal:rf_coil"
     },
     "H": {
-      "item": "buildcraftsilicon:chipset_iron"
+      "item": "kubejs:sturdy_chipset"
     },
     "I": {
       "item": "thermal:machine_frame"
@@ -445,7 +445,7 @@ event.custom({
       "item": 'kubejs:lapis_plate'
     },
     "B": {
-      "item": 'buildcraftcore:gear_stone'
+      "item": 'kubejs:stone_gear'
     }
   },
   "result": {

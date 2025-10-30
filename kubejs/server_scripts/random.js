@@ -132,7 +132,7 @@ event.custom({
       "item": "forestry:impregnated_stick"
     },
     "C": {
-      "item": "buildcraftcore:gear_wood"
+      "item": "kubejs:wooden_gear"
     }
   },
   "result": {

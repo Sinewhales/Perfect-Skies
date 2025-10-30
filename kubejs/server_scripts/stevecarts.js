@@ -3,38 +3,44 @@ event.remove({ id: 'stevescarts:component/component_simple_pcb_1' })
 event.remove({ id: 'stevescarts:component/component_simple_pcb_2' })
 // Simple PCB
 event.custom({
-  "type": "buildcraftsilicon:assembly",
-  "output": {
-    "item": 'stevescarts:component_simple_pcb'
+  "type": "forestry:carpenter",
+  "box": [],
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "A": {
+        "item": 'kubejs:empowered_rubber'
+      },
+      "B": {
+        "item": 'forestry:circuit_board_intricate'
+      },
+      "C": {
+        "item": 'kubejs:red_alloy_plate'
+      },
+       "D": {
+        "item": 'kubejs:duralumin'
+      },
+
+    },
+    "pattern": [
+      "ABA",
+      "CDC",
+      "ABA"
+    ],
+    "result": {
+      "item": 'stevescarts:component_simple_pcb'
+    },
+    "show_notification": true
   },
-  "requiredMicroJoules": 1000000000,
-  "requiredStacks": [
-    {
-      "count": 2,
-      "ingredient": {
-        "item": 'buildcraftsilicon:chipset_redstone'
-      }
-    },
-        {
-      "count": 3,
-      "ingredient": {
-        "item": 'forestry:electron_tube_gold'
-      }
-    },
-   {
-      "count": 1,
-      "ingredient": {
-        "item": 'kubejs:duralumin_plate'
-      }
-    },
-  {
-      "count": 1,
-      "ingredient": {
-        "item":'kubejs:empowered_rubber'
-      }
+  "result": {
+    "Count": 1,
+    "id": 'stevescarts:component_simple_pcb',
+    "tag": {
+      "T": 3
     }
-  ],
-  "subType": "BASIC"
+  },
+  "time": 80
 })
 
 

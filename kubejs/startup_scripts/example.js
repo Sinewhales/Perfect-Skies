@@ -61,6 +61,21 @@ event.create('rock').displayName("Small Rock")
 event.create('aluminum_plate').displayName("Aluminum Plate")
 event.create('stone_gear').displayName("Stone Gear")
 event.create('wooden_gear').displayName("Wooden Gear")
+event.create('redstone_crystal').displayName("Redstone Crystal")
+event.create('glinting_chipset').displayName("Glinting Chipset") // Quartz
+event.create('conductive_chipset').displayName("Conductive Chipset") // Redstone
+event.create('sturdy_chipset').displayName("Sturdy Chipset") // Iron
+event.create('refined_chipset').displayName("Refined Chipset") // Gold
+event.create('pristine_chipset').displayName("Pristine Chipset") // Diamond
+event.create('attuned_chipset').displayName("Attuned Chipset")
+event.create('diamond_chipset').displayName("Unassembled Pristine Chipset")
+event.create('golden_chipset').displayName("Unassembled Refined Chipset") 
+event.create('iron_chipset').displayName("Unassembled Sturdy Chipset") 
+event.create('quartz_chipset').displayName("Unassembled Glinting Chipset") 
+event.create('redstone_chipset').displayName("Unassembled Conductive Chipset") 
+event.create('ender_chipset').displayName("Unassembled Pulsating Chipset") 
+event.create('emerald_chipset').displayName("Unassembled Attuned Chipset") 
+event.create('sealant').displayName("Sealing Paste") 
 
 // Raw Ore Block
 // Aluminum Dust
