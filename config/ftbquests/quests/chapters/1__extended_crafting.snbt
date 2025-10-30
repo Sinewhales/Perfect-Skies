@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["510706A143424837"]
 			id: "164674E47363A30C"
 			rewards: [{
 				id: "12FEE850980936C1"
@@ -36,8 +37,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["164674E47363A30C"]
@@ -48,11 +49,11 @@
 				item: "thermal:iron_plate"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 6.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["483796C2EC96EBD0"]
+			dependencies: ["09D432D02919C1CA"]
 			id: "387CD2768D1787DA"
 			shape: "octagon"
 			subtitle: "Cauldron filling can be automated with a dispenser"
@@ -61,8 +62,8 @@
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 7.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["387CD2768D1787DA"]
@@ -74,26 +75,11 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 9.914965986394549d
+			y: 0.4190299887984068d
 		}
 		{
-			dependencies: [
-				"23B144455379D488"
-				"0697A7CE410E55E3"
-			]
-			id: "23541139EDDB64CB"
-			shape: "octagon"
-			tasks: [{
-				id: "09E6B85DD421BEE6"
-				item: "extendedcrafting:luminessence"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["23541139EDDB64CB"]
+			dependencies: ["08B810FFC3FC0F63"]
 			id: "0570E402958E89E9"
 			shape: "octagon"
 			tasks: [{
@@ -101,8 +87,8 @@
 				item: "extendedcrafting:basic_component"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -0.5d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0570E402958E89E9"]
@@ -113,8 +99,8 @@
 				item: "extendedcrafting:basic_catalyst"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 11.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4BD35D1EBCFE8DD1"]
@@ -131,8 +117,8 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["47CB31A5FFB365AE"]
@@ -144,30 +130,8 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["08B810FFC3FC0F63"]
-			id: "6DEB497FF0FD5C04"
-			tasks: [{
-				id: "7A90EEEA881FCC28"
-				item: "minecraft:blast_furnace"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0697A7CE410E55E3"]
-			id: "3796F62557384EB5"
-			tasks: [{
-				id: "0F7D7A07038B9C56"
-				item: "giacomos_exp:expseed"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -2.5d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -185,110 +149,33 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 3.119047619047599d
+			y: 0.4224313493426308d
 		}
 		{
-			dependencies: ["55ED45653EB88150"]
-			id: "105C110813F01A82"
-			subtitle: "If you managed to find Cactus (or use the one given in the previous quest), you can make Cactus Juice which can be turned into Water. Useful if you're stuck in a desert biome or if water is pretty far away from your base."
-			tasks: [{
-				id: "682E68E49A6A81F2"
-				item: "kubejs:cactus_juice"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["08B810FFC3FC0F63"]
-			hide_dependency_lines: false
-			id: "0697A7CE410E55E3"
-			shape: "octagon"
-			tasks: [{
-				id: "3E3BEC4697534E46"
-				item: "mob_grinding_utils:tank_sink"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["08B810FFC3FC0F63"]
-			id: "65E0631988028A2E"
-			shape: "octagon"
-			tasks: [{
-				id: "0EC1949C175304D5"
-				item: {
-					Count: 1
-					id: "minecraft:flint_and_steel"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["65E0631988028A2E"]
-			id: "1705F0D4F9E48635"
-			shape: "octagon"
-			tasks: [{
-				id: "0CCA42B2A4CBAFBB"
-				item: "minecraft:glowstone_dust"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1705F0D4F9E48635"]
-			id: "23B144455379D488"
-			shape: "octagon"
-			tasks: [{
-				id: "273094491E7B241B"
-				item: "kubejs:inactive_luminessence"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["56AC3D22D12FC7A5"]
+			dependencies: ["510706A143424837"]
+			icon: "minecraft:hopper"
 			id: "11344054C9C971F9"
-			tasks: [{
-				id: "3AABF2C5381B04F9"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
-			title: "Early Automation"
-			x: 10.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"11344054C9C971F9"
-				"4CFDA8D6076098B1"
-			]
-			icon: "flopper:flopper"
-			id: "20A3162E6FB71B18"
 			tasks: [
 				{
-					id: "308ED251F0E92491"
+					id: "3AABF2C5381B04F9"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "2736B2465C9E98A3"
 					item: "flopper:flopper"
 					type: "item"
 				}
 				{
-					id: "32AE3C4B85FEC70D"
+					id: "7B1B0BAD78F83EDB"
 					item: "quark:chute"
 					type: "item"
 				}
 			]
-			title: "Hopper Varients"
-			x: 10.5d
-			y: 0.0d
+			title: "Early Automation"
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["01788FAEEC656353"]
@@ -322,11 +209,11 @@
 				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -10.0d
+			x: -8.5d
+			y: -10.5d
 		}
 		{
-			dependencies: ["08B810FFC3FC0F63"]
+			dependencies: ["510706A143424837"]
 			id: "6E798A361CF22316"
 			tasks: [{
 				id: "1FFE6EF650A861ED"
@@ -339,8 +226,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CE77E39DAA9749D"]
@@ -361,8 +248,8 @@
 				item: "crafter_port:crafter"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -372,10 +259,11 @@
 				item: "quark:pipe"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: -1.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["510706A143424837"]
 			icon: "minecraft:stonecutter"
 			id: "4CFDA8D6076098B1"
 			tasks: [
@@ -385,13 +273,13 @@
 					type: "item"
 				}
 				{
-					id: "07D7241CFFFD63D4"
+					id: "39122CEDBE00A218"
 					item: "minecraft:smithing_table"
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 5.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4CFDA8D6076098B1"]
@@ -401,8 +289,8 @@
 				item: "projectred_core:platformed_plate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4CFDA8D6076098B1"]
@@ -413,30 +301,8 @@
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["483796C2EC96EBD0"]
-			id: "55ED45653EB88150"
-			tasks: [{
-				id: "34DA51852BE8356D"
-				item: "farmersdelight:cooking_pot"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["55ED45653EB88150"]
-			id: "222109A43ED13D48"
-			tasks: [{
-				id: "5A432417305595CF"
-				item: "actuallyadditions:rice_slimeball"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5112CC2DA9D82C4A"]
@@ -456,6 +322,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["510706A143424837"]
 			id: "7FBFBA3B9862A97C"
 			subtitle: "Crushing a raw ore with an anvil gives you a 50% chance to get an additional dust"
 			tasks: [{
@@ -464,11 +331,14 @@
 				type: "item"
 			}]
 			title: "An early ore processing method"
-			x: 8.5d
-			y: -6.0d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["5A5DC66D6E6307CB"]
+			hide_dependency_lines: true
 			id: "588CA388EC0CA92E"
+			optional: true
 			tasks: [{
 				id: "1A35B047B2A81052"
 				item: {
@@ -478,6 +348,7 @@
 						"ftbfiltersystem:filter": "item_tag(perfectskies:paper_source)"
 					}
 				}
+				title: "Pulp Materials"
 				type: "item"
 			}]
 			title: "Paper "
@@ -488,7 +359,9 @@
 			dependencies: [
 				"5A5DC66D6E6307CB"
 				"588CA388EC0CA92E"
+				"60E601209730C631"
 			]
+			dependency_requirement: "one_completed"
 			id: "1F59C875CAACB4F0"
 			tasks: [{
 				id: "2538A94E489245F4"
@@ -502,21 +375,28 @@
 			dependencies: ["1F59C875CAACB4F0"]
 			icon: "oreberriesreplanted:oak_vat"
 			id: "6AA80074051E0539"
+			rewards: [{
+				id: "1236A98AB85EF91C"
+				item: "minecraft:armor_stand"
+				type: "item"
+			}]
+			subtitle: "You can place an armor stand over a vat to automate it. No more manual jumping"
 			tasks: [
 				{
-					id: "573B0BD361799112"
+					id: "221808735BA326DB"
+					item: "kubejs:paper_pulp"
+					type: "item"
+				}
+				{
+					id: "658BABFDC3802A23"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item_tag(oreberriesreplanted:vat)"
+							"ftbfiltersystem:filter": "or(item_tag(oreberriesreplanted:vat))"
 						}
 					}
-					type: "item"
-				}
-				{
-					id: "221808735BA326DB"
-					item: "kubejs:paper_pulp"
+					title: "Vat"
 					type: "item"
 				}
 			]
@@ -571,8 +451,8 @@
 					type: "item"
 				}
 				{
-					id: "29C6647205092886"
-					item: "tinkers_thinking:drying_rack"
+					id: "54655780D5DE183A"
+					item: "hexerei:herb_drying_rack"
 					type: "item"
 				}
 			]
@@ -592,19 +472,20 @@
 			subtitle: "Sticks are found in world or can be made from Bamboo."
 			tasks: [
 				{
-					id: "3609A9F23005ED54"
-					item: {
-						Count: 1
-						id: "farmersdelight:flint_knife"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "754489D26116E1F5"
+					item: "farmersdelight:tree_bark"
 					type: "item"
 				}
 				{
-					id: "754489D26116E1F5"
-					item: "farmersdelight:tree_bark"
+					id: "4D253AA69858628D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(moredelight:stone_knife)item(farmersdelight:flint_knife))"
+						}
+					}
+					title: "Knives"
 					type: "item"
 				}
 			]
@@ -635,25 +516,28 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["5A5DC66D6E6307CB"]
 			id: "5708A7ABA12777C0"
 			tasks: [{
 				id: "3C8B57B5F34AF464"
 				item: "hexerei:pestle_and_mortar"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5708A7ABA12777C0"]
 			id: "60E601209730C631"
+			optional: true
+			subtitle: "Need more Paper ? Wood can be crushed into 2 Wood Pulp which is a cheaper recipe than the one using logs"
 			tasks: [{
 				id: "3BC5689807DFBDB1"
 				item: "forestry:wood_pulp"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.5d
+			x: -5.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1979340115DFE500"]
@@ -699,7 +583,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2B1C2D47B7EE36AD"]
@@ -744,6 +628,7 @@
 						"ftbfiltersystem:filter": "item_tag(oreberriesreplanted:oreberries_bush)"
 					}
 				}
+				title: "Oreberry Bushes"
 				type: "item"
 			}]
 			title: "Oreberry Bushes"
@@ -795,8 +680,89 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "09D432D02919C1CA"
+			subtitle: "To make Black Iron you will need Ink. Ink can be made by throwing a Black Dye in Water or by milking a squid. Black Dye can also be obtained with Charcoal in a Pestle and Mortar."
+			tasks: [{
+				id: "12BA1CC32415817E"
+				item: "kubejs:black_dye_bucket"
+				type: "item"
+			}]
+			x: 5.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["47CB31A5FFB365AE"]
+			id: "74C89D346CAF988B"
+			tasks: [{
+				id: "6EF13CDF0B22980C"
+				item: "hexerei:mahogany_woodcutter"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47CB31A5FFB365AE"]
+			id: "61A4150826E33065"
+			rewards: [
+				{
+					id: "0662C35D973DD292"
+					item: "scannable:rare_ores_module"
+					type: "item"
+				}
+				{
+					id: "08CDB17298ADF2DB"
+					item: "scannable:common_ores_module"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6CC620073BF035EC"
+					item: "kubejs:scanner_battery"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4C8CF6FDC3FDD248"
+				item: {
+					Count: 1
+					id: "scannable:scanner"
+					tag: {
+						energy: 5000
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D7403ACE91DB3FA"]
+			id: "54151481FADA1910"
+			subtitle: "The cutting board is used to make Sticks using a Saw"
+			tasks: [{
+				id: "413BE25D365BBD1D"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["483796C2EC96EBD0"]
+			id: "343EC54EF9FD59AD"
+			tasks: [{
+				id: "79C21C0244B8D568"
+				item: "kubejs:cactus_juice"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
 		}
 	]
 	title: "0 - Extended Crafting"

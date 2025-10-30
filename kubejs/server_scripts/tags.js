@@ -120,7 +120,6 @@ event.add('forge:plates', 'kubejs:aluminum_plate')
 // Paper Source
 event.add('perfectskies:paper_source', 'farmersdelight:rice')
 event.add('perfectskies:paper_source', 'rusticdelight:cotton_boll')
-event.add('perfectskies:paper_source', 'farmersdelight:tree_bark')
 event.add('perfectskies:paper_source', 'minecraft:sugar_cane')
 
 // Hammer
@@ -145,6 +144,40 @@ event.add('oreberriesreplanted:oreberries_bush', ['oreberriesreplanted:iron_oreb
 // Stone that can be smelted
 event.add('perfectskies:ore_stones', ['minecraft:andesite', 'minecraft:granite', 'minecraft:diorite', 'quark:shale', 'quark:limestone', 'quark:jasper'])
 
+// Vat Wood Fix
+
+event.removeAll('perfectskies:nonvanilla_planks')
+
+const blacklist = ['minecraft']
+const planks = event.get('minecraft:planks').getObjectIds();
+
+const moddedplanks = planks.filter((plank) => {
+    const name = Item.of(plank).getId()
+    for (const mod of blacklist) {
+      if (name.includes(mod)) return false;
+    }
+    return true;
+  })
+
+moddedplanks.forEach(plank => {
+    event.add('perfectskies:nonvanilla_planks', plank)
+    })
+
+event.removeAll('perfectskies:nonvanilla_slabs')
+
+const slabs = event.get('minecraft:slabs').getObjectIds();
+
+const moddedslabs = slabs.filter((slab) => {
+    const nameslab = Item.of(slab).getId()
+    for (const mod of blacklist) {
+      if (nameslab.includes(mod)) return false;
+    }
+    return true;
+  })
+
+moddedslabs.forEach(slab => {
+    event.add('perfectskies:nonvanilla_slabs', slab)
+    })
 })
 
 

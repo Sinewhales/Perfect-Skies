@@ -89,6 +89,9 @@ event.hide('chemlib:aluminum_dust')
 event.hide('nuclearcraft:aluminum_block')
 event.hide('chemlib:aluminum_plate')
 event.hide(['oreberriesreplanted:lead_oreberry_bush', 'oreberriesreplanted:uranium_oreberry_bush', 'oreberriesreplanted:osmium_oreberry_bush', 'oreberriesreplanted:zinc_oreberry_bush', 'oreberriesreplanted:lead_oreberry', 'oreberriesreplanted:uranium_oreberry', 'oreberriesreplanted:osmium_oreberry', 'oreberriesreplanted:zinc_oreberry'])
+
+// Drying Rack
+event.hide('tinkers_thinking:drying_rack')
 })
 
 JEIEvents.addItems(event => {

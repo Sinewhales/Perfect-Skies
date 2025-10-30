@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 event.remove({ id: 'treetap:tap' })
-event.remove({ id: 'quark:automation/crafting/chute' })
-event.remove({ id: 'flopper:recipes/flopper' })
 event.remove({ id: 'watercollector:watercollector' })
 event.remove({ id: 'projectred_expansion:frame' })
 event.remove({ id: 'mysticalagriculture:nature_agglomeratio' })
@@ -201,14 +199,6 @@ event.replaceInput(
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
-event.stonecutting('flopper:flopper', 'minecraft:hopper')
-event.stonecutting('quark:chute', 'minecraft:hopper')
-
-event.stonecutting('minecraft:hopper', 'flopper:flopper')
-event.stonecutting('quark:chute', 'flopper:flopper')
-
-event.stonecutting('minecraft:hopper', 'quark:chute')
-event.stonecutting('flopper:flopper', 'quark:chute')
 
 // Drawer everywood
 event.shaped(
@@ -333,6 +323,7 @@ event.custom({
     "item": "architects_palette:moonshale"
   }
 })
+
 })
 
 // Obituary

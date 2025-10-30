@@ -4,35 +4,25 @@ event.remove({ id: 'extendedcrafting:luminessence' })
 event.remove({ id: 'extendedcrafting:basic_component' })
 
 // [0] Basic Component
-event.shaped(
-  Item.of('extendedcrafting:basic_component', 1), // arg 1: output
+event.shapeless(
+  Item.of('extendedcrafting:basic_component'), // arg 1: output
   [
-    'ABA',
-    'BCB', // arg 2: the shape (array of strings)
-    'ABA'
-  ],
-  {
-    A: 'thermal:iron_plate',
-    B: 'extendedcrafting:luminessence',
-    C: 'extendedcrafting:black_iron_slate' //arg 3: the mapping object
-  }
+    'extendedcrafting:black_iron_slate',
+    'thermal:iron_plate'
+  ]
 )
+
 
 // [0] Advanced Component
 event.remove({ id: 'extendedcrafting:advanced_component' })
-event.shaped(
-  Item.of('extendedcrafting:advanced_component', 1), // arg 1: output
+event.shapeless(
+  Item.of('extendedcrafting:advanced_component'), // arg 1: output
   [
-    'ABA',
-    'BCB', // arg 2: the shape (array of strings)
-    'ABA'
-  ],
-  {
-    A: 'thermal:gold_plate',
-    B: 'extendedcrafting:luminessence',
-    C: 'extendedcrafting:black_iron_slate' //arg 3: the mapping object
-  }
+    'extendedcrafting:black_iron_slate',
+    'thermal:gold_plate'
+  ]
 )
+
 
 // [0] Black Iron Slate
 event.remove({ id: 'extendedcrafting:black_iron_slate' })

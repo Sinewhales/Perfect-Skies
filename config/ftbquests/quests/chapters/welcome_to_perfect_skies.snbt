@@ -34,53 +34,6 @@
 				title: "Wastelands"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4B81F3FAE36DB511"]
-			icon: {
-				Count: 1
-				id: "scannable:scanner"
-				tag: {
-					energy: 5000
-				}
-			}
-			id: "6DCC1DAECC0E0BCA"
-			rewards: [
-				{
-					id: "7C88E2694E6D286F"
-					item: {
-						Count: 1
-						id: "scannable:scanner"
-						tag: {
-							energy: 5000
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2A362DC7780268A7"
-					item: "scannable:common_ores_module"
-					type: "item"
-				}
-				{
-					id: "4DD83EE8109A583D"
-					item: "scannable:rare_ores_module"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "0C5BDD3CDA4F7B71"
-					item: "kubejs:scanner_battery"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3EF175B2FD26A809"
-				title: "Scanner"
-				type: "checkmark"
-			}]
 			x: -4.5d
 			y: 1.0d
 		}

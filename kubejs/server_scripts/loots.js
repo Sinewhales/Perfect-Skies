@@ -59,8 +59,10 @@ event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("@rft
  event
         .addBlockLootModifier("#minecraft:logs")
         .matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).removeLoot("#minecraft:logs").addLoot('4x farmersdelight:tree_bark')
-       
+
+// Project Vibrant Rocks drop small rocks when broken
  event.addBlockLootModifier("projectvibrantjourneys:rocks").addLoot('kubejs:rock')
+  event.addBlockLootModifier("projectvibrantjourneys:mossy_rocks").addLoot('kubejs:rock')
 
 // Mud Ball
  event.addBlockLootModifier("minecraft:mud").removeLoot("minecraft:mud").addLoot('4x kubejs:mud_ball')      

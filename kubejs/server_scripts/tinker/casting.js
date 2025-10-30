@@ -41,21 +41,6 @@ event.custom({
   "result": 'thermal:invar_gear'
 })
 
-// Red Alloy
-event.remove({ id: "projectred_core:red_ingot" })
-event.custom({
-  "type": "tconstruct:casting_table",
-  "cast": {
-    "item": 'minecraft:copper_ingot'
-  },
-    "cast_consumed": true,
-  "cooling_time": 60,
-  "fluid": {
-    "amount": 800,
-    "fluid": "thermal:redstone"
-  },
-  "result": 'projectred_core:red_ingot'
-})
 
 // Clay
 event.custom({

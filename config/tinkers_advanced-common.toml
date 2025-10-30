@@ -336,6 +336,12 @@
 	#环流电子调谐剑攻击的能耗，默认250FE。
 	#Range: > 0
 	electron_tuner_consumption = 250
+	#Cancel the movement punishment when using Matter Manipulator,true by default.
+	#取消物质操纵器使用时的移速惩罚，默认是。
+	matter_manipulator_cancel_slowdown = true
+	#Allow Ionized Cannon to gain pierce level form impaling modifier, true by default.
+	#允许等离子射线炮根据穿透词条的等级增加射线穿透数量，默认是。
+	ionize_cannon_pierce_from_impaling = true
 
 #Mekanism Interaction
 #通用机械交互
@@ -343,4 +349,36 @@
 	#Enables fusion reactor exploding when throwing iron ingots into it. true by default.
 	#让你能够通过向朋友的聚变反应堆丢入铁锭/块/粒/砧来增进彼此的感情，默认是。
 	allow_neutronite_crafting = true
+
+#Utilities
+#实用设备
+[utilities]
+	#Transfer speed for Cinderslime Faucet, 1000mB/t by default.
+	#余烬黏液浇筑口的传输速率，默认1000mB/t。
+	#Range: 1 ~ 200000000
+	cinderslime_faucet_speed = 1000
+	#Transfer speed for Iridium Faucet, 2000000000mB/t by default.
+	#铱浇筑口的传输速率，默认2000000000mB/t。
+	#Range: 1 ~ 2000000000
+	iridium_faucet_speed = 2000000000
+	#Cinderslime Casting Speed multiplier with low temp recipes,5x by default.
+	#余烬黏液铸件台处理快速配方时的速度倍率，默认5x。
+	#Range: 0.0 ~ 2.147483647E9
+	cinderslime_casting_increase = 5.0
+	#Cinderslime Casting Speed multiplier with high temp recipes,0.5x by default.
+	#余烬黏液铸件台处理慢速配方时的速度倍率，默认0.5x。
+	#Range: 0.0 ~ 2.147483647E9
+	cinderslime_casting_decrease = 0.5
+	#Recipe time separator for Cinderslime Table containers,100 ticks by default.
+	#余烬黏液铸件台的快慢速分界线，默认100刻(5秒)。
+	#Range: > 1
+	cinderslime_table_separation = 100
+	#Recipe time separator for Cinderslime Basin containers,180 ticks by default.
+	#余烬黏液铸件台的快慢速分界线，默认180刻(9秒)。
+	#Range: > 1
+	cinderslime_basin_separation = 180
+	#Iridium Casting speed modifier, 3x by default.
+	#铱铸件台的速度倍率，默认3x。
+	#Range: 0.0 ~ 2.147483647E9
+	iridium_casting_speed = 3.0
 

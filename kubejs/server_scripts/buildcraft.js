@@ -3,45 +3,6 @@ event.remove({ id: 'buildcraftcore:gear_wood' })
 event.remove({ id: 'buildcraftsilicon:assembly_table' })
 event.remove({ id: 'buildcraftsilicon:laser' })
 
-// [1] Wood Gear
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    " A ",
-    "A A",
-    " A "
-  ],
-  "key": {
-    "A": {
-      "item": "forestry:impregnated_stick"
-    }
-  },
-  "result": {
-    "item": 'buildcraftcore:gear_wood'
-  }
-})
-
-// [1] Stone Gear
-event.remove({ id: 'buildcraftcore:gear_stone' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    " A ",
-    "ABA",
-    " A "
-  ],
-  "key": {
-    "A": {
-      "item": "quark:shale"
-    },
-    "B": {
-      "item": "buildcraftcore:gear_wood"
-    }
-  },
-  "result": {
-    "item": 'buildcraftcore:gear_stone'
-  }
-})
 
 // [1] Stirling Engine
 event.remove({ id: 'buildcraftenergy:engine_stone' })

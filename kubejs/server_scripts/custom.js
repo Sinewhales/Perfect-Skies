@@ -15,20 +15,28 @@ event.shaped(
 )
 
 // [0] Scanner Battery
-event.shaped(
-  Item.of('kubejs:scanner_battery', 1), // arg 1: output
-  [
-    ' A ',
-    'BCB', // arg 2: the shape (array of strings)
-    'BCB'
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    " A ",
+    "BCB",
+    "BCB"
   ],
-  {
-    A: 'minecraft:copper_ingot',
-    B: 'minecraft:iron_ingot',
-    C: 'minecraft:redstone'  //arg 3: the mapping object
+  "key": {
+    "A": {
+      "item": "projectred_core:red_ingot"
+    },
+    "B": {
+      "item": "thermal:iron_plate"
+    },
+    "C": {
+      "item": 'projectred_core:electrotine_dust'
+    }
+  },
+  "result": {
+    "item": "kubejs:scanner_battery"
   }
-)
-
+})
 // [0] Cactus Juice
 event.custom({
   "type": "farmersdelight:cooking",
@@ -78,6 +86,25 @@ event.custom({
     "type": "lychee:item_inside",
     "item_in": {
         "item": "minecraft:black_dye"
+    },
+    "block_in": {
+        "blocks": ["water"],
+        "state": {
+            "level": 0
+        }
+    },
+    "post": [
+        {
+            "type": "place",
+            "block": "kubejs:black_dye"
+        }
+    ]
+})
+
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": 'supplementaries:antique_ink'
     },
     "block_in": {
         "blocks": ["water"],
@@ -931,6 +958,36 @@ event.custom({
     }
   ]
 })
+
+// Buildcraft Depreciation
+// Wooden Gear
+event.shaped(
+  Item.of('kubejs:wooden_gear', 1), // arg 1: output
+  [
+    ' A ',
+    'A A', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'forestry:impregnated_stick',
+
+  }
+)
+
+// Stone Gear
+event.shaped(
+  Item.of('kubejs:wooden_gear', 1), // arg 1: output
+  [
+    ' A ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'netherexp:soul_slate',
+    B: 'kubejs:wooden_gear'
+
+  }
+)
 })
 
 

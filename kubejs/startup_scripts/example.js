@@ -59,6 +59,8 @@ event.create('sticky_resin').displayName("Sticky Resin")
 event.create('paper_pulp').displayName("Paper Pulp")
 event.create('rock').displayName("Small Rock")
 event.create('aluminum_plate').displayName("Aluminum Plate")
+event.create('stone_gear').displayName("Stone Gear")
+event.create('wooden_gear').displayName("Wooden Gear")
 
 // Raw Ore Block
 // Aluminum Dust

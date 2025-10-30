@@ -494,5 +494,33 @@ event.shaped(
     B: 'thermal:lead_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
+
+// Copper Rod
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'thermal:copper_plate' }
+  ],
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'thermal_extra:copper_rod', count: 1 }
+  ]
+})
+
+event.remove({ id: 'thermal_extra:crafting/copper_rod' })
+
+// Silver Plate
+event.shaped(
+  Item.of('thermal:silver_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:silver_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
 })
 

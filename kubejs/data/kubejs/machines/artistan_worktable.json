@@ -4,7 +4,9 @@
   },
   "appearance": {
     "block": "kubejs:worktable",
-    "item": "kubejs:worktable"
+    "item": "kubejs:worktable",
+    "hardness": 2.5,
+    "requires_tool": false
   },
   "components": [
     {

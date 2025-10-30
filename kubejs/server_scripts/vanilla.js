@@ -26,24 +26,11 @@ event.replaceInput(
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
-event.replaceInput(
-  { output: 'minecraft:blast_furnace' }, // Arg 1: the filter
-  'minecraft:iron_ingot',            // Arg 2: the item to replace
-  'extendedcrafting:black_iron_ingot'        // Arg 3: the item to replace it with
-  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
-)
-
-event.replaceInput(
-  { id: 'minecraft:hopper' }, // Arg 1: the filter
-  'minecraft:iron_ingot',            // Arg 2: the item to replace
-  'thermal:iron_plate'       // Arg 3: the item to replace it with
-  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
-)
 
 event.shapeless(
   Item.of('scannable:scanner', '{energy:5000}'), // arg 1: output
   [
-    Item.of('scannable:scanner', '{energy:0}').strongNBT(),
+    Item.of('scannable:scanner', '{energy:0}'),
     'kubejs:scanner_battery'
   ]
 )

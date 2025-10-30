@@ -3,14 +3,14 @@ ServerEvents.recipes(event => {
 // Tree Bark
   event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
-  .requireItem('farmersdelight:tree_bark', "input1")
-.requireItem('farmersdelight:tree_bark', "input2")
-   .requireItem('farmersdelight:tree_bark', "input3")
-   .requireItem('farmersdelight:tree_bark', "input4")
-   .requireItem('farmersdelight:tree_bark', "input6")
-   .requireItem('farmersdelight:tree_bark', "input7")
-   .requireItem('farmersdelight:tree_bark', "input8")
-   .requireItem('farmersdelight:tree_bark', "input9")
+  .requireItemTag('#minecraft:logs', 1, "input1")
+.requireItemTag('#minecraft:logs', 1, "input2")
+   .requireItemTag('#minecraft:logs', 1, "input3")
+   .requireItemTag('#minecraft:logs', 1, "input4")
+   .requireItemTag('#minecraft:logs', 1, "input6")
+   .requireItemTag('#minecraft:logs', 1, "input7")
+   .requireItemTag('#minecraft:logs', 1, "input8")
+   .requireItemTag('#minecraft:logs', 1, "input9")
 
 // Warphopper
 event.remove({ id: "netherexp:warphopper_fur_paper" }) // Re-Add if added during an update
@@ -19,7 +19,7 @@ event.remove({ id: "netherexp:warphopper_fur_paper" }) // Re-Add if added during
 event.remove({ id: "quark:tweaks/crafting/utility/bent/paper" }) 
 event.remove({ id: "minecraft:paper" }) 
 
-  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "3x kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
   .requireItem('minecraft:sugar_cane', "input1")
 .requireItem('minecraft:sugar_cane', "input2")
@@ -33,7 +33,7 @@ event.remove({ id: "minecraft:paper" })
 // Rice
 event.remove({ id: "actuallyadditions:rice_paper" }) 
 
-  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "3x kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
   .requireItem('farmersdelight:rice', "input1")
 .requireItem('farmersdelight:rice', "input2")
@@ -45,7 +45,7 @@ event.remove({ id: "actuallyadditions:rice_paper" })
    .requireItem('farmersdelight:rice', "input9")
 
 // Cotton
-  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "3x kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
   .requireItem('rusticdelight:cotton_boll', "input1")
 .requireItem('rusticdelight:cotton_boll', "input2")
@@ -55,6 +55,17 @@ event.remove({ id: "actuallyadditions:rice_paper" })
    .requireItem('rusticdelight:cotton_boll', "input7")
    .requireItem('rusticdelight:cotton_boll', "input8")
    .requireItem('rusticdelight:cotton_boll', "input9")
+
+     event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "3x kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('forestry:wood_pulp', "input1")
+.requireItem('forestry:wood_pulp', "input2")
+   .requireItem('forestry:wood_pulp', "input3")
+   .requireItem('forestry:wood_pulp', "input4")
+   .requireItem('forestry:wood_pulp', "input6")
+   .requireItem('forestry:wood_pulp', "input7")
+   .requireItem('forestry:wood_pulp', "input8")
+   .requireItem('forestry:wood_pulp', "input9")
 
 // Disable Sticky Resin Recipe / Find a way to reimplement it later
 event.remove({ id: "thermal_extra:sticky_ball_to_paper" }) 
@@ -102,4 +113,36 @@ event.custom({
     "item": "minecraft:paper"
   }
 })
+
+// Wood Pulp
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "output": {
+    "item": 'forestry:wood_pulp',
+    "count": 2
+  },
+  "grindingTime": 100
+})
+
+// Black Dye only in Pestle 
+event.remove({ id: "quark:tweaks/crafting/utility/misc/charcoal_to_black_dye" }) 
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": 'minecraft:black_dye',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
 })
