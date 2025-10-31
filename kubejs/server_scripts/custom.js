@@ -1181,6 +1181,38 @@ event.custom({
   }
 })
 
+// Attuned
+// Quartz Chipset
+event.custom({
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "top": {
+      "item": 'minecraft:emerald'
+    },
+    "middle": {
+      "item": "kubejs:conductive_chipset"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "item": "kubejs:emerald_chipset"
+  }
+})
+
+event.custom({
+  "type": "pneumaticcraft:assembly_laser",
+  "input": {
+    "type": "pneumaticcraft:stacked_item",
+    "count": 1,
+    "item": "kubejs:emerald_chipset"
+  },
+  "program": "laser",
+  "result": {
+    "count": 1,
+    "item": "kubejs:attuned_chipset"
+  }
+})
+
 
 })
 
