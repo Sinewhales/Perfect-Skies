@@ -22,5 +22,14 @@ event.remove({ type: "tconstruct:casting_table", input: 'tconstruct:plate_sand_c
 event.remove({ type: "tconstruct:casting_table", input: 'tconstruct:gear_cast'})
 event.remove({ type: "tconstruct:casting_table", input: 'tconstruct:gear_red_sand_cast'})
 event.remove({ type: "tconstruct:casting_table", input: 'tconstruct:gear_sand_cast'})
+
+event.remove({ id: 'tconstruct:smeltery/melting/soul/sand'})
+event.remove({ id: 'tconstruct:smeltery/melting/scorched/glass_soul'})
+event.remove({ id: 'tconstruct:smeltery/melting/scorched/pane_soul'})
+event.remove({ id: 'tconstruct:smeltery/melting/seared/glass_soul'})
+event.remove({ id: 'tconstruct:smeltery/melting/seared/pane_soul'})
+event.remove({ id: 'tconstruct:smeltery/melting/soul/glass'})
+event.remove({ id: 'tconstruct:smeltery/melting/soul/pane'})
+event.remove({ id: 'tconstruct:smeltery/casting/soul/glass'})
 })
 

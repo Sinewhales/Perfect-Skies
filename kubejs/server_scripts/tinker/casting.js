@@ -362,5 +362,15 @@ event.custom({
   "result": 'kubejs:blaze_shard'
 })
 
+// Soul Glass
+event.custom({
+  "type": "tconstruct:casting_basin",
+  "cooling_time": 113,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "kubejs:molten_soul_glass"
+  },
+  "result": 'tconstruct:soul_glass'
+})
 })
 

@@ -1,0 +1,240 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05"
+	group: ""
+	id: "3C9E82F57D47AA5C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["736A4858CBC99949"]
+			id: "7311B50C34A2BDFD"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "0FC8E896491C5E7D"
+				item: "treetap:tap"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7311B50C34A2BDFD"]
+			id: "772525396CCB0C66"
+			shape: "octagon"
+			tasks: [{
+				id: "171964980647FC3F"
+				item: "thermal:resin_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["772525396CCB0C66"]
+			id: "3182A6033D7D8C22"
+			shape: "octagon"
+			tasks: [{
+				id: "0E760B421B8D893A"
+				item: "thermal_extra:sticky_ball"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3182A6033D7D8C22"]
+			id: "77E3858D7ADC25CA"
+			tasks: [{
+				id: "06CF9AF2BC3DDF09"
+				item: "thermal:rubberwood_sapling"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["772525396CCB0C66"]
+			id: "1F8737DA77D2BDB2"
+			shape: "octagon"
+			tasks: [{
+				id: "49EC943C0D76F4E6"
+				item: "forestry:impregnated_stick"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F8737DA77D2BDB2"]
+			id: "2D3FA62E725A305A"
+			shape: "octagon"
+			tasks: [{
+				id: "573B6575B576BF6D"
+				item: "kubejs:wooden_gear"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3182A6033D7D8C22"
+				"2D3FA62E725A305A"
+			]
+			id: "08AE1B36551CBDD5"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "41F57C93728F8F84"
+				item: "actuallyadditions:wood_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["08AE1B36551CBDD5"]
+			icon: "kubejs:seared_casing"
+			id: "64CF47B19F02B74A"
+			subtitle: "You can use a Vat to make Liquid Seared Stone. Use a faucet on it and pour it on a Wood Casing below. Don't use the Vat to make Seared Stone, they take a very long time to form."
+			tasks: [
+				{
+					id: "408B9642190A1579"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "64FB70F2B7383AB1"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "285220E74F06C2D3"
+					item: "kubejs:seared_casing"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64CF47B19F02B74A"]
+			id: "20C7DA025104B858"
+			tasks: [{
+				id: "1968310A108AAABE"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20C7DA025104B858"]
+			id: "46CC85669D55379D"
+			progression_mode: "linear"
+			subtitle: "Hepatizon is a good alloy both for a pickaxe upgrade and to access the Nether."
+			tasks: [{
+				id: "177E7331A92E20CA"
+				item: "tconstruct:hepatizon_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46CC85669D55379D"]
+			icon: "minecraft:netherrack"
+			id: "31D98CEF594384FA"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:netherrack"
+					id: "519913B08810F5D1"
+					type: "dimension"
+				}
+				{
+					id: "40E706A38B8FE80D"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31D98CEF594384FA"]
+			id: "6DD292B5367B3707"
+			subtitle: "With a stone found only in Soul Sand Valley you will be able to upgrade your gears to sturdier ones."
+			tasks: [{
+				id: "4EDE3E30F3C54834"
+				item: "kubejs:stone_gear"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["31D98CEF594384FA"]
+			id: "33E74A05E753B5AE"
+			subtitle: "In soul sand valleys, you will be able to find Ectoplasm lakes. I recommend filling a portable tank as it will be useful pretty soon. It can also be made with Ectoplasms drops in a Smeltery."
+			tasks: [{
+				id: "3364A941ED970D54"
+				item: "netherexp:ectoplasm_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31D98CEF594384FA"]
+			id: "4D10E016C502A006"
+			subtitle: "There are new Nether ores here. Find some Ardite !"
+			tasks: [{
+				id: "52B44F789778BA7C"
+				item: "tinkers_thinking:ardite_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33E74A05E753B5AE"]
+			id: "3F5503F4F39064FB"
+			subtitle: "Soul Glass can be made by mixing Molten Soul Sand and a bucket of Ectoplasm in the Smeltery."
+			tasks: [{
+				id: "591DE5F6C681EBCE"
+				item: "tconstruct:soul_glass"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4D10E016C502A006"
+				"3F5503F4F39064FB"
+				"6DD292B5367B3707"
+			]
+			id: "74B1334414508A8D"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "6686F293178A5C99"
+				item: "extendedcrafting:frame"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.0d
+		}
+	]
+	title: "0.5 - Real Tech"
+}

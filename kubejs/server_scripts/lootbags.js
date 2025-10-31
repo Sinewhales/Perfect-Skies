@@ -8,4 +8,14 @@ event.custom({
            table: "kubejs:chests/seeds"
         },
 })
+
+event.custom({
+  "type": "lootbags:loot",
+  "name": "Common Lootbag",
+  "rarity": "UNCOMMON",
+  "output": 
+{
+           table: "kubejs:chests/t1_lootbags"
+        },
+})
 })

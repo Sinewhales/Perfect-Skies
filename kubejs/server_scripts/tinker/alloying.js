@@ -62,7 +62,7 @@ event.custom({
   "inputs": [
     {
       "amount": 270,
-      "fluid": "tconstruct:molten_bronze"
+      "fluid": "tconstruct:molten_copper"
     },
     {
       "amount": 90,
@@ -250,6 +250,38 @@ event.custom({
     "fluid": "kubejs:molten_black_steel"
   },
   "temperature": 820
+})
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    { "tag": "tconstruct:molten_cobalt",   "amount":   90 },
+    { "tag": "tconstruct:molten_ardite", "amount":  90 }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_manyullyn",
+    "amount": 90
+  },
+  "temperature": 1200
+})
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 2000,
+      "fluid": "kubejs:molten_soul_sand"
+    },
+    {
+      "amount": 1000,
+      "fluid": "netherexp:ectoplasm"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "fluid": "kubejs:molten_soul_glass"
+  },
+  "temperature": 950
 })
 })
 

@@ -428,4 +428,21 @@ event.remove({ id: "projectvibrantjourneys:mossy_cobblestone_from_mossy_rocks" }
         'projectvibrantjourneys:mossy_rocks'
       ]
     )
+
+// Seared Bricks via Vat
+event.custom({
+       "type": "oreberriesreplanted:vat",
+        "ingredient": {
+          "item": "tconstruct:grout"
+        },
+        "fluid": "tconstruct:seared_stone",
+        "amount": 100,
+        "result": {
+          "item": 'tconstruct:seared_brick'
+        },
+        "evaporationtime": 900000
+      })
+
+event.remove({ id: "tconstruct:smeltery/seared/melter" })
+
 })

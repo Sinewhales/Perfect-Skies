@@ -65,6 +65,46 @@ event.custom({
   "time": 60
 })
 
+// Soul Sand
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": 'minecraft:soul_sand'
+  },
+  "result": {
+    "amount": 500,
+    "fluid": "kubejs:molten_soul_sand"
+  },
+  "temperature": 400,
+  "time": 100
+})
+
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": 'netherexp:phasmo_shard'
+  },
+  "result": {
+    "amount": 250,
+    "fluid": "netherexp:ectoplasm"
+  },
+  "temperature": 400,
+  "time": 60
+})
+
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": 'netherexp:banshee_rod'
+  },
+  "result": {
+    "amount": 1000,
+    "fluid": "netherexp:ectoplasm"
+  },
+  "temperature": 400,
+  "time": 60
+})
+
 
 })
 

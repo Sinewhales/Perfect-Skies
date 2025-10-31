@@ -146,6 +146,16 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0x484f64)
     .displayName('Molten Black Steel')
 
+    event.create('molten_soul_sand')
+    .thickTexture(0x634e43)
+    .bucketColor(0x634e43)
+    .displayName('Molten Soul Sand')
+
+    event.create('molten_soul_glass')
+    .thickTexture(0x6a5244)
+    .bucketColor(0x6a5244)
+    .displayName('Molten Soul Glass')
+
 
 
     

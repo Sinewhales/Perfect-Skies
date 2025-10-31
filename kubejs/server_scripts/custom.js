@@ -38,23 +38,12 @@ event.custom({
   }
 })
 // [0] Cactus Juice
-event.custom({
-  "type": "farmersdelight:cooking",
-  "container": {
-    "item": 'minecraft:glass_bottle'
-  },
-  "cookingtime": 60,
-  "experience": 1.0,
-  "ingredients": [
-    {
-      "item": "minecraft:cactus"
-    }
-  ],
-  "recipe_book_tab": "meals",
-  "result": {
-    "item": 'kubejs:cactus_juice'
-  }
-})
+event.shapeless(
+  Item.of('kubejs:cactus_juice'), // arg 1: output
+  [
+    'minecraft:cactus'
+  ]
+)
 
 
 // [0] Inactive Luminessence

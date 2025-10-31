@@ -9,79 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["736A4858CBC99949"]
-			id: "7311B50C34A2BDFD"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "0FC8E896491C5E7D"
-				item: "treetap:tap"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7311B50C34A2BDFD"]
-			id: "772525396CCB0C66"
-			shape: "octagon"
-			tasks: [{
-				id: "171964980647FC3F"
-				item: "thermal:resin_bucket"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["772525396CCB0C66"]
-			id: "3182A6033D7D8C22"
-			shape: "octagon"
-			tasks: [{
-				id: "0E760B421B8D893A"
-				item: "thermal_extra:sticky_ball"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3182A6033D7D8C22"]
-			id: "77E3858D7ADC25CA"
-			tasks: [{
-				id: "06CF9AF2BC3DDF09"
-				item: "thermal:rubberwood_sapling"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["772525396CCB0C66"]
-			id: "1F8737DA77D2BDB2"
-			shape: "octagon"
-			tasks: [{
-				id: "49EC943C0D76F4E6"
-				item: "forestry:impregnated_stick"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4BC17EF501A87E26"]
-			id: "3F099285F2685DB5"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "5587404A2B5C4A8D"
-				item: "extendedcrafting:frame"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["23038F2A78FCA033"]
 			id: "13D0F4DA36DEC2D8"
 			shape: "octagon"
@@ -266,21 +193,6 @@
 			}]
 			x: 0.0d
 			y: 13.0d
-		}
-		{
-			dependencies: [
-				"3182A6033D7D8C22"
-				"2D3FA62E725A305A"
-			]
-			id: "08AE1B36551CBDD5"
-			shape: "octagon"
-			tasks: [{
-				id: "41F57C93728F8F84"
-				item: "actuallyadditions:wood_casing"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["39160D9A39D9F7B0"]
@@ -474,45 +386,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["736A4858CBC99949"]
-			id: "656E8CC3EF3DD6FE"
-			shape: "octagon"
-			tasks: [{
-				id: "100183D4FE48C73F"
-				item: "tconstruct:seared_melter"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"08AE1B36551CBDD5"
-				"656E8CC3EF3DD6FE"
-			]
-			id: "32E7D984EB4D94A4"
-			shape: "octagon"
-			tasks: [{
-				id: "2C94CD9DDC5AABDC"
-				item: "kubejs:seared_casing"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["32E7D984EB4D94A4"]
-			id: "4A4CD88863C74DA4"
-			shape: "octagon"
-			tasks: [{
-				id: "469D8CF1E66FDBA2"
-				item: "tconstruct:smeltery_controller"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["7B378AD0C88D508D"]
 			id: "66F4B6B6094E786C"
 			shape: "octagon"
@@ -525,10 +398,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"66F4B6B6094E786C"
-				"4A4CD88863C74DA4"
-			]
+			dependencies: ["66F4B6B6094E786C"]
 			id: "24DDA5F30B32023F"
 			shape: "octagon"
 			tasks: [{
@@ -540,31 +410,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1F8737DA77D2BDB2"]
-			id: "2D3FA62E725A305A"
-			shape: "octagon"
-			tasks: [{
-				id: "573B6575B576BF6D"
-				item: "kubejs:wooden_gear"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2D3FA62E725A305A"]
-			id: "634CFDA467E5223C"
-			shape: "octagon"
-			tasks: [{
-				id: "4833EF51AC758B41"
-				item: "kubejs:stone_gear"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["634CFDA467E5223C"]
 			id: "0CABF40B7D4A8C2C"
 			subtitle: "Shale can be automated by doing a cobblestone generator and making the cobblestone generate over a clay block."
 			tasks: [{
@@ -576,40 +421,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["08AE1B36551CBDD5"]
-			id: "5DEE5B95100A872A"
-			tasks: [{
-				id: "3A984647B753435E"
-				item: "farmersdelight:cutting_board"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["5DEE5B95100A872A"]
-			icon: "minecraft:gravel"
-			id: "74FB419F56B24ED7"
-			tasks: [
-				{
-					id: "332FC553DE2A0030"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
-					id: "30FE8E367DFFBE53"
-					item: "minecraft:sand"
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"634CFDA467E5223C"
-				"4A4CD88863C74DA4"
-			]
 			id: "4BC17EF501A87E26"
 			tasks: [{
 				id: "70B93BCB32739982"
@@ -631,7 +442,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3F099285F2685DB5"]
 			id: "23038F2A78FCA033"
 			shape: "octagon"
 			tasks: [{
@@ -643,7 +453,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4A4CD88863C74DA4"]
 			id: "03BFA09C130A399F"
 			tasks: [{
 				id: "6226E6A83B6437AC"
@@ -654,7 +463,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["4A4CD88863C74DA4"]
 			id: "4350A7DDC1009E27"
 			tasks: [{
 				id: "7819EDF6C7469B9B"
@@ -799,7 +607,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["3F099285F2685DB5"]
 			id: "5911B823FF5CB65E"
 			tasks: [{
 				id: "357E51551246AEF0"

@@ -761,8 +761,8 @@
 				item: "kubejs:cactus_juice"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 3.125d
+			y: -1.2857142857142847d
 		}
 	]
 	title: "0 - Extended Crafting"

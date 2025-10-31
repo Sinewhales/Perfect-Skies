@@ -89,16 +89,16 @@ event.custom({
       "item": "tconstruct:hepatizon_ingot"
     },
     "B": {
-      "item": "thermal:invar_gear"
+      "item": "kubejs:stone_gear"
     },
     "C": {
-      "item": "tinkers_thinking:tempered_glass"
+      "item": "tconstruct:soul_glass"
     },
     "D": {
       "item": "tconstruct:obsidian_pane"
     },
     "E": {
-      "item": 'tconstruct:seared_brick'
+      "item": "tinkers_thinking:ardite_ingot"
     },
     "F": {
       "item": "extendedcrafting:black_iron_slate"

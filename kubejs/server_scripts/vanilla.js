@@ -15,7 +15,7 @@ event.shaped(
 event.replaceInput(
   { id: 'minecraft:flint_and_steel' }, // Arg 1: the filter
   'minecraft:iron_ingot',            // Arg 2: the item to replace
-  'extendedcrafting:black_iron_ingot'         // Arg 3: the item to replace it with
+  'tconstruct:hepatizon_ingot'        // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
