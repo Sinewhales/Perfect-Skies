@@ -92,6 +92,9 @@ event.hide(['oreberriesreplanted:lead_oreberry_bush', 'oreberriesreplanted:urani
 
 // Drying Rack
 event.hide('tinkers_thinking:drying_rack')
+
+// Oreberries Bucket Removal
+event.hide(['oreberriesreplanted:lead_oreberry_juice_bucket', 'oreberriesreplanted:uranium_oreberry_juice_bucket', 'oreberriesreplanted:osmium_oreberry_juice_bucket', 'oreberriesreplanted:zinc_oreberry_juice_bucket'])
 })
 
 JEIEvents.addItems(event => {
