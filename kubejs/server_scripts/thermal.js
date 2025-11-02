@@ -92,28 +92,28 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:mud_bricks"
+      "item": "tconstruct:nahuatl"
     },
     "B": {
-      "item": "thermal:bronze_gear"
+      "item": "hexerei:wax_blend"
     },
     "C": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "kubejs:black_iron_gear"
     },
     "D": {
-      "item": "kubejs:impregnated_wood"
+      "item": "glassential:glass_ethereal"
     },
     "E": {
-      "item": "treetap:tap"
+      "item": "thermal:invar_plate"
     },
     "F": {
-      "item": 'fluidtank:tank_stone' 
+      "item": "thermal_extra:bronze_rod"
     },
     "G": {
-      "item": "flopper:flopper"
+      "item": "kubejs:electrotine_plate"
     },
     "H": {
-      "item": 'kubejs:amber_paste_chunk'
+      "item": 'tinkers_thinking:magma_slime_drop'
     },
     "I": {
       "item": "extendedcrafting:frame"
@@ -124,12 +124,7 @@ event.custom({
   }
 })
 
-event.shapeless(
-  Item.of('thermal_extra:sticky_ball', 1), // arg 1: output
-  [
-'thermal:resin_bucket'
-  ]
-)
+
 
 event.shaped(
   Item.of('thermal:rubberwood_sapling', 1), // arg 1: output
@@ -387,7 +382,7 @@ event.custom({
   ingredients: [
     { item: 'thermal:iron_plate' }
   ],
-  tool: { item: 'kubejs:plate_hammer' },
+  tool: { tag: 'cb_microblock:tools/saw' },
   result: [
     { item: 'thermal_extra:iron_rod', count: 1 }
   ]
@@ -522,5 +517,35 @@ event.shaped(
     B: 'thermal:silver_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
+
+// Tin Plate
+event.shaped(
+  Item.of('thermal:tin_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:tin_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Copper Gear
+event.remove({ id: 'thermal:parts/copper_gear' })
+
+// Bronze Rod
+event.remove({ id: 'thermal_extra:crafting/bronze_rod' })
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'thermal:bronze_plate' }
+  ],
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'thermal_extra:bronze_rod', count: 1 }
+  ]
+})
 })
 

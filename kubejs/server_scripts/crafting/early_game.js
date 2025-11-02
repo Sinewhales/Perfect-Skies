@@ -285,7 +285,7 @@ event.custom({
   "type": "hexerei:drying_rack",
   "ingredients": [
     {
-      "item": 'minecraft:slimeball'
+      "item": 'minecraft:slime_ball'
     }
   ],
   "output": {
@@ -445,4 +445,254 @@ event.custom({
 
 event.remove({ id: "tconstruct:smeltery/seared/melter" })
 
+// Lava Bricks can only be made in Tinker
+event.remove({ id: "ceramics:lava_bricks_lava" })
+
+// Blazing Blood Rework
+event.remove({ id: 'tconstruct:smeltery/entity_melting/heads/blaze' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/ball' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/block' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/bud_cluster' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/bud_large' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/bud_medium' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/bud_small' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/congealed' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/crystal' })
+event.remove({ id: 'tconstruct:smeltery/melting/slime/ichor/crystal_block' })
+event.custom({
+  "type": "tconstruct:melting",
+  "byproducts": [
+    {
+      "amount": 10,
+      "fluid": "tconstruct:blazing_blood"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:slimeball/ichor"
+  },
+  "result": {
+    "amount": 200,
+    "fluid": "tconstruct:ichor"
+  },
+  "temperature": 1500,
+  "time": 80
+})
+
+event.custom({
+  "type": "tconstruct:melting",
+  "byproducts": [
+    {
+      "amount": 90,
+      "fluid": "tconstruct:blazing_blood"
+    }
+  ],
+  "ingredient": {
+    "item": "tconstruct:ichor_slime"
+  },
+  "result": {
+    "amount": 1800,
+    "fluid": "tconstruct:ichor"
+  },
+  "temperature": 1500,
+  "time": 241
+})
+
+// Bloody Nylum
+    event.shapeless(
+      Item.of('tconstruct:blood_vanilla_slime_grass'), // arg 1: output
+      [
+        'tconstruct:ichor_slime_dirt',
+        'tconstruct:blood_slime_grass_seeds'
+      ]
+    )
+
+// Amethyst Dust
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:amethyst_shard'
+    }
+  ],
+  "output": {
+    "item": 'thermal_extra:amethyst_dust',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
+// Spectre Ingot
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": 'tconstruct:cobalt_ingot'
+    },
+    "block_in": {
+        "blocks": ["netherexp:ectoplasm"],
+        "state": {
+            "level": 0
+        }
+    },
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'tinkers_thinking:spectre_ingot'
+        },
+                {
+            "type": "place",
+            "block": "*"
+        }
+    ]
+})
+
+// Emerald Dust
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:emerald'
+    }
+  ],
+  "output": {
+    "item": 'thermal:emerald_dust',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
+// Antique Ink Warping 
+event.custom({
+  "type": "architects_palette:warping",
+  "dimension": "minecraft:the_nether",
+  "ingredient": [
+    {
+      "item": 'minecraft:black_dye'
+    }
+  ],
+  "result": {
+    "item": 'supplementaries:antique_ink'
+  }
+})
+
+// Soul Dust
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'mysticalagriculture:soulstone'
+    }
+  ],
+  "output": {
+    "item": 'mysticalagriculture:soul_dust',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
+event.remove({ id: "mysticalagriculture:soul_dust_smelted" })
+
+// Fire Agglomeratio
+event.remove({ id: "mysticalagriculture:fire_agglomeratio" })
+event.custom({
+    "type": "lychee:item_burning",
+    "item_in": {
+        "item": 'mysticalagriculture:nature_agglomeratio'
+    },
+    "post": {
+        "type": "drop_item",
+        "item": 'mysticalagriculture:fire_agglomeratio'
+    }
+})
+
+// Fieryberries
+event.custom({
+  "type": "architects_palette:warping",
+  "dimension": "minecraft:the_nether",
+  "ingredient": [
+    {
+      "item": 'minecraft:glow_berries'
+    }
+  ],
+  "result": {
+    "item": 'kubejs:fiery_berries'
+  }
+})
+
+event.custom({
+  "type": "hexerei:drying_rack",
+  "ingredients": [
+    {
+      "item": 'kubejs:fiery_berries'
+    }
+  ],
+  "output": {
+    "item": 'kubejs:dried_fiery_berries'
+  },
+  "dryingTimeInTicks": 100
+})
+
+// Basalt Dust
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": 'minecraft:basalt',
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": 'kubejs:basalt_dust',
+          "count": 1
+        }
+      },
+      {
+        "item": 'kubejs:basalt_dust',
+        "chance": 0.5
+      }
+    ]
+  }
+})
+
+// Sulfur Dust
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'thermal:sulfur'
+    }
+  ],
+  "output": {
+    "item": 'thermal:sulfur_dust',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
+// Enriched Blaze Powder
+event.custom({
+  "type": "eidolon:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": 'mysticalagriculture:fire_agglomeratio' },
+        { "item": 'kubejs:dried_fiery_berries' },
+        { "item": 'eidolon:crimson_essence' }
+      ]
+    },
+    {
+      "items": [
+        { "item": 'minecraft:blaze_powder' },
+        { "item": 'tconstruct:ichor_slime_crystal' }
+      ]
+    },
+        {
+      "items": [
+        { "item": 'kubejs:basalt_dust' },
+        { "item": 'netherexp:fossil_fuel'}
+      ]
+    }
+  ],
+  "result": {
+    "item": 'kubejs:enriched_blaze_powder',
+    "count": 1
+  }
+})
 })

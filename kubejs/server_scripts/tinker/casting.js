@@ -106,20 +106,6 @@ event.custom({
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'thermal:cured_rubber'
-  },
-    "cast_consumed": true,
-  "cooling_time": 60,
-  "fluid": {
-    "amount": 100,
-    "fluid": "integrateddynamics:menril_resin"
-  },
-  "result": 'kubejs:empowered_rubber'
-})
-
-event.custom({
-  "type": "tconstruct:casting_table",
-  "cast": {
     "tag": "tconstruct:casts/multi_use/ingot"
   },
   "cooling_time": 54,
@@ -371,6 +357,67 @@ event.custom({
     "fluid": "kubejs:molten_soul_glass"
   },
   "result": 'tconstruct:soul_glass'
+})
+
+// Copper Gear
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:stone_gear'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 360,
+    "fluid": "tconstruct:molten_copper"
+  },
+  "result": 'thermal:copper_gear'
+})
+
+// Bloody Seeds
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": 'forge:seeds'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 360,
+    "fluid": "tconstruct:liquid_soul"
+  },
+  "result": 'tconstruct:blood_slime_grass_seeds'
+})
+
+// Soul Candle
+// 
+event.remove({ id: "netherexp:soul_candle" })
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'minecraft:candle'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "kubejs:molten_soul_sand"
+  },
+  "result": 'netherexp:soul_candle'
+})
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:enriched_blaze_powder'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "tconstruct:blazing_blood"
+  },
+  "result": 'kubejs:pyrotheum'
 })
 })
 

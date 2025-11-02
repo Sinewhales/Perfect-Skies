@@ -31,5 +31,9 @@ event.remove({ id: 'tconstruct:smeltery/melting/seared/pane_soul'})
 event.remove({ id: 'tconstruct:smeltery/melting/soul/glass'})
 event.remove({ id: 'tconstruct:smeltery/melting/soul/pane'})
 event.remove({ id: 'tconstruct:smeltery/casting/soul/glass'})
+
+event.remove({ id: 'tinkers_thinking:common/spectre/ingot_by_blasting'})
+event.remove({ id: 'tinkers_thinking:common/spectre/compound'})
+
 })
 

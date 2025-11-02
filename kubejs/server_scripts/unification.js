@@ -740,4 +740,49 @@ event.custom({
   ]
 })
 
+// Cobalt Dust
+event.remove({ id: 'alchemistry:compactor/cobalt_dust' })
+event.custom({
+  "type": "alchemistry:compactor",
+  "group": "alchemistry:compactor",
+  "input": {
+    "count": 16,
+    "ingredient": {
+      "item": "chemlib:cobalt"
+    }
+  },
+  "result": {
+    "item": 'kubejs:cobalt_dust'
+  }
+})
+
+event.remove({ id: 'chemlib:cobalt_ingot_from_blasting_cobalt_dust' })
+event.remove({ id: 'chemlib:cobalt_ingot_from_smelting_cobalt_dust' })
+
+// Cobalt Ingot
+event.remove({ id: 'chemlib:cobalt_nugget_to_ingot' })
+event.remove({ id: 'chemlib:cobalt_block_to_ingot' })
+event.remove({ id: 'chemlib:cobalt_ingot_to_nugget' })
+event.remove({ id: 'chemlib:cobalt_ingot_to_block' })
+
+event.remove({ id: 'minecraft:cobalt_from_nugget' })
+event.remove({ id: 'minecraft:cobalt_from_block' })
+event.remove({ id: 'nuclearcraft:blast_cobalt_dust' })
+event.remove({ id: 'nuclearcraft:blast_cobalt_raw' })
+event.remove({ id: 'nuclearcraft:blast_cobalt_ore' })
+event.remove({ id: 'minecraft:nuclearcraft_cobalt_ore' })
+event.remove({ id: 'minecraft:nuclearcraft_cobalt_dust' })
+event.remove({ id: 'minecraft:nuclearcraft_cobalt_raw' })
+event.remove({ id: 'minecraft:nuclearcraft_cobalt_plate' })
+event.smelting('tconstruct:cobalt_ingot', 'nuclearcraft:cobalt_plate')
+event.smelting('tconstruct:cobalt_ingot', 'kubejs:cobalt_dust')
+event.smelting('tconstruct:cobalt_ingot', 'tconstruct:raw_cobalt')
+event.smelting('tconstruct:cobalt_ingot', 'tconstruct:cobalt_ore')
+event.blasting('tconstruct:cobalt_ingot', 'kubejs:cobalt_dust')
+
+// Cobalt Nuggets
+event.remove({ id: 'nuclearcraft:cobalt_nugget' })
+
+// Cobalt Block
+event.remove({ id: 'nuclearcraft:cobalt_block' })
 })

@@ -44,7 +44,6 @@ event.create('duralumin').displayName("Duralumin Ingot")
 event.create('duralumin_plate').displayName("Duralumin Plate")
 event.create('ancient_rune').displayName("Ancient Rune")
 event.create('pulsating_iron_plate').displayName("Pulsating Iron Plate")
-event.create('pewter_ingot').displayName("Pewter Ingot")
 event.create('graphene').displayName("Graphene")
 event.create('black_steel_ingot').displayName("Black Steel Ingot")
 event.create('black_steel_plate').displayName("Black Steel Plate")
@@ -76,7 +75,18 @@ event.create('redstone_chipset').displayName("Unassembled Conductive Chipset")
 event.create('ender_chipset').displayName("Unassembled Pulsating Chipset") 
 event.create('emerald_chipset').displayName("Unassembled Attuned Chipset") 
 event.create('sealant').displayName("Sealing Paste") 
-
+event.create('paper_stack').displayName("Paper Stack") 
+event.create('ardite_plate').displayName("Ardite Plate") 
+event.create('ardite_rod').displayName("Ardite Rod") 
+event.create('dried_glowberries').displayName("Dried Glowberries") 
+event.create('enriched_blaze_powder').displayName("Enriched Blaze Powder") 
+event.create('pewter_plate').displayName("Pewter Plate") 
+event.create('scorched_brick_dust').displayName("Scorched Brick Dust") 
+event.create('ardite_dust').displayName("Ardite Dust") 
+event.create('fiery_berries').displayName("Fieryberries") 
+event.create('dried_fiery_berries').displayName("Dried Fieryberries") 
+event.create('basalt_dust').displayName("Basalt Dust") 
+event.create('cobalt_dust').displayName("Cobalt Dust") 
 // Raw Ore Block
 // Aluminum Dust
 
@@ -155,6 +165,11 @@ StartupEvents.registry('fluid', event => {
     .thickTexture(0x6a5244)
     .bucketColor(0x6a5244)
     .displayName('Molten Soul Glass')
+
+    event.create('soul_extract')
+    .thinTexture(0x6a5244)
+    .bucketColor(0x6a5244)
+    .displayName('Soul Extract')
 
 
 

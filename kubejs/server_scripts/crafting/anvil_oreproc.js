@@ -182,4 +182,55 @@ event.custom({
     ]
 })
 
+// Ardite
+event.custom({
+    "type": "lychee:block_crushing",
+    "item_in": [
+        {
+            "item": 'tinkers_thinking:raw_ardite'
+        }
+    ],
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'kubejs:ardite_dust',
+            "count": 1
+        },
+        {
+            "type": "drop_item",
+            "item": 'kubejs:ardite_dust',
+            "count": 1,
+            "contextual": {
+            "type": "chance",
+            "chance": 0.5
+            }
+        }
+    ]
+})
+
+event.custom({
+    "type": "lychee:block_crushing",
+    "item_in": [
+        {
+            "item": 'tconstruct:raw_cobalt'
+        }
+    ],
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'kubejs:cobalt_dust',
+            "count": 1
+        },
+        {
+            "type": "drop_item",
+            "item": 'kubejs:cobalt_dust',
+            "count": 1,
+            "contextual": {
+            "type": "chance",
+            "chance": 0.5
+            }
+        }
+    ]
+})
+
 })

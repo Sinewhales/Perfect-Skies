@@ -176,4 +176,32 @@ event.shaped(
   }
 )
 
+// Summon Blaze
+event.recipes.summoningrituals
+    .altar(Ingredient.of('minecraft:fire_charge'))
+    .mobOutput('minecraft:blaze')
+    .input('mynethersdelight:powder_cannon')
+    .input('9x netherexp:fossil_fuel')
+    .input('minecraft:blaze_rod')
+    .input('thermal:sulfur_block')
+    .input('minecraft:lava_bucket')
+    .recipeTime(100)
+    .itemOutput('minecraft:bucket')
+
+// Copper Anvil
+event.shaped(
+  Item.of('minecraft:anvil', 1), // arg 1: output
+  [
+    'AAA',
+    ' B ', // arg 2: the shape (array of strings)
+    'BBB'
+  ],
+  {
+    A: 'minecraft:copper_block',
+    B: 'minecraft:copper_ingot'  //arg 3: the mapping object
+  }
+)
+
+
+
 })

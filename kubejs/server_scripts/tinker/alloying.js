@@ -62,15 +62,11 @@ event.custom({
   "inputs": [
     {
       "amount": 270,
-      "fluid": "tconstruct:molten_copper"
+      "fluid": "tconstruct:molten_bronze"
     },
     {
-      "amount": 90,
-      "fluid": "tconstruct:molten_gold"
-    },
-    {
-      "amount": 90,
-      "fluid": "tconstruct:molten_silver"
+      "amount": 270,
+      "fluid": "tconstruct:molten_electrum"
     }
   ],
   "result": {

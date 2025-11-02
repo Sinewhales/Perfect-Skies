@@ -2,11 +2,11 @@ ServerEvents.recipes(event => {
 event.custom({
   "type": "extendedcrafting:shaped_table",
   "pattern": [
-    "ABABA",
-    "BCDCB",
-    "AEFEA",
-    "BCDCB",
-    "ABABA"
+    "ABCBA",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
+    "ABCBA"
   ],
   "key": {
     "A": {
@@ -16,20 +16,29 @@ event.custom({
       "item": "quark:sturdy_stone"
     },
     "C": {
-      "item": "kubejs:blaze_shard"
+      "item": "tconstruct:seared_bricks"
     },
     "D": {
-      "item": "tconstruct:ichor_slime_crystal"
+      "item": "ceramics:lava_bricks"
     },
     "E": {
-      "item": "kubejs:seared_casing"
+      "item": "tconstruct:ichor_slime_crystal"
     },
     "F": {
+      "item": "netherexp:fossil_fuel"
+    },
+    "G": {
+      "item": "kubejs:double_compressed_cobblestone"
+    },
+    "H": {
+      "item": "kubejs:blaze_shard"
+    },
+    "I": {
       "item": "extendedcrafting:frame"
     }
   },
   "result": {
-    "item": "mbd2:primitive_smelter"
+    "item": 'mbd2:primitive_smelter'
   }
 })
 })

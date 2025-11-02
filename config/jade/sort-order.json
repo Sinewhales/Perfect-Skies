@@ -17,6 +17,7 @@
   "avaritia:crafting_table": null,
   "avaritia:extreme_smithing": null,
   "balm:jade": null,
+  "bonsaitrees3:bonsaipot": null,
   "buildcraftcore:mj_storage_client_data": null,
   "buildcraftcore:mj_storage_server_data": null,
   "buildcraftfactory:autocraft_client_data": null,
@@ -135,5 +136,8 @@
   "treetap:tap": null,
   "twilightforest:quest_ram_wool": null,
   "waystones:waystone": null,
+  "wizards_reborn:crystal_growth": null,
+  "wizards_reborn:numerical": null,
+  "wizards_reborn:salt_campfire": null,
   "woot_revived:machines": null
 }

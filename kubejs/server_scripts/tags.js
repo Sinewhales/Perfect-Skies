@@ -144,6 +144,24 @@ event.add('oreberriesreplanted:oreberries_bush', ['oreberriesreplanted:iron_oreb
 // Stone that can be smelted
 event.add('perfectskies:ore_stones', ['minecraft:andesite', 'minecraft:granite', 'minecraft:diorite', 'quark:shale', 'quark:limestone', 'quark:jasper'])
 
+// Cobalt Dust
+event.removeAll('forge:dusts/cobalt')
+event.add('forge:dusts/cobalt', 'kubejs:cobalt_dust')
+event.add('forge:dusts', 'kubejs:cobalt_dust')
+event.removeAllTagsFrom('nuclearcraft:cobalt_dust')
+event.removeAllTagsFrom('chemlib:cobalt_dust')
+
+// Cobalt
+event.removeAllTagsFrom('chemlib:cobalt_ingot')
+event.removeAllTagsFrom('nuclearcraft:cobalt_ingot')
+
+// Cobalt Nuggets
+event.removeAllTagsFrom('chemlib:cobalt_nugget')
+event.removeAllTagsFrom('nuclearcraft:cobalt_nugget')
+
+// Cobalt Block
+event.removeAllTagsFrom('nuclearcraft:cobalt_block')
+event.removeAllTagsFrom('chemlib:cobalt_metal_block')
 // Vat Wood Fix
 
 event.removeAll('perfectskies:nonvanilla_planks')

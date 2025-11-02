@@ -1202,6 +1202,157 @@ event.custom({
   }
 })
 
+// Soul Extract
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'minecraft:warped_stem',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'minecraft:warped_wart_block',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "minecraft:warped_fungus",
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:soul_extract",
+    "amount": 30
+  }
+})
+
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'minecraft:crimson_stem',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'minecraft:nether_wart_block',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "minecraft:crimson_fungus",
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "kubejs:soul_extract",
+    "amount": 30
+  }
+})
+
+// Soul Glass Easier
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": "minecraft:glass",
+  "fluid": {
+    "fluid": "kubejs:soul_extract",
+    "amount": 500
+  },
+  "duration": 100,
+  "result": {
+    "item": 'tconstruct:soul_glass'
+  }
+})
+
+// Empowered Rubber
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'thermal:cured_rubber',
+  "fluid": {
+    "fluid": "integrateddynamics:menril_resin",
+    "amount": 500
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:empowered_rubber'
+  }
+})
+
+// Paper Stack
+event.shaped(
+  Item.of('kubejs:paper_stack', 1), // arg 1: output
+  [
+    ' A ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'minecraft:paper',
+    B: 'minecraft:string',  //arg 3: the mapping object
+  }
+)
+
+// Ardite Plate
+event.shaped(
+  Item.of('kubejs:ardite_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'tinkers_thinking:ardite_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Ardite Rod
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'kubejs:ardite_plate' }
+  ],
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'kubejs:ardite_rod', count: 1 }
+  ]
+})
+
+// Dried Glowberries
+event.custom({
+  "type": "hexerei:drying_rack",
+  "ingredients": [
+    {
+      "item": 'minecraft:glow_berries'
+    }
+  ],
+  "output": {
+    "item": 'kubejs:dried_glowberries'
+  },
+  "dryingTimeInTicks": 100
+})
+
+// Ardite Dust
+event.smelting('tinkers_thinking:ardite_ingot', 'kubejs:ardite_dust')
+event.blasting('tinkers_thinking:ardite_ingot', 'kubejs:ardite_dust')
+
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item":  'kubejs:ardite_dust'
+  },
+  "result": {
+    "amount": 90,
+    "fluid": "tinkers_thinking:molten_ardite"
+  },
+  "temperature": 1296,
+  "time": 20
+})
+
+
 
 })
 

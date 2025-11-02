@@ -7,12 +7,12 @@ event.remove({ id: 'alexscaves:jei.cave_map_magnetic_caves' })
 event.recipes.summoningrituals
     .altar(Ingredient.of('kubejs:ancient_rune'))
     .itemOutput(Item.of('alexscaves:cave_tablet', '{CaveBiome:"alexscaves:magnetic_caves"}'))
-    .input('minecraft:lodestone')
     .input('2x mysticalagriculture:nature_agglomeratio')
-    .input('kubejs:heart_of_emerald')
-    .input('2x kubejs:red_alloy_plate')
-    .input('thermal:electrum_gear')
-    .input('minecraft:amethyst_block')
+    .input('2x kubejs:black_steel_ingot')
+    .input('2x tconstruct:ichor_slime_crystal')
+    .input('2x kubejs:dried_glowberries')
+    .input('2x mysticalagriculture:soul_dust')
+    .input('2x supplementaries:antique_ink')
     .recipeTime(200)
 
 // [2] Scarlet Neodymium
@@ -81,28 +81,28 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:ancient_rune"
-    },
-    "B": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "C": {
-      "item": "minecraft:lapis_block"
-    },
-    "D": {
       "item": "minecraft:dripstone_block"
     },
-    "E": {
+    "B": {
+      "item": "architects_palette:algal_bricks"
+    },
+    "C": {
       "item": "kubejs:impregnated_wood"
     },
+    "D": {
+      "item": "netherexp:fossil_fuel"
+    },
+    "E": {
+      "item": "kubejs:black_steel_ingot"
+    },
     "F": {
-      "item": "architects_palette:moonshale"
+      "item": "kubejs:ancient_rune"
     },
     "G": {
-      "item": "kubejs:mud_bricks"
+      "item": "thermal_extra:amethyst_dust"
     },
     "H": {
-      "item": "farmersdelight:rope"
+      "item": "tconstruct:necrotic_bone"
     },
     "I": {
       "item": "minecraft:cartography_table"

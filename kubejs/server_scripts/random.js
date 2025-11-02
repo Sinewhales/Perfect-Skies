@@ -14,7 +14,7 @@ event.remove({ id: 'giacomos_exp:expseed' })
 event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
 event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
 event.remove({ id: 'architects_palette:smelting/moonshale' })
-
+event.remove({ id: 'glassential:glass_ethereal' })
 event.custom({
   "type": "extendedcrafting:shaped_table",
   "pattern": [
@@ -85,31 +85,31 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "integrateddynamics:crystalized_menril_block"
     },
     "B": {
-      "item": "kubejs:electrotine_plate"
+      "item": "architects_palette:algal_bricks"
     },
     "C": {
-      "item": "architects_palette:algal_brick"
+      "item": "projectred_exploration:electrotine_block"
     },
     "D": {
-      "item": "integratedterminals:menril_glass"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "E": {
-      "item": "thermal:cured_rubber"
+      "item": "kubejs:duralumin"
     },
     "F": {
-      "item": "minecraft:water_bucket"
+      "item": "minecraft:lily_pad"
     },
     "G": {
-      "item": "kubejs:black_iron_gear"
+      "item": "fluidtank:tank_stone"
     },
     "H": {
-      "item": 'fluidtank:tank_stone' 
+      "item": "aquaculture:driftwood"
     },
     "I": {
-      "item": "actuallyadditions:wood_casing"
+      "item": "extendedcrafting:frame"
     }
   },
   "result": {
@@ -262,28 +262,28 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "tconstruct:rose_gold_ingot"
+      "item": "netherexp:soul_candle"
     },
     "B": {
-      "item": "minecraft:candle"
+      "item": "netherexp:soul_slate"
     },
     "C": {
       "item": "minecraft:skeleton_skull"
     },
     "D": {
-      "item": "minecraft:amethyst_shard"
+      "item": "hexerei:dried_sage"
     },
     "E": {
-      "item": "minecraft:red_wool"
+      "item": "mysticalagriculture:nature_agglomeratio"
     },
     "F": {
       "item": "thermal:electrum_plate"
     },
     "G": {
-      "item": "kubejs:impregnated_wood"
+      "item": "tconstruct:necrotic_bone"
     },
     "H": {
-      "item": "minecraft:lectern"
+      "item": "thermal_extra:amethyst_dust"
     },
     "I": {
       "item": "minecraft:enchanting_table"
@@ -299,14 +299,14 @@ event.remove({ id: 'explorerscompass:explorers_compass' })
 event.recipes.summoningrituals
     .altar(Ingredient.of('naturescompass:naturescompass'))
     .itemOutput('explorerscompass:explorerscompass')
-    .input('2x kubejs:pulsating_iron_plate')
-    .input('2x extendedcrafting:black_iron_ingot')
     .input('2x mysticalagriculture:nature_agglomeratio')
-    .input('2x minecraft:amethyst_shard')
-    .input('2x architects_palette:moonshale')
-    .input('2x kubejs:cotton_cloth')
     .input('2x minecraft:moss_block')
-    .input('minecraft:cobweb')
+    .input('2x quark:soul_bead')
+    .input('2x architects_palette:moonshale')
+    .input('2x tinkers_thinking:spectre_ingot')
+    .input('2x hexerei:dried_belladonna_flowers')
+    .input('2x thermal_extra:amethyst_dust')
+    .input('minecraft:map')
     .recipeTime(200)
 
 // Moonshale
@@ -324,6 +324,29 @@ event.custom({
   }
 })
 
+// Ethereal Glass
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": 'minecraft:glass'
+    },
+    "block_in": {
+        "blocks": ["netherexp:ectoplasm"],
+        "state": {
+            "level": 0
+        }
+    },
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'glassential:glass_ethereal'
+        },
+                {
+            "type": "place",
+            "block": "*"
+        }
+    ]
+})
 })
 
 // Obituary

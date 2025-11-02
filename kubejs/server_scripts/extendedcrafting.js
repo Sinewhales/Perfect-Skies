@@ -80,30 +80,36 @@ event.custom({
   "pattern": [
     "ABCBA",
     "DEFED",
-    "CFGFC",
+    "GHIHG",
     "DEFED",
     "ABCBA"
   ],
   "key": {
     "A": {
-      "item": "tconstruct:hepatizon_ingot"
+      "item": "kubejs:obsidian_plate"
     },
     "B": {
-      "item": "kubejs:stone_gear"
+      "item": "actuallyadditions:black_quartz"
     },
     "C": {
-      "item": "tconstruct:soul_glass"
+      "item": "tinkers_thinking:spectre_ingot"
     },
     "D": {
-      "item": "tconstruct:obsidian_pane"
+      "item": "tconstruct:hepatizon_ingot"
     },
     "E": {
-      "item": "tinkers_thinking:ardite_ingot"
+      "item": "fluxnetworks:flux_dust"
     },
     "F": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "kubejs:stone_gear"
     },
     "G": {
+      "item": "netherexp:soul_glass"
+    },
+    "H": {
+      "item": "kubejs:ardite_rod"
+    },
+    "I": {
       "item": "actuallyadditions:wood_casing"
     }
   },

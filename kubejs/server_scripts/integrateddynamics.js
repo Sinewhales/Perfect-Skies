@@ -46,28 +46,28 @@ event.custom({
       "item": "architects_palette:algal_bricks"
     },
     "B": {
-      "item": "farmersdelight:rope"
+      "item": "integrateddynamics:menril_log"
     },
     "C": {
-      "item": "kubejs:duralumin_plate"
+      "item": "tconstruct:amethyst_bronze_ingot"
     },
     "D": {
-      "item": "kubejs:impregnated_wood"
+      "item": "tconstruct:nahuatl"
     },
     "E": {
-      "item": "kubejs:empowered_rubber"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "F": {
-      "item": "minecraft:cauldron"
+      "item": "supplementaries:antique_ink"
     },
     "G": {
-      "item": "extendedcrafting:black_iron_slate"
+      "item": "thermal:cured_rubber"
     },
     "H": {
       "item": "tconstruct:seared_basin"
     },
     "I": {
-      "item": "actuallyadditions:wood_casing"
+      "item": "extendedcrafting:frame"
     }
   },
   "result": {
@@ -132,28 +132,28 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:reinforced_obsidian_block"
-    },
-    "B": {
-      "item": "kubejs:empowered_rubber"
-    },
-    "C": {
-      "item": "minecraft:anvil"
-    },
-    "D": {
-      "item": "integratedterminals:menril_glass"
-    },
-    "E": {
       "item": "kubejs:black_steel_plate"
     },
+    "B": {
+      "item": "alexscaves:azure_neodymium_pillar"
+    },
+    "C": {
+      "item": "tconstruct:scorched_bricks"
+    },
+    "D": {
+      "item": "kubejs:blaze_shard"
+    },
+    "E": {
+      "item": "kubejs:empowered_rubber"
+    },
     "F": {
-      "item": "kubejs:gelatinous_ferrousslime_drop"
+      "item": "minecraft:anvil"
     },
     "G": {
-      "item": "alexscaves:galena"
+      "item": "tconstruct:obsidian_pane"
     },
     "H": {
-      "item": "kubejs:electrotine_gear"
+      "item": "kubejs:gelatinous_ferrousslime_drop"
     },
     "I": {
       "item": "extendedcrafting:frame"

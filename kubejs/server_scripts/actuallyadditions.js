@@ -5,33 +5,42 @@ event.custom({
   "type": "extendedcrafting:shaped_table",
   "pattern": [
     "ABCBA",
-    "BDEDB",
-    "CEFEC",
-    "BDEDB",
+    "DEFED",
+    "GHIHG",
+    "DEFED",
     "ABCBA"
   ],
   "key": {
     "A": {
-      "item": "thermal:iron_plate"
-    },
-    "B": {
-      "item": "thermal:rubberwood_planks"
-    },
-    "C": {
-      "item": "kubejs:wooden_gear"
-    },
-    "D": {
-      "item": "thermal_extra:sticky_ball"
-    },
-    "E": {
       "item": "kubejs:wood_sheet"
     },
+    "B": {
+      "item": "quark:blossom_log"
+    },
+    "C": {
+      "item": "forestry:beeswax"
+    },
+    "D": {
+      "item": "extendedcrafting:black_iron_slate"
+    },
+    "E": {
+      "item": "kubejs:wooden_gear"
+    },
     "F": {
+      "item": "thermal_extra:iron_rod"
+    },
+    "G": {
+      "item": "thermal:emerald_dust"
+    },
+    "H": {
+      "item": "kubejs:paper_stack"
+    },
+    "I": {
       "item": "minecraft:barrel"
     }
   },
   "result": {
-    "item":  'actuallyadditions:wood_casing'
+    "item": "actuallyadditions:wood_casing"
   }
 })
 

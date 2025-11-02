@@ -93,6 +93,21 @@ event.hide(['oreberriesreplanted:lead_oreberry_bush', 'oreberriesreplanted:urani
 // Drying Rack
 event.hide('tinkers_thinking:drying_rack')
 
+// Cobalt Dust
+event.hide('chemlib:cobalt_dust')
+event.hide('nuclearcraft:cobalt_dust')
+
+// Cobalt
+event.hide('chemlib:cobalt_ingot')
+event.hide('nuclearcraft:cobalt_ingot')
+
+// Cobalt Nugget
+event.hide('chemlib:cobalt_nugget')
+event.hide('nuclearcraft:cobalt_nugget')
+
+// Cobalt Block
+event.hide('nuclearcraft:cobalt_block')
+event.hide('chemlib:cobalt_metal_block')
 // Oreberries Bucket Removal
 event.hide(['oreberriesreplanted:lead_oreberry_juice_bucket', 'oreberriesreplanted:uranium_oreberry_juice_bucket', 'oreberriesreplanted:osmium_oreberry_juice_bucket', 'oreberriesreplanted:zinc_oreberry_juice_bucket'])
 })
