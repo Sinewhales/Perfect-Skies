@@ -74,34 +74,6 @@ event.custom({
   "result": 'thermal:iron_gear'
 })
 
-// Impregnated Stick
-event.custom({
-  "type": "tconstruct:casting_table",
-  "cast": {
-    "item": 'minecraft:stick'
-  },
-    "cast_consumed": true,
-  "cooling_time": 20,
-  "fluid": {
-    "amount": 125,
-    "fluid": "thermal:resin"
-  },
-  "result": 'forestry:impregnated_stick'
-})
-
-event.custom({
-  "type": "tconstruct:casting_table",
-  "cast": {
-    "item": 'kubejs:cotton_cloth'
-  },
-    "cast_consumed": true,
-  "cooling_time": 100,
-  "fluid": {
-    "amount": 250,
-    "fluid": "tconstruct:honey"
-  },
-  "result": 'kubejs:synthethic_leather'
-})
 
 event.custom({
   "type": "tconstruct:casting_table",
@@ -115,6 +87,33 @@ event.custom({
   },
   "result": {
     "item": 'kubejs:duralumin'
+  }
+})
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cooling_time": 54,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_conductive_alloy"
+  },
+  "result": {
+    "item": 'kubejs:conductive_alloy_ingot'
+  }
+})
+
+event.custom({
+  "type": "tconstruct:casting_basin",
+  "cooling_time": 80,
+  "fluid": {
+    "amount": 810,
+    "fluid": "kubejs:molten_conductive_alloy"
+  },
+  "result": {
+    "item": 'kubejs:conductive_alloy_block'
   }
 })
 
@@ -419,5 +418,38 @@ event.custom({
   },
   "result": 'kubejs:pyrotheum'
 })
+
+// Nahuatl
+event.remove({ id: "tconstruct:smeltery/casting/obsidian/nahuatl" })
+event.custom({
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": 'architects_palette:twisted_planks'
+  },
+  "cast_consumed": true,
+  "cooling_time": 111,
+  "fluid": {
+    "amount": 500,
+    "tag": "tconstruct:molten_obsidian"
+  },
+  "result": 'tconstruct:nahuatl'
+})
+
+// Bronze Gear
+event.remove({ id: "forestry:gear_bronze" })
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:stone_gear'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 360,
+    "fluid": "tconstruct:molten_bronze"
+  },
+  "result": 'thermal:bronze_gear'
+})
+
 })
 

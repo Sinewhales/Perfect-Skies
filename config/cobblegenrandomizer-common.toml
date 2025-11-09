@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = []
+			custom_generators = [["cobblestone", "minecraft:clay", ["minecraft:andesite|17", "minecraft:diorite|17", "minecraft:granite|17", "quark:shale|17", "quark:limestone|16", "quark:jasper|16"]]]
 

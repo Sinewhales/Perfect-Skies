@@ -9,16 +9,16 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "kubejs:red_alloy_plate"
+      "item": "thermal:cured_rubber"
     },
     "B": {
-      "item": "thermal:lapis_gear"
+      "item": 'kubejs:lapis_plate'
     },
     "C": {
       "item": "flopper:flopper"
     },
     "D": {
-      "item": "integratedterminals:menril_glass"
+      "item": "thermal:bronze_block"
     }
   },
   "result": {
@@ -37,10 +37,10 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "thermal:bronze_plate"
+      "item": "thermal:cured_rubber"
     },
     "B": {
-      "item": "thermal:cured_rubber"
+      "item": "extendedcrafting:black_iron_slate"
     },
     "C": {
       "item": "quark:pipe"
@@ -64,20 +64,23 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "thermal:invar_plate"
+      "item": "thermal:cured_rubber"
     },
     "B": {
-      "item": "kubejs:empowered_rubber"
+      "item": "kubejs:red_alloy_plate"
     },
     "C": {
-      "item": 'projectred_core:electrotine_dust'
+      "type": "forge:nbt",
+      "item": "projectred_expansion:battery",
+      "count": 1,
+      "nbt": "{Damage:0}"
     },
     "D": {
-      "item": "kubejs:red_alloy_block"
+      "item": "kubejs:conductive_alloy_block"
     }
   },
   "result": {
-    "item": "pipez:energy_pipe",
+    "item": 'pipez:energy_pipe',
     "count": 6
   }
 })

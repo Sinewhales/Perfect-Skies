@@ -82,28 +82,16 @@ event.custom({
 event.custom({
   "type": "tconstruct:melting",
   "ingredient": {
-    "item": 'netherexp:phasmo_shard'
+    "item": 'kubejs:condensed_ectoplasm'
   },
   "result": {
-    "amount": 250,
+    "amount": 125,
     "fluid": "netherexp:ectoplasm"
   },
   "temperature": 400,
   "time": 60
 })
 
-event.custom({
-  "type": "tconstruct:melting",
-  "ingredient": {
-    "item": 'netherexp:banshee_rod'
-  },
-  "result": {
-    "amount": 1000,
-    "fluid": "netherexp:ectoplasm"
-  },
-  "temperature": 400,
-  "time": 60
-})
 
 
 })

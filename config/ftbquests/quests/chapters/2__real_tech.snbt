@@ -9,18 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["13D0F4DA36DEC2D8"]
-			id: "54E7BF339D2D6C25"
-			shape: "octagon"
-			tasks: [{
-				id: "2D2E22B8A7127374"
-				item: "kubejs:empowered_rubber"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 5.0d
-		}
-		{
 			dependencies: ["0384461FF42098C3"]
 			id: "6A1435794C592A3C"
 			tasks: [{
@@ -64,34 +52,6 @@
 			}]
 			x: 10.0d
 			y: 12.5d
-		}
-		{
-			dependencies: ["76C8B754EAE20908"]
-			id: "6771EAB3BA34B265"
-			tasks: [{
-				id: "21CA92EFDB2A4345"
-				item: {
-					Count: 1
-					id: "hangglider:hang_glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 15.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["43C74383CE73981F"]
-			id: "76C8B754EAE20908"
-			tasks: [{
-				id: "491588281DC3E00B"
-				item: "kubejs:tanned_leather"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["736A4858CBC99949"]
@@ -209,27 +169,6 @@
 			}]
 			x: 4.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["1F8737DA77D2BDB2"]
-			id: "1DE7CB89404AD7DB"
-			tasks: [{
-				id: "1F2D3BF9529B9A52"
-				item: "farmingforblockheads:market"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
-			id: "03BFA09C130A399F"
-			tasks: [{
-				id: "6226E6A83B6437AC"
-				item: "kubejs:synthethic_leather"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 5.5d
 		}
 		{
 			dependencies: ["74DC5BF4A6A40B95"]

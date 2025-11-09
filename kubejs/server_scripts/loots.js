@@ -11,10 +11,10 @@ LootJS.modifiers((event) => {
   event.addBlockLootModifier("minecraft:fern").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
   event.addBlockLootModifier('projectvibrantjourneys:short_grass').removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
 
-  event.addBlockLootModifier("minecraft:grass").randomChance(0.7).matchMainHand(Item.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
-  event.addBlockLootModifier("minecraft:tall_grass").randomChance(0.7).matchMainHand(Item.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
-  event.addBlockLootModifier("minecraft:fern").randomChance(0.7).matchMainHand(Item.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
-  event.addBlockLootModifier("projectvibrantjourneys:short_grass").randomChance(0.7).matchMainHand(Item.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+  event.addBlockLootModifier("minecraft:grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+  event.addBlockLootModifier("minecraft:tall_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+  event.addBlockLootModifier("minecraft:fern").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+  event.addBlockLootModifier("projectvibrantjourneys:short_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   
 // Copper Nugget Unification
 
@@ -68,7 +68,18 @@ event.addLootTableModifier("minecraft:chests/woodland_mansion").removeLoot("@rft
   event.addBlockLootModifier("projectvibrantjourneys:mossy_rocks").addLoot('kubejs:rock')
 
 // Mud Ball
- event.addBlockLootModifier("minecraft:mud").removeLoot("minecraft:mud").addLoot('4x kubejs:mud_ball')      
+ event.addBlockLootModifier("minecraft:mud").removeLoot("minecraft:mud").addLoot('4x environmental:mud_ball')     
+
+// Ecto Shard through archaeology
+event.addLootTableModifier(/netherexp:archaeology.*/)
+        .removeLoot(Ingredient.all)
+        .addLoot('netherexp:phasmo_shard')
+
+event.addEntityLootModifier("quark:wraith").randomChance(0.4).addLoot('netherexp:phasmo_shard').limitCount([1, 3])
+
+event.addEntityLootModifier("netherexp:wisp").removeLoot(Ingredient.all)
+event.addEntityLootModifier("netherexp:wisp").randomChance(0.2).addLoot('netherexp:phasmo_shard')
+event.addEntityLootModifier("netherexp:wisp").randomChance(0.4).addLoot('kubejs:condensed_ectoplasm')
 });
 
 ServerEvents.chestLootTables(event => {

@@ -46,7 +46,7 @@ event.custom({
       "fluid": "tconstruct:molten_glass"
     },
     {
-      "amount": 500,
+      "amount": 180,
       "fluid": "tconstruct:molten_aluminum"
     }
   ],
@@ -61,11 +61,11 @@ event.custom({
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "amount": 270,
+      "amount": 90,
       "fluid": "tconstruct:molten_bronze"
     },
     {
-      "amount": 270,
+      "amount": 90,
       "fluid": "tconstruct:molten_electrum"
     }
   ],
@@ -94,6 +94,26 @@ event.custom({
   },
   "temperature": 700
 })
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 90,
+      "tag": "forge:molten_iron"
+    },
+    {
+      "amount": 90,
+      "fluid": "thermal:redstone"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "fluid": "kubejs:molten_conductive_alloy"
+  },
+  "temperature": 700
+})
+
 
 event.custom({
   "type": "tconstruct:alloy",

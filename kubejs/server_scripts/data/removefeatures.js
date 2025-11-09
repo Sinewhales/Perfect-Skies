@@ -151,7 +151,11 @@ ServerEvents.highPriorityData(e => {
      "nuclearcraft:uranium_ore",
      "nuclearcraft:uranium_wasteland_ore",
      "nuclearcraft:zinc_wasteland_ore",
-    "nuclearcraft:zinc_ore"
+    "nuclearcraft:zinc_ore",
+    "bigreactors:anglesite_ore",
+    "bigreactors:benitoite_ore",
+    "bigreactors:deepslate_yellorite_ore",
+    "bigreactors:yellorite_ore"
 
 
 

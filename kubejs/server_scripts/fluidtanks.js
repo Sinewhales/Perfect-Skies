@@ -9,88 +9,45 @@ event.shaped(
     'ABA'
   ],
   {
-    A: '#minecraft:planks',
-    B: 'minecraft:glass',  //arg 3: the mapping object
+    A: 'kubejs:wood_sheet',
+    B: 'minecraft:glass_pane',  //arg 3: the mapping object
   }
 )
 
 // Stone
 event.remove({ id: 'fluidtank:tank_stone' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABA",
-    "BCB",
-    "ABA"
+event.shaped(
+  Item.of('fluidtank:tank_stone', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'CBC'
   ],
-  "key": {
-    "A": {
-      "item": "fluidtank:tank_wood"
-    },
-    "B": {
-      "item": "architects_palette:moonshale"
-    },
-    "C": {
-      "item": "quark:sturdy_stone"
-    }
-  },
-  "result": {
-    "item": 'fluidtank:tank_stone' 
+  {
+    A: 'netherexp:soul_slate',
+    B: 'fluidtank:tank_wood',
+    C: 'extendedcrafting:black_iron_slate' //arg 3: the mapping object
   }
-})
+)
 
 // Copper Tank
 event.remove({ id: 'fluidtank:tank_copper' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABA",
-    "BCB",
-    "DBD"
+event.shaped(
+  Item.of('fluidtank:tank_copper', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'CBC'
   ],
-  "key": {
-    "A": {
-      "item": "fluidtank:tank_wood"
-    },
-    "B": {
-      "item": "thermal:bronze_plate"
-    },
-    "C": {
-      "item": "kubejs:duralumin_block"
-    },
-    "D": {
-      "item": "fluidtank:tank_stone"
-    }
-  },
-  "result": {
-    "item": "fluidtank:tank_copper"
+  {
+    A: 'thermal:copper_plate',
+    B: 'fluidtank:tank_stone',
+    C: 'kubejs:black_steel_plate'
   }
-})
+)
 
 event.remove({ id: 'fluidtank:tank_tin' })
 event.remove({ id: 'fluidtank:tank_iron' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABA",
-    "BCB",
-    "ABA"
-  ],
-  "key": {
-    "A": {
-      "item": "fluidtank:tank_stone"
-    },
-    "B": {
-      "item": "fluidtank:tank_tin"
-    },
-    "C": {
-      "item": "kubejs:black_steel_block"
-    }
-  },
-  "result": {
-    "item": 'fluidtank:tank_iron'
-  }
-})
 
 event.remove({ id: 'fluidtank:tank_bronze' })
 

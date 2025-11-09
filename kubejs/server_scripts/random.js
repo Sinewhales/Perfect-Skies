@@ -7,7 +7,6 @@ event.remove({ id: 'naturescompass:natures_compass' })
 event.remove({ id: 'functionalstorage:oak_drawer_alternate_x1' })
 event.remove({ id: 'functionalstorage:oak_drawer_alternate_x2' })
 event.remove({ id: 'functionalstorage:oak_drawer_alternate_x4' })
-event.remove({ id: 'actuallyadditions:charcoal_to_tiny' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank_sink' })
 event.remove({ id: 'giacomos_exp:expseed' })
@@ -15,22 +14,20 @@ event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
 event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
 event.remove({ id: 'architects_palette:smelting/moonshale' })
 event.remove({ id: 'glassential:glass_ethereal' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
+
+event.shaped(
+  Item.of('treetap:tap', 1), // arg 1: output
+  [
     " A ",
     "AAA",
     "AA "
   ],
-  "key": {
-    "A": {
-      "item": "thermal:copper_plate"
-    }
-  },
-  "result": {
-    "item": 'treetap:tap'
+  {
+    A: "thermal:copper_plate"
+
   }
-})
+)
+
 
 event.custom({
   "type": "treetap:tap_extract",
@@ -74,48 +71,20 @@ event.custom({
     "item": 'naturescompass:naturescompass'
   }
 })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.shaped(
+  Item.of('watercollector:watercollector', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'ABA'
   ],
-  "key": {
-    "A": {
-      "item": "integrateddynamics:crystalized_menril_block"
-    },
-    "B": {
-      "item": "architects_palette:algal_bricks"
-    },
-    "C": {
-      "item": "projectred_exploration:electrotine_block"
-    },
-    "D": {
-      "item": "extendedcrafting:black_iron_slate"
-    },
-    "E": {
-      "item": "kubejs:duralumin"
-    },
-    "F": {
-      "item": "minecraft:lily_pad"
-    },
-    "G": {
-      "item": "fluidtank:tank_stone"
-    },
-    "H": {
-      "item": "aquaculture:driftwood"
-    },
-    "I": {
-      "item": "extendedcrafting:frame"
-    }
-  },
-  "result": {
-    "item": 'watercollector:watercollector'
+  {
+    A: 'integrateddynamics:crystalized_menril_block',
+    B: 'architects_palette:algal_bricks',
+    C: 'minecraft:lily_pad',
+    D: 'extendedcrafting:frame'  //arg 3: the mapping object
   }
-})
+)
 
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -347,8 +316,97 @@ event.custom({
         }
     ]
 })
+
+// Dank 1
+event.remove({ id: 'dankstorage:dank_1' })
+event.shaped(
+  Item.of('dankstorage:dank_1', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'extendedcrafting:black_iron_slate',
+    B: 'minecraft:copper_ingot',
+    C: 'sophisticatedstorage:upgrade_base'
+
+  }
+)
+
+// Flopper Alternate
+event.shaped(
+  Item.of('flopper:flopper', 1), // arg 1: output
+  [
+    '   ',
+    'ABA', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'minecraft:iron_ingot',
+    B: 'ceramics:empty_clay_bucket'
+  }
+)
+
+// Soul Glass
+event.remove({ id: 'netherexp:soul_glass' })
+event.shapeless(
+  Item.of('netherexp:soul_glass'), // arg 1: output
+  [
+    'minecraft:glass',
+    'netherexp:phasmo_shard',
+    'tinkers_thinking:spectre_ingot'
+  ]
+)
+
+// Backpack Upgrade Base
+event.remove({ id: 'sophisticatedbackpacks:upgrade_base' })
+event.shaped(
+  Item.of('sophisticatedbackpacks:upgrade_base', 1), // arg 1: output
+  [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  {
+    A: "kubejs:tanned_leather",
+    B: 'kubejs:black_steel_ingot',
+    C: 'minecraft:string'
+  }
+)
+
+// Cardboard
+event.remove({ id: 'cardboardboxes:cardboardbox' })
+event.shapeless(
+  Item.of('cardboardboxes:cardboardbox'), // arg 1: output
+  [
+    '4x kubejs:cardboard_chunk'
+  ]
+)
+
+
+
+// Wisp Egg
+event.recipes.summoningrituals
+    .altar(Ingredient.of('minecraft:egg'))
+    .itemOutput(Item.of('netherexp:wisp_spawn_egg'))
+    .input('mysticalagriculture:nature_agglomeratio')
+    .input('mysticalagriculture:soul_dust')
+    .input('tconstruct:amethyst_bronze_ingot')
+    .input('supplementaries:antique_ink')
+    .input('tinkers_thinking:spectre_block')
+    .input('hexerei:dried_sage')
+    .input('netherexp:phasmo_shard')
+    .recipeTime(200)
+
+
+
+
 })
 
+
+
+// Compacting Upgrade
 // Obituary
 ItemEvents.dropped('gravestone:obituary', e => e.item.count--)
 

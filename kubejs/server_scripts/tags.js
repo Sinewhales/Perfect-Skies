@@ -1,6 +1,10 @@
 ServerEvents.tags('block', event => {
 // Cactus Should Grow in Spring
    event.add('sereneseasons:spring_crops', 'minecraft:cactus')
+   event.add('forge:ores/aluminum', 'kubejs:aluminium_ore')
+event.add('forge:ores/aluminum', 'kubejs:deepslate_aluminium_ore')
+event.add('forge:ores', 'kubejs:aluminium_ore')
+event.add('forge:ores', 'kubejs:deepslate_aluminium_ore')
 
 })
 ServerEvents.tags('item', event => {
@@ -50,9 +54,12 @@ event.add('forge:nuggets/copper', 'thermal:copper_nugget')
 event.removeAll('forge:raw_materials/aluminum')
 event.add('forge:raw_materials/aluminum', 'kubejs:raw_aluminum_ore')
 
+
 // Alu Ore
 event.add('forge:ores/aluminum', 'kubejs:aluminium_ore')
 event.add('forge:ores/aluminum', 'kubejs:deepslate_aluminium_ore')
+event.add('forge:ores', 'kubejs:aluminium_ore')
+event.add('forge:ores', 'kubejs:deepslate_aluminium_ore')
 
 // Rice
 event.removeAll('forge:crops/rice')
@@ -162,6 +169,10 @@ event.removeAllTagsFrom('nuclearcraft:cobalt_nugget')
 // Cobalt Block
 event.removeAllTagsFrom('nuclearcraft:cobalt_block')
 event.removeAllTagsFrom('chemlib:cobalt_metal_block')
+
+// Rotten Leather
+event.remove('forge:leather', 'forbidden_arcanus:rotten_leather')
+event.remove('agricraft:leather', 'forbidden_arcanus:rotten_leather')
 // Vat Wood Fix
 
 event.removeAll('perfectskies:nonvanilla_planks')

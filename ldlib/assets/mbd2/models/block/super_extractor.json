@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "kubejs:block/super_extractor",
+    "side": "tconstruct:block/wood/nahuatl",
+    "top": "tconstruct:block/wood/nahuatl"
+  }
+}

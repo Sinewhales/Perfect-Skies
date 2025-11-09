@@ -81,48 +81,21 @@ event.custom({
   }
 })
 
+// Arboreal
 event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
-  ],
-  "key": {
-    "A": {
-      "item": "tconstruct:nahuatl"
+    "type": "lychee:block_interacting",
+    "item_in": {
+        "item": 'treetap:tap'
     },
-    "B": {
-      "item": "hexerei:wax_blend"
-    },
-    "C": {
-      "item": "kubejs:black_iron_gear"
-    },
-    "D": {
-      "item": "glassential:glass_ethereal"
-    },
-    "E": {
-      "item": "thermal:invar_plate"
-    },
-    "F": {
-      "item": "thermal_extra:bronze_rod"
-    },
-    "G": {
-      "item": "kubejs:electrotine_plate"
-    },
-    "H": {
-      "item": 'tinkers_thinking:magma_slime_drop'
-    },
-    "I": {
-      "item": "extendedcrafting:frame"
-    }
-  },
-  "result": {
-    "item": "thermal:device_tree_extractor"
-  }
-})
+    "block_in": 'extendedcrafting:frame',
+    "post": [
+        {
+            "type": "place",
+            "block": 'thermal:device_tree_extractor'
+        }
+    ]
+}
+)
 
 
 
@@ -138,14 +111,6 @@ event.shaped(
     B: '#minecraft:saplings'
   }
 )
-
-        event.custom({
-            "type": "thermal:rock_gen",
-            "adjacent": "minecraft:water",
-            "below": "minecraft:clay",
-            "result": { "item": "quark:shale"}
-        })
-
 event.custom({
   "type": "extendedcrafting:shaped_table",
   "pattern": [
@@ -424,6 +389,20 @@ event.shaped(
   {
     A: 'kubejs:plate_hammer',
     B: 'thermal:bronze_ingot',  //arg 3: the mapping object
+  }
+).damageIngredient("kubejs:plate_hammer", 1)
+
+// Bronze Plate
+event.shaped(
+  Item.of('thermal:nickel_plate', 1), // arg 1: output
+  [
+    'A  ',
+    'B  ', // arg 2: the shape (array of strings)
+    'B  '
+  ],
+  {
+    A: 'kubejs:plate_hammer',
+    B: 'thermal:nickel_ingot',  //arg 3: the mapping object
   }
 ).damageIngredient("kubejs:plate_hammer", 1)
 

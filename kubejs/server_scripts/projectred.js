@@ -5,54 +5,45 @@ event.smithing(
   'projectred_core:platformed_plate',  
    'minecraft:redstone',                   // arg 1: output
   'projectred_core:plate',                          // arg 3: the item to be upgraded
-  'minecraft:redstone'                           // arg 4: the upgrade item
+  'minecraft:redstone_torch'                           // arg 4: the upgrade item
 )
+
 event.remove({ id: 'projectred_expansion:block_breaker' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.remove({ id: 'projectred_expansion:deployer' })
+
+// Block breaker
+event.shaped(
+  Item.of('projectred_expansion:block_breaker', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'AEA'
   ],
-  "key": {
-    "A": {
-      "item": "quark:shale"
-    },
-    "B": {
-      "item": "projectred_core:red_ingot"
-    },
-    "C": {
-      "item": "minecraft:piston"
-    },
-    "D": {
-      "item": "thermal:iron_plate"
-    },
-    "E": {
-      "item": "kubejs:stone_gear"
-    },
-    "F": {
-      "type": "forge:nbt",
-      "item": "minecraft:iron_pickaxe",
-      "count": 1,
-      "nbt": "{Damage:0}"
-    },
-    "G": {
-      "item": "quark:sturdy_stone"
-    },
-    "H": {
-      "item": "tconstruct:seared_bricks"
-    },
-    "I": {
-      "item": "actuallyadditions:wood_casing"
-    }
-  },
-  "result": {
-    "item": 'projectred_expansion:block_breaker'
+  {
+    A: 'quark:sturdy_stone',
+    B: 'eidolon:silver_pickaxe',
+    C: 'kubejs:stone_gear',
+    D: 'minecraft:piston',
+    E: 'projectred_core:electrotine_ingot'  //arg 3: the mapping object
   }
-})
+)
+
+// Deployer
+event.shaped(
+  Item.of('projectred_expansion:deployer', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'AEA'
+  ],
+  {
+    A: 'quark:sturdy_stone',
+    B: 'sophisticatedstorage:iron_to_gold_tier_upgrade',
+    C: 'kubejs:stone_gear',
+    D: 'minecraft:piston',
+    E: 'projectred_core:electrotine_ingot'  //arg 3: the mapping object
+  }
+)
 
 // Stone Rod
 event.custom({

@@ -145,4 +145,15 @@ event.custom({
   "grindingTime": 100
 })
 
+// Paper from Cattail
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('projectvibrantjourneys:cattail', "input1")
+.requireItem('projectvibrantjourneys:cattail', "input2")
+   .requireItem('projectvibrantjourneys:cattail', "input3")
+   .requireItem('projectvibrantjourneys:cattail', "input4")
+   .requireItem('projectvibrantjourneys:cattail', "input6")
+   .requireItem('projectvibrantjourneys:cattail', "input7")
+   .requireItem('projectvibrantjourneys:cattail', "input8")
+   .requireItem('projectvibrantjourneys:cattail', "input9")
 })

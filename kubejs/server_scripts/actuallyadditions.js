@@ -1,48 +1,22 @@
 ServerEvents.recipes(event => {
   // [1] Wood Casing 
 event.remove({ id: 'actuallyadditions:wood_casing' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.shaped(
+  Item.of('actuallyadditions:wood_casing', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'ABA'
   ],
-  "key": {
-    "A": {
-      "item": "kubejs:wood_sheet"
-    },
-    "B": {
-      "item": "quark:blossom_log"
-    },
-    "C": {
-      "item": "forestry:beeswax"
-    },
-    "D": {
-      "item": "extendedcrafting:black_iron_slate"
-    },
-    "E": {
-      "item": "kubejs:wooden_gear"
-    },
-    "F": {
-      "item": "thermal_extra:iron_rod"
-    },
-    "G": {
-      "item": "thermal:emerald_dust"
-    },
-    "H": {
-      "item": "kubejs:paper_stack"
-    },
-    "I": {
-      "item": "minecraft:barrel"
-    }
-  },
-  "result": {
-    "item": "actuallyadditions:wood_casing"
+  {
+    A: 'kubejs:wood_sheet',
+    B: 'extendedcrafting:black_iron_slate',
+    C: 'kubejs:wooden_gear',
+    D: 'minecraft:emerald'
+
   }
-})
+)
+
 
 // Rice Slimeball
 event.remove({ id: 'actuallyadditions:rice_slime_potion' })

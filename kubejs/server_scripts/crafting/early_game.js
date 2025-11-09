@@ -78,6 +78,7 @@ event.shaped(
 event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks_bamboo" })
 event.remove({ id: 'minecraft:stick' })
 event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks" })
+event.remove({ id: "environmental:mud_ball_from_dirt" })
 event.custom({
   type: 'farmersdelight:cutting',
   ingredients: [
@@ -149,13 +150,10 @@ event.custom({
   ],
   "key": {
     "A": {
-      "type": "forge:nbt",
-      "item": "cb_microblock:iron_saw",
-      "count": 1,
-      "nbt": "{Damage:0}"
+      "item": "cb_microblock:iron_saw"
     },
     "B": {
-      "item": "minecraft:oak_planks"
+      "tag": "minecraft:planks"
     },
     "C": {
       "item": "minecraft:stonecutter"
@@ -165,7 +163,8 @@ event.custom({
     "item": 'hexerei:mahogany_woodcutter'
   }
 })
-
+// Silver Pickaxe
+event.remove({ id: "iceandfire:silver_pickaxe" })
 // Scanner
 event.remove({ id: "scannable:scanner" })
 event.custom({
@@ -183,7 +182,7 @@ event.custom({
       "item": "kubejs:aluminum_plate"
     },
     "C": {
-      "item": "projectred_exploration:electrotine_block"
+      "item": 'projectred_exploration:electrotine_block'
     },
     "D": {
       "item": "kubejs:scanner_battery"
@@ -278,7 +277,7 @@ event.custom({
   "output": {
     "item": 'minecraft:leather'
   },
-  "dryingTimeInTicks": 600
+  "dryingTimeInTicks": 150
 })
 
 event.custom({
@@ -440,7 +439,7 @@ event.custom({
         "result": {
           "item": 'tconstruct:seared_brick'
         },
-        "evaporationtime": 900000
+        "evaporationtime": 9000
       })
 
 event.remove({ id: "tconstruct:smeltery/seared/melter" })
@@ -695,4 +694,232 @@ event.custom({
     "count": 1
   }
 })
+
+// Mortar Bone Meal
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:bone'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:bone_meal',
+    "count": 5
+  },
+  "grindingTime": 100
+})
+
+// Mortar Flint
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:gravel'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:flint',
+    "count": 1
+  },
+  "grindingTime": 100
+})
+
+// Mortar Book
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:book'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:paper',
+    "count": 2
+  },
+  "grindingTime": 100
+})
+
+// Fertilizer
+event.remove({ id: "forestry:fertilizer_ash" })
+event.remove({ id: "forestry:fertilizer_apatite" })
+event.shapeless(
+      Item.of('forestry:fertilizer_compound', 2), // arg 1: output
+      [
+        'supplementaries:ash',
+        'thermal:compost',
+        'thermal:apatite',
+        'thermal:niter'
+      ]
+    )
+
+event.shapeless(
+      Item.of('minecraft:bone_meal'), // arg 1: output
+      [
+
+        'thermal:compost'
+      ]
+    )
+
+// Graphite Removal to bring shift click back
+event.remove({ id: "bigreactors:smelting/graphite_from_charcoal" })
+event.remove({ id: "bigreactors:smelting/graphite_from_dust" })
+event.remove({ id: "bigreactors:smelting/graphite_from_coal" })
+event.remove({ id: "bigreactors:blasting/graphite_from_coal" })
+event.remove({ id: "bigreactors:blasting/graphite_from_charcoal" })
+event.remove({ id: "bigreactors:blasting/graphite_from_dust" })
+
+// Watering Can requires Fertilizer
+event.replaceInput(
+  { id: 'mysticalagriculture:watering_can' }, // Arg 1: the filter
+  'minecraft:bone_meal',            // Arg 2: the item to replace
+  'forestry:fertilizer_compound'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+// Cheaper Blast Furnace
+event.remove({ id: "tconstruct:common/basalt_blast_furnace" })
+event.remove({ id: "quark:building/crafting/furnaces/blackstone_blast_furnace" })
+event.remove({ id: "minecraft:blast_furnace" })
+event.remove({ id: "quark:building/crafting/furnaces/deepslate_blast_furnace" })
+event.shaped(
+  Item.of('minecraft:blast_furnace', 1), // arg 1: output
+  [
+    'AAA',
+    'BCB', // arg 2: the shape (array of strings)
+    'DED'
+  ],
+  {
+    A: 'minecraft:smooth_stone',
+    B: 'minecraft:iron_ingot',
+    C: 'minecraft:furnace',
+    D: 'minecraft:terracotta',
+    E: 'minecraft:campfire'
+
+  }
+)
+
+// Antique Ink can be turned into black dye
+event.shapeless(
+      Item.of('minecraft:black_dye', 2), // arg 1: output
+      [
+        'supplementaries:antique_ink'
+      ]
+    )
+
+// Crafter uses copper instead
+event.replaceInput(
+  { id: 'crafter_port:crafter' }, // Arg 1: the filter
+  'minecraft:iron_ingot',            // Arg 2: the item to replace
+  'minecraft:copper_ingot'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+// Dank 2
+event.remove({ id: "dankstorage:dank_2" })
+event.shaped(
+  Item.of('dankstorage:dank_2', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'tinkers_thinking:ardite_ingot',
+    B: 'minecraft:nether_wart_block',
+    C: 'dankstorage:dank_1'
+  }
+)
+
+event.remove({ id: "dankstorage:1_to_2" })
+event.shaped(
+  Item.of('dankstorage:1_to_2', 1), // arg 1: output
+  [
+    'ABA',
+    'B B', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'tinkers_thinking:ardite_ingot',
+    B: 'minecraft:nether_wart_block'
+  }
+)
+
+// Emerald Lasso
+event.remove({ id: "moblassos:emerald_lasso" })
+event.shapeless(
+  Item.of('agricraft:emerald_shard', 9), // arg 1: output
+  [
+    'minecraft:emerald'
+  ]
+)
+
+event.shaped(
+  Item.of("moblassos:emerald_lasso", 1), // arg 1: output
+  [
+    'A A',
+    ' B ', // arg 2: the shape (array of strings)
+    'A A'
+  ],
+  {
+    A: 'agricraft:emerald_shard',
+    B: 'minecraft:lead'
+  }
+)
+
+// Rotten Leather
+event.remove({ id: "forbidden_arcanus:rotten_leather" })
+event.remove({ id: "forbidden_arcanus:leather" })
+event.remove({ id: "integrateddynamics:drying_basin/convenience/minecraft_leather" })
+event.remove({ id: "integrateddynamics:mechanical_drying_basin/convenience/minecraft_leather" })
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'minecraft:rotten_flesh',
+  "fluid": {
+    "fluid": "kubejs:nature_extract",
+    "amount": 100
+  },
+  "duration": 100,
+  "result": {
+    "item": 'forbidden_arcanus:rotten_leather'
+  }
+
+})
+
+
+  event.custom({
+  "type": "hexerei:drying_rack",
+  "ingredients": [
+    {
+      "item": 'forbidden_arcanus:rotten_leather'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:leather'
+  },
+  "dryingTimeInTicks": 200
+
+  
+})
+  // Bound Leather
+
+event.shaped(
+  Item.of('kubejs:bound_leather', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'minecraft:string',
+    B: 'kubejs:cotton_cloth',
+    C: 'minecraft:leather'
+
+  }
+)
+
+
+// Impregnated Wood in Artisan
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:impregnated_wood")
+.requireItemTag('#minecraft:planks', 1).requireFluid(Fluid.of("thermal:resin", 100))
 })

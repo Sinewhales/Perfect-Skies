@@ -1,7 +1,7 @@
 
 [BlackListSettings]
 	#Prevents mobs spawners from being placed into cardboard boxes
-	BlackListMobSpawners = true
+	BlackListMobSpawners = false
 
 #Auto generated list of block entities registered in Minecraft that can be blocked from use with the box. If a block entity does not show up on this list it is already black listed. The reasoning behind blocking block entities is to prevent crashes or unwanted interaction. Such as picking up a piston which can both causes issues and doesn't really matter. Set value to 'true' to disable interaction.
 [tile_ban_list]

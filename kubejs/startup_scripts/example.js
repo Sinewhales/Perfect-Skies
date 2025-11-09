@@ -31,11 +31,8 @@ event.create('cotton_cloth').displayName("Cotton Cloth")
 event.create('synthethic_leather').displayName("Synthethic Leather")
 event.create('amber_paste_chunk').displayName("Amber Paste Chunk")
 event.create('empowered_rubber').displayName("Empowered Rubber").glow(true)
-event.create('mud_ball').displayName("Mud Ball")
 event.create('mud_brick').displayName("Mud Brick")
 event.create('lapis_plate').displayName("Lapis Plate")
-event.create('brass_ingot').displayName("Brass Ingot")
-event.create('brass_plate').displayName("Brass Plate")
 event.create('crushing_hammer').displayName("Crushing Hammer").unstackable().maxDamage(200)
 event.create('hyper_diamond').displayName("Hyper Diamond")
 event.create('pulsating_chipset').displayName("Pulsating Chipset")
@@ -44,7 +41,6 @@ event.create('duralumin').displayName("Duralumin Ingot")
 event.create('duralumin_plate').displayName("Duralumin Plate")
 event.create('ancient_rune').displayName("Ancient Rune")
 event.create('pulsating_iron_plate').displayName("Pulsating Iron Plate")
-event.create('graphene').displayName("Graphene")
 event.create('black_steel_ingot').displayName("Black Steel Ingot")
 event.create('black_steel_plate').displayName("Black Steel Plate")
 event.create('black_steel_gear').displayName("Black Steel Gear")
@@ -87,10 +83,18 @@ event.create('fiery_berries').displayName("Fieryberries")
 event.create('dried_fiery_berries').displayName("Dried Fieryberries") 
 event.create('basalt_dust').displayName("Basalt Dust") 
 event.create('cobalt_dust').displayName("Cobalt Dust") 
+event.create('conductive_alloy_ingot').displayName("Conductive Alloy Ingot") 
+event.create('bound_leather').displayName("Bound Leather") 
+event.create('kelp_powder').displayName("Kelp Powder") 
+event.create('village_locator').fireResistant().unstackable().displayName("Village Locator")
+event.create('demon_metal').displayName("Demonic Metal Ingot").fireResistant(true)
+event.create('condensed_ectoplasm').displayName("Condensed Ectoplasm")
+event.create('cardboard_chunk').displayName("Cardboard Chunk")
 // Raw Ore Block
 // Aluminum Dust
 
 })
+
 
 StartupEvents.registry('fluid', event => {
 
@@ -166,6 +170,11 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0x6a5244)
     .displayName('Molten Soul Glass')
 
+    event.create('molten_conductive_alloy')
+    .thickTexture(0xba686a)
+    .bucketColor(0xba686a)
+    .displayName('Molten Conductive Alloy')
+
     event.create('soul_extract')
     .thinTexture(0x6a5244)
     .bucketColor(0x6a5244)
@@ -201,7 +210,9 @@ StartupEvents.registry('block', event => {
   event.create('stone_fuel_bus').displayName("Stone Fuel Bus").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('worktable').displayName("Worktable").model('kubejs:block/worktable').defaultCutout()
   event.create('aluminum_block').displayName("Block of Aluminum").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
-
+  event.create('conductive_alloy_block').displayName("Block of Conductive Alloy").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
+  event.create('super_extractor').displayName("Super Extractor").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
+  event.create('stone_output_hatch').displayName("Stone Output Hatch").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
 
   
 

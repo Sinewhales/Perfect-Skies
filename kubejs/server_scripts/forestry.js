@@ -3,18 +3,16 @@ event.remove({ id: 'forestry:carpenter/impregnated_stick' })
 event.remove({ id: 'forestry:fabricator' })
 
 // [1] Impregnated Stick
-event.shaped(
-  Item.of('forestry:impregnated_stick', 8), // arg 1: output
-  [
-    'AAA',
-    'ABA', // arg 2: the shape (array of strings)
-    'AAA'
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { item: 'kubejs:impregnated_wood' }
   ],
-  {
-    A: 'minecraft:stick',
-    B: 'thermal:resin_bucket'
-  }
-)
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'forestry:impregnated_stick', count: 1 }
+  ]
+})
 
 // [1] Thermionic Fabricator
 event.custom({

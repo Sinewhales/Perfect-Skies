@@ -75,48 +75,21 @@ event.custom({
 
 // [1] Black Iron Frame
 event.remove({ id: 'extendedcrafting:frame' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.shaped(
+  Item.of('extendedcrafting:frame', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'ABA'
   ],
-  "key": {
-    "A": {
-      "item": "kubejs:obsidian_plate"
-    },
-    "B": {
-      "item": "actuallyadditions:black_quartz"
-    },
-    "C": {
-      "item": "tinkers_thinking:spectre_ingot"
-    },
-    "D": {
-      "item": "tconstruct:hepatizon_ingot"
-    },
-    "E": {
-      "item": "fluxnetworks:flux_dust"
-    },
-    "F": {
-      "item": "kubejs:stone_gear"
-    },
-    "G": {
-      "item": "netherexp:soul_glass"
-    },
-    "H": {
-      "item": "kubejs:ardite_rod"
-    },
-    "I": {
-      "item": "actuallyadditions:wood_casing"
-    }
-  },
-  "result": {
-    "item": "extendedcrafting:frame"
+  {
+    A: 'kubejs:obsidian_plate',
+    B: 'kubejs:stone_gear',
+    C: 'netherexp:soul_glass',
+    D: 'actuallyadditions:wood_casing'  //arg 3: the mapping object
   }
-})
+)
+
 
 // [2] Black Iron Ingot (Thermal)
 

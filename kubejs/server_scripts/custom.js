@@ -90,25 +90,6 @@ event.custom({
     ]
 })
 
-event.custom({
-    "type": "lychee:item_inside",
-    "item_in": {
-        "item": 'supplementaries:antique_ink'
-    },
-    "block_in": {
-        "blocks": ["water"],
-        "state": {
-            "level": 0
-        }
-    },
-    "post": [
-        {
-            "type": "place",
-            "block": "kubejs:black_dye"
-        }
-    ]
-})
-
 // Ancient Rune
 event.custom({
     "type": "lychee:item_inside",
@@ -246,12 +227,12 @@ event.custom({
 
 event.custom({
   "type": "integrateddynamics:drying_basin",
-  "item": "minecraft:leather",
+  "item": "kubejs:bound_leather",
   "fluid": {
-    "fluid": "thermal:resin",
-    "amount": 250
+    "fluid": "tconstruct:honey",
+    "amount": 500
   },
-  "duration": 100,
+  "duration": 200,
   "result": {
     "item": 'kubejs:tanned_leather'
   }
@@ -354,6 +335,32 @@ event.custom({
   "max_leaves": 24,
   "result": {
     "fluid": "kubejs:nature_extract",
+    "amount": 30
+  }
+})
+
+// Rubberwood Terrestria
+event.custom({
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": 'terrestria:rubber_log',
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": 'terrestria:rubber_leaves',
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": 'terrestria:rubber_sapling',
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "thermal:latex",
     "amount": 30
   }
 })
@@ -588,19 +595,6 @@ event.shaped(
   }
 )
 
-// Impregnated Wood
-event.shaped(
-  Item.of('kubejs:impregnated_wood', 8), // arg 1: output
-  [
-    'AAA',
-    'ABA', // arg 2: the shape (array of strings)
-    'AAA'
-  ],
-  {
-    A: '#minecraft:planks',
-    B: 'thermal:resin_bucket',  //arg 3: the mapping object
-  }
-)
 
 event.shaped(
   Item.of('kubejs:crushing_hammer', 1), // arg 1: output
@@ -616,7 +610,7 @@ event.shaped(
 )
 
 // Mud Bricks
-event.smelting('kubejs:mud_brick', 'kubejs:mud_ball')
+event.smelting('kubejs:mud_brick', 'environmental:mud_ball')
 
 // Aluminum
 event.smelting('kubejs:aluminum_ingot', 'kubejs:raw_aluminum_ore')
@@ -895,6 +889,14 @@ event.shapeless(
   ]
 )
 
+// Conductive Alloy
+event.shapeless(
+  Item.of('kubejs:conductive_alloy_block'), // arg 1: output
+  [
+    '9x kubejs:conductive_alloy_ingot'
+  ]
+)
+
 event.shapeless(
   Item.of('kubejs:aluminum_nugget', 9), // arg 1: output
   [
@@ -961,13 +963,14 @@ event.shaped(
 event.shaped(
   Item.of('kubejs:stone_gear', 1), // arg 1: output
   [
-    ' A ',
+    'CAC',
     'ABA', // arg 2: the shape (array of strings)
-    ' A '
+    'CAC'
   ],
   {
     A: 'netherexp:soul_slate',
-    B: 'kubejs:wooden_gear'
+    B: 'kubejs:wooden_gear',
+    C: 'tconstruct:hepatizon_nugget'
 
   }
 )
@@ -1352,7 +1355,63 @@ event.custom({
   "time": 20
 })
 
+// Demon Metal
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": 'tinkers_thinking:ardite_ingot'
+    },
+    "block_in": "minecraft:lava",
+    "post": [
+        {
+            "type": "drop_item",
+            "item": 'kubejs:demon_metal'
+        }
+    ]
+})
 
+event.shaped(
+  Item.of('kubejs:village_locator', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'quark:blossom_log',
+    B: 'minecraft:amethyst_shard',
+    C: 'minecraft:compass'  //arg 3: the mapping object
+  }
+)
+
+// Synthethic Leather
+event.shaped(
+  Item.of('kubejs:synthethic_leather', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'minecraft:string',
+    B: 'kubejs:cotton_cloth',  
+    C: 'thermal_extra:sticky_ball' //arg 3: the mapping object
+  }
+)
+
+// Cardboard Chunk
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'kubejs:paper_stack',
+  "fluid": {
+    "fluid": "thermal:resin",
+    "amount": 250
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:cardboard_chunk'
+  }
+})
 
 })
 

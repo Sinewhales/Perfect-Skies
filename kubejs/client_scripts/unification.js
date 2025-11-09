@@ -75,6 +75,8 @@ event.hide(['tconstruct:plate_sand_cast'])
 // Hide KJS Multi Parts
 event.hide(['kubejs:stone_output_bus', 'kubejs:primitive_smelter', 'kubejs:stone_input_bus', 'kubejs:stone_fuel_bus'])
 event.hide('kubejs:worktable')
+event.hide('kubejs:super_extractor')
+event.hide('kubejs:stone_output_hatch')
 
 // Aluminum
 event.hide('dustandash:aluminum_ingot')
@@ -116,7 +118,7 @@ JEIEvents.addItems(event => {
   event.add(['cb_microblock:stone_saw', 'cb_microblock:iron_saw', 'cb_microblock:diamond_saw', 'cb_microblock:stone_rod'])
   event.add('ceramics:unfired_clay_bucket')
   event.add(['tropicraft:light_mangrove_log', 'tropicraft:black_mangrove_log', 'tropicraft:red_mangrove_log'])
-
+  event.add(['cagerium:binding_gemstone', 'cagerium:binding_wood_plate', 'cagerium:burning_upgrade', 'cagerium:cage', 'cagerium:ominous_skull', 'cagerium:plate', 'cagerium:skeleton_key', 'cagerium:terrarium'])
 })
 
 JEIEvents.hideFluids(event => {

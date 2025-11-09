@@ -11,5 +11,15 @@ event.shapeless(
 '4x thermal:compost'
   ]
 )
+
+// Stone Knife 
+event.remove({ id: 'moredelight:stone_knife' })
+event.shapeless(
+  Item.of('moredelight:stone_knife'), // arg 1: output
+  [
+'minecraft:stick',
+'kubejs:rock'
+  ]
+)
 })
 

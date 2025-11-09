@@ -41,24 +41,6 @@
 			dependencies: ["4B81F3FAE36DB511"]
 			icon: "waystones:waystone"
 			id: "00CEEC6896483F22"
-			rewards: [
-				{
-					id: "0D3EA9AA39FE33A0"
-					item: "waystones:waystone"
-					type: "item"
-				}
-				{
-					id: "11AF68B68E9908EA"
-					item: {
-						Count: 1
-						id: "waystones:warp_stone"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
 			subtitle: "Waystones recipes are disabled and those in villages are unbreakable. You can only TP to your personnal waystone or to any village tou have discovered."
 			tasks: [{
 				id: "2967D0162935673A"
@@ -85,20 +67,6 @@
 			dependencies: ["4B81F3FAE36DB511"]
 			icon: "minecraft:grass"
 			id: "48C969E6FB3594C2"
-			rewards: [{
-				id: "381AE7E547BB34DD"
-				item: {
-					Count: 1
-					id: "lootbags:loot_bag"
-					tag: {
-						Color: 13882323
-						Loot: "lootbags:kjs/a93e9hs1ns87kfthowfa40cqh"
-						Name: "Seed Bag"
-						Type: "COMMON"
-					}
-				}
-				type: "item"
-			}]
 			subtitle: "As a way to declutter inventory, grass now have a chance to drop a Seed Bag when broken. Open it to get the usual loots."
 			tasks: [{
 				id: "680A7D0DE9E95E61"
@@ -119,23 +87,6 @@
 			}]
 			x: -1.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["4B81F3FAE36DB511"]
-			icon: "sophisticatedbackpacks:backpack"
-			id: "7230A222432AAE45"
-			rewards: [{
-				id: "59F1C2552CD3D804"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1A49A93B91216346"
-				title: "Backpack"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: 2.5d
 		}
 	]
 	title: "Welcome to Perfect Skies"

@@ -1,47 +1,20 @@
 
 ServerEvents.recipes(event => {
 event.remove({ id: 'farmingforblockheads:market' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "AABAA",
-    "C   C",
-    "CDDDC",
-    "EFGFE",
-    "HFBFH"
+event.shaped(
+  Item.of('farmingforblockheads:market', 1), // arg 1: output
+  [
+    'ABA',
+    'C C', // arg 2: the shape (array of strings)
+    'DED'
   ],
-  "key": {
-    "A": {
-      "item": "thermal:iron_plate"
-    },
-    "B": {
-      "item": "kubejs:heart_of_emerald"
-    },
-    "C": {
-      "item": "forestry:impregnated_stick"
-    },
-    "D": {
-      "item": "minecraft:red_wool"
-    },
-    "E": {
-      "item": "minecraft:emerald"
-    },
-    "F": {
-      "item": "quark:blossom_log"
-    },
-    "G": {
-      "type": "forge:nbt",
-      "item": "lootbags:loot_bag",
-      "count": 1,
-      "nbt": "{Color:13882323,Loot:\"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh\",Name:\"Seed Bag\",Type:\"COMMON\"}"
-    },
-    "H": {
-      "item": "kubejs:impregnated_wood"
-    }
-  },
-  "result": {
-    "item": 'farmingforblockheads:market'
+  {
+    A: 'thermal:iron_plate',
+    B: 'kubejs:heart_of_emerald',
+    C: 'forestry:impregnated_stick',
+    D: 'quark:blossom_log',
+    E: 'minecraft:red_wool'
   }
-})
+)
 })
 

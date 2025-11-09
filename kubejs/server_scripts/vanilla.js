@@ -36,31 +36,25 @@ event.shapeless(
 )
 
 //[0] Water Bucket from Cactus Juice
-event.shaped(
-  Item.of('minecraft:water_bucket', 1), // arg 1: output
-  [
-    'AAA',
-    'ABA', // arg 2: the shape (array of strings)
-    'AAA'
-  ],
-  {
-    A: 'kubejs:cactus_juice',
-    B: 'minecraft:bucket',
-
-  }
-)
-
 event.shapeless(
   Item.of('minecraft:water_bucket'), // arg 1: output
   [
-    '8x kubejs:cactus_juice',
+    '4x kubejs:cactus_juice',
     'minecraft:bucket'
+  ]
+)
+
+event.shapeless(
+  Item.of('ceramics:fluid_clay_bucket', '{fluid:"minecraft:water"}'), // arg 1: output
+  [
+    '4x kubejs:cactus_juice',
+    'ceramics:empty_clay_bucket'
   ]
 )
 
 // Chest Bulk
 event.shaped(
-  Item.of('minecraft:chest', 4), // arg 1: output
+  Item.of('minecraft:chest', 2), // arg 1: output
   [
     'AAA',
     'A A', // arg 2: the shape (array of strings)
@@ -137,30 +131,6 @@ event.custom({
 
 
 // Leather
-event.custom({
-  "type": "tinkers_thinking:drying_rack",
-  "ingredient": [
-    {
-      "item": 'kubejs:synthethic_leather'
-    }
-  ],
-  "output": {
-    "item": 'minecraft:leather'
-  }
-})
-
-// Mud
-event.shaped(
-  Item.of('minecraft:mud', 1), // arg 1: output
-  [
-    'AA ',
-    'AA ', // arg 2: the shape (array of strings)
-    '   '
-  ],
-  {
-    A: 'kubejs:mud_ball'  //arg 3: the mapping object
-  }
-)
 
 // Lodestone Alt
 event.shaped(
@@ -201,6 +171,9 @@ event.shaped(
     B: 'minecraft:copper_ingot'  //arg 3: the mapping object
   }
 )
+
+// Cheap Hopper Removal
+event.remove({ id: 'quark:tweaks/crafting/utility/misc/easy_hopper' })
 
 
 
