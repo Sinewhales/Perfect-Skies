@@ -18,6 +18,24 @@ event.custom({
   "fluid_amount_difference": -1
 })
 
+// Contract
+event.custom({
+  "type": "amendments:cauldron_crafting",
+  "input_items": [
+    {
+      "item": 'kubejs:paper_stack'
+    }
+  ],
+  "input_fluid": {
+    "id": "kubejs:black_dye"
+  },
+  "output_item": {
+    "id": 'moblassos:contract',
+    "Count": 1
+  },
+  "fluid_amount_difference": -1
+})
+
 event.custom({
   "type": "amendments:cauldron_crafting",
   "input_items": [
@@ -35,38 +53,5 @@ event.custom({
   "fluid_amount_difference": -1
 })
 
-event.custom({
-  "type": "amendments:cauldron_crafting",
-  "input_items": [
-    {
-      "item": 'kubejs:inactive_luminessence'
-    }
-  ],
-  "input_fluid": {
-    "id": "mob_grinding_utils:fluid_xp"
-  },
-  "output_item": {
-    "id": 'extendedcrafting:luminessence',
-    "Count": 1
-  },
-  "fluid_amount_difference": -1
-})
-
-event.custom({
-  "type": "amendments:cauldron_crafting",
-  "input_items": [
-    {
-      "item": 'minecraft:wheat_seeds'
-    }
-  ],
-  "input_fluid": {
-    "id": "mob_grinding_utils:fluid_xp"
-  },
-  "output_item": {
-    "id": 'giacomos_exp:expseed',
-    "Count": 1
-  },
-  "fluid_amount_difference": -1
-})
 })
 

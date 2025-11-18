@@ -11,7 +11,7 @@ event.shaped(
   {
     A: 'thermal:iron_plate',
     B: 'kubejs:heart_of_emerald',
-    C: 'forestry:impregnated_stick',
+    C: 'minecraft:stick',
     D: 'quark:blossom_log',
     E: 'minecraft:red_wool'
   }

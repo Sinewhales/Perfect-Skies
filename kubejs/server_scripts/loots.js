@@ -43,6 +43,18 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier("chests/village/village_toolsmith").randomChance(0.3).addLoot('mysticalagriculture:inferium_essence').limitCount([1, 7], [5, 9])
 	event.addLootTableModifier("chests/village/village_weaponsmith").randomChance(0.3).addLoot('mysticalagriculture:inferium_essence').limitCount([1, 7], [5, 9])
 
+// Heart of Emerald in Villages
+event.addLootTableModifier("chests/village/village_desert_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_plains_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_savanna_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_snowy_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_taiga_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_toolsmith").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_weaponsmith").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
+
+// Heart of Emerald Epic urn Loot
+event.addBlockLootModifier("supplementaries:urn").randomChance(0.05).addLoot('kubejs:heart_of_emerald')
+
 // Evilcraft Tweaks
 event.addLootTableModifier("chests/village/village_cartographer").removeLoot("@rftoolsdim")
 event.addLootTableModifier("chests/village/village_plains_house").removeLoot("@rftoolsdim")
@@ -104,7 +116,6 @@ ServerEvents.chestLootTables(event => {
 			p.addItem('occultism:datura_seeds', 1).weight(3)
 		})
 	})
-
 	event.addChest('kubejs:t1_lootbags', t => {
 		t.addPool(p => {
 			p.rolls = 1

@@ -21,5 +21,23 @@ event.shapeless(
 'kubejs:rock'
   ]
 )
+// Cooking Pot
+event.remove({ id: 'farmersdelight:cooking_pot' })
+event.shaped(
+  Item.of('farmersdelight:cooking_pot', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'CCC'
+  ],
+  {
+    A: 'tconstruct:seared_brick',
+    B: Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}').strongNBT(),
+    C: 'tconstruct:hepatizon_ingot',
+    D: 'tinkers_thinking:pulp_bottle'
+
+  }
+)
+
 })
 

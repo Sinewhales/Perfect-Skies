@@ -32,48 +32,6 @@ event.custom({
   }
 })
 
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
-  ],
-  "key": {
-    "A": {
-      "item": "architects_palette:algal_bricks"
-    },
-    "B": {
-      "item": "integrateddynamics:menril_log"
-    },
-    "C": {
-      "item": "tconstruct:amethyst_bronze_ingot"
-    },
-    "D": {
-      "item": "tconstruct:nahuatl"
-    },
-    "E": {
-      "item": "extendedcrafting:black_iron_slate"
-    },
-    "F": {
-      "item": "supplementaries:antique_ink"
-    },
-    "G": {
-      "item": "thermal:cured_rubber"
-    },
-    "H": {
-      "item": "tconstruct:seared_basin"
-    },
-    "I": {
-      "item": "extendedcrafting:frame"
-    }
-  },
-  "result": {
-    "item": 'integrateddynamics:drying_basin'
-  }
-})
 event.remove({ id: 'integratedterminals:crafting/part_terminal_storage' })
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -121,67 +79,24 @@ event.custom({
   }
 })
 event.remove({ id: 'integratedterminals:crafting/part_display_panel' })
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.shaped(
+  Item.of('integrateddynamics:squeezer', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'ABA'
   ],
-  "key": {
-    "A": {
-      "item": "kubejs:black_steel_plate"
-    },
-    "B": {
-      "item": "alexscaves:azure_neodymium_pillar"
-    },
-    "C": {
-      "item": "tconstruct:scorched_bricks"
-    },
-    "D": {
-      "item": "kubejs:blaze_shard"
-    },
-    "E": {
-      "item": "kubejs:empowered_rubber"
-    },
-    "F": {
-      "item": "minecraft:anvil"
-    },
-    "G": {
-      "item": "tconstruct:obsidian_pane"
-    },
-    "H": {
-      "item": "kubejs:gelatinous_ferrousslime_drop"
-    },
-    "I": {
-      "item": "extendedcrafting:frame"
-    }
-  },
-  "result": {
-    "item": "integrateddynamics:squeezer"
+  {
+    A: 'tconstruct:hepatizon_ingot',
+    B: 'minecraft:anvil',  //arg 3: the mapping object
+    C: 'actuallyadditions:wood_casing',
+    D: 'extendedcrafting:frame'
   }
-})
+)
+
 
 // Lead
 
-event.custom({
-  "type": "integrateddynamics:squeezer",
-  "item": {
-    "item": 'alexscaves:galena'
-  },
-  "result": {
-    "items": [
-      {
-        "item": {
-          "item": 'thermal:lead_dust',
-          "count": 1
-        }
-      }
-    ]
-  }
-})
 event.remove({ id: 'integrateddynamics:crafting/part_display_panel' })
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -300,5 +215,35 @@ event.custom({
     "item": "integratedterminals:menril_glass"
   }
 })
+
+// Drying basin
+event.shaped(
+  Item.of('integrateddynamics:drying_basin', 1), // arg 1: output
+  [
+    'A A',
+    'BCB', // arg 2: the shape (array of strings)
+    'ADA'
+  ],
+  {
+    A: 'tconstruct:nahuatl',
+    B: 'kubejs:black_iron_gear',  //arg 3: the mapping object
+    C: 'tconstruct:seared_basin',
+    D: 'architects_palette:algal_bricks'
+  }
+)
+
+// Magma Block to Lava
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'minecraft:magma_block'
+  },
+  "result": {
+   "fluid": {
+      "fluid": "minecraft:lava",
+      "amount": 125
+    }
+  }})
+
 })
 

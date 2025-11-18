@@ -8,43 +8,6 @@ event.smithing(
   'minecraft:redstone_torch'                           // arg 4: the upgrade item
 )
 
-event.remove({ id: 'projectred_expansion:block_breaker' })
-event.remove({ id: 'projectred_expansion:deployer' })
-
-// Block breaker
-event.shaped(
-  Item.of('projectred_expansion:block_breaker', 1), // arg 1: output
-  [
-    'ABA',
-    'CDC', // arg 2: the shape (array of strings)
-    'AEA'
-  ],
-  {
-    A: 'quark:sturdy_stone',
-    B: 'eidolon:silver_pickaxe',
-    C: 'kubejs:stone_gear',
-    D: 'minecraft:piston',
-    E: 'projectred_core:electrotine_ingot'  //arg 3: the mapping object
-  }
-)
-
-// Deployer
-event.shaped(
-  Item.of('projectred_expansion:deployer', 1), // arg 1: output
-  [
-    'ABA',
-    'CDC', // arg 2: the shape (array of strings)
-    'AEA'
-  ],
-  {
-    A: 'quark:sturdy_stone',
-    B: 'sophisticatedstorage:iron_to_gold_tier_upgrade',
-    C: 'kubejs:stone_gear',
-    D: 'minecraft:piston',
-    E: 'projectred_core:electrotine_ingot'  //arg 3: the mapping object
-  }
-)
-
 // Stone Rod
 event.custom({
   type: 'farmersdelight:cutting',
@@ -56,6 +19,19 @@ event.custom({
     { item: 'cb_microblock:stone_rod', count: 1 }
   ]
 })
+
+event.shaped(
+  Item.of('cb_microblock:stone_rod', 1), // arg 1: output
+  [
+    '   ',
+    ' A ', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'kubejs:rock',
+
+  }
+)
 
 })
 

@@ -120,6 +120,7 @@ event.removeAllTagsFrom('chemlib:aluminum_metal_block')
 event.add('forge:storage_blocks/aluminum', 'kubejs:aluminum_block')
 event.add('forge:storage_blocks', 'kubejs:aluminum_block')
 
+
 // Plate
 event.removeAllTagsFrom('chemlib:aluminum_plate')
 event.add('forge:plates/aluminum', 'kubejs:aluminum_plate')
@@ -221,6 +222,9 @@ ServerEvents.tags('fluid', event => {
 
  event.removeAll('systeams:water')
   event.add('systeams:water', 'minecraft:water')
+
+  // Enchanted Water
+  event.add('perfectskies:enchanted_water', 'kubejs:enchanted_water')
 
 
 })

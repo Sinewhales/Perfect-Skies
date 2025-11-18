@@ -13,22 +13,22 @@ event.custom({
       "item": "kubejs:compressed_furnace"
     },
     "B": {
-      "item": "quark:sturdy_stone"
+      "item": "kubejs:double_compressed_cobblestone"
     },
     "C": {
-      "item": "tconstruct:seared_bricks"
+      "item": "tconstruct:scorched_bricks"
     },
     "D": {
       "item": "ceramics:lava_bricks"
     },
     "E": {
-      "item": "tconstruct:ichor_slime_crystal"
+      "item": "kubejs:black_steel_plate"
     },
     "F": {
       "item": "netherexp:fossil_fuel"
     },
     "G": {
-      "item": "kubejs:double_compressed_cobblestone"
+      "item": "tconstruct:ichor_congealed_slime"
     },
     "H": {
       "item": "kubejs:blaze_shard"
@@ -42,6 +42,7 @@ event.custom({
   }
 })
 
+
 // Super Extractor
 event.custom({
   "type": "extendedcrafting:shaped_table",
@@ -54,31 +55,34 @@ event.custom({
   ],
   "key": {
     "A": {
-      "item": "tconstruct:nahuatl"
-    },
-    "B": {
-      "item": "architects_palette:twisted_planks"
-    },
-    "C": {
-      "item": "architects_palette:algal_bricks"
-    },
-    "D": {
-      "item": "thermal:nickel_plate"
-    },
-    "E": {
       "item": "thermal:device_tree_extractor"
     },
+    "B": {
+      "item": "architects_palette:algal_bricks"
+    },
+    "C": {
+      "type": "forge:nbt",
+      "item": "tconstruct:large_plate",
+      "count": 1,
+      "nbt": "{Material:\"tconstruct:nahuatl\"}"
+    },
+    "D": {
+      "item": "kubejs:black_iron_gear"
+    },
+    "E": {
+      "item": "kubejs:black_steel_plate"
+    },
     "F": {
-      "item": "architects_palette:monazite_rod"
+      "item": "mysticalagriculture:nature_agglomeratio"
     },
     "G": {
-      "item": "extendedcrafting:black_iron_ingot"
+      "item": "tinkers_thinking:ardite_ingot"
     },
     "H": {
-      "item": "thermal:bronze_gear"
+      "item": "kubejs:empowered_rubber"
     },
     "I": {
-      "item": "projectred_expansion:frame"
+      "item": "extendedcrafting:frame"
     }
   },
   "result": {

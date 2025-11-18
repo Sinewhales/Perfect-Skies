@@ -61,6 +61,26 @@ event.custom({
   "type": "tconstruct:alloy",
   "inputs": [
     {
+      "amount": 1000,
+      "fluid": "tconstruct:magma"
+    },
+    {
+      "amount": 250,
+      "fluid": "tconstruct:blazing_blood"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "fluid": "kubejs:enriched_magma"
+  },
+  "temperature": 950
+})
+
+
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
       "amount": 90,
       "fluid": "tconstruct:molten_bronze"
     },
@@ -112,6 +132,26 @@ event.custom({
     "fluid": "kubejs:molten_conductive_alloy"
   },
   "temperature": 700
+})
+
+// Liquid Glue
+event.custom({
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 250,
+      "tag": "tconstruct:slime"
+    },
+    {
+      "amount": 500,
+      "fluid": "thermal:resin"
+    }
+  ],
+  "result": {
+    "amount": 250,
+    "fluid": "kubejs:liquid_glue"
+  },
+  "temperature": 400
 })
 
 

@@ -61,13 +61,8 @@ event.hide(['sophisticatedstorage:xp_pump_upgrade', 'sophisticatedbackpacks:xp_p
 // Rope
 event.hide(['supplementaries:rope'])
 
-// Tinker casts
-event.hide(['tconstruct:gear_cast'])
-event.hide(['tconstruct:gear_red_sand_cast'])
-event.hide(['tconstruct:gear_sand_cast'])
-event.hide(['tconstruct:plate_cast'])
-event.hide(['tconstruct:plate_red_sand_cast'])
-event.hide(['tconstruct:plate_sand_cast'])
+
+
 
 // Steel Ingot
   event.hide('tconstruct:steel_ingot')

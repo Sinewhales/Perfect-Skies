@@ -7,10 +7,25 @@ event.remove({ id: 'extendedcrafting:basic_component' })
 event.shapeless(
   Item.of('extendedcrafting:basic_component'), // arg 1: output
   [
-    'extendedcrafting:black_iron_slate',
-    'thermal:iron_plate'
+    'kubejs:black_steel_plate',
+    'thermal:invar_plate',
+    'extendedcrafting:luminessence'
   ]
 )
+
+// Luminessence
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'kubejs:inactive_luminessence',
+  "fluid": {
+    "fluid": "mob_grinding_utils:fluid_xp",
+    "amount": 500
+  },
+  "duration": 100,
+  "result": {
+    "item": 'extendedcrafting:luminessence'
+  }
+})
 
 
 // [0] Advanced Component
@@ -18,8 +33,9 @@ event.remove({ id: 'extendedcrafting:advanced_component' })
 event.shapeless(
   Item.of('extendedcrafting:advanced_component'), // arg 1: output
   [
-    'extendedcrafting:black_iron_slate',
-    'thermal:gold_plate'
+    'kubejs:black_steel_plate',
+    'thermal:electrum_plate',
+    'extendedcrafting:luminessence'
   ]
 )
 
@@ -83,8 +99,8 @@ event.shaped(
     'ABA'
   ],
   {
-    A: 'kubejs:obsidian_plate',
-    B: 'kubejs:stone_gear',
+    A: 'tconstruct:obsidian_pane',
+    B: 'kubejs:black_steel_gear',
     C: 'netherexp:soul_glass',
     D: 'actuallyadditions:wood_casing'  //arg 3: the mapping object
   }

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "welcome_to_perfect_skies"
-	group: ""
+	group: "5392D860F8A1D1B3"
 	icon: "botania:cosmetic_questgiver_mark"
 	id: "56EA4AAA59CE1479"
 	order_index: 0

@@ -8,7 +8,7 @@ event.shaped(
     'CDC'
   ],
   {
-    A: 'integratedterminals:menril_glass',
+    A: 'tinkers_thinking:tempered_glass',
     B: 'kubejs:heart_of_emerald',
     C: 'tconstruct:nahuatl',
     D: 'farmersdelight:straw_bale'

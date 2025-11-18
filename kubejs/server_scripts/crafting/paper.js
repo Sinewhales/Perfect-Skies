@@ -126,7 +126,7 @@ event.custom({
     "item": 'forestry:wood_pulp',
     "count": 2
   },
-  "grindingTime": 100
+  "grindingTime": 60
 })
 
 // Black Dye only in Pestle 
@@ -156,4 +156,65 @@ event.custom({
    .requireItem('projectvibrantjourneys:cattail', "input7")
    .requireItem('projectvibrantjourneys:cattail', "input8")
    .requireItem('projectvibrantjourneys:cattail', "input9")
+
+     event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('environmental:cattail', "input1")
+.requireItem('environmental:cattail', "input2")
+   .requireItem('environmental:cattail', "input3")
+   .requireItem('environmental:cattail', "input4")
+   .requireItem('environmental:cattail', "input6")
+   .requireItem('environmental:cattail', "input7")
+   .requireItem('environmental:cattail', "input8")
+   .requireItem('environmental:cattail', "input9")
+
+// Paper with ID
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'farmersdelight:rice_bag'
+  },
+  "result": {
+   "fluid": {
+      "fluid": "tinkers_thinking:pulp",
+      "amount": 1000
+    }
+  }})
+
+  event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'rusticdelight:cotton_boll_crate'
+  },
+  "result": {
+   "fluid": {
+      "fluid": "tinkers_thinking:pulp",
+      "amount": 1000
+    }
+  }})
+
+  event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'thermal:sugar_cane_block'
+  },
+  "result": {
+   "fluid": {
+      "fluid": "tinkers_thinking:pulp",
+      "amount": 1000
+    }
+  }})
+
+  // Drying Basin
+  event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "tinkers_thinking:pulp",
+    "amount": 250
+  },
+  "duration": 20,
+  "result": {
+    "item": 'minecraft:paper'
+  }
+})
 })

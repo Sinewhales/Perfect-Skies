@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "788AE2A997A3E324"
+	id: "7A9AADECFB14255F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D7403ACE91DB3FA"]
+			id: "765B3F8F0733A8D3"
+			tasks: [{
+				id: "4647C4BFC08EB846"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FBFBA3B9862A97C"]
+			id: "15C9C8A8378061CC"
+			tasks: [{
+				id: "1BBA421EAC7AAD65"
+				item: "fluidtank:tank_wood"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15C9C8A8378061CC"]
+			id: "5B44744A532FCF12"
+			tasks: [{
+				id: "0F56D2707F5334CD"
+				item: "fluidtank:reservoir_wood"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CFDA8D6076098B1"]
+			id: "7B1DC94CCA6A15B5"
+			subtitle: "Sophisticated Storage Chests recipes are disabled, you'll have to use upgrades."
+			tasks: [{
+				id: "4DBE2F4F73D84650"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08B810FFC3FC0F63"]
+			id: "0C5CAB284A316EE6"
+			tasks: [{
+				id: "44DFCBF278E4112A"
+				item: "dankstorage:dank_1"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+	]
+	title: "Storage"
+}

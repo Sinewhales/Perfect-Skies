@@ -20,9 +20,7 @@ JEIAddedEvents.registerCategories(event => {
 JEIAddedEvents.registerRecipes(event => {
 	event.custom('minecraft:cauldron_crafting').add({ input: 'minecraft:iron_ingot', catalyst: 'kubejs:black_dye_bucket', output: 'extendedcrafting:black_iron_ingot' })
     event.custom('minecraft:cauldron_crafting').add({ input: 'thermal:iron_gear', catalyst: 'kubejs:black_dye_bucket', output: 'kubejs:black_iron_gear' })
-    event.custom('minecraft:cauldron_crafting').add({ input: 'kubejs:inactive_luminessence', catalyst: 'mob_grinding_utils:fluid_xp_bucket', output: 'extendedcrafting:luminessence' })
-    event.custom('minecraft:cauldron_crafting').add({ input: 'minecraft:wheat_seeds', catalyst: 'mob_grinding_utils:fluid_xp_bucket', output: 'giacomos_exp:expseed' })
-
+	event.custom('minecraft:cauldron_crafting').add({ input: 'kubejs:paper_stack', catalyst: 'kubejs:black_dye_bucket', output: 'moblassos:contract' })
 })
 
 global['verifyRecipe'] = (jeiHelpers, recipe) => {

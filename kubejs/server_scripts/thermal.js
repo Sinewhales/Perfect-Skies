@@ -82,22 +82,24 @@ event.custom({
 })
 
 // Arboreal
-event.custom({
-    "type": "lychee:block_interacting",
-    "item_in": {
-        "item": 'treetap:tap'
-    },
-    "block_in": 'extendedcrafting:frame',
-    "post": [
-        {
-            "type": "place",
-            "block": 'thermal:device_tree_extractor'
-        }
-    ]
-}
+event.shaped(
+  Item.of('thermal:device_tree_extractor', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'AEA'
+  ],
+  {
+    A: 'eidolon:polished_planks',
+    B: 'supplementaries:faucet',
+    C: 'kubejs:pewter_plate',
+    D: 'extendedcrafting:frame',
+    E: 'kubejs:black_steel_gear'
+  }
 )
 
-
+// Rubber
+event.remove({ id: 'thermal:rubber_3' })
 
 event.shaped(
   Item.of('thermal:rubberwood_sapling', 1), // arg 1: output

@@ -5,7 +5,7 @@ event.remove({ id: 'dustandash:crafting/cooled_magma_block' })
 event.custom({
   "type": "integrateddynamics:drying_basin",
   "fluid": {
-    "fluid": "tconstruct:magma",
+    "fluid": "kubejs:enriched_magma",
     "amount": 1000
   },
   "duration": 100,

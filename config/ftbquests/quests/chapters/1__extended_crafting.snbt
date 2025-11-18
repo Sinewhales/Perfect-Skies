@@ -2,8 +2,8 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1__extended_crafting"
-	group: ""
-	icon: "extendedcrafting:advanced_table"
+	group: "5392D860F8A1D1B3"
+	icon: "extendedcrafting:black_iron_ingot"
 	id: "694A4D82DE1A6C74"
 	order_index: 1
 	quest_links: [ ]
@@ -80,86 +80,6 @@
 			y: 0.4190299887984068d
 		}
 		{
-			dependencies: ["08B810FFC3FC0F63"]
-			id: "0570E402958E89E9"
-			shape: "octagon"
-			tasks: [{
-				id: "43DBCEC3EC0823A3"
-				item: "extendedcrafting:basic_component"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0570E402958E89E9"]
-			id: "4BD35D1EBCFE8DD1"
-			shape: "octagon"
-			tasks: [{
-				id: "01448BB3EEDAC7E2"
-				item: "extendedcrafting:basic_catalyst"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4BD35D1EBCFE8DD1"]
-			id: "47CB31A5FFB365AE"
-			rewards: [{
-				id: "52483E133984387C"
-				item: "extendedcrafting:basic_table"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 1.0d
-			tasks: [{
-				id: "242B2066028B57F0"
-				item: "extendedcrafting:basic_table"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["47CB31A5FFB365AE"]
-			id: "736A4858CBC99949"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "34B79AF3F73D19E0"
-				item: "extendedcrafting:advanced_table"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["510706A143424837"]
-			icon: "minecraft:hopper"
-			id: "11344054C9C971F9"
-			tasks: [
-				{
-					id: "3AABF2C5381B04F9"
-					item: "minecraft:hopper"
-					type: "item"
-				}
-				{
-					id: "2736B2465C9E98A3"
-					item: "flopper:flopper"
-					type: "item"
-				}
-				{
-					id: "7B1B0BAD78F83EDB"
-					item: "quark:chute"
-					type: "item"
-				}
-			]
-			title: "Early Automation"
-			x: -0.5d
-			y: -1.0d
-		}
-		{
 			dependencies: ["01788FAEEC656353"]
 			id: "1979340115DFE500"
 			shape: "octagon"
@@ -171,81 +91,6 @@
 			}]
 			x: -10.0d
 			y: -8.0d
-		}
-		{
-			dependencies: ["1979340115DFE500"]
-			id: "60FB14BE07C4EC74"
-			tasks: [{
-				id: "38486BE203023275"
-				item: "extendedcrafting:handheld_table"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["3D7403ACE91DB3FA"]
-			id: "765B3F8F0733A8D3"
-			tasks: [{
-				id: "4647C4BFC08EB846"
-				item: "functionalstorage:oak_1"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -10.5d
-		}
-		{
-			dependencies: [
-				"7DA0E9FB463A7C45"
-				"510706A143424837"
-			]
-			id: "6E798A361CF22316"
-			tasks: [{
-				id: "1FFE6EF650A861ED"
-				item: {
-					Count: 1
-					id: "mysticalagriculture:watering_can"
-					tag: {
-						Water: 0b
-					}
-				}
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7CE77E39DAA9749D"]
-			id: "273654184CAD71BC"
-			tasks: [{
-				id: "0A24C1AD881015E7"
-				item: "forestry:worktable"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["510706A143424837"]
-			id: "1AC52A86C309953B"
-			tasks: [{
-				id: "6FF9FD6869AD2290"
-				item: "crafter_port:crafter"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["56AC3D22D12FC7A5"]
-			id: "46B221D54066E885"
-			tasks: [{
-				id: "769D3E68C5FBCB6A"
-				item: "quark:pipe"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["510706A143424837"]
@@ -263,34 +108,11 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 3.0d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["4CFDA8D6076098B1"]
-			id: "0F286D1985726E20"
-			tasks: [{
-				id: "5FF1A327C5F397A9"
-				item: "projectred_core:platformed_plate"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["4CFDA8D6076098B1"]
-			id: "7B1DC94CCA6A15B5"
-			subtitle: "Sophisticated Storage Chests recipes are disabled, you'll have to use upgrades."
-			tasks: [{
-				id: "4DBE2F4F73D84650"
-				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["5112CC2DA9D82C4A"]
+			dependencies: ["3D7403ACE91DB3FA"]
 			id: "5A5DC66D6E6307CB"
 			tasks: [{
 				id: "348CC8636A46028E"
@@ -316,7 +138,7 @@
 				type: "item"
 			}]
 			title: "An early ore processing method"
-			x: -2.5d
+			x: -1.5d
 			y: -1.0d
 		}
 		{
@@ -531,24 +353,6 @@
 		}
 		{
 			dependencies: ["1979340115DFE500"]
-			id: "5112CC2DA9D82C4A"
-			shape: "octagon"
-			tasks: [{
-				id: "78774CDE878A26BE"
-				item: {
-					Count: 1
-					id: "kubejs:crushing_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -9.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5112CC2DA9D82C4A"]
 			id: "1113E6A776F22C69"
 			tasks: [{
 				id: "603D0073031DC672"
@@ -559,7 +363,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["5A5DC66D6E6307CB"]
+			dependencies: ["1979340115DFE500"]
 			id: "3D7403ACE91DB3FA"
 			tasks: [{
 				id: "72D673EE4E34E6FF"
@@ -572,8 +376,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -9.0d
+			x: -8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2B1C2D47B7EE36AD"]
@@ -681,50 +485,16 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["47CB31A5FFB365AE"]
+			dependencies: ["08B810FFC3FC0F63"]
+			dependency_requirement: "one_completed"
 			id: "74C89D346CAF988B"
 			tasks: [{
 				id: "6EF13CDF0B22980C"
 				item: "hexerei:mahogany_woodcutter"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["47CB31A5FFB365AE"]
-			id: "61A4150826E33065"
-			rewards: [
-				{
-					id: "0662C35D973DD292"
-					item: "scannable:rare_ores_module"
-					type: "item"
-				}
-				{
-					id: "08CDB17298ADF2DB"
-					item: "scannable:common_ores_module"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "6CC620073BF035EC"
-					item: "kubejs:scanner_battery"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "4C8CF6FDC3FDD248"
-				item: {
-					Count: 1
-					id: "scannable:scanner"
-					tag: {
-						energy: 5000
-					}
-				}
-				type: "item"
-			}]
-			x: 14.0d
-			y: 0.0d
+			x: 9.702380952380935d
+			y: -1.095238095238095d
 		}
 		{
 			dependencies: ["3D7403ACE91DB3FA"]
@@ -735,8 +505,8 @@
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -10.5d
+			x: -8.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["51DA828F05C25E66"]
@@ -752,87 +522,17 @@
 		}
 		{
 			dependencies: ["08B810FFC3FC0F63"]
-			id: "0C5CAB284A316EE6"
+			id: "08AE1B36551CBDD5"
+			shape: "octagon"
+			size: 2.0d
 			tasks: [{
-				id: "44DFCBF278E4112A"
-				item: "dankstorage:dank_1"
+				id: "41F57C93728F8F84"
+				item: "actuallyadditions:wood_casing"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
-		}
-		{
-			id: "7DA0E9FB463A7C45"
-			tasks: [{
-				id: "79C12265661065BE"
-				item: "minecraft:composter"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1AF3B85CDF694535"]
-			id: "690E400CBCDFB0A5"
-			tasks: [{
-				id: "25CBC2FFD043A756"
-				item: "minecraft:blast_furnace"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1979340115DFE500"]
-			id: "3F29225EF1AFF649"
-			tasks: [{
-				id: "57048C8DDFBD1199"
-				item: "comforts:sleeping_bag_white"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["7FBFBA3B9862A97C"]
-			id: "15C9C8A8378061CC"
-			tasks: [{
-				id: "1BBA421EAC7AAD65"
-				item: "fluidtank:tank_wood"
-				type: "item"
-			}]
-			x: -3.5d
+			x: 13.0d
 			y: -2.0d
 		}
-		{
-			dependencies: ["1AF3B85CDF694535"]
-			id: "16847D2DBB19886E"
-			tasks: [{
-				id: "25A37C6C80565CD2"
-				item: {
-					Count: 1
-					id: "constructionwand:stone_wand"
-					tag: {
-						Damage: 0
-						wand_options: { }
-					}
-				}
-				type: "item"
-			}]
-			x: -6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["15C9C8A8378061CC"]
-			id: "5B44744A532FCF12"
-			tasks: [{
-				id: "0F56D2707F5334CD"
-				item: "fluidtank:reservoir_wood"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -3.5d
-		}
 	]
-	title: "0 - Extended Crafting"
+	title: "0 - Humble Beginings"
 }

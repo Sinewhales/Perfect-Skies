@@ -14,6 +14,8 @@ event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
 event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
 event.remove({ id: 'architects_palette:smelting/moonshale' })
 event.remove({ id: 'glassential:glass_ethereal' })
+event.remove({ id: 'cardboardboxes:cardboardbox' })
+event.remove({ id: 'moblassos:contract' })
 
 event.shaped(
   Item.of('treetap:tap', 1), // arg 1: output
@@ -28,6 +30,14 @@ event.shaped(
   }
 )
 
+// Algal Blend can be made from Seagrass
+event.shapeless(
+  Item.of('architects_palette:algal_blend', 2), // arg 1: output
+  [
+    'minecraft:clay_ball',
+    'minecraft:seagrass'
+  ]
+)
 
 event.custom({
   "type": "treetap:tap_extract",
@@ -59,18 +69,6 @@ event.custom({
 }
 )
 
-event.custom({
-  "type": "integrateddynamics:drying_basin",
-  "item": "minecraft:compass",
-  "fluid": {
-    "fluid": "kubejs:nature_extract",
-    "amount": 1000
-  },
-  "duration": 100,
-  "result": {
-    "item": 'naturescompass:naturescompass'
-  }
-})
 event.shaped(
   Item.of('watercollector:watercollector', 1), // arg 1: output
   [
@@ -79,10 +77,10 @@ event.shaped(
     'ABA'
   ],
   {
-    A: 'integrateddynamics:crystalized_menril_block',
+    A: 'tconstruct:hepatizon_ingot',
     B: 'architects_palette:algal_bricks',
     C: 'minecraft:lily_pad',
-    D: 'extendedcrafting:frame'  //arg 3: the mapping object
+    D: 'actuallyadditions:wood_casing'  //arg 3: the mapping object
   }
 )
 
@@ -119,9 +117,9 @@ event.shaped(
     'ABA'
   ],
   {
-    A: 'extendedcrafting:black_iron_ingot',
-    B: 'minecraft:obsidian',
-    C: 'minecraft:glass'  //arg 3: the mapping object
+    A: 'kubejs:black_steel_ingot',
+    B: 'tconstruct:obsidian_pane',
+    C: 'netherexp:soul_glass'  //arg 3: the mapping object
   }
 )
 
@@ -219,64 +217,68 @@ event.shapeless(
   ]
 )
 
+// Cardboard
+event.shapeless(
+  Item.of('cardboardboxes:cardboardbox'), // arg 1: output
+  [
+    '4x kubejs:cardboard_chunk'
+  ]
+)
 // Summoning Altar
-event.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCBA",
-    "DEFED",
-    "GHIHG",
-    "DEFED",
-    "ABCBA"
+event.shaped(
+  Item.of('summoningrituals:altar', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'EFE'
   ],
-  "key": {
-    "A": {
-      "item": "netherexp:soul_candle"
-    },
-    "B": {
-      "item": "netherexp:soul_slate"
-    },
-    "C": {
-      "item": "minecraft:skeleton_skull"
-    },
-    "D": {
-      "item": "hexerei:dried_sage"
-    },
-    "E": {
-      "item": "mysticalagriculture:nature_agglomeratio"
-    },
-    "F": {
-      "item": "thermal:electrum_plate"
-    },
-    "G": {
-      "item": "tconstruct:necrotic_bone"
-    },
-    "H": {
-      "item": "thermal_extra:amethyst_dust"
-    },
-    "I": {
-      "item": "minecraft:enchanting_table"
-    }
-  },
-  "result": {
-    "item": "summoningrituals:altar"
-  }
-})
+  {
+    A: 'netherexp:soul_candle',
+    B: 'minecraft:wither_skeleton_skull',
+    C: 'thermal:gold_plate',
+    D: 'extendedcrafting:frame',
+    E: 'tconstruct:nahuatl',
+    F: 'minecraft:lectern'
 
-// Explorer's Compass
+  }
+)
+
+// Nature Compass
+event.shaped(
+  Item.of('naturescompass:naturescompass', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: '#minecraft:saplings',
+    B: 'tinkers_thinking:spectre_nugget',
+    C: 'minecraft:compass'
+
+  }
+)
+
+event.shaped(
+  Item.of('explorerscompass:explorerscompass', 1), // arg 1: output
+  [
+    'BAB',
+    'DCD', // arg 2: the shape (array of strings)
+    'BAB'
+  ],
+  {
+    A: 'quark:soul_bead',
+    B: 'tconstruct:amethyst_bronze_ingot',
+    C: 'naturescompass:naturescompass',
+    D: 'minecraft:cobweb'
+
+  }
+)
+
 event.remove({ id: 'explorerscompass:explorers_compass' })
-event.recipes.summoningrituals
-    .altar(Ingredient.of('naturescompass:naturescompass'))
-    .itemOutput('explorerscompass:explorerscompass')
-    .input('2x mysticalagriculture:nature_agglomeratio')
-    .input('2x minecraft:moss_block')
-    .input('2x quark:soul_bead')
-    .input('2x architects_palette:moonshale')
-    .input('2x tinkers_thinking:spectre_ingot')
-    .input('2x hexerei:dried_belladonna_flowers')
-    .input('2x thermal_extra:amethyst_dust')
-    .input('minecraft:map')
-    .recipeTime(200)
+
+
+
 
 // Moonshale
 event.remove({ id: 'architects_palette:warping/moonshale_from_stone_warping' })
@@ -353,7 +355,7 @@ event.remove({ id: 'netherexp:soul_glass' })
 event.shapeless(
   Item.of('netherexp:soul_glass'), // arg 1: output
   [
-    'minecraft:glass',
+    'tconstruct:soul_glass',
     'netherexp:phasmo_shard',
     'tinkers_thinking:spectre_ingot'
   ]
@@ -370,38 +372,62 @@ event.shaped(
   ],
   {
     A: "kubejs:tanned_leather",
-    B: 'kubejs:black_steel_ingot',
+    B: 'extendedcrafting:black_iron_ingot',
     C: 'minecraft:string'
   }
 )
 
-// Cardboard
-event.remove({ id: 'cardboardboxes:cardboardbox' })
-event.shapeless(
-  Item.of('cardboardboxes:cardboardbox'), // arg 1: output
-  [
-    '4x kubejs:cardboard_chunk'
-  ]
-)
+
+
 
 
 
 // Wisp Egg
 event.recipes.summoningrituals
-    .altar(Ingredient.of('minecraft:egg'))
+    .altar(Ingredient.of('netherexp:wisp_bottle'))
     .itemOutput(Item.of('netherexp:wisp_spawn_egg'))
-    .input('mysticalagriculture:nature_agglomeratio')
-    .input('mysticalagriculture:soul_dust')
-    .input('tconstruct:amethyst_bronze_ingot')
-    .input('supplementaries:antique_ink')
-    .input('tinkers_thinking:spectre_block')
-    .input('hexerei:dried_sage')
+    .input('eidolon:soul_shard')
+    .input('tinkers_thinking:spectre_ingot')
     .input('netherexp:phasmo_shard')
+    .input('mysticalagriculture:soul_dust')
     .recipeTime(200)
 
 
+// Exp Seed
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'oreberriesreplanted:essence_berry',
+  "fluid": {
+    "fluid": "mob_grinding_utils:fluid_xp",
+    "amount": 1000
+  },
+  "duration": 100,
+  "result": {
+    "item": 'giacomos_exp:expseed'
+  }
+})
 
-
+// Phasmo Shard Duplication
+event.custom({
+  "type": "eidolon:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": 'netherexp:phasmo_shard' }
+      ]
+    },
+    {
+      "items": [
+        { "item": 'eidolon:enchanted_ash' },
+        { "item": 'mysticalagriculture:soulium_dust' }
+      ]
+    }
+  ],
+  "result": {
+    "item": 'netherexp:phasmo_shard',
+    "count": 2
+  }
+})
 })
 
 

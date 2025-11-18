@@ -1,9 +1,4 @@
 {
-  "wizards_reborn": {
-    "numerical": true,
-    "crystal_growth": true,
-    "salt_campfire": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -150,6 +145,10 @@
   },
   "replication": {
     "matter_tank": true
+  },
+  "evilcraft": {
+    "box_of_eternal_closure": true,
+    "broom": true
   },
   "pneumaticcraft": {
     "pneumatic": true,

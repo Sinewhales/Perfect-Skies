@@ -90,6 +90,11 @@ event.create('village_locator').fireResistant().unstackable().displayName("Villa
 event.create('demon_metal').displayName("Demonic Metal Ingot").fireResistant(true)
 event.create('condensed_ectoplasm').displayName("Condensed Ectoplasm")
 event.create('cardboard_chunk').displayName("Cardboard Chunk")
+event.create('amethyst_bronze_plate').displayName("Amethyst Bronze Plate")
+event.create('magic_clay').displayName("Magic Clay")
+event.create('inlay_cast').displayName("Inlay Gold Cast")
+event.create('stone_inlay').displayName("Stone Inlay")
+event.create('blaze_ingot').displayName("Blaze Ingot")
 // Raw Ore Block
 // Aluminum Dust
 
@@ -175,10 +180,21 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xba686a)
     .displayName('Molten Conductive Alloy')
 
+    event.create('enriched_magma')
+    .thickTexture(0xa12424)
+    .bucketColor(0xa12424)
+    .displayName('Enriched Magma')
+
     event.create('soul_extract')
     .thinTexture(0x6a5244)
     .bucketColor(0x6a5244)
     .displayName('Soul Extract')
+
+    event.create('liquid_glue')
+    .thinTexture(0xD3D3D3)
+    .bucketColor(0xD3D3D3)
+    .displayName('Liquid Glue')
+
 
 
 

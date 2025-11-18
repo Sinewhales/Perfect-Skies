@@ -142,7 +142,7 @@ event.shaped(
   ],
   {
     A: 'architects_palette:chiseled_moonshale',
-    B: 'extendedcrafting:black_iron_block'  //arg 3: the mapping object
+    B: 'kubejs:black_steel_ingot'  //arg 3: the mapping object
   }
 )
 
@@ -175,6 +175,51 @@ event.shaped(
 // Cheap Hopper Removal
 event.remove({ id: 'quark:tweaks/crafting/utility/misc/easy_hopper' })
 
+// Tree Bark to Planks
+    event.shapeless(
+      Item.of('minecraft:oak_planks'), // arg 1: output
+      [
+        '4x farmersdelight:tree_bark'
+      ]
+    )
 
+// Cobblestone
+ event.remove({ id: "projectvibrantjourneys:cobblestone_from_rocks" })
+     event.shapeless(
+      Item.of('minecraft:cobblestone'), // arg 1: output
+      [
+        '4x kubejs:rock'
+      ]
+    )
+
+// Sticks
+
+event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks_bamboo" })
+event.remove({ id: 'minecraft:stick' })
+event.remove({ id: "quark:tweaks/crafting/utility/misc/easy_sticks" })
+event.remove({ id: "environmental:mud_ball_from_dirt" })
+event.custom({
+  type: 'farmersdelight:cutting',
+  ingredients: [
+    { tag: 'minecraft:planks' }
+  ],
+  tool: { tag: 'cb_microblock:tools/saw' },
+  result: [
+    { item: 'minecraft:stick', count: 1 }
+  ]
+})
+
+event.shaped(
+  Item.of('minecraft:stick', 1), // arg 1: output
+  [
+    '   ',
+    ' A ', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'minecraft:bamboo',
+
+  }
+)
 
 })

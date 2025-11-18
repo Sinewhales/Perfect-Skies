@@ -1,0 +1,93 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation_options"
+	group: "788AE2A997A3E324"
+	id: "73AF0BA04727E2D3"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["510706A143424837"]
+			icon: "minecraft:hopper"
+			id: "11344054C9C971F9"
+			tasks: [
+				{
+					id: "3AABF2C5381B04F9"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "2736B2465C9E98A3"
+					item: "flopper:flopper"
+					type: "item"
+				}
+				{
+					id: "7B1B0BAD78F83EDB"
+					item: "quark:chute"
+					type: "item"
+				}
+			]
+			title: "Early Automation"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["510706A143424837"]
+			id: "1AC52A86C309953B"
+			tasks: [{
+				id: "6FF9FD6869AD2290"
+				item: "crafter_port:crafter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4CFDA8D6076098B1"]
+			id: "0F286D1985726E20"
+			tasks: [{
+				id: "5FF1A327C5F397A9"
+				item: "projectred_core:platformed_plate"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56AC3D22D12FC7A5"]
+			id: "46B221D54066E885"
+			tasks: [{
+				id: "769D3E68C5FBCB6A"
+				item: "quark:pipe"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["32E3F203C379B8DC"]
+			id: "0D12FDBAE586CF1E"
+			tasks: [
+				{
+					id: "00CFC0B9138A1177"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "28D10DDC4170DB8C"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "5F6060626A003732"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.0d
+		}
+	]
+	title: "Automation Options"
+}

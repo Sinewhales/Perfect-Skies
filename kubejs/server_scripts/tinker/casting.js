@@ -30,9 +30,9 @@ event.remove({ id: "tconstruct:smeltery/casting/metal/invar/gear_sand_cast" })
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'kubejs:stone_gear'
+    "item": 'tconstruct:gear_cast'
   },
-    "cast_consumed": true,
+    "cast_consumed": false,
   "cooling_time": 120,
   "fluid": {
     "amount": 360,
@@ -40,6 +40,125 @@ event.custom({
   },
   "result": 'thermal:invar_gear'
 })
+
+// Black Iron Slate
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'tconstruct:plate_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_black_iron"
+  },
+  "result": 'extendedcrafting:black_iron_slate'
+})
+
+// Pewter Plate
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'tconstruct:plate_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_pewter"
+  },
+  "result": 'kubejs:pewter_plate'
+})
+
+// Black Steel Plate
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'tconstruct:plate_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_black_steel"
+  },
+  "result": 'kubejs:black_steel_plate'
+})
+
+// Black Steel Gear
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'tconstruct:gear_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 360,
+    "fluid": "kubejs:molten_black_steel"
+  },
+  "result": 'kubejs:black_steel_gear'
+})
+
+
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'tconstruct:ingot_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 90,
+    "fluid": "kubejs:molten_black_iron"
+  },
+  "result": 'extendedcrafting:black_iron_ingot'
+})
+
+// Inlay
+event.remove({ id: "eidolon:pewter_inlay" })
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:inlay_cast'
+  },
+    "cast_consumed": false,
+  "cooling_time": 100,
+  "fluid": {
+    "amount": 360,
+    "fluid": "tconstruct:molten_pewter"
+  },
+  "result": 'eidolon:pewter_inlay'
+})
+
+// Luminessence Inactive
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'mysticalagriculture:inferium_essence'
+  },
+    "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "thermal:glowstone"
+  },
+  "result": 'kubejs:inactive_luminessence'
+})
+
+event.custom({
+  "type": "tconstruct:casting_basin",
+  "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 810,
+    "fluid": "kubejs:molten_black_iron"
+  },
+  "result": "extendedcrafting:black_iron_block"
+})
+
 
 
 // Clay
@@ -63,9 +182,9 @@ event.remove({ id: "tconstruct:smeltery/casting/metal/iron/gear_sand_cast" })
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'kubejs:stone_gear'
+    "item": 'tconstruct:gear_cast'
   },
-    "cast_consumed": true,
+    "cast_consumed": false,
   "cooling_time": 120,
   "fluid": {
     "amount": 360,
@@ -362,9 +481,9 @@ event.custom({
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'kubejs:stone_gear'
+    "item": 'tconstruct:gear_cast'
   },
-    "cast_consumed": true,
+    "cast_consumed": false,
   "cooling_time": 120,
   "fluid": {
     "amount": 360,
@@ -429,7 +548,7 @@ event.custom({
   "cast_consumed": true,
   "cooling_time": 111,
   "fluid": {
-    "amount": 500,
+    "amount": 250,
     "tag": "tconstruct:molten_obsidian"
   },
   "result": 'tconstruct:nahuatl'
@@ -440,9 +559,9 @@ event.remove({ id: "forestry:gear_bronze" })
 event.custom({
   "type": "tconstruct:casting_table",
   "cast": {
-    "item": 'kubejs:stone_gear'
+    "item": 'tconstruct:gear_cast'
   },
-    "cast_consumed": true,
+    "cast_consumed": false,
   "cooling_time": 120,
   "fluid": {
     "amount": 360,
@@ -450,6 +569,65 @@ event.custom({
   },
   "result": 'thermal:bronze_gear'
 })
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:wooden_gear'
+  },
+    "cast_consumed": true,
+  "cooling_time": 120,
+  "fluid": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_gold"
+  },
+  "result": 'tconstruct:gear_cast'
+})
+
+// Inlay Cast
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:stone_inlay'
+  },
+    "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 180,
+    "fluid": "tconstruct:molten_gold",
+  },
+  "result": 'kubejs:inlay_cast'
+})
+
+// Heart of Emerald / Diamond
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'quark:diamond_heart'
+  },
+    "cast_consumed": true,
+  "cooling_time": 100,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "tconstruct:molten_emerald",
+  },
+  "result": 'kubejs:heart_of_emerald'
+})
+
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:heart_of_emerald'
+  },
+    "cast_consumed": true,
+  "cooling_time": 100,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "tconstruct:molten_diamond",
+  },
+  "result": 'quark:diamond_heart'
+})
+
 
 })
 
