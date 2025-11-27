@@ -19,25 +19,6 @@ event.shaped(
 event.remove({ id: 'eidolon:blast_enchanted_ash' })
 event.remove({ id: 'eidolon:enchanted_ash_from_block' })
 event.remove({ id: 'eidolon:enchanted_ash' })
-event.custom({
-  "type": "farmersdelight:cooking",
-  "cookingtime": 100,
-  "experience": 1.0,
-  "ingredients": [
-    {
-      "item": 'thermal_extra:amethyst_dust'
-    },
-    {
-      "item": 'supplementaries:ash'
-    }
-  ],
-  "recipe_book_tab": "misc",
-  "result": {
-    "count": 1,
-    "item": 'eidolon:enchanted_ash'
-  }
-})
-
 // Arcane Workbench
 event.remove({ id: 'eidolon:worktable' })
 event.custom({
@@ -90,6 +71,9 @@ event.shaped(
     B: 'tconstruct:scorched_stone'
   }
 )
+
+// Enchanted Ash
+event.smelting('eidolon:enchanted_ash', 'tconstruct:necrotic_bone')
 
 })
 

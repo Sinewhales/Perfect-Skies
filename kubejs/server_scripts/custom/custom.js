@@ -306,19 +306,6 @@ event.shaped(
   }
 )
 
-// Glue
-event.remove({ id: "tconstruct:smeltery/entity_melting/swiftness" })
-event.custom({
-  "type": "tconstruct:entity_melting",
-  "damage": 1,
-  "entity": {
-    "type": "minecraft:horse"
-  },
-  "result": {
-    "amount": 50,
-    "fluid": "kubejs:liquid_glue"
-  }
-})
 
 
 
@@ -413,7 +400,7 @@ event.custom({
   "type": "integrateddynamics:drying_basin",
   "item": 'kubejs:paper_stack',
   "fluid": {
-    "fluid": "kubejs:liquid_glue",
+    "fluid": "thermal:resin",
     "amount": 250
   },
   "duration": 100,
@@ -437,6 +424,89 @@ event.shaped(
   }
 )
 
+// Block of Pulp
+// Bulk Paper
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'rusticdelight:cotton_boll_crate',
+  "fluid": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:pulp_block'
+  }
+})
+
+
+  event.remove({ id: "environmental:cattail_thatch" })
+  event.shapeless(
+  Item.of('environmental:cattail_thatch', 1), // arg 1: output
+  [
+    '9x projectvibrantjourneys:cattail'
+  ]
+)
+
+  event.shapeless(
+  Item.of('environmental:cattail_thatch', 1), // arg 1: output
+  [
+    '9x environmental:cattail'
+  ]
+)
+
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'environmental:cattail_thatch',
+  "fluid": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:pulp_block'
+  }
+})
+
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'thermal:sugar_cane_block',
+  "fluid": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:pulp_block'
+  }
+})
+
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": 'farmersdelight:rice_bag' ,
+  "fluid": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 100,
+  "result": {
+    "item": 'kubejs:pulp_block'
+  }
+})
+
+//
+
+event.custom({
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "item": 'minecraft:magma_block'
+  },
+  "result": {
+   "fluid": {
+      "fluid": "minecraft:lava",
+      "amount": 125
+    }
+  }})
 })
 
 

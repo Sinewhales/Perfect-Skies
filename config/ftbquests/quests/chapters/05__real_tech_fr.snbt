@@ -8,43 +8,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7311B50C34A2BDFD"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "0FC8E896491C5E7D"
-				item: "treetap:tap"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7311B50C34A2BDFD"]
-			id: "772525396CCB0C66"
-			shape: "octagon"
-			tasks: [{
-				id: "171964980647FC3F"
-				item: "thermal:resin_bucket"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["772525396CCB0C66"]
-			id: "3182A6033D7D8C22"
-			shape: "octagon"
-			tasks: [{
-				id: "0E760B421B8D893A"
-				item: "thermal_extra:sticky_ball"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3182A6033D7D8C22"]
 			id: "77E3858D7ADC25CA"
 			tasks: [{
 				id: "06CF9AF2BC3DDF09"
@@ -55,7 +18,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["3182A6033D7D8C22"]
 			id: "7F6078B786596D10"
 			tasks: [{
 				id: "16750D2111AFF541"

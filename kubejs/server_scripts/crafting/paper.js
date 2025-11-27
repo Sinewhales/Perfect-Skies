@@ -172,49 +172,26 @@ event.custom({
 event.custom({
   "type": "integrateddynamics:squeezer",
   "item": {
-    "item": 'farmersdelight:rice_bag'
+    "item": 'kubejs:pulp_block'
   },
-  "result": {
-   "fluid": {
-      "fluid": "tinkers_thinking:pulp",
-      "amount": 1000
-    }
-  }})
-
-  event.custom({
-  "type": "integrateddynamics:squeezer",
-  "item": {
-    "item": 'rusticdelight:cotton_boll_crate'
-  },
-  "result": {
-   "fluid": {
-      "fluid": "tinkers_thinking:pulp",
-      "amount": 1000
-    }
-  }})
-
-  event.custom({
-  "type": "integrateddynamics:squeezer",
-  "item": {
-    "item": 'thermal:sugar_cane_block'
-  },
-  "result": {
-   "fluid": {
-      "fluid": "tinkers_thinking:pulp",
-      "amount": 1000
-    }
-  }})
-
-  // Drying Basin
-  event.custom({
-  "type": "integrateddynamics:drying_basin",
-  "fluid": {
-    "fluid": "tinkers_thinking:pulp",
-    "amount": 250
-  },
-  "duration": 20,
-  "result": {
-    "item": 'minecraft:paper'
+ "result": {
+    "items": [
+      {
+        "item": {
+          "item": "minecraft:paper",
+          "count": 3
+        }
+      },
+      {
+        "item": "minecraft:paper",
+        "chance": 0.5
+      },
+      {
+        "item": "minecraft:paper",
+        "chance": 0.5
+      }
+    ]
   }
-})
+  })
+
 })

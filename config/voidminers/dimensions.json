@@ -1,0 +1,16 @@
+{
+  "miner": {
+    "enabled": false,
+    "defaultAllow": true,
+    "globalAllow": [],
+    "globalBlock": [],
+    "tierRules": {}
+  },
+  "solar": {
+    "enabled": false,
+    "defaultAllow": true,
+    "globalAllow": [],
+    "globalBlock": [],
+    "tierRules": {}
+  }
+}

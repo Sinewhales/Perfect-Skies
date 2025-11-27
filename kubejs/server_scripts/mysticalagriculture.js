@@ -15,7 +15,7 @@ event.custom({
 // Soulium
 event.remove({ id: 'mysticalagriculture:soulium_ingot' })
 event.recipes.summoningrituals
-    .altar(Ingredient.of('kubejs:demon_metal'))
+    .altar(Ingredient.of('eidolon:pewter_ingot'))
     .itemOutput(Item.of('mysticalagriculture:soulium_ingot'))
     .input('mysticalagriculture:soulium_dust')
     .input('eidolon:soul_shard')

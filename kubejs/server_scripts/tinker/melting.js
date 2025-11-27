@@ -92,6 +92,22 @@ event.custom({
   "time": 60
 })
 
+// Seared Stone from Cobblestone
+event.custom({
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": 'quark:stone_tool_materials'
+  },
+  "result": {
+    "amount": 125,
+    "fluid": "tconstruct:seared_stone"
+  },
+  "temperature": 400,
+  "time": 60
+})
+
+
+
 
 
 })

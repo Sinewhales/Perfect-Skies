@@ -162,6 +162,14 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
+  "voidminers_reforged": {
+    "miner_modifiers": true
+  },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
   "telepastries": {
     "bites": true
   },

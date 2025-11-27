@@ -209,6 +209,7 @@ StartupEvents.registry('block', event => {
   event.create('nether_black_quartz').displayName("Nether Black Quartz Ore").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('nether_ore')
   event.create('raw_aluminum_block').displayName("Raw Aluminum Block").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('stone')
   event.create('seared_casing').displayName("Seared Casing")
+  event.create('pulp_block').displayName("Block of Pulp")
   event.create('impregnated_wood').displayName("Impregnated Wood")
   event.create('red_alloy_block').displayName("Block of Red Alloy").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('metal')
   event.create('mud_bricks').displayName("Small Mud Bricks").requiresTool(true).tagBlock('minecraft:mineable/pickaxe').soundType('nether_bricks')

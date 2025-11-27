@@ -270,38 +270,12 @@ event.custom({
 // Nether Grout
 event.remove({ id: "tconstruct:smeltery/scorched/nether_grout_multiple" })
 event.remove({ id: "tconstruct:smeltery/scorched/nether_grout" })
-event.custom({
-  "type": "tconstruct:casting_basin",
-  "cast": {
-    "item": 'dustandash:cooled_magma_block'
-  },
-  "cast_consumed": true,
-  "cooling_time": 113,
-  "fluid": {
-    "amount": 250,
-    "fluid": "tconstruct:liquid_soul"
-  },
-  "result": "tconstruct:nether_grout"
-})
 
 // Scorched Bricks
 event.remove({ id: "tconstruct:smeltery/scorched/scorched_brick" })
 event.remove({ id: "tconstruct:smeltery/scorched/scorched_brick_kiln" })
 event.remove({ id: "tconstruct:smeltery/melting/scorched/grout" })
 event.remove({ id: "tconstruct:smeltery/casting/scorched/brick_composite" })
-event.custom({
-  "type": "architects_palette:warping",
-  "dimension": "minecraft:the_nether",
-  "ingredient": [
-    {
-      "item":  "tconstruct:nether_grout"
-    }
-  ],
-  "result": {
-    "item": 'tconstruct:scorched_brick',
-    "count": 2
-  }
-})
 
 // Remove Molten Lead
 event.remove({ id: "tconstruct:smeltery/melting/metal/silver/ore_singular" })
@@ -629,5 +603,17 @@ event.custom({
 })
 
 
+// Nether Grout
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "kubejs:enriched_magma",
+    "amount": 500
+  },
+  "duration": 100,
+  "result": {
+    "item": "tconstruct:nether_grout"
+  }
+})
 })
 

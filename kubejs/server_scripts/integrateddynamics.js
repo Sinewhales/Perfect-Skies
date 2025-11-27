@@ -89,8 +89,8 @@ event.shaped(
   {
     A: 'tconstruct:hepatizon_ingot',
     B: 'minecraft:anvil',  //arg 3: the mapping object
-    C: 'actuallyadditions:wood_casing',
-    D: 'extendedcrafting:frame'
+    C: 'tconstruct:obsidian_pane',
+    D: 'actuallyadditions:wood_casing'
   }
 )
 

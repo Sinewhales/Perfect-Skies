@@ -55,7 +55,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -5.5d
 			y: 1.0d
 		}
 		{
@@ -176,35 +176,17 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["3B8504D1D913BA61"]
-			id: "6003ED59433999EC"
-			tasks: [{
-				id: "73C8A39E1071907A"
-				item: "kubejs:enriched_magma_bucket"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 2.5d
-		}
-		{
 			dependencies: [
-				"6003ED59433999EC"
 				"0429A4A650BA1666"
+				"3B8504D1D913BA61"
 			]
 			icon: "dustandash:cooled_magma_block"
 			id: "5904AD621A5A7ECD"
-			tasks: [
-				{
-					id: "67F25D5BED296FB5"
-					item: "dustandash:cooled_magma_block"
-					type: "item"
-				}
-				{
-					id: "7C287E9CCA994E4F"
-					item: "tconstruct:nether_grout"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C287E9CCA994E4F"
+				item: "tconstruct:nether_grout"
+				type: "item"
+			}]
 			x: 4.0d
 			y: 4.0d
 		}
@@ -389,26 +371,14 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["2F91212C3E306218"]
-			id: "081C37FE0F89B032"
-			tasks: [{
-				id: "1633E174A205C12A"
-				item: "mob_grinding_utils:tank_sink"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["081C37FE0F89B032"]
 			id: "15AF105E7DFBB423"
 			tasks: [{
 				id: "61B4AA30ED0ABC50"
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 8.0d
+			x: -4.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["15AF105E7DFBB423"]
@@ -423,8 +393,8 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 8.0d
+			x: -6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["64E9F2C6A933444C"]
@@ -434,8 +404,8 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 8.0d
+			x: -7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5868E1CF034ECDD6"]
@@ -445,8 +415,8 @@
 				item: "mbd2:primitive_smelter"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 8.0d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7B23AAAB363D027B"]
@@ -460,7 +430,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["0429A4A650BA1666"]
+			dependencies: [
+				"0429A4A650BA1666"
+				"772525396CCB0C66"
+			]
 			id: "7E4C7DAECBC74441"
 			tasks: [{
 				id: "3F3B8B8B479F3292"
@@ -478,7 +451,7 @@
 				item: "watercollector:watercollector"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 1.0d
 		}
 		{
@@ -494,26 +467,72 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5F1779FE128160D8"]
-			id: "5811A4FDCFA8AB69"
+			dependencies: ["20C7DA025104B858"]
+			id: "7311B50C34A2BDFD"
+			size: 1.0d
 			tasks: [{
-				id: "44117F635B95724A"
-				item: "farmersdelight:cooking_pot"
+				id: "0FC8E896491C5E7D"
+				item: "treetap:tap"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["5811A4FDCFA8AB69"]
-			id: "687C9E76A74C6011"
+			dependencies: ["7311B50C34A2BDFD"]
+			id: "772525396CCB0C66"
 			tasks: [{
-				id: "42EDBFC86DE5341D"
-				item: "actuallyadditions:rice_slimeball"
+				id: "171964980647FC3F"
+				item: "thermal:resin_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0429A4A650BA1666"
+				"772525396CCB0C66"
+			]
+			id: "24991D01A197E56B"
+			tasks: [{
+				id: "1253180A359AB4FB"
+				item: "cardboardboxes:cardboardbox"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F91212C3E306218"]
+			id: "514CB91B457B23D3"
+			tasks: [
+				{
+					id: "7A2642DEDAAA48F8"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					id: "699E109A32B36403"
+					item: "apotheosis:glowing_hellshelf"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E84F250513CFE63"]
+			hide_dependency_lines: true
+			id: "1206DCCC5EEFC9D7"
+			subtitle: "Combine a brush with one of those to make an unbreakable one."
+			tasks: [{
+				id: "1CC98BBA5D359944"
+				item: "quark:diamond_heart"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
 		}
 	]
 	title: "0.5 - Metallurgy"

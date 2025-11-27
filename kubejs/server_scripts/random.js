@@ -16,6 +16,9 @@ event.remove({ id: 'architects_palette:smelting/moonshale' })
 event.remove({ id: 'glassential:glass_ethereal' })
 event.remove({ id: 'cardboardboxes:cardboardbox' })
 event.remove({ id: 'moblassos:contract' })
+event.remove({ id: 'tiab:time_in_a_bottle' })
+event.remove({ id: 'mysticalagriculture:soulium_gemstone' })
+
 
 event.shaped(
   Item.of('treetap:tap', 1), // arg 1: output
@@ -25,7 +28,7 @@ event.shaped(
     "AA "
   ],
   {
-    A: "thermal:copper_plate"
+    A: 'thermal:bronze_plate'
 
   }
 )
@@ -392,19 +395,41 @@ event.recipes.summoningrituals
     .input('mysticalagriculture:soul_dust')
     .recipeTime(200)
 
+// Soulium Gemstone
+event.recipes.summoningrituals
+    .altar(Ingredient.of('minecraft:diamond'))
+    .itemOutput(Item.of('mysticalagriculture:soulium_gemstone'))
+    .input('mysticalagriculture:soulium_dust')
+    .input('mysticalagriculture:soulium_dust')
+    .input('mysticalagriculture:soulium_dust')
+    .input('mysticalagriculture:soulium_dust')
+    .recipeTime(60)
+
 
 // Exp Seed
 event.custom({
-  "type": "integrateddynamics:drying_basin",
-  "item": 'oreberriesreplanted:essence_berry',
-  "fluid": {
-    "fluid": "mob_grinding_utils:fluid_xp",
-    "amount": 1000
-  },
-  "duration": 100,
-  "result": {
-    "item": 'giacomos_exp:expseed'
-  }
+	"type": "apotheosis:enchanting",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "enchantment"
+	}],
+	"input": {
+		"item": 'oreberriesreplanted:essence_berry'
+	},
+	"requirements": {
+		"eterna": 10,
+		"quanta": 4,
+		"arcana": 5
+	},
+	"max_requirements": {
+		"eterna": -1,
+		"quanta": -1,
+		"arcana": -1
+	},
+	"result": {
+		"item": 'giacomos_exp:expseed',
+		"count": 1
+	}
 })
 
 // Phasmo Shard Duplication
@@ -428,6 +453,17 @@ event.custom({
     "count": 2
   }
 })
+
+// Time in a Bottle
+event.recipes.summoningrituals
+    .altar(Ingredient.of('quark:bottled_cloud'))
+    .itemOutput(Item.of('tiab:time_in_a_bottle'))
+    .input('3x tconstruct:rose_gold_ingot')
+    .input('quark:diamond_heart')
+    .input('kubejs:blaze_shard')
+    .input('2x tinkers_thinking:spectre_ingot')
+    .input('extendedcrafting:luminessence')
+    .recipeTime(200)
 })
 
 

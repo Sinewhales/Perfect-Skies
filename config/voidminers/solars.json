@@ -1,0 +1,263 @@
+{
+  "amethystine": {
+    "energyStorage": 320000000,
+    "duration": 25,
+    "energyGeneration": 1280,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 2.37,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+137%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.73,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+27%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76AMETHYSTINE SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a76320.00 MFE",
+      "\u00a79Capacity: \u00a7f320.00 MFE",
+      "\u00a7aGeneration: \u00a7f1280 FE/t"
+    ]
+  },
+  "aurantium": {
+    "energyStorage": 10000000,
+    "duration": 80,
+    "energyGeneration": 40,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 1.4,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+40%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.83,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+17%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76AURANTIUM SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a7610.00 MFE",
+      "\u00a79Capacity: \u00a7f10.00 MFE",
+      "\u00a7aGeneration: \u00a7f40 FE/t"
+    ]
+  },
+  "caerium": {
+    "energyStorage": 160000000,
+    "duration": 30,
+    "energyGeneration": 640,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 2.2,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+120%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.75,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+25%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76CAERIUM SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a76160.00 MFE",
+      "\u00a79Capacity: \u00a7f160.00 MFE",
+      "\u00a7aGeneration: \u00a7f640 FE/t"
+    ]
+  },
+  "rubetine": {
+    "energyStorage": 5000000,
+    "duration": 100,
+    "energyGeneration": 20,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 1.17,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+17%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.85,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+15%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76RUBETINE SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a765.00 MFE",
+      "\u00a79Capacity: \u00a7f5.00 MFE",
+      "\u00a7aGeneration: \u00a7f20 FE/t"
+    ]
+  },
+  "rosarium": {
+    "energyStorage": 640000000,
+    "duration": 20,
+    "energyGeneration": 2560,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 2.6,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+160%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.71,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+29%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76ROSARIUM SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a76640.00 MFE",
+      "\u00a79Capacity: \u00a7f640.00 MFE",
+      "\u00a7aGeneration: \u00a7f2560 FE/t"
+    ]
+  },
+  "verdium": {
+    "energyStorage": 40000000,
+    "duration": 50,
+    "energyGeneration": 160,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 1.8,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+80%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.79,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+21%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76VERDIUM SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a7640.00 MFE",
+      "\u00a79Capacity: \u00a7f40.00 MFE",
+      "\u00a7aGeneration: \u00a7f160 FE/t"
+    ]
+  },
+  "citrinetine": {
+    "energyStorage": 20000000,
+    "duration": 60,
+    "energyGeneration": 80,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 1.57,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+57%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.81,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+19%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76CITRINETINE SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a7620.00 MFE",
+      "\u00a79Capacity: \u00a7f20.00 MFE",
+      "\u00a7aGeneration: \u00a7f80 FE/t"
+    ]
+  },
+  "ultimate": {
+    "energyStorage": 2147483647,
+    "duration": 15,
+    "energyGeneration": 5120,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 3.33,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+233%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.65,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+35%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76ULTIMATE SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a762.15 GFE",
+      "\u00a79Capacity: \u00a7f2.15 GFE",
+      "\u00a7aGeneration: \u00a7f5120 FE/t"
+    ]
+  },
+  "azurine": {
+    "energyStorage": 80000000,
+    "duration": 40,
+    "energyGeneration": 320,
+    "modifiers": {
+      "weather_resistance": {
+        "generation": 1.0,
+        "efficiency": 1.0,
+        "weatherResistance": 1.97,
+        "tooltip": [
+          "\u00a79Weather Protection: \u00a7f+97%"
+        ]
+      },
+      "efficiency": {
+        "generation": 1.0,
+        "efficiency": 0.77,
+        "weatherResistance": 1.0,
+        "tooltip": [
+          "\u00a7bEfficiency Boost: \u00a7f+23%"
+        ]
+      }
+    },
+    "tooltip": [
+      "\u00a76AZURINE SOLAR PANEL",
+      "\u00a7eStored energy: \u00a7f0 FE/\u00a7680.00 MFE",
+      "\u00a79Capacity: \u00a7f80.00 MFE",
+      "\u00a7aGeneration: \u00a7f320 FE/t"
+    ]
+  }
+}

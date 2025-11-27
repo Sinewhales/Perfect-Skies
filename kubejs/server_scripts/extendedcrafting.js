@@ -14,17 +14,30 @@ event.shapeless(
 )
 
 // Luminessence
+
 event.custom({
-  "type": "integrateddynamics:drying_basin",
-  "item": 'kubejs:inactive_luminessence',
-  "fluid": {
-    "fluid": "mob_grinding_utils:fluid_xp",
-    "amount": 500
-  },
-  "duration": 100,
-  "result": {
-    "item": 'extendedcrafting:luminessence'
-  }
+	"type": "apotheosis:enchanting",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "enchantment"
+	}],
+	"input": {
+		"item": 'mysticalagriculture:inferium_essence'
+	},
+	"requirements": {
+		"eterna": 10,
+		"quanta": 4,
+		"arcana": 15
+	},
+	"max_requirements": {
+		"eterna": -1,
+		"quanta": -1,
+		"arcana": -1
+	},
+	"result": {
+		"item": 'extendedcrafting:luminessence',
+		"count": 1
+	}
 })
 
 

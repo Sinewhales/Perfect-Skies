@@ -39,5 +39,7 @@ event.shaped(
   }
 )
 
+event.remove({ id: 'farmersdelight:canvas' })
+
 })
 

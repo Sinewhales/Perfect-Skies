@@ -61,6 +61,21 @@ event.custom({
   }
 })
 
+// Scorched Bricks
+event.custom({
+  "type": "ceramics:kiln",
+  "category": "item",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": 'tconstruct:nether_grout'
+  },
+  "result": {
+    "count": 2,
+    "item": 'tconstruct:scorched_brick'
+  }
+})
+
 // Kiln
 event.remove({ id: "ceramics:kiln" })
 event.shaped(

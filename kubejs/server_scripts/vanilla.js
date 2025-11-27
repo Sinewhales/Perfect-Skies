@@ -222,4 +222,51 @@ event.shaped(
   }
 )
 
+// Unbreakable Brush
+event.custom({
+    "type": "lychee:anvil_crafting",
+    "item_in": [
+        {
+            "item": "minecraft:brush"
+        },
+        {
+            "item": 'quark:diamond_heart'
+        }
+    ],
+    "item_out": {
+      "item": "minecraft:brush",
+      "count": 1,
+      "nbt": "{Damage:0,Unbreakable:1}"
+    },
+    "level_cost": 1,
+    "material_cost": 1,
+    "post": {
+        "type": "prevent_default"
+    }
+})
+
+// Brush
+event.remove({ id: 'minecraft:brush' })
+event.shaped(
+  Item.of('minecraft:brush', 1), // arg 1: output
+  [
+    ' C ',
+    ' B ', // arg 2: the shape (array of strings)
+    ' A '
+  ],
+  {
+    A: 'forestry:impregnated_stick',
+    B: 'tconstruct:hepatizon_ingot',
+    C: 'farmersdelight:canvas' //arg 3: the mapping object
+  }
+)
+
+// Enchanting Table
+event.remove({ id: 'blue_skies:enchanting_table_compat' })
+event.replaceInput(
+  { id: 'minecraft:enchanting_table' }, // Arg 1: the filter
+  'minecraft:obsidian',            // Arg 2: the item to replace
+  'kubejs:reinforced_obsidian_block'        // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
 })

@@ -94,10 +94,10 @@ event.custom({
     "item": 'alexscaves:galena'
   },
   "result": {
-    "amount": 1000,
+    "amount": 125,
     "fluid": "tconstruct:seared_stone"
   },
-  "temperature": 700,
+  "temperature": 1200,
   "time": 80
 })
 
@@ -120,5 +120,8 @@ event.custom({
   "temperature": 1500,
   "time": 241
 })
+
+// Smelting + Kiln
+event.smelting('2x tconstruct:scorched_brick', 'tconstruct:nether_grout')
 })
 
