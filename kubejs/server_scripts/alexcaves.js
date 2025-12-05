@@ -71,7 +71,16 @@ event.custom({
   "energy": 16000
 })
 
-
+// Magnetic Dimension
+event.recipes.summoningrituals
+    .altar(Ingredient.of('thermal:flux_magnet'))
+    .itemOutput(Item.of('alex_caves_dimensions:magnetic_caves_key'))
+    .input('alexscaves:energized_galena_neutral')
+    .input('kubejs:gelatinous_ferrousslime_drop')
+    .input('kubejs:purple_neodymium')
+    .input('thermal:lead_block')
+    .input(Item.of('alexscaves:cave_codex', '{CaveBiome:"alexscaves:magnetic_caves"}').strongNBT())
+    .recipeTime(200)
 
 
 })

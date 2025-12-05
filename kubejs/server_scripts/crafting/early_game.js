@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
 event.remove({ id: "cb_microblock:stone_rod" })
 event.remove({ id: 'farmersdelight:cutting/stone' })
+event.remove({ id: 'minecraft:campfire' })
+event.remove({ id: 'farmersdelight:book_from_canvas' })
 
 // Stones give random nuggets when smelted
 event.smelting('minecraft:iron_nugget', 'minecraft:andesite')
@@ -270,6 +272,8 @@ event.remove({ id: "bigreactors:smelting/graphite_from_coal" })
 event.remove({ id: "bigreactors:blasting/graphite_from_coal" })
 event.remove({ id: "bigreactors:blasting/graphite_from_charcoal" })
 event.remove({ id: "bigreactors:blasting/graphite_from_dust" })
+event.remove({ id: "blue_skies:furnace_compat" })
+event.remove({ id: "quark:building/crafting/furnaces/cobblestone_furnace" })
 
 // Watering Can requires Fertilizer
 event.replaceInput(
@@ -300,6 +304,42 @@ event.shaped(
 
   }
 )
+
+// Furnace
+event.shaped(
+  Item.of('minecraft:furnace', 1), // arg 1: output
+  [
+    'ABA',
+    'CDC', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'minecraft:cobblestone',
+    B: 'quark:sturdy_stone',
+    C: 'architects_palette:flint_block',
+    D: '#minecraft:coals'
+
+  }
+)
+
+// Campfire
+event.shaped(
+  Item.of('minecraft:campfire', 1), // arg 1: output
+  [
+    ' A ',
+    'A A', // arg 2: the shape (array of strings)
+    'CBC'
+  ],
+  {
+    A: 'minecraft:stick',
+    B: '#minecraft:logs',
+    C: 'farmersdelight:straw_bale'
+
+  }
+)
+
+
+
 
 // Scorched Alloyer
 event.shaped(
@@ -365,22 +405,15 @@ event.shaped(
 
 // Emerald Lasso
 event.remove({ id: "moblassos:emerald_lasso" })
-event.shapeless(
-  Item.of('agricraft:emerald_shard', 9), // arg 1: output
-  [
-    'minecraft:emerald'
-  ]
-)
-
 event.shaped(
   Item.of("moblassos:emerald_lasso", 1), // arg 1: output
   [
-    'A A',
-    ' B ', // arg 2: the shape (array of strings)
-    'A A'
+    'AB ',
+    '   ', // arg 2: the shape (array of strings)
+    '   '
   ],
   {
-    A: 'agricraft:emerald_shard',
+    A: 'minecraft:emerald',
     B: 'minecraft:lead'
   }
 )
@@ -390,42 +423,7 @@ event.remove({ id: "forbidden_arcanus:rotten_leather" })
 event.remove({ id: "forbidden_arcanus:leather" })
 event.remove({ id: "integrateddynamics:drying_basin/convenience/minecraft_leather" })
 event.remove({ id: "integrateddynamics:mechanical_drying_basin/convenience/minecraft_leather" })
-event.custom({
-  "type": "eidolon:crucible",
-  "steps": [
-    {
-      "items": [
-      	{ "item": 'minecraft:rotten_flesh' },
-      ]
-    },
-    {
-      "items": [
-      	{ "item": 'mysticalagriculture:nature_agglomeratio' }
-      ],
-      "stirs": 1
-    }
-  ],
-  "result": {
-    "item": 'forbidden_arcanus:rotten_leather',
-    "count": 1
-  }
-})
 
-
-  event.custom({
-  "type": "hexerei:drying_rack",
-  "ingredients": [
-    {
-      "item": 'forbidden_arcanus:rotten_leather'
-    }
-  ],
-  "output": {
-    "item": 'minecraft:leather'
-  },
-  "dryingTimeInTicks": 200
-
-  
-})
   // Bound Leather
 
 event.shaped(
@@ -439,6 +437,23 @@ event.shaped(
     A: 'minecraft:string',
     B: 'kubejs:cotton_cloth',
     C: 'minecraft:leather'
+
+  }
+)
+
+// Upgrade Base
+event.remove({ id: 'sophisticatedstorage:upgrade_base' })
+event.shaped(
+  Item.of('sophisticatedstorage:upgrade_base', 1), // arg 1: output
+  [
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'thermal:iron_plate',
+    B: 'minecraft:flint',
+    C: 'tconstruct:pattern'
 
   }
 )
@@ -458,7 +473,56 @@ event.shaped(
   }
 )
 
+// Crafting Table
+event.remove({ id: "deep_aether:skyroot_crafting_table" })
+event.remove({ id: "aether:skyroot_crafting_table" })
+event.remove({ id: "minecraft:crafting_table" })
+
+// Clay Bucket Removal
+event.remove({ id: "ceramics:unfired_clay_bucket" })
+
+event.shaped(
+  Item.of('minecraft:crafting_table', 1), // arg 1: output
+  [
+    'AA ',
+    'BB ', // arg 2: the shape (array of strings)
+    '   '
+  ],
+  {
+    A: 'farmersdelight:canvas',
+    B: '#minecraft:planks'
+  }
+)
+
+
+// Stick Wood Cutting
+  event.custom({
+ "type": "hexerei:woodcutting",
+  "count": 2,
+  "ingredient": {
+    "tag": 'minecraft:planks'
+  },
+  "ingredient_count": 1,
+  "result": "minecraft:stick"
+})
+
 // Impregnated Wood in Artisan
-event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:impregnated_wood")
-.requireItemTag('#minecraft:planks', 1).requireFluid(Fluid.of("thermal:resin", 100))
+event.remove({ id: "mysticalagriculture:honey_agglomeratio" })
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'thermal_extra:sticky_ball')
+.requireFluid(Fluid.of("thermal:resin", 250)).damageItem('kubejs:plate_hammer', 1, "tool")
+
+event.remove({ id: "woodenbucket:wooden_bucket" })
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'woodenbucket:wooden_bucket')
+.damageItemTag('#cb_microblock:tools/saw', 1, "tool").requireItemTag('#minecraft:logs', 1, "input4").requireItemTag('#minecraft:logs', 1, "input6").requireItemTag('#minecraft:logs', 1, "input8")
+
+
+// Honey Agglomeratio in Artisan
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'mysticalagriculture:honey_agglomeratio')
+.requireFluid(Fluid.of("tconstruct:honey", 250)).damageItem('kubejs:plate_hammer', 1, "tool")
+
+// Rotten Leather
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'forbidden_arcanus:rotten_leather')
+.requireItem('minecraft:rotten_flesh', "input1").requireItem('minecraft:green_dye', "input2").requireItem('salt:salt', "input5").requireItem('farmersdelight:canvas', "input4").requireFluid(Fluid.of("thermal:resin", 250))
+event.campfireCooking('minecraft:leather', 'forbidden_arcanus:rotten_leather', 0.35, 200)
+
 })

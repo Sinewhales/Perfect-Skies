@@ -28,7 +28,7 @@ event.shaped(
     "AA "
   ],
   {
-    A: 'thermal:bronze_plate'
+    A: 'thermal:copper_plate'
 
   }
 )
@@ -349,7 +349,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:iron_ingot',
-    B: 'ceramics:empty_clay_bucket'
+    B: 'woodenbucket:wooden_bucket'
   }
 )
 

@@ -94,3 +94,16 @@
 	#Should give the woot guide book on player first connection [Default: true]
 	shouldGiveOnSpawn = false
 
+#Magmator
+[magmator]
+	#The tick rate for the Copper Magmator [Default: 50]
+	copperTickRate = 50
+	#The tick rate for the Iron Magmator [Default: 20]
+	ironTickRate = 20
+	#The tick rate for the Gold Magmator [Default: 10]
+	goldTickRate = 10
+	#The tick rate for the Diamond Magmator [Default: 5]
+	diamondTickRate = 5
+	#The tick rate for the Netherite Magmator [Default: 1]
+	netheriteTickRate = 1
+

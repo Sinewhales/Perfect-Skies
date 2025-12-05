@@ -5,13 +5,14 @@ event.shaped(
   Item.of('actuallyadditions:wood_casing', 1), // arg 1: output
   [
     'ABA',
-    'C C', // arg 2: the shape (array of strings)
+    'CDC', // arg 2: the shape (array of strings)
     'ABA'
   ],
   {
     A: 'kubejs:wood_sheet',
     B: 'extendedcrafting:black_iron_slate',
-    C: 'kubejs:aluminum_plate'
+    C: 'kubejs:aluminum_plate',
+    D: 'thermal_extra:sticky_ball'
   }
 )
 

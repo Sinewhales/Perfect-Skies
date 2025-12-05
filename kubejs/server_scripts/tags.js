@@ -6,6 +6,9 @@ event.add('forge:ores/aluminum', 'kubejs:deepslate_aluminium_ore')
 event.add('forge:ores', 'kubejs:aluminium_ore')
 event.add('forge:ores', 'kubejs:deepslate_aluminium_ore')
 
+// Sugar Cane
+event.removeAllTagsFrom('quark:sugar_cane_block')
+
 })
 ServerEvents.tags('item', event => {
 // Iron Plate
@@ -13,6 +16,9 @@ event.removeAll('forge:plates/iron')
 event.add('forge:plates/iron', 'thermal:iron_plate')
 event.removeAll('ad_astra:iron_plates')
 event.add('ad_astra:iron_plates', 'ad_astra:iron_plate')
+
+// Sugar Cane block
+event.removeAllTagsFrom('quark:sugar_cane_block')
 
 // Iron Dust
 event.removeAll('forge:dusts/iron')
@@ -103,7 +109,6 @@ event.removeAllTagsFrom('nuclearcraft:aluminum_ingot')
 // Nuggets
 event.removeAllTagsFrom('nuclearcraft:aluminum_nugget')
 event.add('forge:nuggets/aluminum', 'kubejs:aluminum_nugget')
-event.add('agricraft:nuggets/aluminium', 'kubejs:aluminum_nugget')
 event.add('forge:nuggets', 'kubejs:aluminum_nugget')
 event.removeAllTagsFrom('chemlib:aluminum_nugget')
 
@@ -173,7 +178,9 @@ event.removeAllTagsFrom('chemlib:cobalt_metal_block')
 
 // Rotten Leather
 event.remove('forge:leather', 'forbidden_arcanus:rotten_leather')
-event.remove('agricraft:leather', 'forbidden_arcanus:rotten_leather')
+
+
+
 // Vat Wood Fix
 
 event.removeAll('perfectskies:nonvanilla_planks')

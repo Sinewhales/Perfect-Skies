@@ -23,6 +23,18 @@ event.custom({
   "result": "kubejs:seared_casing"
 })
 
+// Galena Stone
+
+event.custom({
+  "type": "tconstruct:casting_basin",
+  "cooling_time": 113,
+  "fluid": {
+    "amount": 1000,
+    "fluid": "kubejs:molten_galena_stone"
+  },
+  "result": 'alexscaves:galena'
+})
+
 // Invar Gear
 event.remove({ id: "thermal:parts/invar_gear" })
 event.remove({ id: "tconstruct:smeltery/casting/metal/invar/gear_gold_cast" })

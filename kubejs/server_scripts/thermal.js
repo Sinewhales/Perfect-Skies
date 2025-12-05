@@ -368,6 +368,19 @@ event.custom({
   }
 })
 
+// Honey Agglomeratio
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "fluid": {
+    "fluid": "tconstruct:honey",
+    "amount": 250
+  },
+  "duration": 20,
+  "result": {
+    "item": 'mysticalagriculture:honey_agglomeratio'
+  }
+})
+
 event.custom({
   "type": "integrateddynamics:drying_basin",
   "fluid": {

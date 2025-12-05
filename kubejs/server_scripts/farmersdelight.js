@@ -5,12 +5,9 @@ ServerEvents.recipes(event => {
 event.remove({ id: 'farmersdelight:organic_compost_from_rotten_flesh' })
 event.remove({ id: 'farmersdelight:organic_compost_from_tree_bark' })
 
-event.shapeless(
-  Item.of('farmersdelight:organic_compost'), // arg 1: output
-  [
-'4x thermal:compost'
-  ]
-)
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'farmersdelight:organic_compost')
+.requireItem('minecraft:dirt', "input1").requireItem('farmersdelight:straw', "input2").requireItem('thermal:compost', "input4").requireItem('thermal:niter', "input5").requireFluid(Fluid.of("minecraft:water", 1000))
+event.campfireCooking('farmersdelight:rich_soil', 'farmersdelight:organic_compost', 0.35, 400)
 
 // Stone Knife 
 event.remove({ id: 'moredelight:stone_knife' })
@@ -39,7 +36,6 @@ event.shaped(
   }
 )
 
-event.remove({ id: 'farmersdelight:canvas' })
 
 })
 

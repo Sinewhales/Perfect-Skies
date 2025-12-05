@@ -136,7 +136,7 @@ event.shaped(
 
 // Fuel Bus
 event.shaped(
-  Item.of('mbd2:stone_fuel_bus', 1), // arg 1: output
+  Item.of('mbd2:stone_fuel_hatch', 1), // arg 1: output
   [
     ' B ',
     ' A ', // arg 2: the shape (array of strings)

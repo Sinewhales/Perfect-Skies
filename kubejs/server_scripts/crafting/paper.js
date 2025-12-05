@@ -30,6 +30,18 @@ event.remove({ id: "minecraft:paper" })
    .requireItem('minecraft:sugar_cane', "input8")
    .requireItem('minecraft:sugar_cane', "input9")
 
+// Canvas
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('farmersdelight:canvas', "input1")
+.requireItem('farmersdelight:canvas', "input2")
+   .requireItem('farmersdelight:canvas', "input3")
+   .requireItem('farmersdelight:canvas', "input4")
+   .requireItem('farmersdelight:canvas', "input6")
+   .requireItem('farmersdelight:canvas', "input7")
+   .requireItem('farmersdelight:canvas', "input8")
+   .requireItem('farmersdelight:canvas', "input9")
+
 // Rice
 event.remove({ id: "actuallyadditions:rice_paper" }) 
 
@@ -56,7 +68,7 @@ event.remove({ id: "actuallyadditions:rice_paper" })
    .requireItem('rusticdelight:cotton_boll', "input8")
    .requireItem('rusticdelight:cotton_boll', "input9")
 
-     event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "3x kubejs:pulp")
+     event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
   .requireItem('forestry:wood_pulp', "input1")
 .requireItem('forestry:wood_pulp', "input2")
@@ -95,24 +107,10 @@ event.custom({
         "fluid": "tinkers_thinking:pulp",
         "amount": 100,
         "result": {
-          "item": "kubejs:paper_pulp"
+          "item": "minecraft:paper"
         },
         "evaporationtime": 100
       })
-
-
-// Drying
-event.custom({
-  "type": "tinkers_thinking:drying_rack",
-  "ingredient": [
-    {
-      "item": "kubejs:paper_pulp"
-    }
-  ],
-  "output": {
-    "item": "minecraft:paper"
-  }
-})
 
 // Wood Pulp
 event.custom({
@@ -144,6 +142,94 @@ event.custom({
   },
   "grindingTime": 100
 })
+
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+        {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": 'minecraft:black_dye',
+    "count": 2
+  },
+  "grindingTime": 150
+})
+
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+        {
+      "item": "minecraft:charcoal"
+    },
+            {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": 'minecraft:black_dye',
+    "count": 3
+  },
+  "grindingTime": 200
+})
+
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+        {
+      "item": "minecraft:charcoal"
+    },
+            {
+      "item": "minecraft:charcoal"
+    },
+                {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": 'minecraft:black_dye',
+    "count": 4
+  },
+  "grindingTime": 300
+})
+
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+        {
+      "item": "minecraft:charcoal"
+    },
+            {
+      "item": "minecraft:charcoal"
+    },
+                {
+      "item": "minecraft:charcoal"
+    },
+                    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": 'minecraft:black_dye',
+    "count": 5
+  },
+  "grindingTime": 350
+})
+
+
 
 // Paper from Cattail
   event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")

@@ -31,6 +31,8 @@
   "buildcraftsilicon:assembly_server_data": null,
   "buildcraftsilicon:laser_target_client_data": null,
   "buildcraftsilicon:laser_target_server_data": null,
+  "compactcrafting:field_projector": null,
+  "compactcrafting:field_proxy": null,
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
   "evilcraft:box_of_eternal_closure": null,

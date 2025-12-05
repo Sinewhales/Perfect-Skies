@@ -166,12 +166,14 @@
     "miner_modifiers": true
   },
   "apotheosis": {
-    "adventure": true,
-    "ench": true,
-    "spawner": true
+    "ench": true
   },
   "telepastries": {
     "bites": true
+  },
+  "compactcrafting": {
+    "field_proxy": true,
+    "field_projector": true
   },
   "balm": {
     "jade": true

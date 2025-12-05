@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
   // Pattern
     event.remove({ id: "tconstruct:tables/pattern" })
     event.shapeless(
-      Item.of('tconstruct:pattern'), // arg 1: output
+      Item.of('tconstruct:pattern', 2), // arg 1: output
       [
         '4x minecraft:paper'
       ]
@@ -94,8 +94,8 @@ event.custom({
     "item": 'alexscaves:galena'
   },
   "result": {
-    "amount": 125,
-    "fluid": "tconstruct:seared_stone"
+    "amount": 250,
+    "fluid": "kubejs:molten_galena_stone"
   },
   "temperature": 1200,
   "time": 80

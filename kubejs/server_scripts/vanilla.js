@@ -45,10 +45,10 @@ event.shapeless(
 )
 
 event.shapeless(
-  Item.of('ceramics:fluid_clay_bucket', '{fluid:"minecraft:water"}'), // arg 1: output
+  Item.of('woodenbucket:wooden_bucket', '{Damage:0,Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), // arg 1: output
   [
     '4x kubejs:cactus_juice',
-    'ceramics:empty_clay_bucket'
+    'woodenbucket:wooden_bucket'
   ]
 )
 
@@ -81,6 +81,10 @@ event.remove({ output: '#quark:revertable_chests' })
 event.remove({ id: 'quark:building/crafting/chests/chest_revert' })
 event.stonecutting('#quark:revertable_chests', 'minecraft:chest')
 event.stonecutting('minecraft:chest', '#quark:revertable_chests')
+
+// Sugar Cane Block
+event.stonecutting('thermal:sugar_cane_block', 'quark:sugar_cane_block')
+event.stonecutting('quark:sugar_cane_block', 'thermal:sugar_cane_block')
 
 // Gravel
 event.custom({

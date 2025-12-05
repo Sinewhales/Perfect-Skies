@@ -152,6 +152,19 @@ event.custom({
   }
 })
 
+event.custom({
+  "type": "integrateddynamics:drying_basin",
+  "item": "kubejs:bound_leather",
+  "fluid": {
+    "fluid": "tconstruct:honey",
+    "amount": 500
+  },
+  "duration": 200,
+  "result": {
+    "item": 'kubejs:tanned_leather'
+  }
+})
+
 
 // [1] Electrotine Crystal
 event.custom({
@@ -362,7 +375,7 @@ event.shaped(
   ],
   {
     A: 'extendedcrafting:black_iron_ingot',
-    B: 'agricraft:emerald_shard',
+    B: 'minecraft:emerald',
     C: 'minecraft:compass'  //arg 3: the mapping object
   }
 )

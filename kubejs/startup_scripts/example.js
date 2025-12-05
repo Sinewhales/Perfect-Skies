@@ -195,6 +195,11 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xD3D3D3)
     .displayName('Liquid Glue')
 
+    event.create('molten_galena_stone')
+    .thickTexture(0xA689E1)
+    .bucketColor(0xA689E1)
+    .displayName('Molten Galena Stone')
+
 
 
 

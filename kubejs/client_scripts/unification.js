@@ -63,7 +63,6 @@ event.hide(['supplementaries:rope'])
 
 
 
-
 // Steel Ingot
   event.hide('tconstruct:steel_ingot')
 

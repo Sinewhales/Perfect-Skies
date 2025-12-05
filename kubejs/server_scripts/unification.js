@@ -785,4 +785,8 @@ event.remove({ id: 'nuclearcraft:cobalt_nugget' })
 
 // Cobalt Block
 event.remove({ id: 'nuclearcraft:cobalt_block' })
+
+// Sugar Cane Block (Quark)
+event.remove({ id: 'quark:building/crafting/compressed/sugar_cane_block_uncompress' })
+event.remove({ id: 'quark:building/crafting/compressed/sugar_cane_block' })
 })

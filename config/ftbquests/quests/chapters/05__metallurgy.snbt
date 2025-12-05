@@ -371,30 +371,26 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["514CB91B457B23D3"]
 			id: "15AF105E7DFBB423"
 			tasks: [{
 				id: "61B4AA30ED0ABC50"
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 10.0d
+			x: 0.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["15AF105E7DFBB423"]
 			id: "64E9F2C6A933444C"
-			rewards: [{
-				id: "5C4BB0CFFBD5D6AC"
-				item: "extendedcrafting:basic_table"
-				type: "item"
-			}]
 			tasks: [{
 				id: "7B772ABE7F41CBA8"
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.0d
+			x: -1.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["64E9F2C6A933444C"]
@@ -404,8 +400,8 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.0d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5868E1CF034ECDD6"]
@@ -415,8 +411,8 @@
 				item: "mbd2:primitive_smelter"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.5d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7B23AAAB363D027B"]
@@ -465,29 +461,6 @@
 			}]
 			x: 0.0d
 			y: 1.0d
-		}
-		{
-			dependencies: ["20C7DA025104B858"]
-			id: "7311B50C34A2BDFD"
-			size: 1.0d
-			tasks: [{
-				id: "0FC8E896491C5E7D"
-				item: "treetap:tap"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["7311B50C34A2BDFD"]
-			id: "772525396CCB0C66"
-			tasks: [{
-				id: "171964980647FC3F"
-				item: "thermal:resin_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 4.0d
 		}
 		{
 			dependencies: [

@@ -4,14 +4,19 @@ event.remove({ id: 'extendedcrafting:luminessence' })
 event.remove({ id: 'extendedcrafting:basic_component' })
 
 // [0] Basic Component
-event.shapeless(
-  Item.of('extendedcrafting:basic_component'), // arg 1: output
-  [
-    'kubejs:black_steel_plate',
-    'thermal:invar_plate',
-    'extendedcrafting:luminessence'
-  ]
-)
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:black_steel_plate'
+  },
+    "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 180,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "result": 'extendedcrafting:basic_component'
+})
 
 // Luminessence
 
@@ -43,15 +48,60 @@ event.custom({
 
 // [0] Advanced Component
 event.remove({ id: 'extendedcrafting:advanced_component' })
-event.shapeless(
-  Item.of('extendedcrafting:advanced_component'), // arg 1: output
+event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": 'kubejs:black_steel_plate'
+  },
+    "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 180,
+    "fluid": "tconstruct:molten_gold"
+  },
+  "result": 'extendedcrafting:advanced_component'
+})
+
+// Basic Catalyst
+event.remove({ id: 'extendedcrafting:basic_catalyst' })
+event.shaped(
+  Item.of('extendedcrafting:basic_catalyst', 1), // arg 1: output
   [
-    'kubejs:black_steel_plate',
-    'thermal:electrum_plate',
-    'extendedcrafting:luminessence'
-  ]
+    'ABA',
+    'BCB', // arg 2: the shape (array of strings)
+    'ABA'
+  ],
+  {
+    A: 'tconstruct:hepatizon_nugget',
+    B: 'extendedcrafting:basic_component',
+    C: 'extendedcrafting:luminessence'  //arg 3: the mapping object
+  }
 )
 
+// Advanced Catalyst
+event.remove({ id: 'extendedcrafting:advanced_catalyst' })
+event.custom({
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "tconstruct:manyullyn_nugget"
+    },
+    "B": {
+      "item": "extendedcrafting:advanced_component"
+    },
+    "C": {
+      "item": "extendedcrafting:luminessence"
+    }
+  },
+  "result": {
+    "item": 'extendedcrafting:advanced_catalyst'
+  }
+})
 
 // [0] Black Iron Slate
 event.remove({ id: 'extendedcrafting:black_iron_slate' })

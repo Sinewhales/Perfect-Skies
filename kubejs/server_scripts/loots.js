@@ -10,12 +10,14 @@ LootJS.modifiers((event) => {
   event.addBlockLootModifier("minecraft:tall_grass").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
   event.addBlockLootModifier("minecraft:fern").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
   event.addBlockLootModifier('projectvibrantjourneys:short_grass').removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+event.addBlockLootModifier('projectvibrantjourneys:watergrass').removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
 
   event.addBlockLootModifier("minecraft:grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("minecraft:tall_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("minecraft:fern").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("projectvibrantjourneys:short_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
-  
+event.addBlockLootModifier('projectvibrantjourneys:watergrass').randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+
 // Copper Nugget Unification
 
     event

@@ -37,8 +37,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.5d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["164674E47363A30C"]
@@ -49,8 +49,8 @@
 				item: "thermal:iron_plate"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["56AC3D22D12FC7A5"]
@@ -62,8 +62,8 @@
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["387CD2768D1787DA"]
@@ -76,11 +76,14 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: 9.914965986394549d
-			y: 0.4190299887984068d
+			x: 11.829365079365076d
+			y: -5.472222222222236d
 		}
 		{
-			dependencies: ["01788FAEEC656353"]
+			dependencies: [
+				"01788FAEEC656353"
+				"17C2578DFE221E7D"
+			]
 			id: "1979340115DFE500"
 			shape: "octagon"
 			size: 2.0d
@@ -108,8 +111,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 2.0d
+			x: 6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3D7403ACE91DB3FA"]
@@ -138,8 +141,8 @@
 				type: "item"
 			}]
 			title: "An early ore processing method"
-			x: -1.5d
-			y: -1.0d
+			x: 3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5A5DC66D6E6307CB"]
@@ -159,8 +162,8 @@
 				type: "item"
 			}]
 			title: "Paper "
-			x: -3.5d
-			y: -6.0d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -188,28 +191,21 @@
 				type: "item"
 			}]
 			subtitle: "You can place an armor stand over a vat to automate it. No more manual jumping"
-			tasks: [
-				{
-					id: "221808735BA326DB"
-					item: "kubejs:paper_pulp"
-					type: "item"
-				}
-				{
-					id: "658BABFDC3802A23"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item_tag(oreberriesreplanted:vat))"
-						}
+			tasks: [{
+				id: "658BABFDC3802A23"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(oreberriesreplanted:vat))"
 					}
-					title: "Vat"
-					type: "item"
 				}
-			]
+				title: "Vat"
+				type: "item"
+			}]
 			title: "Crushing Vat"
-			x: -6.660714285714299d
-			y: -3.964285714285708d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6AA80074051E0539"]
@@ -219,7 +215,7 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -3.0d
 			y: -4.0d
 		}
 		{
@@ -232,44 +228,8 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: -8.460122920350699d
-			y: -1.5773861059575367d
-		}
-		{
-			dependencies: ["1113E6A776F22C69"]
-			id: "3C514660147F4066"
-			tasks: [{
-				id: "5CF77EC67DD78643"
-				item: "ceramics:unfired_clay_bucket"
-				type: "item"
-			}]
-			x: -11.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["3C514660147F4066"]
-			icon: "ceramics:empty_clay_bucket"
-			id: "51DA828F05C25E66"
-			rewards: [{
-				id: "0BE4191B5EFD5907"
-				item: "minecraft:cactus"
-				type: "item"
-			}]
-			subtitle: "Dry the Unfired Bucket on a Drying Rack"
-			tasks: [
-				{
-					id: "2B1340D14AAA2BC6"
-					item: "ceramics:empty_clay_bucket"
-					type: "item"
-				}
-				{
-					id: "54655780D5DE183A"
-					item: "hexerei:herb_drying_rack"
-					type: "item"
-				}
-			]
-			x: -11.5d
-			y: -2.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["53B838C1046E2E38"]
@@ -328,15 +288,15 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["5A5DC66D6E6307CB"]
+			dependencies: ["463C5111DA3D263D"]
 			id: "5708A7ABA12777C0"
 			tasks: [{
 				id: "3C8B57B5F34AF464"
 				item: "hexerei:pestle_and_mortar"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -8.0d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5708A7ABA12777C0"]
@@ -348,22 +308,11 @@
 				item: "forestry:wood_pulp"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.5d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["1979340115DFE500"]
-			id: "1113E6A776F22C69"
-			tasks: [{
-				id: "603D0073031DC672"
-				item: "ceramics:unfired_clay_plate"
-				type: "item"
-			}]
-			x: -11.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["1979340115DFE500"]
+			dependencies: ["463C5111DA3D263D"]
 			id: "3D7403ACE91DB3FA"
 			tasks: [{
 				id: "72D673EE4E34E6FF"
@@ -377,7 +326,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2B1C2D47B7EE36AD"]
@@ -395,8 +344,8 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
-			y: 0.5d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["56F6D191156562F6"]
@@ -406,8 +355,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 0.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1AF3B85CDF694535"]
@@ -426,8 +375,8 @@
 				type: "item"
 			}]
 			title: "Oreberry Bushes"
-			x: -7.5d
-			y: 2.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1AF3B85CDF694535"]
@@ -445,8 +394,8 @@
 				type: "item"
 			}]
 			title: "Ores from Stone"
-			x: -5.5d
-			y: 2.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1AF3B85CDF694535"]
@@ -463,8 +412,8 @@
 				title: "First Ingot"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["510706A143424837"]
@@ -481,8 +430,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: 4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["08B810FFC3FC0F63"]
@@ -493,11 +442,11 @@
 				item: "hexerei:mahogany_woodcutter"
 				type: "item"
 			}]
-			x: 9.702380952380935d
-			y: -1.095238095238095d
+			x: 11.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3D7403ACE91DB3FA"]
+			dependencies: ["1979340115DFE500"]
 			id: "54151481FADA1910"
 			subtitle: "The cutting board is used to make Sticks using a Saw"
 			tasks: [{
@@ -505,23 +454,14 @@
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.5d
+			x: -8.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["51DA828F05C25E66"]
-			id: "343EC54EF9FD59AD"
-			subtitle: "In this pack, infinite water sources are disabled but water can be made from cactus if needed."
-			tasks: [{
-				id: "79C21C0244B8D568"
-				item: "kubejs:cactus_juice"
-				type: "item"
-			}]
-			x: -11.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["08B810FFC3FC0F63"]
+			dependencies: [
+				"08B810FFC3FC0F63"
+				"772525396CCB0C66"
+			]
 			id: "08AE1B36551CBDD5"
 			shape: "octagon"
 			size: 2.0d
@@ -531,7 +471,80 @@
 				type: "item"
 			}]
 			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1979340115DFE500"]
+			id: "463C5111DA3D263D"
+			tasks: [{
+				id: "6746CFC310F5FF70"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7810266D6B6184BA"]
+			id: "17C2578DFE221E7D"
+			tasks: [{
+				id: "09196480A7B1B3E1"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5A5DC66D6E6307CB"]
+			id: "35CDE833975D126D"
+			tasks: [{
+				id: "038414B46FF876CA"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["164674E47363A30C"]
+			id: "7311B50C34A2BDFD"
+			size: 1.0d
+			tasks: [{
+				id: "0FC8E896491C5E7D"
+				item: "treetap:tap"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7311B50C34A2BDFD"]
+			id: "772525396CCB0C66"
+			tasks: [{
+				id: "171964980647FC3F"
+				item: "thermal:resin_bucket"
+				type: "item"
+			}]
+			x: 6.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["772525396CCB0C66"]
+			id: "48DDF261C40647FC"
+			tasks: [{
+				id: "58C02FFFCFDAA79F"
+				item: "forbidden_arcanus:rotten_leather"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
 		}
 	]
 	title: "0 - Humble Beginings"

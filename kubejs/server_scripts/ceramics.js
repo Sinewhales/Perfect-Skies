@@ -1,36 +1,4 @@
 ServerEvents.recipes(event => {
-// Ceramic Plate
-event.remove({ id: "ceramics:unfired_clay_plate" })
-event.shaped(
-  Item.of('ceramics:unfired_clay_plate', 1), // arg 1: output
-  [
-    '   ',
-    'B  ', // arg 2: the shape (array of strings)
-    'B  '
-  ],
-  {
-    B: 'minecraft:clay_ball',  //arg 3: the mapping object
-  }
-)
-
-// Clay Bucket
-event.remove({ id: "ceramics:unfired_clay_bucket" })
-event.shaped(
-  Item.of('ceramics:unfired_clay_bucket', 1), // arg 1: output
-  [
-    '   ',
-    'A A', // arg 2: the shape (array of strings)
-    ' A '
-  ],
-  {
-    A: 'ceramics:unfired_clay_plate',
-
-  }
-)
-
-// Lava Bricks can only be made in Tinker
-event.remove({ id: "ceramics:lava_bricks_lava" })
-
 // Circuits in Kiln
 event.custom({
   "type": "ceramics:kiln",

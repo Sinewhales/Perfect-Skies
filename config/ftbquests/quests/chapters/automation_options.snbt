@@ -33,17 +33,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["510706A143424837"]
-			id: "1AC52A86C309953B"
-			tasks: [{
-				id: "6FF9FD6869AD2290"
-				item: "crafter_port:crafter"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["4CFDA8D6076098B1"]
 			id: "0F286D1985726E20"
 			tasks: [{

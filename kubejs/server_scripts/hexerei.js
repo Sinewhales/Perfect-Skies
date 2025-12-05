@@ -4,13 +4,14 @@ event.remove({ id: "hexerei:pestle_and_mortar_from_mixing_cauldron" })
 event.shaped(
   Item.of('hexerei:pestle_and_mortar', 1), // arg 1: output
   [
-    '  B',
+    '  C',
     'ABA', // arg 2: the shape (array of strings)
     'AAA'
   ],
   {
-    A: 'minecraft:cobblestone',
-    B: 'cb_microblock:stone_rod',  //arg 3: the mapping object
+    A: 'minecraft:cobblestone_slab',
+    B: 'minecraft:flint',
+    C: 'cb_microblock:stone_rod',  //arg 3: the mapping object
   }
 )
 
@@ -48,18 +49,8 @@ event.shaped(
 
 // Hexerei Drying Recipes (Deprecating Tinker drying rack)
 event.remove({ id: "hexerei:leather_from_drying_rack" })
-event.custom({
-  "type": "hexerei:drying_rack",
-  "ingredients": [
-    {
-      "item": 'ceramics:unfired_clay_bucket'
-    }
-  ],
-  "output": {
-    "item": 'ceramics:empty_clay_bucket'
-  },
-  "dryingTimeInTicks": 100
-})
+event.campfireCooking('ceramics:empty_clay_bucket', 'ceramics:unfired_clay_bucket', 0.35, 100)
+event.campfireCooking('minecraft:charcoal', '#minecraft:logs', 0.35, 400)
 
 // Drying Canvas into String
 event.custom({
@@ -75,18 +66,7 @@ event.custom({
   "dryingTimeInTicks": 60
 })
 
-event.custom({
-  "type": "hexerei:drying_rack",
-  "ingredients": [
-    {
-      "item": 'kubejs:paper_pulp'
-    }
-  ],
-  "output": {
-    "item": 'minecraft:paper'
-  },
-  "dryingTimeInTicks": 200
-})
+
 
 event.custom({
   "type": "hexerei:drying_rack",
