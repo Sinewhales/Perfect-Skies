@@ -51,14 +51,13 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "agricraft": {
-    "soil": true,
-    "crop_block": true
-  },
   "avaritia": {
     "extreme_smithing": true,
     "crafting_table": true,
     "compressor": true
+  },
+  "immersiveengineering": {
+    "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,

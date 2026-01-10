@@ -270,3 +270,8 @@
 !the_bumblezone:sugar_water_floor,
 !phantasm:acidburnt_abysses,
 !phantasm:dreaming_den,
+!ad_astra_star:asteroids_0,
+!deeperdarker:blooming_caverns,
+!deeperdarker:deeplands,
+!deeperdarker:echoing_forest,
+!deeperdarker:overcast_columns,

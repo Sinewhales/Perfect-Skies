@@ -300,7 +300,7 @@ event.shaped(
     ' A '
   ],
   {
-    A: 'minecraft:stick',
+    A: 'forestry:impregnated_stick',
 
   }
 )
@@ -377,6 +377,21 @@ event.shaped(
     A: 'extendedcrafting:black_iron_ingot',
     B: 'minecraft:emerald',
     C: 'minecraft:compass'  //arg 3: the mapping object
+  }
+)
+
+// Paint Brush
+event.shaped(
+  Item.of('kubejs:paintbrush', 1), // arg 1: output
+  [
+    'BC ',
+    'AB ', // arg 2: the shape (array of strings)
+    '   '
+  ],
+  {
+    A: 'minecraft:stick',
+    B: '#minecraft:wool',
+    C: 'farmersdelight:canvas'  //arg 3: the mapping object
   }
 )
 
@@ -560,6 +575,41 @@ ItemEvents.entityInteracted("minecraft:bucket", (event) => {
           milk(event, currentTime)
           event.cancel();
         }
+    }    
+});
+
+// Ink Wood Bucket
+function milk2(event, currentTime) {
+  event.getTarget().persistentData.put("lastMilked", currentTime)
+  let pitch =  Math.random() + 0.8;
+  Utils.server.runCommandSilent(`playsound minecraft:entity.cow.milk neutral @a ${event.getTarget().getX()} ${event.getTarget().getY()} ${event.getTarget().getZ()} 1 ${pitch}`)
+  if (event.player.getMainHandItem().count == 1)
+    event.server.scheduleInTicks(1, () => {
+      event.player.setMainHandItem(Item.of('woodenbucket:wooden_bucket', '{Damage:0,Fluid:{Amount:1000,FluidName:"kubejs:black_dye"}}').strongNBT());
+    });
+  else{
+    event.player.setMainHandItem(event.player.getMainHandItem().withCount(event.player.getMainHandItem().count - 1))
+    event.player.give(Item.of('woodenbucket:wooden_bucket', '{Damage:0,Fluid:{Amount:1000,FluidName:"kubejs:black_dye"}}').strongNBT().withCount(1))
+  } 
+  }
+ItemEvents.entityInteracted("woodenbucket:wooden_bucket", (event) => {
+    if (event.getTarget().getType() != "minecraft:squid") return
+    let currentTime = event.getTarget().level.getTime();
+    event.player.swing();
+    if (!event.getTarget().persistentData.get("lastMilked")) {
+        event.getTarget().persistentData.put("lastMilked", currentTime) // first time milking
+        milk2(event, currentTime)
+        event.cancel();
+    }else{
+        let lastMilked = event.getTarget().persistentData.getLong("lastMilked");
+        let timeSinceLastMilked = currentTime - lastMilked;
+        if (timeSinceLastMilked < 400) {
+            event.getLevel().runCommandSilent("/particle angry_villager " + event.getTarget().getX() + " " + event.getTarget().getY() + " " + event.getTarget().getZ() + " 0.3 0.7 0.3 1 4");
+            event.getLevel().runCommandSilent(`/title ${event.player.displayName.getString()} actionbar "Can't milk now. Try again later"`);
+            event.cancel();
+        }else{
+          milk2(event, currentTime)
+          event.cancel();
+        }
     }
-    
 });

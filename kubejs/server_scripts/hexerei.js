@@ -49,7 +49,7 @@ event.shaped(
 
 // Hexerei Drying Recipes (Deprecating Tinker drying rack)
 event.remove({ id: "hexerei:leather_from_drying_rack" })
-event.campfireCooking('ceramics:empty_clay_bucket', 'ceramics:unfired_clay_bucket', 0.35, 100)
+
 event.campfireCooking('minecraft:charcoal', '#minecraft:logs', 0.35, 400)
 
 // Drying Canvas into String

@@ -68,6 +68,18 @@ event.remove({ id: "actuallyadditions:rice_paper" })
    .requireItem('rusticdelight:cotton_boll', "input8")
    .requireItem('rusticdelight:cotton_boll', "input9")
 
+// Bamboo
+  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "kubejs:pulp")
+  .requireFluid(Fluid.of("minecraft:water", 500))
+  .requireItem('minecraft:bamboo', "input1")
+.requireItem('minecraft:bamboo', "input2")
+   .requireItem('minecraft:bamboo', "input3")
+   .requireItem('minecraft:bamboo', "input4")
+   .requireItem('minecraft:bamboo', "input6")
+   .requireItem('minecraft:bamboo', "input7")
+   .requireItem('minecraft:bamboo', "input8")
+   .requireItem('minecraft:bamboo', "input9")
+
      event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
   .requireFluid(Fluid.of("minecraft:water", 500))
   .requireItem('forestry:wood_pulp', "input1")

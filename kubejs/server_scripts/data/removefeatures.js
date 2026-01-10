@@ -155,7 +155,14 @@ ServerEvents.highPriorityData(e => {
     "bigreactors:anglesite_ore",
     "bigreactors:benitoite_ore",
     "bigreactors:deepslate_yellorite_ore",
-    "bigreactors:yellorite_ore"
+    "bigreactors:yellorite_ore",
+    "immersiveengineering:bauxite",
+    "immersiveengineering:deep_nickel",
+    "immersiveengineering:lead",
+    "immersiveengineering:mineral_veins",
+    "immersiveengineering:nickel",
+    "immersiveengineering:silver",
+    "immersiveengineering:uranium"
 
 
 

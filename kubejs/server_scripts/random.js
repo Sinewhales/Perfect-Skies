@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 event.remove({ id: 'treetap:tap' })
-event.remove({ id: 'watercollector:watercollector' })
 event.remove({ id: 'projectred_expansion:frame' })
 event.remove({ id: 'mysticalagriculture:nature_agglomeratio' })
 event.remove({ id: 'naturescompass:natures_compass' })
@@ -9,7 +8,6 @@ event.remove({ id: 'functionalstorage:oak_drawer_alternate_x2' })
 event.remove({ id: 'functionalstorage:oak_drawer_alternate_x4' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank' })
 event.remove({ id: 'mob_grinding_utils:recipe_tank_sink' })
-event.remove({ id: 'giacomos_exp:expseed' })
 event.remove({ id: 'rusticdelight:paper_from_cotton_boll' })
 event.remove({ id: 'rusticdelight:string_from_cotton_boll' })
 event.remove({ id: 'architects_palette:smelting/moonshale' })
@@ -70,21 +68,6 @@ event.custom({
         "item": "supplementaries:ash"
     }
 }
-)
-
-event.shaped(
-  Item.of('watercollector:watercollector', 1), // arg 1: output
-  [
-    'ABA',
-    'CDC', // arg 2: the shape (array of strings)
-    'ABA'
-  ],
-  {
-    A: 'tconstruct:hepatizon_ingot',
-    B: 'architects_palette:algal_bricks',
-    C: 'minecraft:lily_pad',
-    D: 'actuallyadditions:wood_casing'  //arg 3: the mapping object
-  }
 )
 
 event.custom({
@@ -380,6 +363,24 @@ event.shaped(
   }
 )
 
+// Fan
+event.remove({ id: 'mob_grinding_utils:recipe_fan' })
+event.shaped(
+  Item.of('mob_grinding_utils:fan', 1), // arg 1: output
+  [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  {
+    A: 'actuallyadditions:wood_casing',
+    B: 'tinkers_thinking:spectre_ingot',
+    C: 'tconstruct:seared_stone_slab'
+  }
+)
+
+
+
 
 
 
@@ -406,31 +407,6 @@ event.recipes.summoningrituals
     .recipeTime(60)
 
 
-// Exp Seed
-event.custom({
-	"type": "apotheosis:enchanting",
-	"conditions": [{
-		"type": "apotheosis:module",
-		"module": "enchantment"
-	}],
-	"input": {
-		"item": 'oreberriesreplanted:essence_berry'
-	},
-	"requirements": {
-		"eterna": 10,
-		"quanta": 4,
-		"arcana": 5
-	},
-	"max_requirements": {
-		"eterna": -1,
-		"quanta": -1,
-		"arcana": -1
-	},
-	"result": {
-		"item": 'giacomos_exp:expseed',
-		"count": 1
-	}
-})
 
 // Phasmo Shard Duplication
 event.custom({

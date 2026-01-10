@@ -55,7 +55,7 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
+			x: -4.0d
 			y: 1.0d
 		}
 		{
@@ -426,40 +426,21 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"0429A4A650BA1666"
-				"772525396CCB0C66"
-			]
-			id: "7E4C7DAECBC74441"
-			tasks: [{
-				id: "3F3B8B8B479F3292"
-				item: "kubejs:tanned_leather"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5F1779FE128160D8"]
-			id: "65C0E9FD098D1FB2"
-			tasks: [{
-				id: "25C5DC7B53817794"
-				item: "watercollector:watercollector"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["5F1779FE128160D8"]
 			id: "498A58F33BE56168"
+			rewards: [{
+				count: 2
+				id: "64746B962C714629"
+				item: "minecraft:armor_stand"
+				type: "item"
+			}]
 			subtitle: "Acts as a Mortar replacement and unlocks a better way to make Paper"
 			tasks: [{
 				id: "3B810922183327C8"
 				item: "integrateddynamics:squeezer"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
@@ -473,7 +454,7 @@
 				item: "cardboardboxes:cardboardbox"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 4.0d
 		}
 		{
@@ -506,6 +487,51 @@
 			}]
 			x: 9.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["5E84F250513CFE63"]
+			id: "16CA4E4683894DB2"
+			tasks: [{
+				id: "0A95187D1CD22936"
+				item: "mob_grinding_utils:fan"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["480D3F574931FAE5"]
+			icon: "sophisticatedstorage:controller"
+			id: "1C12AC958F01D60C"
+			tasks: [
+				{
+					id: "700AB8C094AA34E7"
+					item: "sophisticatedstorage:controller"
+					type: "item"
+				}
+				{
+					id: "644E7B7A08E41626"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "04FB9F805DFC5B70"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "39F3AD8D3BFFF93D"
+					item: "sophisticatedstorage:storage_tool"
+					type: "item"
+				}
+				{
+					id: "3ECC8C590BEA76F9"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
 		}
 	]
 	title: "0.5 - Metallurgy"

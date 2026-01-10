@@ -19,7 +19,7 @@ event.custom({
       "item": "tconstruct:scorched_bricks"
     },
     "D": {
-      "item": "ceramics:lava_bricks"
+      "item": 'chisel:lavastone/cracked'
     },
     "E": {
       "item": "kubejs:black_steel_plate"

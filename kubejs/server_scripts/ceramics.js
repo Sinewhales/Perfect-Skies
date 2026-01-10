@@ -1,62 +1,31 @@
 ServerEvents.recipes(event => {
 // Circuits in Kiln
-event.custom({
-  "type": "ceramics:kiln",
-  "category": "item",
-  "cookingtime": 100,
-  "experience": 0.1,
-  "ingredient": {
-    "item": 'minecraft:smooth_stone'
-  },
-  "result": {
-    "count": 2,
-    "item": "projectred_core:plate"
-  }
-})
+event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'minecraft:smooth_stone'}, result: Item.of("projectred_core:plate",2)})
+
 
 // Algal Bricks in Kiln
-event.custom({
-  "type": "ceramics:kiln",
-  "category": "item",
-  "cookingtime": 100,
-  "experience": 0.1,
-  "ingredient": {
-    "item": 'architects_palette:algal_blend'
-  },
-  "result": {
-    "count": 1,
-    "item": 'architects_palette:algal_brick'
-  }
-})
+event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'architects_palette:algal_blend'}, result: Item.of('architects_palette:algal_brick',1)})
+
 
 // Scorched Bricks
-event.custom({
-  "type": "ceramics:kiln",
-  "category": "item",
-  "cookingtime": 100,
-  "experience": 0.1,
-  "ingredient": {
-    "item": 'tconstruct:nether_grout'
-  },
-  "result": {
-    "count": 2,
-    "item": 'tconstruct:scorched_brick'
-  }
-})
+event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'tconstruct:nether_grout'}, result: Item.of('tconstruct:scorched_brick',2)})
+
+// Grout in Kiln
+event.custom({type: 'clayworks:baking', cookingtime: 100, ingredient: {item: 'tconstruct:grout'}, result: Item.of('tconstruct:seared_brick', 1)})
 
 // Kiln
-event.remove({ id: "ceramics:kiln" })
+event.remove({ id: "clayworks:kiln" })
 event.shaped(
-  Item.of('ceramics:kiln', 1), // arg 1: output
+  Item.of('clayworks:kiln', 1), // arg 1: output
   [
     'AAA',
     'ABA', // arg 2: the shape (array of strings)
     'CCC'
   ],
   {
-    A: 'ceramics:clay_plate',
+    A: 'supplementaries:daub',
     B: 'minecraft:furnace',
-    C: 'minecraft:bricks'
+    C: 'minecraft:terracotta'
 
   }
 )

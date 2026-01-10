@@ -228,7 +228,7 @@ event.shaped(
     A: 'tconstruct:nahuatl',
     B: 'kubejs:black_iron_gear',  //arg 3: the mapping object
     C: 'tconstruct:seared_basin',
-    D: 'architects_palette:algal_bricks'
+    D: 'tconstruct:hepatizon_block'
   }
 )
 

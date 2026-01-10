@@ -37,7 +37,7 @@ autoChiselNeedsPower = false
 marbleAmount = 20
 #Amount of limestone veins per chunk (0 to disable)
 #Range: 0 ~ 100
-limestoneAmount = 18
+limestoneAmount = 0
 #Amount of basalt veins per chunk (0 to disable)
 #Range: 0 ~ 100
 basaltVeinAmount = 0

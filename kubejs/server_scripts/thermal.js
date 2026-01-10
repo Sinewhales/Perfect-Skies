@@ -347,7 +347,7 @@ event.custom({
 event.custom({
   type: 'farmersdelight:cutting',
   ingredients: [
-    { item: 'thermal:iron_plate' }
+    { item: 'minecraft:iron_ingot' }
   ],
   tool: { tag: 'cb_microblock:tools/saw' },
   result: [

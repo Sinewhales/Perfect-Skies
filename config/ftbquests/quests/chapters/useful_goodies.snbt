@@ -19,17 +19,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["1979340115DFE500"]
-			id: "60FB14BE07C4EC74"
-			tasks: [{
-				id: "38486BE203023275"
-				item: "extendedcrafting:handheld_table"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["7CE77E39DAA9749D"]
 			id: "273654184CAD71BC"
 			tasks: [{
@@ -39,25 +28,6 @@
 			}]
 			x: -3.0d
 			y: 0.5d
-		}
-		{
-			dependencies: ["1AF3B85CDF694535"]
-			icon: "minecraft:blast_furnace"
-			id: "690E400CBCDFB0A5"
-			tasks: [
-				{
-					id: "25CBC2FFD043A756"
-					item: "minecraft:blast_furnace"
-					type: "item"
-				}
-				{
-					id: "40E910E7A2D0A8CC"
-					item: "ceramics:kiln"
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["1AF3B85CDF694535"]
@@ -95,7 +65,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["56AC3D22D12FC7A5"]
 			id: "55205B0AC971CFB7"
 			tasks: [{
 				id: "2C69129B9E8B71E4"
@@ -104,41 +73,6 @@
 			}]
 			x: 1.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["08B810FFC3FC0F63"]
-			id: "61A4150826E33065"
-			rewards: [
-				{
-					id: "0662C35D973DD292"
-					item: "scannable:rare_ores_module"
-					type: "item"
-				}
-				{
-					id: "08CDB17298ADF2DB"
-					item: "scannable:common_ores_module"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "6CC620073BF035EC"
-					item: "kubejs:scanner_battery"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "4C8CF6FDC3FDD248"
-				item: {
-					Count: 1
-					id: "scannable:scanner"
-					tag: {
-						energy: 5000
-					}
-				}
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.0d
 		}
 		{
 			icon: "moblassos:emerald_lasso"
@@ -189,17 +123,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["514CB91B457B23D3"]
-			id: "2043DE3FFB46A182"
-			tasks: [{
-				id: "697ECFAB67B1AE36"
-				item: "giacomos_exp:expseed"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["08B810FFC3FC0F63"]
 			id: "73D40E0001D7B871"
 			subtitle: "Villagers are the only source of renewable emeralds for now as they are guaranteed to drop one after a certain amount of time. If you haven't found a village by now use this. If you didn't find amethyst, the item is a guaranteed trade from a wandering trader for some wood."
@@ -210,34 +133,6 @@
 			}]
 			x: -1.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["7E4C7DAECBC74441"]
-			id: "051FDC2121214868"
-			tasks: [{
-				id: "61A604AEA01E97C3"
-				item: "sophisticatedbackpacks:upgrade_base"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7E4C7DAECBC74441"]
-			id: "6771EAB3BA34B265"
-			tasks: [{
-				id: "21CA92EFDB2A4345"
-				item: {
-					Count: 1
-					id: "hangglider:hang_glider"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["61ECA7BBCCC178C8"]
@@ -251,8 +146,25 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["510706A143424837"]
+			id: "593A19CD9CEDB958"
+			tasks: [{
+				id: "7529CD6ACF38BA64"
+				item: {
+					Count: 1
+					id: "chisel:iron_chisel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
 		}
 	]
 	title: "Useful Goodies"

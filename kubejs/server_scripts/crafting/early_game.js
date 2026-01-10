@@ -21,6 +21,14 @@ event.remove({ id: "thermal:storage/sawdust_block" })
       ]
     )
 
+// Canvas > Hemp
+    event.shapeless(
+      Item.of('farmersdelight:canvas'), // arg 1: output
+      [
+        '4x immersiveengineering:hemp_fiber'
+      ]
+    )
+
 // Amethyst Dust
 event.custom({
   "type": "hexerei:pestle_and_mortar",
@@ -35,6 +43,36 @@ event.custom({
   },
   "grindingTime": 100
 })
+
+// Green Dye from Kelp and Sea Grass
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:kelp'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:green_dye',
+    "count": 1
+  },
+  "grindingTime": 50
+})
+
+event.custom({
+  "type": "hexerei:pestle_and_mortar",
+  "ingredients": [
+    {
+      "item": 'minecraft:seagrass'
+    }
+  ],
+  "output": {
+    "item": 'minecraft:green_dye',
+    "count": 1
+  },
+  "grindingTime": 50
+})
+
 
 // Spectre Ingot
 event.custom({
@@ -51,11 +89,32 @@ event.custom({
     "post": [
         {
             "type": "drop_item",
-            "item": 'tinkers_thinking:spectre_ingot'
+            "item": 'tinkers_thinking:spectre_ingot',
+            "count": 2
         },
                 {
             "type": "place",
             "block": "*"
+        }
+    ]
+})
+
+// Black Iron Alt 2
+event.custom({
+    "type": "lychee:item_inside",
+    "item_in": {
+        "item": 'thermal:bitumen'
+    },
+    "block_in": {
+        "blocks": ["tconstruct:molten_iron_fluid"],
+        "state": {
+            "level": 0
+        }
+    },
+    "post": [
+                {
+            "type": "place",
+            "block": "kubejs:molten_black_iron"
         }
     ]
 })
@@ -309,13 +368,12 @@ event.shaped(
 event.shaped(
   Item.of('minecraft:furnace', 1), // arg 1: output
   [
-    'ABA',
+    'AAA',
     'CDC', // arg 2: the shape (array of strings)
-    'ABA'
+    'AAA'
   ],
   {
     A: 'minecraft:cobblestone',
-    B: 'quark:sturdy_stone',
     C: 'architects_palette:flint_block',
     D: '#minecraft:coals'
 
@@ -435,7 +493,7 @@ event.shaped(
   ],
   {
     A: 'minecraft:string',
-    B: 'kubejs:cotton_cloth',
+    B: 'farmersdelight:canvas',
     C: 'minecraft:leather'
 
   }
@@ -443,19 +501,11 @@ event.shaped(
 
 // Upgrade Base
 event.remove({ id: 'sophisticatedstorage:upgrade_base' })
-event.shaped(
-  Item.of('sophisticatedstorage:upgrade_base', 1), // arg 1: output
-  [
-    'ABA',
-    'BCB', // arg 2: the shape (array of strings)
-    'ABA'
-  ],
-  {
-    A: 'thermal:iron_plate',
-    B: 'minecraft:flint',
-    C: 'tconstruct:pattern'
-
-  }
+event.smithing(
+  'sophisticatedstorage:upgrade_base',  
+   'tconstruct:pattern',                   // arg 1: output
+  'minecraft:flint',                          // arg 3: the item to be upgraded
+  'thermal:iron_plate'                          // arg 4: the upgrade item
 )
 
 // Withered Block require fossil fuel
@@ -477,9 +527,6 @@ event.shaped(
 event.remove({ id: "deep_aether:skyroot_crafting_table" })
 event.remove({ id: "aether:skyroot_crafting_table" })
 event.remove({ id: "minecraft:crafting_table" })
-
-// Clay Bucket Removal
-event.remove({ id: "ceramics:unfired_clay_bucket" })
 
 event.shaped(
   Item.of('minecraft:crafting_table', 1), // arg 1: output
@@ -511,9 +558,16 @@ event.remove({ id: "mysticalagriculture:honey_agglomeratio" })
 event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'thermal_extra:sticky_ball')
 .requireFluid(Fluid.of("thermal:resin", 250)).damageItem('kubejs:plate_hammer', 1, "tool")
 
+// BLack Iron Alt
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'extendedcrafting:black_iron_ingot')
+.requireFluid(Fluid.of("kubejs:black_dye", 250)).damageItem('kubejs:paintbrush', 1, "tool").requireItem('minecraft:iron_ingot', "input1")
+
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'extendedcrafting:black_iron_ingot')
+.requireFluid(Fluid.of("pneumaticcraft:oil", 500)).damageItem('kubejs:paintbrush', 1, "tool").requireItem('minecraft:iron_ingot', "input1")
+
 event.remove({ id: "woodenbucket:wooden_bucket" })
 event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'woodenbucket:wooden_bucket')
-.damageItemTag('#cb_microblock:tools/saw', 1, "tool").requireItemTag('#minecraft:logs', 1, "input4").requireItemTag('#minecraft:logs', 1, "input6").requireItemTag('#minecraft:logs', 1, "input8")
+.damageItemTag('#cb_microblock:tools/saw', 1, "tool").requireItemTag('#minecraft:planks', 1, "input4").requireItemTag('#minecraft:planks', 1, "input6").requireItemTag('#minecraft:planks', 1, "input8")
 
 
 // Honey Agglomeratio in Artisan
@@ -525,4 +579,7 @@ event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'forbidd
 .requireItem('minecraft:rotten_flesh', "input1").requireItem('minecraft:green_dye', "input2").requireItem('salt:salt', "input5").requireItem('farmersdelight:canvas', "input4").requireFluid(Fluid.of("thermal:resin", 250))
 event.campfireCooking('minecraft:leather', 'forbidden_arcanus:rotten_leather', 0.35, 200)
 
+// Tanned Leather
+event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'kubejs:tanned_leather')
+.requireItem('kubejs:bound_leather', "input1").requireItem('minecraft:flint', "input2").requireItem('minecraft:green_dye', "input5").requireItem('minecraft:bowl', "input4").requireFluid(Fluid.of("thermal:resin", 500))
 })

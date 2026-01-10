@@ -2,6 +2,7 @@ StartupEvents.registry('item', event => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   // If you want a custom item model, you can create one in Blockbench and put it in kubejs/assets/kubejs/models/item/test_item.json
   event.create('plate_hammer').displayName("Plate Hammer").unstackable().maxDamage(50)
+  event.create('paintbrush').displayName("Paintbrush").unstackable().maxDamage(30)
     event.create('obsidian_plate').displayName("Obsidian Plate")
 event.create('redstone_plate').displayName("Redstone Plate")
 event.create('black_iron_gear').displayName("Black Iron Gear")

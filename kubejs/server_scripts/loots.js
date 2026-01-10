@@ -6,17 +6,20 @@ LootJS.modifiers((event) => {
       event.addBlockLootModifier("kubejs:deepslate_aluminium_ore").removeLoot("kubejs:deepslate_aluminium_ore").addLoot('kubejs:raw_aluminum_ore')
       
   // Grass
-  event.addBlockLootModifier("minecraft:grass").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
-  event.addBlockLootModifier("minecraft:tall_grass").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
-  event.addBlockLootModifier("minecraft:fern").removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
-  event.addBlockLootModifier('projectvibrantjourneys:short_grass').removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
-event.addBlockLootModifier('projectvibrantjourneys:watergrass').removeLoot(Ingredient.all).randomChance(0.4).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+  event.addBlockLootModifier("minecraft:grass").removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+  event.addBlockLootModifier("minecraft:tall_grass").removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+  event.addBlockLootModifier("minecraft:fern").removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+  event.addBlockLootModifier('projectvibrantjourneys:short_grass').removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+event.addBlockLootModifier('projectvibrantjourneys:watergrass').removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+event.addBlockLootModifier('minecraft:large_fern').removeLoot(Ingredient.all).randomChance(0.2).addLoot(Item.of('lootbags:loot_bag', '{Color:13882323,Loot:"lootbags:kjs/a93e9hs1ns87kfthowfa40cqh",Name:"Seed Bag",Type:"COMMON"}'))
+
 
   event.addBlockLootModifier("minecraft:grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("minecraft:tall_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("minecraft:fern").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
   event.addBlockLootModifier("projectvibrantjourneys:short_grass").randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
 event.addBlockLootModifier('projectvibrantjourneys:watergrass').randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
+event.addBlockLootModifier('minecraft:large_fern').randomChance(0.7).matchMainHand(Ingredient.of('#farmersdelight:tools/knives')).addLoot(Item.of('farmersdelight:straw'))
 
 // Copper Nugget Unification
 
@@ -44,6 +47,15 @@ event.addBlockLootModifier('projectvibrantjourneys:watergrass').randomChance(0.7
 	event.addLootTableModifier("chests/village/village_taiga_house").randomChance(0.3).addLoot('mysticalagriculture:inferium_essence').limitCount([1, 7], [5, 9])
 	event.addLootTableModifier("chests/village/village_toolsmith").randomChance(0.3).addLoot('mysticalagriculture:inferium_essence').limitCount([1, 7], [5, 9])
 	event.addLootTableModifier("chests/village/village_weaponsmith").randomChance(0.3).addLoot('mysticalagriculture:inferium_essence').limitCount([1, 7], [5, 9])
+
+	// Pattern in Villages
+	event.addLootTableModifier("chests/village/village_desert_house").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_plains_house").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_savanna_house").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_snowy_house").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_taiga_house").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_toolsmith").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
+	event.addLootTableModifier("chests/village/village_weaponsmith").randomChance(0.2).addLoot('tconstruct:pattern').limitCount([0, 1], [1, 2])
 
 // Heart of Emerald in Villages
 event.addLootTableModifier("chests/village/village_desert_house").randomChance(0.1).addLoot('kubejs:heart_of_emerald').limitCount([0, 1], [1, 2])
@@ -116,6 +128,7 @@ ServerEvents.chestLootTables(event => {
 			p.addItem('hexerei:sage_seed', 1).weight(2)
 			p.addItem('actuallyadditions:coffee_beans', 1).weight(2)
 			p.addItem('occultism:datura_seeds', 1).weight(3)
+			p.addItem('immersiveengineering:seed', 1).weight(2)
 		})
 	})
 	event.addChest('kubejs:t1_lootbags', t => {
