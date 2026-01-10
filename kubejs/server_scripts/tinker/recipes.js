@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
   // Pattern
     event.remove({ id: "tconstruct:tables/pattern" })
     event.shapeless(
-      Item.of('tconstruct:pattern', 2), // arg 1: output
+      Item.of('tconstruct:pattern', 1), // arg 1: output
       [
         '4x minecraft:paper'
       ]

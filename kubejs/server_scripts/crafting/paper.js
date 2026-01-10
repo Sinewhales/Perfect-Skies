@@ -30,17 +30,7 @@ event.remove({ id: "minecraft:paper" })
    .requireItem('minecraft:sugar_cane', "input8")
    .requireItem('minecraft:sugar_cane', "input9")
 
-// Canvas
-  event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", "2x kubejs:pulp")
-  .requireFluid(Fluid.of("minecraft:water", 500))
-  .requireItem('farmersdelight:canvas', "input1")
-.requireItem('farmersdelight:canvas', "input2")
-   .requireItem('farmersdelight:canvas', "input3")
-   .requireItem('farmersdelight:canvas', "input4")
-   .requireItem('farmersdelight:canvas', "input6")
-   .requireItem('farmersdelight:canvas', "input7")
-   .requireItem('farmersdelight:canvas', "input8")
-   .requireItem('farmersdelight:canvas', "input9")
+
 
 // Rice
 event.remove({ id: "actuallyadditions:rice_paper" }) 
