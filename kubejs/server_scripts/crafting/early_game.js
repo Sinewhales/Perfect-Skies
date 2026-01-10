@@ -576,7 +576,7 @@ event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'mystica
 
 // Rotten Leather
 event.recipes.custommachinery.custom_craft("kubejs:artistan_worktable", 'forbidden_arcanus:rotten_leather')
-.requireItem('minecraft:rotten_flesh', "input1").requireItem('minecraft:green_dye', "input2").requireItem('salt:salt', "input5").requireItem('farmersdelight:canvas', "input4").requireFluid(Fluid.of("thermal:resin", 250))
+.requireItem('minecraft:rotten_flesh', "input1").requireItem('minecraft:green_dye', "input2").requireItem("hexalia:salt", "input5").requireItem('farmersdelight:canvas', "input4").requireFluid(Fluid.of("thermal:resin", 250))
 event.campfireCooking('minecraft:leather', 'forbidden_arcanus:rotten_leather', 0.35, 200)
 
 // Tanned Leather

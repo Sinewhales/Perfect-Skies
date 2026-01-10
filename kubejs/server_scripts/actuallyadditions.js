@@ -41,7 +41,7 @@ event.custom({
       "item": "farmersdelight:rice"
     },
         {
-      "item": "salt:salt"
+      "item": "hexalia:salt"
     },
         {
         "type": "forge:partial_nbt",
